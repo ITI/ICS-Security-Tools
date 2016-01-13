@@ -5,6 +5,8 @@
 ### Protocol Implementation
 * [pyModBus](https://github.com/bashwork/pymodbus) - A full modbus protocol written in python.
 
+* [ Modbus for Go](https://github.com/goburrow/modbus) - Fault-tolerant implementation of modbus protocol in Go (golang)
+
 ### Fuzzing
 * [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system.
 
