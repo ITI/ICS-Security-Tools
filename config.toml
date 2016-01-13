@@ -1,0 +1,8 @@
+baseurl = "http://iti.github.io/ICS-Security-Tools/"
+languageCode = "en-us"
+title = "ICS Security Tools"
+theme = "bootie-docs"
+[params]
+  mainMenu = ["About", "Scenario Overview", "Handouts", "Phase1", "Phase2", "Phase3"]
+  noCategoryLink = true
+  description = "Tools, tips, tricks, and more for exploring ICS Security."
