@@ -6,10 +6,10 @@ This effort intends to pull together tools, tips, and tricks of the trade to wor
 The code repository will house any specific scripts, tools, configurations, or other useful tidbits to utilize in this space.
 
 General Structure:  
-./configurations/  
-./protocols/  
-./scripts/  
-./tools/  
+[./configurations/](configurations)  
+[./protocols/](protocols)  
+[./scripts/](scripts)  
+[./tools/](tools)  
 
 Enjoy!
 
