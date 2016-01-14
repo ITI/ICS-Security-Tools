@@ -1,9 +1,11 @@
 # ICS Protocols 
 ## Developed as a community asset at S4x16
 
+## AMI
+* [Termineter](https://github.com/GrayHatLabs/john_commor_c1218) - c1218 powermeter emulator
+
 ## BACnet
 * [BACpypes](https://github.com/JoelBender/bacpypes) - BACpypes provides a BACnet application layer and network layer written in Python for daemons, scripting, and graphical interfaces.
-
 
 ## Modbus
 ### Protocol Implementation
