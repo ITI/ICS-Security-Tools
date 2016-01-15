@@ -8,5 +8,8 @@
 ### Malware
 * [YARA](https://plusvic.github.io/yara/) - YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families (or whatever you want to describe) based on textual or binary patterns. Each description, a.k.a rule, consists of a set of strings and a boolean expression which determine its logic.
 
+### Vulnerabilities
+* [Binwalk](https://github.com/devttys0/binwalk) - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
+
 (creative commons license)
 
