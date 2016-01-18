@@ -7,9 +7,10 @@
 
 ### Malware
 * [YARA](https://plusvic.github.io/yara/) - YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families (or whatever you want to describe) based on textual or binary patterns. Each description, a.k.a rule, consists of a set of strings and a boolean expression which determine its logic.
+* [Volatility](https://github.com/volatilityfoundation/volatility) - The Volatility Framework is a completely open collection of tools,implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples.
 
-* [Volatility](https://github.com/volatilityfoundation/volatility) - The Volatility Framework is a completely open collection of tools,
-implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples.
+### Vulnerabilities
+* [Binwalk](https://github.com/devttys0/binwalk) - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
 
 (creative commons license)
 
