@@ -7,6 +7,8 @@ The code repository will house any specific scripts, tools, configurations, or o
 
 General Structure:  
 [./configurations/](configurations)  
+[./hardware/](hardware)  
+[./pcaps/](pcaps)  
 [./protocols/](protocols)  
 [./scripts/](scripts)  
 [./tools/](tools)  
