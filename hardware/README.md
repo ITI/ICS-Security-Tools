@@ -30,7 +30,7 @@ computer plugs, so having this makes it easy)
 
 ### Advanced
 * Oscilliscope ([RIGOL](http://www.rigolna.com) are decent and cheap.)
-* Universal JTAG Adapter (e.g., [this one](http://www.diygadget.com/universal-jtag-adapter-v2-wiggler-and-xilinx-platform-cable-compatible-debrick-routers-modems-and-more.html) and supporting software (e.g., [OpenOCD](http://openocd.org)).
+* Universal JTAG Adapter (e.g., [Wiggler](http://www.diygadget.com/universal-jtag-adapter-v2-wiggler-and-xilinx-platform-cable-compatible-debrick-routers-modems-and-more.html), [Flyswatter 2](http://www.tincantools.com/JTAG/Flyswatter2.html), [JTAGulator](http://www.grandideastudio.com/portfolio/jtagulator/)) and supporting software (e.g., [OpenOCD](http://openocd.org)).
 * Logic Analyzer ([Saleae](https://www.saleae.com) are good for normal use, stick with an 8 channel
 to start)
 * Adjustable Power Supply
