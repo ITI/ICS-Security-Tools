@@ -7,7 +7,7 @@
 ## BACnet
 * [BACpypes](https://github.com/JoelBender/bacpypes) - BACpypes provides a BACnet application layer and network layer written in Python for daemons, scripting, and graphical interfaces.
 
-## {PROFINET}
+## PROFINET
 ### Protocol Implementation
 * [Profinet - Python](https://github.com/devkid/profinet) - Simple PROFINET implementation in python
 * [Profinet - C](https://github.com/kprovost/libs7comm) - PROFINET implementation in C
