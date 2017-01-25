@@ -7,6 +7,9 @@
 ## Spoofing
 * [Modbus-VCR](https://github.com/reidmefirst/modbus-vcr/) - The Modbus VCR records and replays Modbus traffic
 
+## PLC Injection
+* [PlcInjector](https://github.com/BorjaMerino/PlcInjector) - Modbus stager in assembly and some scripts to upload/download data to the holding register of a PLC. More info [here](http://www.shelliscoming.com/2016/12/modbus-stager-using-plcs-as.html).
+
 ## Common Toolset
 * [Metasploit](http://www.metasploit.com) - Exploitation framework.
 * [Bettercap](https://github.com/evilsocket/bettercap) - A complete, modular, portable and easily extensible MITM framework.
@@ -20,4 +23,3 @@ Note: The following tools haven't necessarily been utilized in an ICS context, b
 * [Laika Boss](https://github.com/lmco/laikaboss) - Laika is an object scanner and intrusion detection system that strives to achieve the goal of a scalable, flexible, and verbose system.
 
 (creative commons license)
-
