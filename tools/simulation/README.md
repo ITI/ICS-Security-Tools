@@ -1,10 +1,5 @@
 # ICS Tools
-## Developed as a community asset at S4x16
-
-## Protocol Simulation
-* [ModbusPal](http://modbuspal.sourceforge.net) - ModbusPal is a MODBUS slave simulator. Its purpose is to offer an easy to use interface with the capabilities to reproduce complex and realistic MODBUS environments. Mirrored [here](../mirrored/modbuspal/).
-* [DNP3 Simulator](https://github.com/automatak/dnp3-simulator) - Graphical DNP3 Master/Outstation simulator
-
+## Developed as a community asset
 
 ## Grid Simulation Tools
 * [OpenDSS](http://smartgrid.epri.com/SimulationTool.aspx) - The OpenDSS is a comprehensive electrical power system simulation tool primarly for electric utility power distribution systems. It supports nearly all frequency domain (sinusoidal steady‐state) analyses commonly performed on electric utility power distribution systems.

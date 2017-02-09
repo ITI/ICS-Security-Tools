@@ -1,5 +1,5 @@
 # ICS Security Tools, Tips, and Trade
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 This effort intends to pull together tools, tips, and tricks of the trade to working on cyber security in the ICS environment.
 
@@ -16,4 +16,3 @@ General Structure:
 Enjoy!
 
 (creative commons license)
-

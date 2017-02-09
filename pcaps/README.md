@@ -1,5 +1,5 @@
 # ICS PCAPS
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## Tools
 * [CapSan](https://github.com/jsiwek/capsan) - Packet capture sanitizer/anonymizer for Jon Siwek at University of Illinois.

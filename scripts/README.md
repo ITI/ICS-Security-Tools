@@ -1,5 +1,5 @@
 # ICS Scripts
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## Enumeration
 * [Redpoint](https://github.com/digitalbond/Redpoint) - Digital Bond's ICS Enumeration Tools (NMAP NSE scripts).

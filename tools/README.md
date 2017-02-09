@@ -1,5 +1,5 @@
 # ICS Tools
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## General
 [General Tools](general) - General purpose tools in the space providing HMIs and Educational platforms.

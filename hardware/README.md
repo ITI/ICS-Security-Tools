@@ -1,5 +1,5 @@
 # ICS Hardware
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## Starting Hardware
 * [Siemens S7-1200](http://w3.siemens.com/mcms/programmable-logic-controller/en/basic-controller/s7-1200/pages/default.aspx) PLCs - Cheap and commonly used. You can buy a "starter kit" that includes TIA Portal (software to configure the PLC). Trial version of the software is also available. Check eBay or refurb vendors for deals.
@@ -39,4 +39,3 @@ to start)
 * [IDAPro](https://www.hex-rays.com/products/ida/)
 
 (creative commons license)
-

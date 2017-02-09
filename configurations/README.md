@@ -1,5 +1,5 @@
 # ICS Configurations
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 # Default Password Lists
 * [SCADA Strangelove's SCADAPASS](passwords/scadapass.csv)

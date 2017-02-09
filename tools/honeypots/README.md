@@ -1,5 +1,5 @@
 # ICS Tools - Honeypots
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## Honeypots
 * [SCADA Honeynet](http://www.digitalbond.com/tools/scada-honeynet/) - The SCADA Honeynet appears to be a PLC. It is highly realistic with support for the management interfaces, a points list taken from an actual installation, and default parameters unchanged.
@@ -8,4 +8,3 @@
 
 
 (creative commons license)
-

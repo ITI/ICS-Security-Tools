@@ -1,5 +1,5 @@
 # ICS Tools - Analysis
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## Analysis
 ### Logs

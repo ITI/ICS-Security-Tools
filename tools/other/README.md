@@ -1,5 +1,5 @@
 # ICS Tools - Other
-## Developed as a community asset at S4x16
+## Developed as a community asset
 
 ## Evasion
 * [Modshaft](https://github.com/reidmefirst/modshaft/) - Modshaft is an IP-over-Modbus/TCP tunnel.  It is useful for evading application-layer firewalls.
