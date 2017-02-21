@@ -1,0 +1,253 @@
+Metadata-Version: 1.0
+Name: IPy
+Version: 0.60
+Summary: Class and tools for handling of IPv4 and IPv6 addresses and networks
+Home-page: http://software.inl.fr/trac/trac.cgi/wiki/IPy
+Author: Victor Stinner
+Author-email: victor.stinner AT inl.fr
+License: BSD License
+Download-URL: http://software.inl.fr/trac/trac.cgi/wiki/IPy
+Description: IPy - class and tools for handling of IPv4 and IPv6 addresses and networks.
+        
+        Presentation of the API
+        =======================
+        
+        The IP class allows a comfortable parsing and handling for most
+        notations in use for IPv4 and IPv6 addresses and networks. It was
+        greatly inspired by RIPE's Perl module NET::IP's interface but
+        doesn't share the implementation. It doesn't share non-CIDR netmasks,
+        so funky stuff like a netmask of 0xffffff0f can't be done here.
+        
+        >>> from IPy import IP
+        >>> ip = IP('127.0.0.0/30')
+        >>> for x in ip:
+        ...  print x
+        ...
+        127.0.0.0
+        127.0.0.1
+        127.0.0.2
+        127.0.0.3
+        >>> ip2 = IP('0x7f000000/30')
+        >>> ip == ip2
+        1
+        >>> ip.reverseNames()
+        ['0.0.0.127.in-addr.arpa.', '1.0.0.127.in-addr.arpa.', '2.0.0.127.in-addr.arpa.', '3.0.0.127.in-addr.arpa.']
+        >>> ip.reverseName()
+        '0-3.0.0.127.in-addr.arpa.'
+        >>> ip.iptype()
+        'PRIVATE'
+        
+        
+        Supports most IP address formats
+        ================================
+        
+        It can detect about a dozen different ways of expressing IP addresses
+        and networks, parse them and distinguish between IPv4 and IPv6 addresses:
+        
+        >>> IP('10.0.0.0/8').version()
+        4
+        >>> IP('::1').version()
+        6
+        
+        IPv4 addresses
+        --------------
+        
+        >>> print IP(0x7f000001)
+        127.0.0.1
+        >>> print IP('0x7f000001')
+        127.0.0.1
+        >>> print IP('127.0.0.1')
+        127.0.0.1
+        >>> print IP('10')
+        10.0.0.0
+        
+        IPv6 addresses
+        --------------
+        
+        >>> print IP('1080:0:0:0:8:800:200C:417A')
+        1080::8:800:200c:417a
+        >>> print IP('1080::8:800:200C:417A')
+        1080::8:800:200c:417a
+        >>> print IP('::1')
+        ::1
+        >>> print IP('::13.1.68.3')
+        ::d01:4403
+        
+        Network mask and prefixes
+        -------------------------
+        
+        >>> print IP('127.0.0.0/8')
+        127.0.0.0/8
+        >>> print IP('127.0.0.0/255.0.0.0')
+        127.0.0.0/8
+        >>> print IP('127.0.0.0-127.255.255.255')
+        127.0.0.0/8
+        
+        
+        Derive network address
+        ===========================
+        
+        IPy can transform an IP address into a network address by applying the given
+        netmask:
+        >>> print IP('127.0.0.1/255.0.0.0', make_net=True)
+        127.0.0.0/8
+        
+        This can also be done for existing IP instances:
+        >>> print IP('127.0.0.1').make_net('255.0.0.0')
+        127.0.0.0/8
+        
+        
+        Convert address to string
+        =========================
+        
+        Nearly all class methods which return a string have an optional
+        parameter 'wantprefixlen' which controls if the prefixlen or netmask
+        is printed. Per default the prefilen is always shown if the network
+        contains more than one address::
+        
+        wantprefixlen == 0 / None     don't return anything   1.2.3.0
+        wantprefixlen == 1            /prefix                 1.2.3.0/24
+        wantprefixlen == 2            /netmask                1.2.3.0/255.255.255.0
+        wantprefixlen == 3            -lastip                 1.2.3.0-1.2.3.255
+        
+        You can also change the defaults on an per-object basis by fiddling with
+        the class members:
+        
+        * NoPrefixForSingleIp
+        * WantPrefixLen
+        
+        Examples of string conversions:
+        
+        >>> IP('10.0.0.0/32').strNormal()
+        '10.0.0.0'
+        >>> IP('10.0.0.0/24').strNormal()
+        '10.0.0.0/24'
+        >>> IP('10.0.0.0/24').strNormal(0)
+        '10.0.0.0'
+        >>> IP('10.0.0.0/24').strNormal(1)
+        '10.0.0.0/24'
+        >>> IP('10.0.0.0/24').strNormal(2)
+        '10.0.0.0/255.255.255.0'
+        >>> IP('10.0.0.0/24').strNormal(3)
+        '10.0.0.0-10.0.0.255'
+        >>> ip = IP('10.0.0.0')
+        >>> print ip
+        10.0.0.0
+        >>> ip.NoPrefixForSingleIp = None
+        >>> print ip
+        10.0.0.0/32
+        >>> ip.WantPrefixLen = 3
+        >>> print ip
+        10.0.0.0-10.0.0.0
+        
+        
+        Compatibility and links
+        =======================
+        
+        IPy 0.60 works on Python version 2.4 and 2.5.
+        
+        This Python module is under BSD license: see COPYING file.
+        
+        Further Information might be available at:
+        http://software.inl.fr/trac/trac.cgi/wiki/IPy
+        
+        
+        TODO
+        ====
+        
+        * better comparison (__cmp__ and friends)
+        * tests for __cmp__
+        * always write hex values lowercase
+        * interpret 2001:1234:5678:1234/64 as 2001:1234:5678:1234::/64
+        * move size in bits into class variables to get rid of
+        some "if self._ipversion ..."
+        * support for base85 encoding
+        * support for output of IPv6 encoded IPv4 Addresses
+        * update address type tables
+        * first-last notation should be allowed for IPv6
+        * add IPv6 docstring examples
+        * check better for negative parameters
+        * add addition / aggregation
+        * move reverse name stuff out of the classes and refactor it
+        * support for aggregation of more than two nets at once
+        * support for aggregation with "holes"
+        * support for finding common prefix
+        * '>>' and '<<' for prefix manipulation
+        * add our own exceptions instead ValueError all the time
+        * rename checkPrefix to checkPrefixOk
+        * add more documentation and doctests
+        * refactor
+        
+        What's new
+        ==========
+        
+        Version 0.60
+        * strCompressed() formats '::ffff:a.b.c.d' correctly
+        * Use strCompressed() instead of strFullsize() to format IP addresses,
+        ouput is smarter with IPv6 address
+        * Remove check_addr_prefixlen because it generates invalid IP address
+        
+        2008-02-05
+        * Release IPy 0.56
+        * Fix IPv6 parser for unit tests: reject
+        '1111::2222:3333:4444:5555:6666:7777:8888' address since '::' is
+        useless
+        
+        2007-08-16
+        * Release IPy 0.55
+        * Rewrite IPv6 parser to allow address "1:2:3:4:5:6::"
+        
+        2007-06-22
+        * Release IPy 0.54
+        * make_net() match from James Teh: transform an IP address into a network
+        address by applying the given netmask
+        
+        2007-02-28
+        * Release IPy 0.53
+        * Reject '0.0.0.0-0.0.0.4' if check_addr_prefixlen is enable
+        * Fix many english spelling mistakes
+        
+        2006-11-06
+        * Release IPy 0.52
+        * Fix strCompressed() for IPv6 "ffff:ffff:ffff:ffff:ffff:f:f:fffc/127"
+        
+        2006-11-02
+        * Release IPy 0.51
+        * Write real name of IPy author (Maximillian Dornseif)
+        * Use version "0.51" to help packaging since 0.5 was smaller than 0.42
+        * Fix unit test for Python 2.3 (don't use doctest.testfile) and 2.5
+        (problem of hex() lower case)
+        * "make test" also check IPy documentation
+        * IPy now works on Python 2.2 to 2.5
+        
+        2006-10-26
+        * Release IPy 0.5
+        * Apply Jean Gillaux patch for netmask "/0.0.0.0" bug
+        * Apply William McVey patch for __nonzero__() bug
+        * Apply Victor Stinner patch: setup.py can use setuptools and fix URLs
+        * Allow "172.30.1.0/22" with new option IPy.check_addr_prefixlen=False
+        * Add regression tests
+        * Create AUTHORS file
+        
+        2004-08-22
+        * IPy 0.42 works on Python 2.3 without warnings
+        
+        2002-01-16
+        * IPy 0.41 has Python < 2.2 compatible unit tests and a README file
+        
+        2001-12-22
+        * IPy 0.4 was the first public relase
+Keywords: ipv4 ipv6 netmask
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Plugins
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python

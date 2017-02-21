@@ -16,6 +16,7 @@
 
 ## Metasploit Modules
 * [Gleg SCADA+ Pack](http://gleg.net/agora_scada.shtml) - **Commercial**
+* [S7 Metasplot pack](../mirrored/s7-metasploit-modules) - Initial s7 metasploit modules.
 
 ## Other
 Note: The following tools haven't necessarily been utilized in an ICS context, but could be helpful.

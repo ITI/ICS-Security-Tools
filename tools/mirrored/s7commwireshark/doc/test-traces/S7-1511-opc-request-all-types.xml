@@ -1,0 +1,109 @@
+        <dataBlock name="DB_5" logicalAddress="%DB5" supportsAddressingByOffset="false" subtype="DB" CRC="0x1AE0DE59">
+          <dataTag name="Static_1" offset="0.0" datatype="Array [0..100] of Word" id="51" lid="11" rid="0x02010004" />
+        </dataBlock>
+        <dataBlock name="DB1" logicalAddress="%DB1" supportsAddressingByOffset="false" subtype="DB" CRC="0x7AB386AB">
+          <dataTag name="var1" offset="0.0" datatype="Bool" id="51" lid="9" rid="0x02000001" />
+          <dataTag name="dword" offset="2.0" datatype="DWord" id="52" lid="12" rid="0x02000006" />
+          <dataTag name="dword_1" offset="6.0" datatype="DWord" id="53" lid="13" rid="0x02000006" />
+        </dataBlock>
+        <dataBlock name="DB3" logicalAddress="%DB3" supportsAddressingByOffset="false" subtype="DB" CRC="0xC53E97F6">
+          <dataTag name="var1" offset="0.0" datatype="Byte" id="51" lid="10" rid="0x02000002" />
+          <dataTag name="var2" offset="2.0" datatype="Word" id="52" lid="12" rid="0x02000004" />
+          <dataTag name="varstring" offset="4.0" datatype="String" id="53" lid="14" rid="0x02000013" />
+        </dataBlock>
+        <dataBlock name="DB_2" logicalAddress="%DB2" supportsAddressingByOffset="false" subtype="DB" CRC="0xD9CDB7E6">
+          <dataTag name="var1" offset="0.0" datatype="Byte" id="51" lid="10" rid="0x02000002" />
+          <dataTag name="var2" offset="2.0" datatype="Word" id="52" lid="12" rid="0x02000004" />
+        </dataBlock>
+        <dataBlock name="DB4" logicalAddress="%DB4" supportsAddressingByOffset="true" subtype="DB" CRC="0xE20774EF">
+          <dataTag name="Word0" offset="0.0" datatype="Word" id="51" lid="10" rid="0x02000004" />
+          <dataTag name="Word1" offset="2.0" datatype="Word" id="52" lid="11" rid="0x02000004" />
+          <dataTag name="Byte2" offset="4.0" datatype="Byte" id="53" lid="13" rid="0x02000002" />
+          <dataTag name="Integer" offset="6.0" datatype="Int" id="54" lid="15" rid="0x02000005" />
+        </dataBlock>
+        <dataBlock name="DB6" logicalAddress="%DB6" supportsAddressingByOffset="false" subtype="DB" CRC="0xD4FD3326">
+          <dataTag name="Word0" offset="0.0" datatype="Word" id="51" lid="10" rid="0x02000004" />
+          <dataTag name="Word1" offset="2.0" datatype="Word" id="52" lid="11" rid="0x02000004" />
+          <dataTag name="Byte2" offset="4.0" datatype="Byte" id="53" lid="13" rid="0x02000002" />
+          <dataTag name="Integer" offset="6.0" datatype="Int" id="54" lid="15" rid="0x02000005" />
+          <dataTag name="Bool" offset="8.0" datatype="Bool" id="55" lid="16" rid="0x02000001" />
+          <dataTag name="DInt" offset="10.0" datatype="DInt" id="56" lid="17" rid="0x02000007" />
+          <dataTag name="DTL" offset="14.0" datatype="DTL" id="57" lid="18" rid="0x02000043" subPartIndex="-2" />
+          <dataTag name="Date" offset="26.0" datatype="Date" id="58" lid="19" rid="0x02000009" />
+          <dataTag name="AOM_Ident" offset="28.0" datatype="AOM_IDENT" id="59" lid="20" rid="0x02000080" />
+          <dataTag name="Array_Byte" offset="32.0" datatype="Array[0..10] of Byte" id="60" lid="22" rid="0x02010002" />
+          <dataTag name="CONN_ANY" offset="44.0" datatype="CONN_ANY" id="61" lid="23" rid="0x020000A8" />
+          <dataTag name="CONN_OUC" offset="46.0" datatype="CONN_OUC" id="62" lid="24" rid="0x020000AA" />
+          <dataTag name="CONN_PRG" offset="48.0" datatype="CONN_PRG" id="63" lid="25" rid="0x020000A9" />
+          <dataTag name="CONN_R_ID" offset="50.0" datatype="CONN_R_ID" id="64" lid="26" rid="0x020000AB" />
+          <dataTag name="CREF" offset="54.0" datatype="CREF" id="65" lid="27" rid="0x02000065" subPartIndex="-3" />
+          <dataTag name="Char" offset="62.0" datatype="Char" id="66" lid="28" rid="0x02000003" />
+          <dataTag name="DB_ANY" offset="64.0" datatype="DB_ANY" id="67" lid="29" rid="0x020000D0" />
+          <dataTag name="DB_WWW" offset="66.0" datatype="DB_WWW" id="68" lid="30" rid="0x020000D1" />
+          <dataTag name="DWord" offset="68.0" datatype="DWord" id="69" lid="31" rid="0x02000006" />
+          <dataTag name="Date_1" offset="72.0" datatype="Date" id="70" lid="32" rid="0x02000009" />
+          <dataTag name="Date_And_Time" offset="74.0" datatype="Date_And_Time" id="71" lid="33" rid="0x0200000E" />
+          <dataTag name="EVENT_ANY" offset="82.0" datatype="EVENT_ANY" id="72" lid="34" rid="0x02000081" />
+          <dataTag name="EVENT_ATT" offset="86.0" datatype="EVENT_ATT" id="73" lid="35" rid="0x02000082" />
+          <dataTag name="EVENT_HWINT" offset="90.0" datatype="EVENT_HWINT" id="74" lid="36" rid="0x02000086" />
+          <dataTag name="ErrorStruct" offset="94.0" datatype="ErrorStruct" id="75" lid="37" rid="0x02000061" subPartIndex="-4" />
+          <dataTag name="HW_ANY" offset="122.0" datatype="HW_ANY" id="76" lid="38" rid="0x02000090" />
+          <dataTag name="HW_DEVICE" offset="124.0" datatype="HW_DEVICE" id="77" lid="39" rid="0x02000093" />
+          <dataTag name="HW_DPMASTER" offset="126.0" datatype="HW_DPMASTER" id="78" lid="40" rid="0x02000092" />
+          <dataTag name="HW_DPSLAVE" offset="128.0" datatype="HW_DPSLAVE" id="79" lid="41" rid="0x02000094" />
+          <dataTag name="HW_HSC" offset="130.0" datatype="HW_HSC" id="80" lid="42" rid="0x02000098" />
+          <dataTag name="HW_IEPORT" offset="132.0" datatype="HW_IEPORT" id="81" lid="43" rid="0x0200009C" />
+          <dataTag name="HW_INTERFACE" offset="134.0" datatype="HW_INTERFACE" id="82" lid="44" rid="0x0200009B" />
+          <dataTag name="HW_IO" offset="136.0" datatype="HW_IO" id="83" lid="45" rid="0x02000095" />
+          <dataTag name="HW_IOSYSTEM" offset="138.0" datatype="HW_IOSYSTEM" id="84" lid="46" rid="0x02000091" />
+          <dataTag name="HW_MODULE" offset="140.0" datatype="HW_MODULE" id="85" lid="49" rid="0x02000096" />
+          <dataTag name="HW_PTO" offset="142.0" datatype="HW_PTO" id="86" lid="50" rid="0x0200009A" />
+          <dataTag name="HW_PWM" offset="144.0" datatype="HW_PWM" id="87" lid="65" rid="0x02000099" />
+          <dataTag name="HW_SUBMODULE" offset="146.0" datatype="HW_SUBMODULE" id="88" lid="66" rid="0x02000097" />
+          <dataTag name="IEC_COUNTER" offset="148.0" datatype="IEC_COUNTER" id="89" lid="67" rid="0x0200001E" subPartIndex="-5" />
+          <dataTag name="IEC_DCOUNTER" offset="154.0" datatype="IEC_DCOUNTER" id="90" lid="68" rid="0x02000046" subPartIndex="-6" />
+          <dataTag name="IEC_LCOUNTER" offset="166.0" datatype="IEC_LCOUNTER" id="91" lid="69" rid="0x02000047" subPartIndex="-7" />
+          <dataTag name="IEC_LTIMER" offset="190.0" datatype="IEC_LTIMER" id="92" lid="70" rid="0x02000044" subPartIndex="-8" />
+          <dataTag name="IEC_SCOUNTER" offset="218.0" datatype="IEC_SCOUNTER" id="101" lid="72" rid="0x02000045" subPartIndex="-9" />
+          <dataTag name="IEC_TIMER" offset="222.0" datatype="IEC_TIMER" id="94" lid="73" rid="0x0200001F" subPartIndex="-10" />
+          <dataTag name="IEC_UCOUNTER" offset="238.0" datatype="IEC_UCOUNTER" id="95" lid="74" rid="0x02000048" subPartIndex="-11" />
+          <dataTag name="IEC_UDCOUNTER" offset="244.0" datatype="IEC_UDCOUNTER" id="96" lid="75" rid="0x0200004A" subPartIndex="-12" />
+          <dataTag name="IEC_ULCOUNTER" offset="256.0" datatype="IEC_ULCOUNTER" id="97" lid="76" rid="0x0200004B" subPartIndex="-13" />
+          <dataTag name="IEC_USCOUNTER" offset="280.0" datatype="IEC_USCOUNTER" id="98" lid="77" rid="0x02000049" subPartIndex="-14" />
+          <dataTag name="Int" offset="284.0" datatype="Int" id="110" lid="88" rid="0x02000005" />
+          <dataTag name="LDT" offset="286.0" datatype="LDT" id="111" lid="89" rid="0x02000042" />
+          <dataTag name="LInt" offset="294.0" datatype="LInt" id="112" lid="90" rid="0x02000032" />
+          <dataTag name="LReal" offset="302.0" datatype="LReal" id="113" lid="91" rid="0x02000030" />
+          <dataTag name="LTime" offset="310.0" datatype="LTime" id="114" lid="92" rid="0x02000040" />
+          <dataTag name="LTime_Of_Day" offset="318.0" datatype="LTime_Of_Day" id="115" lid="93" rid="0x02000041" />
+          <dataTag name="LWord" offset="326.0" datatype="LWord" id="116" lid="94" rid="0x02000033" />
+          <dataTag name="NREF" offset="334.0" datatype="NREF" id="117" lid="95" rid="0x02000062" subPartIndex="-15" />
+          <dataTag name="OB_ANY" offset="342.0" datatype="OB_ANY" id="118" lid="96" rid="0x020000A0" />
+          <dataTag name="OB_ATT" offset="344.0" datatype="OB_ATT" id="119" lid="97" rid="0x020000A4" />
+          <dataTag name="OB_CYCLIC" offset="346.0" datatype="OB_CYCLIC" id="120" lid="98" rid="0x020000A3" />
+          <dataTag name="OB_DELAY" offset="348.0" datatype="OB_DELAY" id="121" lid="99" rid="0x020000A1" />
+          <dataTag name="OB_DIAG" offset="350.0" datatype="OB_DIAG" id="122" lid="110" rid="0x020000C3" />
+          <dataTag name="OB_HWINT" offset="352.0" datatype="OB_HWINT" id="123" lid="111" rid="0x020000C1" />
+          <dataTag name="OB_PCYCLE" offset="354.0" datatype="OB_PCYCLE" id="124" lid="112" rid="0x020000C0" />
+          <dataTag name="OB_STARTUP" offset="356.0" datatype="OB_STARTUP" id="125" lid="113" rid="0x020000C5" />
+          <dataTag name="OB_TIMEERROR" offset="358.0" datatype="OB_TIMEERROR" id="126" lid="114" rid="0x020000C4" />
+          <dataTag name="OB_TOD" offset="360.0" datatype="OB_TOD" id="127" lid="116" rid="0x020000A2" />
+          <dataTag name="PIP" offset="362.0" datatype="PIP" id="128" lid="117" rid="0x020000AF" />
+          <dataTag name="PORT" offset="364.0" datatype="PORT" id="129" lid="118" rid="0x020000AD" />
+          <dataTag name="RTM" offset="366.0" datatype="RTM" id="130" lid="119" rid="0x020000AE" />
+          <dataTag name="Real" offset="368.0" datatype="Real" id="131" lid="120" rid="0x02000008" />
+          <dataTag name="S5Time" offset="372.0" datatype="S5Time" id="132" lid="127" rid="0x0200000C" />
+          <dataTag name="SInt" offset="374.0" datatype="SInt" id="133" lid="128" rid="0x02000037" />
+          <dataTag name="String" offset="376.0" datatype="String" id="134" lid="129" rid="0x02000013" />
+          <dataTag name="Struct" offset="632.0" datatype="Struct" id="135" lid="130" rid="0x92010000" subPartIndex="1" CRC="0xFE4DFF0D">
+            <dataTag name="Struct_Word" offset="0.0" datatype="Word" id="52" lid="11" rid="0x02000004" />
+            <dataTag name="Struct_Byte" offset="2.0" datatype="Byte" id="51" lid="12" rid="0x02000002" />
+          </dataTag>
+          <dataTag name="Time" offset="636.0" datatype="Time" id="136" lid="131" rid="0x0200000B" />
+          <dataTag name="Time_Of_Day" offset="640.0" datatype="Time_Of_Day" id="137" lid="132" rid="0x0200000A" />
+          <dataTag name="UDInt" offset="644.0" datatype="UDInt" id="138" lid="133" rid="0x02000036" />
+          <dataTag name="UInt" offset="648.0" datatype="UInt" id="139" lid="134" rid="0x02000035" />
+          <dataTag name="ULInt" offset="650.0" datatype="ULInt" id="140" lid="135" rid="0x02000031" />
+          <dataTag name="USInt" offset="658.0" datatype="USInt" id="141" lid="139" rid="0x02000034" />
+          <dataTag name="Word" offset="660.0" datatype="Word" id="142" lid="140" rid="0x02000004" />
+        </dataBlock>

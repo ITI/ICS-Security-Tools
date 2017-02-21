@@ -1,0 +1,56 @@
+Version 0.60
+	* strCompressed() formats '::ffff:a.b.c.d' correctly
+	* Use strCompressed() instead of strFullsize() to format IP addresses,
+	  ouput is smarter with IPv6 address
+	* Remove check_addr_prefixlen because it generates invalid IP address
+
+2008-02-05
+	* Release IPy 0.56
+	* Fix IPv6 parser for unit tests: reject
+	  '1111::2222:3333:4444:5555:6666:7777:8888' address since '::' is
+	  useless
+
+2007-08-16
+	* Release IPy 0.55
+	* Rewrite IPv6 parser to allow address "1:2:3:4:5:6::"
+
+2007-06-22
+	* Release IPy 0.54
+	* make_net() match from James Teh: transform an IP address into a network
+	  address by applying the given netmask
+
+2007-02-28
+	* Release IPy 0.53
+	* Reject '0.0.0.0-0.0.0.4' if check_addr_prefixlen is enable
+	* Fix many english spelling mistakes
+
+2006-11-06
+	* Release IPy 0.52
+	* Fix strCompressed() for IPv6 "ffff:ffff:ffff:ffff:ffff:f:f:fffc/127"
+
+2006-11-02
+	* Release IPy 0.51
+	* Write real name of IPy author (Maximillian Dornseif)
+	* Use version "0.51" to help packaging since 0.5 was smaller than 0.42
+	* Fix unit test for Python 2.3 (don't use doctest.testfile) and 2.5
+	  (problem of hex() lower case)
+	* "make test" also check IPy documentation
+	* IPy now works on Python 2.2 to 2.5
+
+2006-10-26
+	* Release IPy 0.5
+	* Apply Jean Gillaux patch for netmask "/0.0.0.0" bug
+	* Apply William McVey patch for __nonzero__() bug
+	* Apply Victor Stinner patch: setup.py can use setuptools and fix URLs
+	* Allow "172.30.1.0/22" with new option IPy.check_addr_prefixlen=False
+	* Add regression tests
+	* Create AUTHORS file
+
+2004-08-22
+	* IPy 0.42 works on Python 2.3 without warnings
+
+2002-01-16
+	* IPy 0.41 has Python < 2.2 compatible unit tests and a README file
+
+2001-12-22
+	* IPy 0.4 was the first public relase

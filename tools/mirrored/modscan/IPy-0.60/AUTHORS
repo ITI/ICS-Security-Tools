@@ -1,0 +1,11 @@
+Bernhard Frauendienst <contact AT obeliks.de> - fixed IPv6 parser
+James Teh <james.teh AT netboxblue.com> - make_net option patch
+Jean Gillaux <jgillaux AT inl.fr> - Fix netmask "/0.0.0.0"
+Mark Johnston - bringing IPy to Python 2.3
+Matthew Flanagan <mattimustang AT gmail.com> - Fix strCompressed()
+Maximillian Dornseif <md AT hudora.de> - IPy author and maintainer until version 0.42
+Samuel Krempp - fix __cmp__() bug
+Shell, Hin-lik Hung - bring IPy to OpenBSD ports
+Skinny Puppy - __add__() now always  returns a value
+Victor Stinner <victor.stinner AT inl.fr> - Patch setup.py for setuptools, maintainer since version 0.5
+William McVey <wam AT cisco.com> - Fix IP.__nonzero__()

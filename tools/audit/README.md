@@ -7,6 +7,9 @@
 * [DHS CSET](https://ics-cert.us-cert.gov/Downloading-and-Installing-CSET) - The Cyber Security Evaluation Tool (CSET®) is a Department of Homeland Security (DHS) product that assists organizations in protecting their key national cyber assets. It was developed under the direction of the DHS National Cyber Security Division (NCSD) by cybersecurity experts and with assistance from the National Institute of Standards and Technology. This tool provides users with a systematic and repeatable approach for assessing the security posture of their cyber systems and networks. It includes both high-level and detailed questions related to all industrial control and IT systems.
 * [NSA GRASSMARLIN](https://github.com/iadgov/GRASSMARLIN) - GRASSMARLIN provides IP network situational awareness of industrial control systems (ICS) and Supervisory Control and Data Acquisition (SCADA) networks to support network security. Passively map, and visually display, an ICS/SCADA network topology while safely conducting device discovery, accounting, and reporting on these critical cyber-physical systems.
 * [Misc SCADA Tools](https://github.com/atimorin/scada-tools) - A collection of miscellaneous SCADA tools written in python.
+* [PLCscan](../mirrored/plcsan) - Tool for scan PLC devices over s7comm or modbus protocols.
+* [modscan](../mirrored/modscan) - Tool to scan modbus devices and gather information.
+* [S7 Wireshark Dissector](../mirrored/s7commwireshark) - Wireshark dissector for S7.
 
 ## IDS Signatures
 * [Quickdraw ICS IDS](http://www.digitalbond.com/tools/quickdraw/) - Digital Bond’s original research project was to develop a set of IDS rules for SCADA protocols. The initial rules for Modbus TCP and DNP3 have now been enhanced for EtherNet/IP, Vulnerability rules and Device Specific rules. Quickdraw also includes Snort preprocessors and plugins that allow rules for more complex control system protocols.

@@ -1,0 +1,20 @@
+Overview of changes in Wireshark s7comm Plugin 0.0.3
+* changed labels/descriptions in header part
+* changed labels/descriptions of block-services
+* added diagnostic telegrams (type 1) on online block view
+* added basic support for 1200 symbolic variable access
+* added several SZL IDs
+
+Overview of changes in Wireshark s7comm Plugin 0.0.4
+* extended 1200 symbolic variable access
+* added SZL ID 0x0131 index 0x0010
+* added SZL partial list extract desciption
+* optimized display of fragmented SZL data when divided into several PDUs
+* show SZL ID 0x0111 in the same way as ID 0x0011
+* extended filter of variable services
+* added SZL ID 0xxy74
+
+Overview of changes in Wireshark s7comm Plugin 0.0.5
+* compatibility with Wireshark 1.12
+  Since they changed the wireshark-api, this plugin
+  won't work with older versions of Wireshark.
