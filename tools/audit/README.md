@@ -9,7 +9,6 @@
 * [Misc SCADA Tools](https://github.com/atimorin/scada-tools) - A collection of miscellaneous SCADA tools written in python.
 * [PLCscan](../mirrored/plcsan) - Tool for scan PLC devices over s7comm or modbus protocols.
 * [modscan](../mirrored/modscan) - Tool to scan modbus devices and gather information.
-* [S7 Wireshark Dissector](../mirrored/s7commwireshark) - Wireshark dissector for S7.
 
 ## IDS Signatures
 * [Quickdraw ICS IDS](http://www.digitalbond.com/tools/quickdraw/) - Digital Bond’s original research project was to develop a set of IDS rules for SCADA protocols. The initial rules for Modbus TCP and DNP3 have now been enhanced for EtherNet/IP, Vulnerability rules and Device Specific rules. Quickdraw also includes Snort preprocessors and plugins that allow rules for more complex control system protocols.
