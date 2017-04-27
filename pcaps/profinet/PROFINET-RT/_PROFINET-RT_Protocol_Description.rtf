@@ -1,0 +1,109 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red3\green47\blue153;
+\red240\green242\blue245;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab720
+\pard\pardeftab720\sl380\sa227
+
+\f0\b\fs34 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 PROFINET Real-Time Protocol (PN-RT)\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Profinet RT is one of the protocols of the {\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/PROFINET"}}{\fldrslt \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 Profinet}} family. It used for real time cyclic data transfer with Industrial Programable Logic Controllers. Communications using PN-RT bypass the standard TCP/IP interface provided by Profinet to provide high speed communications of up to 12MBd. Specifically it was designed for time critical discrete input/output and message transfer.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 History\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 The PN-RT protocol was released with Profinet specification v2.2 in June 2007.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Protocol dependencies\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls1\ilvl0
+\b0\fs28 \cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/EthernetHardware"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 EthernetHardware}}\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 : PN-IO is directly on top of Ethernet and uses Ethernet type 0x8892\cb1 \uc0\u8232 \cb3 \
+\pard\pardeftab720\sa280
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Wireshark\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 The PN-RT dissector is fully functional.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Display Filter\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 A complete list of PN-RT display filter fields can be found in the {\field{\*\fldinst{HYPERLINK "http://www.wireshark.org/docs/dfref/p/pn_rt.html"}}{\fldrslt \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 display filter reference}}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Show only the PN-RT based traffic:
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  pn_rt\uc0\u8232 
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa280
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Capture Filter\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls3\ilvl0
+\b0\fs28 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Capture only the PN-RT based traffic:
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  ether proto 0x8892\uc0\u8232 
+\f0 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Capture everything except the PN-RT based traffic:
+\f1 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  not ether proto 0x8892\uc0\u8232 
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa280
+\cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 External links\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls4\ilvl0
+\b0\fs28 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 add link to PN-RT specification\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls4\ilvl0\cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "http://www.rtaautomation.com/profinetio/"}}{\fldrslt \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 PROFINET Unplugged - An introduction to PROFINET IO}}\cf2 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \uc0\u8232 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\fs24 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\
+\
+GNU General Public License\
+This page is based on the WireShark project's wiki page at:\
+{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/PROFINET/RT"}}{\fldrslt https://wiki.wireshark.org/PROFINET/RT}}}

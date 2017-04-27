@@ -1,0 +1,4 @@
+A sample packet capture from a Control4 appliance that includes OTA key
+delivery to a downstream device.  You can extract the key with zbdsniff,
+and decrypt the contents with Wireshark.  Remember to enter the key
+backward in Wireshark to get it to decrypt properly.

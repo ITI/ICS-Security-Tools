@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red83\green83\blue83;\red3\green47\blue153;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab720
+\pard\pardeftab720\sl380\sa227
+
+\f0\b\fs34 \cf0 \expnd0\expndtw0\kerning0
+OPC - OLE For Process Control\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+OPC is a series of standards specifications. The first standard (originally called simply the OPC Specification and now called the Data Access Specification) resulted from the collaboration of a number of leading worldwide automation suppliers working in cooperation with Microsoft. Originally based on Microsoft's OLE COM (component object model) and DCOM (distributed component object model) technologies, the specification defined a standard set of objects, interfaces and methods for use in process control and manufacturing automation applications to facilitate interoperability. The COM/DCOM technologies provided the framework for software products to be developed. There are now hundreds of OPC Data Access servers and clients.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+History\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+OPC Data Access was the first OPC specification. It was very easy to use because COM/DCOM was used as the underlying protocol and COM technologies were well supported by all kinds of IDEs from C++ and Visual Basic to VBA in Office applications. It spread very quickly as a vendor independent standard for accessing process data and other specifications for different automation technology requirements such as Alarm & Events followed. Despite its advantages, the DCOM based solution also has disadvantages. In addition to some problems with DCOM timeouts and network interruptions, one of the biggest problems is that it is bound to Microsoft and is not portable to other operating systems.\
+The first approach to address this problem was the SOAP based XML-DA protocol. It was intended for higher level enterprise applications, but it was unexpectedly used a lot by embedded device vendors because it was the first protocol to allow access to process data from other operating systems in a standardized way. Unfortunately, XML-DA is not the most efficient and resource saving of protocols.\
+\pard\pardeftab720\sa280
+
+\b \cf0 \expnd0\expndtw0\kerning0
+OPC Unified Architecture
+\b0 \expnd0\expndtw0\kerning0
+ is a completely new invention of OPC and not only a new protocol. All existing specifications have been integrated into one object oriented address space. There is a new information model which allows description of all kind of data, including meta data and complex relations. Requirements such as redundancy, configurable timeouts, and much more have been integrated. One of the most important features is that it is 
+\b \expnd0\expndtw0\kerning0
+completely portable
+\b0 \expnd0\expndtw0\kerning0
+ and no longer bound to Microsoft. OPC UA describes services on an abstract level, which can be mapped to different kinds of protocols. One of the most important protocol mappings is the binary mapping to an efficient TCP/IP based protocol which is often referred to as "OPC/TCP" or "OPC Binary". More precisely, this is a binary encoding of the service data transported via a native TCP/IP protocol. The IANA registered port for "OPC/TCP" is 4840. On the user interface level a UA server is identified by a URL like in a web browser. The protocol prefix to access such a server is "opc.tcp://".\
+Another important protocol mapping is the SOAP mapping which is actually a {\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/WebService"}}{\fldrslt \cf2 \expnd0\expndtw0\kerning0
+WebService}}. The encoding is done as XML and the transport is done via HTTP/SOAP. The protocol prefix for that is just "{\field{\*\fldinst{HYPERLINK "http:/"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+http://}}".\
+There is also a third mapping that is a hybrid between the other two protocols. The data is encoded as binary as with OPC/TCP, but is transported via a single SOAP service named "Invoke." This way, the binary data is BASE64 encoded and is transported via HTTP/SOAP in the Invoke call. This is a compromise between the efficient binary encoding and the firewall friendly HTTP protocol.\
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+Protocols\
+\pard\pardeftab720\sa280
+
+\b0\fs28 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\sa280
+
+\b \cf0 \expnd0\expndtw0\kerning0
+DCOM based protocols\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls1\ilvl0
+\b0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC%20DA"}}{\fldrslt \expnd0\expndtw0\kerning0
+OPC DA}}\cf0 \expnd0\expndtw0\kerning0
+: The OPC Data Access protocol\uc0\u8232 \
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC%20HDA"}}{\fldrslt \expnd0\expndtw0\kerning0
+OPC HDA}}\cf0 \expnd0\expndtw0\kerning0
+: The OPC Historical Data Access protocol\uc0\u8232 \
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC%20AE"}}{\fldrslt \expnd0\expndtw0\kerning0
+OPC AE}}\cf0 \expnd0\expndtw0\kerning0
+: The OPC Alarm & Events protocol\uc0\u8232 \
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC%20Commands"}}{\fldrslt \expnd0\expndtw0\kerning0
+OPC Commands}}\cf0 \expnd0\expndtw0\kerning0
+: The OPC Commands protocol\uc0\u8232 \
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\sa280
+
+\b \cf0 \expnd0\expndtw0\kerning0
+SOAP based protocols\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls2\ilvl0
+\b0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC%20XML-DA"}}{\fldrslt \expnd0\expndtw0\kerning0
+OPC XML-DA}}\cf0 \expnd0\expndtw0\kerning0
+: The first webservice based OPC protocol.\uc0\u8232 \
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\sa280
+
+\b \cf0 \expnd0\expndtw0\kerning0
+TCP/IP based protocols\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls3\ilvl0
+\b0 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC%20UA"}}{\fldrslt \expnd0\expndtw0\kerning0
+OPC UA}}\cf0 \expnd0\expndtw0\kerning0
+: The OPC Unified Architecture protocol.\uc0\u8232 \
+\pard\pardeftab720\sa280
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl360\sa265
+
+\b\fs32 \cf0 \expnd0\expndtw0\kerning0
+External links\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa70
+\ls4\ilvl0
+\b0\fs28 \cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+The OPC Foundation: {\field{\*\fldinst{HYPERLINK "http://www.opcfoundation.org/"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+http://www.opcfoundation.org}}\uc0\u8232 \
+\ls4\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Overview about OPC UA: {\field{\*\fldinst{HYPERLINK "http://www.ascolab.com/index.php?file=ua&lang=en"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+http://www.ascolab.com/index.php?file=ua&lang=en}}\uc0\u8232 \
+\pard\tx720\pardeftab720\sa70
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+GNU General Public License\
+This page is based on the WireShark project's wiki page at:\
+{\field{\*\fldinst{HYPERLINK "https://wiki.wireshark.org/OPC"}}{\fldrslt https://wiki.wireshark.org/OPC}}\
+}
