@@ -27,6 +27,7 @@ just Ethernet stuff, but its good wiring for all kinds of things)
 * A few 120VAC appliance replacement cords. (plug on one end and wire on the other. Lots of this equipment doesn't have standard
 computer plugs, so having this makes it easy)
 * [Raspberry Pi](https://www.raspberrypi.org/products/) or [BeagleBone Black](https://www.sparkfun.com/products/12857) and Breadboard
+* [A low-cost, DIY data diode for ICS](https://github.com/wavestone-cdt/dyode)
 
 ### Advanced
 * Oscilliscope ([RIGOL](http://www.rigolna.com) are decent and cheap.)
