@@ -14,6 +14,7 @@
 
 ### Basic
 * Network Tap or Hub for capturing network traffic
+* [Throwing Star LAN Tap](https://greatscottgadgets.com/throwingstar/) - a small, simple passive Ethernet tap for monitoring Ethernet communications, requiring no power for operation.
 * [BusPirate](http://dangerousprototypes.com/docs/Bus_Pirate), or equivalent
 * A few USB-Ethernet dongles
 * VMWare Workstation, or other virtualization software
