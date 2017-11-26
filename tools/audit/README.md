@@ -12,6 +12,7 @@
 
 ## IDS Signatures
 * [Quickdraw ICS IDS](https://github.com/digitalbond/quickdraw) - Digital Bond’s original research project was to develop a set of IDS rules for SCADA protocols. The initial rules for Modbus TCP and DNP3 have now been enhanced for EtherNet/IP, Vulnerability rules and Device Specific rules. Quickdraw also includes Snort preprocessors and plugins that allow rules for more complex control system protocols.
+* [Quickdraw Suricata Signatures](https://github.com/digitalbond/Quickdraw-Suricata) - A set of EtherNet/IP IDS rules for use with Suricata.
 
 ## IDS Extensions
 * [Profinet for Suricata](https://github.com/rain8841/Suricata_Profinet_MOD) - Profinet extensions for Suricata
