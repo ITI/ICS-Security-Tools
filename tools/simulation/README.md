@@ -8,5 +8,9 @@
 * [Siemens PSSE](http://w3.siemens.com/smartgrid/global/en/products-systems-solutions/software-solutions/planning-data-management-software/planning-simulation/pages/pss-e.aspx) - PSS®E is a trusted leader in the power industry for cutting-edge electric transmission system analysis and planning. Used in over 115 countries worldwide, PSS®E is powerful, customizable, and fully-featured. With the addition of integrated node-breaker support in version 34, PSS®E is leading the market in advances in electric transmission modeling and simulation. **[Commercial]**
 * [GE PSLF](http://www.geenergyconsulting.com/practice-area/software-products/pslf) - Effective power system analysis often requires large-scale simulations and manipulation of large volumes of data. When performing these analyses, efficient algorithms are just as important as the engineering models in which the data is used. GE Energy recognizes these imperatives, and has developed Concorda PSLF. The algorithms in the PSLF suite have been developed to handle large utility-scale systems of up to 80,000 buses. A complete set of tools allows the user to switch smoothly between data visualization, system simulation, and results analysis. **[Commercial]**
 
+## Others
+* [PLC Fiddle](http://www.plcfiddle.com/) - Free Online Ladder logic Editor and Simulator in your Browser. [Description](http://accautomation.ca/plc-fiddle-online-editor-and-simulator-in-your-browser)
+* [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs
+
 (creative commons license)
 
