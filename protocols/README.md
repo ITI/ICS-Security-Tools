@@ -1,12 +1,14 @@
 # ICS Protocols
 ## Developed as a community asset
 
+## General / Miscellaneous Releases
+* [PoC 2013 SCADA Release](https://github.com/atimorin/PoC2013) - Power of Community 2013 conference special release of ICS/SCADA toolkit
+
 ## AMI
 * [Termineter](https://github.com/GrayHatLabs/john_commor_c1218) - c1218 powermeter emulator
 
 ## BACnet
 * [BACpypes](https://github.com/JoelBender/bacpypes) - BACpypes provides a BACnet application layer and network layer written in Python for daemons, scripting, and graphical interfaces.
-
 
 ## DNP3
 ### Protocol Implementation
@@ -61,7 +63,6 @@
 * [FireEye TriStation Wireshark Dissector](https://github.com/stvemillertime/TriStation) - reverse engineered wireshark dissector from Mandiant/FireEye team after Triton discovery.
 * [Nozomi TriStation Wireshark Dissector](https://github.com/NozomiNetworks/tricotools) - another TriStation dissector, this time from Nozomi
 
-
 ## Zigbee
 * [Killerbee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.
 
@@ -70,7 +71,7 @@
 * [Scapy implementation of DLR (Device Level Ring) protocol](https://github.com/scy-phy/scapy-dlr)
 * [CPPPO - Communications Protocol Python Parser and Originator (EtherNet/IP CIP implementation)](https://github.com/pjkundert/cpppo) - Cpppo is used to implement binary communications protocol parsers. The protocol’s communication elements are described in terms of state machines which change state in response to input events, collecting the data and producing output data artifacts.
 * [pycomm](https://github.com/ruscito/pycomm) - **pycomm** is a package that includes a collection of modules used to communicate with PLCs. At the moment the first module in the package is **ab_comm**. **ab_comm** is a module that contains a set of classes used to interface Rockwell PLCs using Ethernet/IP protocol. The "clx" class can be used to communicate with Compactlogix, Controllogix PLCs The "slc" can be used to communicate with Micrologix or SLC PLCs
-
+* [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
 
 ## General Protocol Fuzzing
 * [AFL](http://lcamtuf.coredump.cx/afl/) - American fuzzy lop is a security-oriented fuzzer that employs a novel type of compile-time instrumentation and genetic algorithms to automatically discover clean, interesting test cases that trigger new internal states in the targeted binary.

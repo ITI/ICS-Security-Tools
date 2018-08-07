@@ -5,7 +5,7 @@
 * [CapSan](https://github.com/jsiwek/capsan) - Packet capture sanitizer/anonymizer for Jon Siwek at University of Illinois.
 
 # Protocol Organized PCAPs
-* [Jason Smith's Organized ICS PCAP repo](https://github.com/automayt/ICS-pcap) - A comprehensive collection of ICS/SCADA PCAPs organized by protocol. Make sure to have git lfs support and do a git lfs clone of the repo to get the actual files.
+* [Jason Smith's Organized ICS PCAP repo](https://github.com/automayt/ICS-pcap) - A comprehensive collection of ICS/SCADA PCAPs organized by protocol. Make sure to have git lfs support and do a git lfs clone of the linked repo to get the actual files.
 
 ## Captures
 * [Bro-IDS DNP3 & Modbus Captures](bro) - Test captures from the parser testing tree.
