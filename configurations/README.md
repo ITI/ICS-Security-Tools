@@ -4,6 +4,7 @@
 # Default Password Lists
 * [SCADA Strangelove's SCADAPASS](passwords/scadapass.csv)
 * [Arnaud Soullie's ICS Default Passwords](passwords/ics-default-passwords.csv)
+* [TrackerNode Research](https://github.com/Trackernodes/trackernodesresearch)
 
 # IDS Rules
 * [Cisco Talos Snort IDS Rules](rules/talos-snort.rules) - These are a handful of community rules that correspond to the SCADA Strangelove default credentials. More community rules are available [here](https://www.snort.org/downloads/community/community-rules.tar.gz)
