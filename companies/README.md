@@ -65,6 +65,7 @@ This is not an endorsement, nor is it comprehensive. This is just providing a li
 * [SCADAfence](https://www.scadafence.com)
 * [Schneider Electric](https://www.schneider-electric.com/ww/en/)
 * [Schweitzer Engineering](https://selinc.com)
+* [SIGA](https://sigasec.com)
 * [Siemens](https://www.siemens.com/global/en/home.html)
 * [SISCO](https://www.sisconet.com)
 * [Securicon](http://www.securicon.com)
