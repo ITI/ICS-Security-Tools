@@ -14,6 +14,19 @@
 * [QuickDraw test data](quickdraw) - PCAPs from the quickdraw initiative to test the sensor filters.
 * [Various DNP3 captures](dnp3) - This covers a variety of DNP3 captures broken out by function types. Includes some very obscure functionality and were designed for firewall testing.
 * [Various Siemens S7 captures](https://github.com/gymgit/s7-pcaps) - Covers a subset of the S7 protocol, includes a few security critical functions such as authentication and firmware update.
-* [Secure Water Treatment Testbed (SWaT/SUTD) Dataset](https://itrust.sutd.edu.sg/dataset/) - The SWaT Dataset was systematically generated from the Secure Water Treatment Testbed (SUTD) to address this need. The data collected from the testbed consists of 11 days of continuous operation. 7 days’ worth of data was collected under normal operation while 4 days’ worth of data was collected with attack scenarios.  During the data collection, all network traffic, sensor and actuator data were collected [available by request]
+* [More S7 Captures](s7) - Some more S7 captures
+* [Various C37.118 Captures](C37.118) - Example C37.118 captures and spec details
+* [DLMS-COSEM Security Review](DLMS-COSEM) - third party security review of DLMS-COSEM
+* [Various EthernetIP Captures](EthernetIP) - Various EthernetIP captures
+* [Various IEC 60870-5-104 Captures](IEC60870-5-104) - Various IEC 60870-5-104 captures
+* [Various IEC 61850 Captures](IEC61850) - Various IEC 61850 captures
+* [Various ModBus TCP Captures](ModbusTCP) - Various Modbus TCP captures
+* [Various OPC Specifications](OPC) - Various OPC specifications
+* [Various Zigbee Captures](Zigbee) - Various Zigbee captures
+
+## Datasets
+* [iTrust Secure Water Treatment Testbed (SWaT/SUTD) Dataset](https://itrust.sutd.edu.sg/research/dataset/dataset_characteristics/#swat) - The SWaT Dataset was systematically generated from the Secure Water Treatment Testbed (SUTD) to address this need. The data collected from the testbed consists of 11 days of continuous operation. 7 days’ worth of data was collected under normal operation while 4 days’ worth of data was collected with attack scenarios.  During the data collection, all network traffic, sensor and actuator data were collected [available by request]
+* [iTrust WADI Dataset](https://itrust.sutd.edu.sg/research/dataset/dataset_characteristics/#wadi) - Similar to the SWaT dataset, the data collected from the Water Distribution testbed consists of 16 days of continuous operation, of which 14 days’ worth of data was collected under normal operation and 2 days with attack scenarios. During the data collection, all network traffic, sensor and actuator data were collected. [available by request]
+* [iTrust EPIC Dataset](https://itrust.sutd.edu.sg/research/dataset/dataset_characteristics/#blaq) - Blaq_0 Hackathon was first organised in January 2018 for SUTD undergraduate students. Independent attack teams design and launch attacks on EPIC. Attack teams are scored according to how successful they are in performing attacks based on specific intents. [available by request]
 
 (creative commons license)
