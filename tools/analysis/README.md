@@ -26,4 +26,8 @@
 * [Binwalk](https://github.com/ReFirmLabs/binwalk) - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
 * [ANGR](https://github.com/angr/angr) - A powerful and user-friendly binary analysis platform.
 
+### Samples
+* [Trisis/Triton/Hatman](https://github.com/ICSrepo/TRISIS-TRITON-HATMAN) - Repository containting original and decompiled files of TRISIS/TRITON/HATMAN malware
+
+
 (creative commons license)
