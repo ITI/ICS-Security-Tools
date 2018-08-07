@@ -10,15 +10,17 @@
 ## PLC Injection
 * [PlcInjector](https://github.com/BorjaMerino/PlcInjector) - Modbus stager in assembly and some scripts to upload/download data to the holding register of a PLC. More info [here](http://www.shelliscoming.com/2016/12/modbus-stager-using-plcs-as.html).
 
-## Common Toolset
+## Common Toolsets
 * [Metasploit](http://www.metasploit.com) - Exploitation framework.
 * [Bettercap](https://github.com/evilsocket/bettercap) - A complete, modular, portable and easily extensible MITM framework.
 * [ISF (Industrial Exploitation Framework)](https://github.com/dark-lbp/isf) - an exploitation framework based on open source project routersploit 
+* [ISF(Industrial Security Exploitation Framework) ](https://github.com/w3h/isf) - ISF(Industrial Security Exploitation Framework) is an exploitation framework based on Python, claiming to be based on the NSA Equation Group Fuzzbunch toolkit, decceloped by the ICSMASTER team.
 
 ## Metasploit Modules
 * [Gleg SCADA+ Pack](http://gleg.net/agora_scada.shtml) - **Commercial**
 * [S7 Metasplot pack](../mirrored/s7-metasploit-modules) - Initial s7 metasploit modules.
 * [Schneider Electric PLC / Modbus modules from DEFCON 25](https://github.com/arnaudsoullie/funwithmodbus0x5a) - Downloading a program from the PLC, gathering information about the PLC and forcing the values of the digital outputs, START/STOP
+* [IEC 104 Module](https://github.com/michaelj0hn/iec104) - IEC104 Client for Metasploit [merged into mainline](https://github.com/rapid7/metasploit-framework/pull/10386)
 
 ## Other
 Note: The following tools haven't necessarily been utilized in an ICS context, but could be helpful.
