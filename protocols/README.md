@@ -61,7 +61,7 @@
 
 ## TriStation
 * [FireEye TriStation Wireshark Dissector](https://github.com/stvemillertime/TriStation) - reverse engineered wireshark dissector from Mandiant/FireEye team after Triton discovery.
-* [Nozomi TriStation Wireshark Dissector](https://github.com/NozomiNetworks/tricotools) - another TriStation dissector, this time from Nozomi
+* [Nozomi TriStation Wireshark Dissector](https://github.com/NozomiNetworks/tricotools) - another TriStation dissector, this time from Nozomi, also incldues pcap, and basic honeypot simulator.
 
 ## Zigbee
 * [Killerbee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.

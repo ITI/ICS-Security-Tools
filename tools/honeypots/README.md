@@ -10,5 +10,6 @@
 * [SEL-2924 Bluetooth to Serial adapter Emulator](https://github.com/digitalbond/CTF-Challenges/tree/master/S4x2016/SEL-Emulator) - This project simulates an SEL-2924 Bluetooth to Serial adapter, as it would appear if it was accidentally left connected to a SEL-751A Feeder protection relay. DO NOT USE THIS AS A PRODUCTION HONEYPOT: there are security vulnerabilities both known and unknown in the implementation.
 * [HoneyPoint Security Server™](http://microsolved.com/HoneyPoint-server.html) -  Commercial distributed honeypot, includes IT and SCADA emulators.
 * [Awesome Honeypots](https://github.com/paralax/awesome-honeypots) - A list of awesome honeypots, tools, components and much more.
+* [Nozomi TriStation Basic Honeypot](https://github.com/NozomiNetworks/tricotools) - another TriStation dissector, this time from Nozomi, also incldues pcap, and basic honeypot simulator.
 
 (creative commons license)
