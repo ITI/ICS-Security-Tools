@@ -20,6 +20,13 @@
 ### Fuzzing
 * [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](aegis-opensource).
 
+## Ethernet/IP and CIP
+* [EtherNet/IP+CIP dissector for Scapy](https://github.com/scy-phy/scapy-cip-enip) - a Python library which can be used to interact with components of a network using ENIP (Ethernet/IP) and CIP (Common Industrial Protocol) protocols. It uses scapy to implement packet dissectors which are able to decode a part of the network traffic. These dissectors can also be used to craft packets, which allows directly communicating with the PLCs (Programmable Logic Controllers) of the network. [Use case](https://labs.mwrinfosecurity.com/blog/offensive-ics-exploitation-a-technical-description/)
+* [Scapy implementation of DLR (Device Level Ring) protocol](https://github.com/scy-phy/scapy-dlr)
+* [CPPPO - Communications Protocol Python Parser and Originator (EtherNet/IP CIP implementation)](https://github.com/pjkundert/cpppo) - Cpppo is used to implement binary communications protocol parsers. The protocol’s communication elements are described in terms of state machines which change state in response to input events, collecting the data and producing output data artifacts.
+* [pycomm](https://github.com/ruscito/pycomm) - **pycomm** is a package that includes a collection of modules used to communicate with PLCs. At the moment the first module in the package is **ab_comm**. **ab_comm** is a module that contains a set of classes used to interface Rockwell PLCs using Ethernet/IP protocol. The "clx" class can be used to communicate with Compactlogix, Controllogix PLCs The "slc" can be used to communicate with Micrologix or SLC PLCs
+* [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
+
 ## IEC 104
 * [IEC Server](http://area-x1.lima-city.de) - Software to simulate server side of systems using a telecontrol message Protocol specified in the IEC 60870-5.
 * [OpenMRTS](https://sourceforge.net/projects/mrts/) - MRTS is an attempt to create open source IEC 870-5-101/104 based components for telecontrol and supervisory systems and to become a complete solution in future.
@@ -33,6 +40,20 @@
 
 ### Tools
 * [IEDScout](https://www.omicronenergy.com/en/products/all/secondary-testing-calibration/iedscout/noc/1/) - IEDScout provides access to 61850-based IEDs and can simulate entire Ed. {1,2} IEDs. Specifically, IEDScout lets you look inside the IED and at its communication. All data modeled and exchanged becomes visible and accessible. Additionally, IEDScout serves numerous useful tasks, which could otherwise only be performed with dedicated engineering tools or even a functioning master station. IEDScout shows an overview representing the typical workflow of commissioning, but also provides detailed information upon request. **[commercial]** Free 30 day evaluation license.
+
+## IEEE C37.118
+### Protocol Implementation
+* [C37.118-2005 Spec](https://ieeexplore.ieee.org/document/1611105/) -- C37.118-2005 (deprecated). Note, this is a paid IEEE spec
+* [C37.118-2011 Spec](https://ieeexplore.ieee.org/document/6111219/) -- C37.118-2011 (current). Note, this is a paid IEEE spec
+* [pyMU](https://github.com/iti/pymu) - Python C37.118-2011 parser
+* [pyPMU](https://github.com/iicsys/pypmu) - WIP Python implementation
+* [Wireshark Dissector](https://github.com/boundary/wireshark/blob/master/epan/dissectors/packet-synphasor.c) - Implemented C37.118 wireshark dissector
+* [Grid Solutions Framework C37.118](https://github.com/GridProtectionAlliance/gsf/tree/master/Source/Libraries/GSF.PhasorProtocols/IEEEC37_118) - GSF implementation (.net)
+
+### Tools
+* [pyMU](https://github.com/iti/pymu) - Python C37.118-2011 parser
+* [pyPMU](https://github.com/iicsys/pypmu) - WIP Python implementation
+* [PMU Connection Tester](https://github.com/GridProtectionAlliance/PMUConnectionTester) - Full fledged PMU connection tester, speaking c37.118 amongst many other synchrophasor protocols
 
 ## Modbus
 ### Protocol Implementation
@@ -53,6 +74,11 @@
 ### Fuzzing
 * [ProFuzz](https://github.com/HSASec/ProFuzz) - Simple PROFINET fuzzer based on Scapy
 
+## SEL Fast Message
+* [Wireshark Dissector - SEL Fast Message](https://github.com/boundary/wireshark/blob/master/epan/dissectors/packet-selfm.c) - Wireshark Dissector for SEL Fast Message
+* [Grid Solutions Framework SEL Fast Message](https://github.com/GridProtectionAlliance/gsf/tree/master/Source/Libraries/GSF.PhasorProtocols/SelFastMessage) - GSF implementation (.net)
+* [SEL Applications Guides](https://www.selinc.com) - Look up AG95-10 and AG2002-14 product codes.
+
 ## Siemens S7
 * [Snap7](http://snap7.sourceforge.net/) - open source Siemens S7 communication library.
 * [LibNoDave](http://libnodave.sourceforge.net/) - Another (less complete) open source communication library for the S7 protocol.
@@ -65,13 +91,6 @@
 
 ## Zigbee
 * [Killerbee](https://github.com/riverloopsec/killerbee) - IEEE 802.15.4/ZigBee Security Research Toolkit.
-
-## Ethernet/IP and CIP
-* [EtherNet/IP+CIP dissector for Scapy](https://github.com/scy-phy/scapy-cip-enip) - a Python library which can be used to interact with components of a network using ENIP (Ethernet/IP) and CIP (Common Industrial Protocol) protocols. It uses scapy to implement packet dissectors which are able to decode a part of the network traffic. These dissectors can also be used to craft packets, which allows directly communicating with the PLCs (Programmable Logic Controllers) of the network. [Use case](https://labs.mwrinfosecurity.com/blog/offensive-ics-exploitation-a-technical-description/)
-* [Scapy implementation of DLR (Device Level Ring) protocol](https://github.com/scy-phy/scapy-dlr)
-* [CPPPO - Communications Protocol Python Parser and Originator (EtherNet/IP CIP implementation)](https://github.com/pjkundert/cpppo) - Cpppo is used to implement binary communications protocol parsers. The protocol’s communication elements are described in terms of state machines which change state in response to input events, collecting the data and producing output data artifacts.
-* [pycomm](https://github.com/ruscito/pycomm) - **pycomm** is a package that includes a collection of modules used to communicate with PLCs. At the moment the first module in the package is **ab_comm**. **ab_comm** is a module that contains a set of classes used to interface Rockwell PLCs using Ethernet/IP protocol. The "clx" class can be used to communicate with Compactlogix, Controllogix PLCs The "slc" can be used to communicate with Micrologix or SLC PLCs
-* [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
 
 ## General Protocol Fuzzing
 * [AFL](http://lcamtuf.coredump.cx/afl/) - American fuzzy lop is a security-oriented fuzzer that employs a novel type of compile-time instrumentation and genetic algorithms to automatically discover clean, interesting test cases that trigger new internal states in the targeted binary.
