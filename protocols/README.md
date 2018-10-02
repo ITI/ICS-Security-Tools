@@ -84,6 +84,7 @@
 * [LibNoDave](http://libnodave.sourceforge.net/) - Another (less complete) open source communication library for the S7 protocol.
 * [S7comm](http://sourceforge.net/projects/s7commwireshark/) - open source Wireshark dissector plugin for the Siemens S7 protocol.
 * [Python Snap7 Wrapper](https://github.com/gijzelaerr/python-snap7) - A Python wrapper for the snap7 PLC communication library
+* [Bro-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Bro IDS
 
 ## TriStation
 * [FireEye TriStation Wireshark Dissector](https://github.com/stvemillertime/TriStation) - reverse engineered wireshark dissector from Mandiant/FireEye team after Triton discovery.
