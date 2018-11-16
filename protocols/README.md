@@ -15,7 +15,8 @@
 * [OpenDNP3](https://github.com/automatak/dnp3) - Opendnp3 is the de facto reference implementation of IEEE-1815 (DNP3) provided under the Apache License.
 * [DNP3 Simulator](https://github.com/automatak/dnp3-simulator) - Graphical DNP3 Master/Outstation simulator
 * [PIFaceRTU](https://github.com/automatak/pifacertu) - Opendnp3 running on a Raspberry Pi with Piface I/O board
-* [Langsec DNP3 Parser](https://github.com/pesco/dnp3) - Parsing DNP3 using parser combinators in C.
+* [LangSec DNP3 Parser](https://github.com/Dartmouth-Trustlab/dnp3) - Parsing DNP3 using parser combinators in C.
+* [Proxyd](https://github.com/Dartmouth-Trustlab/proxy) - TCP Proxy for testing hammer based parsers (such as the DNP3 parser above)
 
 ### Fuzzing
 * [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](aegis-opensource).
@@ -49,6 +50,7 @@
 * [pyPMU](https://github.com/iicsys/pypmu) - WIP Python implementation
 * [Wireshark Dissector](https://github.com/boundary/wireshark/blob/master/epan/dissectors/packet-synphasor.c) - Implemented C37.118 wireshark dissector
 * [Grid Solutions Framework C37.118](https://github.com/GridProtectionAlliance/gsf/tree/master/Source/Libraries/GSF.PhasorProtocols/IEEEC37_118) - GSF implementation (.net)
+* [LangSec C37.118 Parser](https://github.com/Dartmouth-Trustlab/C37.118PMU) - LangSec based C37.118 parser
 
 ### Tools
 * [pyMU](https://github.com/iti/pymu) - Python C37.118-2011 parser
