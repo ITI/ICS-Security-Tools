@@ -40,4 +40,9 @@ to start)
 * Another laptop for bare Linux
 * [IDAPro](https://www.hex-rays.com/products/ida/)
 
+## Guides 
+
+* [Justifying an ICS Lab](http://scadamag.infracritical.com/index.php/2018/12/03/justifying-an-ics-lab/) - An article by Jake Brodsky about the need for and the costs associated with establishing an ICS lab
+
+
 (creative commons license)
