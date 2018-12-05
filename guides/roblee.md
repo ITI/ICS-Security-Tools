@@ -1,4 +1,6 @@
-[Source](http://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/ "Permalink to A Collection of Resources for Getting Started in ICS/SCADA Cybersecurity – Robert M. Lee")
+[Source](http://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/ 
+
+"Permalink to A Collection of Resources for Getting Started in ICS/SCADA Cybersecurity – Robert M. Lee")
 
 # A Collection of Resources for Getting Started in ICS/SCADA Cybersecurity – Robert M. Lee
 
