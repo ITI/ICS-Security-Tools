@@ -29,7 +29,6 @@
 * [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
 
 ## IEC 104
-* [IEC Server](http://area-x1.lima-city.de) - Software to simulate server side of systems using a telecontrol message Protocol specified in the IEC 60870-5.
 * [OpenMRTS](https://sourceforge.net/projects/mrts/) - MRTS is an attempt to create open source IEC 870-5-101/104 based components for telecontrol and supervisory systems and to become a complete solution in future.
 * [QTester104](https://sourceforge.net/projects/qtester104/) - This software implements the IEC60870-5-104 protocol (client side) for substation data acquisition and control via tcp/ip network using the QT UI Framework. It can be compiled on Linux and Windows platforms. It's possible to poll and view data from the substation system (RTU/concentrator) and also send commands.
 * [lib60870](https://github.com/mz-automation/lib60870) - Implements IEC 60870-5-104 protocol.
