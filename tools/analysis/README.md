@@ -19,7 +19,9 @@
 * [FLARE VM](https://github.com/fireeye/flare-vm) - FLARE VM is a fully customizable, Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
 
 ### Network
-* [GRASSMARLIN] (https://github.com/iadgov/GRASSMARLIN) - GRASSMARLIN provides IP network situational awareness of industrial control systems (ICS) and Supervisory Control and Data Acquisition (SCADA) networks to support network security. Passively map, and visually display, an ICS/SCADA network topology while safely conducting device discovery, accounting, and reporting on these critical cyber-physical systems.
+* [GRASSMARLIN](https://github.com/iadgov/GRASSMARLIN) - GRASSMARLIN provides IP network situational awareness of industrial control systems (ICS) and Supervisory Control and Data Acquisition (SCADA) networks to support network security. Passively map, and visually display, an ICS/SCADA network topology while safely conducting device discovery, accounting, and reporting on these critical cyber-physical systems.
+* [ARMORE](https://github.com/ITI/ARMORE) - ARMORE was developed to be an open-source software solution that will aid asset owners by increasing visibility, securing communications, and inspecting ICS communications for behavior that is not intended. Built around Bro and Linux.
+* [EDMAND](https://github.com/ITI/EDMAND) - EDMAND Anomaly detection framework. Built around Bro.
 
 ### Protocols
 * [TruffleHog](https://github.com/TruffleHog/TruffleHog) - A network analysis tool that works together with snort to visually represent a PROFINET network graph.
