@@ -7,6 +7,7 @@
 * [Firmwalker](https://github.com/craigz28/firmwalker) - Script for extracting some useful things from embedded firmware images
 * [Firmware Mod Kit](https://github.com/mirror/firmware-mod-kit) - Basic framework for doing firmware modifications
 * [Firmadyne](https://github.com/firmadyne/firmadyne) - System for emulation and dynamic analysis of Linux-based firmware
+* [ICSREF](https://github.com/momalab/ICSREF) - ICSREF is a modular framework that automates the reverse engineering process of CODESYS binaries compiled with the CODESYS v2 compiler.
 
 ### Logs
 * [Plaso - Log2timeline](https://github.com/log2timeline/plaso/wiki) - log2timeline is a tool designed to extract timestamps from various files found on a typical computer system(s) and aggregate them.
