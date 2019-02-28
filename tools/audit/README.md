@@ -13,6 +13,9 @@
 * [modscan](../mirrored/modscan) - Tool to scan modbus devices and gather information.
 * [Open PHA](https://www.kenexis.com/software/openpha/download/) - Open PHA™ is a  HAZOP and LOPA software tool. Open PHA™ provides an easy to use, light-weight platform for performing HAZOP and LOPA analysis. Includes the ability to perform a Security PHA Review directly in the PHA study (description: https://www.kenexis.com/security-pha-review-spr-open-pha/)
 
+## Robotics
+* [Aztarna](https://github.com/aliasrobotics/aztarna) - A footprinting tool for robots
+
 ## IDS Signatures
 * [Quickdraw ICS IDS](https://github.com/digitalbond/quickdraw) - Digital Bond’s original research project was to develop a set of IDS rules for SCADA protocols. The initial rules for Modbus TCP and DNP3 have now been enhanced for EtherNet/IP, Vulnerability rules and Device Specific rules. Quickdraw also includes Snort preprocessors and plugins that allow rules for more complex control system protocols.
 * [Quickdraw Suricata Signatures for EtherNet/IP](https://github.com/digitalbond/Quickdraw-Suricata) - A set of EtherNet/IP IDS rules for use with Suricata.
