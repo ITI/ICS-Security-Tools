@@ -9,6 +9,7 @@
 * [Firmadyne](https://github.com/firmadyne/firmadyne) - System for emulation and dynamic analysis of Linux-based firmware
 * [ICSREF](https://github.com/momalab/ICSREF) - ICSREF is a modular framework that automates the reverse engineering process of CODESYS binaries compiled with the CODESYS v2 compiler.
 * [Thomas Roth - Embedded Serial Gateways](https://github.com/nezza/scada-stuff) - Various scripts for analysis of some serial embedded gateways. See also: [video](https://media.ccc.de/v/34c3-8956-scada_-_gateway_to_s_hell)
+* [ICS Mem Collect](https://github.com/fireeye/ics_mem_collect) - Memory Analysis Collection Toolkit for GE D20MX platform from FireEye.
 
 ### Logs
 * [Plaso - Log2timeline](https://github.com/log2timeline/plaso/wiki) - log2timeline is a tool designed to extract timestamps from various files found on a typical computer system(s) and aggregate them.
