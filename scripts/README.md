@@ -11,4 +11,8 @@
 * [GE Proficy HMI SCADA CIMPLICITY Privilege Management Vulnerability - ICSA-16-194-02](https://github.com/offensive-security/exploit-database/blob/master/exploits/windows/local/40069.cpp) - Local privilege escalation exploit from ExploitDB.
 * [Rockwell FactoryTalk Activation Server Denial of Service Vulnerability - CVE-2012-0221](https://github.com/offensive-security/exploit-database/blob/master/exploits/multiple/dos/36570.txt) - Denial of Service exploit from ExploitDB.
 
+## Other
+* [ICS-Petya Resources](https://github.com/arobinsongit/ICS-Petya) - A variety of items related to Petya/Not-Petya.
+
+
 (creative commons license)
