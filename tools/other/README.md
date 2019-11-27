@@ -15,6 +15,7 @@
 * [Bettercap](https://github.com/evilsocket/bettercap) - A complete, modular, portable and easily extensible MITM framework.
 * [ISF (Industrial Exploitation Framework)](https://github.com/dark-lbp/isf) - an exploitation framework based on open source project routersploit 
 * [ISF(Industrial Security Exploitation Framework) ](https://github.com/w3h/isf) - ISF(Industrial Security Exploitation Framework) is an exploitation framework based on Python, claiming to be based on the NSA Equation Group Fuzzbunch toolkit, decceloped by the ICSMASTER team.
+* [EtherSploit/IP](https://github.com/thiagoralves/EtherSploit-IP) - An interactive shell with a bunch of helpful commands to exploit EtherNet/IP vulnerabilities (more specifically Allen-Bradley MicroLogix implementation of ENIP)
 
 ## Metasploit Modules
 * [Gleg SCADA+ Pack](http://gleg.net/agora_scada.shtml) - **Commercial**
