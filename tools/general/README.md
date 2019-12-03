@@ -8,7 +8,7 @@
 * [ioBroker](https://github.com/ioBroker/ioBroker) - ioBroker is an IoT platform that is modular and supports some ICS protocols such as [s7](https://github.com/ioBroker/ioBroker.s7), [modbus](https://github.com/ioBroker/ioBroker.modbus).
 * [OPCSystems.Net](https://www.opcsystems.com/downloads/downloads.php) - A wide variety of software available for time-limited trial use. SCADA, HMI, and OPC broadly covered.
 * [OpenSCADA (oscada)](http://oscada.org/main/) - OpenSCADA system is an open implementation of SCADA (Supervisory Control And Data Acquisition) and HMI (Human-Machine Interface) systems. The main properties of the system are: openness(GPL), multi-platform, modularity and scalability.
-* [openSCADA](http://openscada.org) - openSCADA is the companion project to [Eclipse SCADA](https://eclipse.org/eclipsescada/). It provides additional components for the Eclipse SCADA system.
+* [Eclipse NeoSCADA](https://www.eclipse.org/eclipsescada/) - Designed to be a framework to create a fully working production SCADA System. This was formerly called openSCADA.
 * [OSHMI - Open Substation HMI](https://sourceforge.net/projects/oshmiopensubstationhmi/) - Full featured HMI used in production substations (Brazil).
 * [pvbrowser](https://github.com/pvbrowser/pvb) - Simple process visualization
 * [PySCADA](https://github.com/trombastic/PyScada) - A Open Source SCADA System with HTML5 HMI, build using the Django framework.
