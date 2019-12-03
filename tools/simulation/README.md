@@ -13,6 +13,7 @@
 ## Others
 * [PLC Fiddle](http://www.plcfiddle.com/) - Free Online Ladder logic Editor and Simulator in your Browser. [Description](http://accautomation.ca/plc-fiddle-online-editor-and-simulator-in-your-browser)
 * [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs
+* [Net To PLCSim](https://sourceforge.net/projects/nettoplcsim/) - TCP/IP-Network extension for the PLC simulation software Siemens PLCSim
 
 (creative commons license)
 
