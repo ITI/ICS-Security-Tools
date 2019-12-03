@@ -9,6 +9,7 @@
 
 ## PLC Injection
 * [PlcInjector](https://github.com/BorjaMerino/PlcInjector) - Modbus stager in assembly and some scripts to upload/download data to the holding register of a PLC. More info [here](http://www.shelliscoming.com/2016/12/modbus-stager-using-plcs-as.html).
+* [plcinject](https://github.com/SCADACS/PLCinject) - S7 PLC injection using Snap7
 
 ## Exploit frameworks
 * [Sixnet Tools](https://github.com/mssabr01/sixnet-tools) - Tool for exploiting sixnet RTUs
