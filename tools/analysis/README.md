@@ -10,6 +10,7 @@
 * [ICSREF](https://github.com/momalab/ICSREF) - ICSREF is a modular framework that automates the reverse engineering process of CODESYS binaries compiled with the CODESYS v2 compiler.
 * [Thomas Roth - Embedded Serial Gateways](https://github.com/nezza/scada-stuff) - Various scripts for analysis of some serial embedded gateways. See also: [video](https://media.ccc.de/v/34c3-8956-scada_-_gateway_to_s_hell)
 * [ICS Mem Collect](https://github.com/fireeye/ics_mem_collect) - Memory Analysis Collection Toolkit for GE D20MX platform from FireEye.
+* [Recon 2017 Work on Protection Relays](https://github.com/rigmar/Recon2017) - More information [here](http://www.scada.sl/2017/10/hopeless-relay-protection-for.html)
 
 ### Logs
 * [Plaso - Log2timeline](https://github.com/log2timeline/plaso/wiki) - log2timeline is a tool designed to extract timestamps from various files found on a typical computer system(s) and aggregate them.
@@ -25,6 +26,7 @@
 * [ARMORE](https://github.com/ITI/ARMORE) - ARMORE was developed to be an open-source software solution that will aid asset owners by increasing visibility, securing communications, and inspecting ICS communications for behavior that is not intended. Built around Bro and Linux.
 * [EDMAND](https://github.com/ITI/EDMAND) - EDMAND Anomaly detection framework. Built around Bro.
 * [AIUS](https://github.com/ITI/aius) - AIUS Repository (EDMAND/CAPTAR combination). Built around Bro.
+* [ML NIDS For ICS](https://github.com/Rocionightwater/ML-NIDS-for-SCADA) - Machine learning techniques for Intrusion Detection in SCADA Systems
 
 ### Protocols
 * [TruffleHog](https://github.com/TruffleHog/TruffleHog) - A network analysis tool that works together with snort to visually represent a PROFINET network graph.
@@ -34,8 +36,9 @@
 * [ANGR](https://github.com/angr/angr) - A powerful and user-friendly binary analysis platform.
 * [Floss](https://github.com/fireeye/flare-floss) - FireEye Labs Obfuscated String Solver (FLOSS) uses advanced static analysis techniques to automatically deobfuscate strings from malware binaries.
 
+
 ### Samples
-* [Trisis/Triton/Hatman](https://github.com/ICSrepo/TRISIS-TRITON-HATMAN) - Repository containting original and decompiled files of TRISIS/TRITON/HATMAN malware
+* [Trisis/Triton/Hatman](https://github.com/MDudek-ICS/TRISIS-TRITON-HATMAN) - Repository containing original and decompiled files of TRISIS/TRITON/HATMAN malware
 
 
 (creative commons license)
