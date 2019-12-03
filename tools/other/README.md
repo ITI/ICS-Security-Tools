@@ -10,11 +10,15 @@
 ## PLC Injection
 * [PlcInjector](https://github.com/BorjaMerino/PlcInjector) - Modbus stager in assembly and some scripts to upload/download data to the holding register of a PLC. More info [here](http://www.shelliscoming.com/2016/12/modbus-stager-using-plcs-as.html).
 
+## Exploit frameworks
+* [Sixnet Tools](https://github.com/mssabr01/sixnet-tools) - Tool for exploiting sixnet RTUs
+
+
 ## Common Toolsets
 * [Metasploit](http://www.metasploit.com) - Exploitation framework.
 * [Bettercap](https://github.com/evilsocket/bettercap) - A complete, modular, portable and easily extensible MITM framework.
 * [ISF (Industrial Exploitation Framework)](https://github.com/dark-lbp/isf) - an exploitation framework based on open source project routersploit 
-* [ISF(Industrial Security Exploitation Framework) ](https://github.com/w3h/isf) - ISF(Industrial Security Exploitation Framework) is an exploitation framework based on Python, claiming to be based on the NSA Equation Group Fuzzbunch toolkit, decceloped by the ICSMASTER team.
+* [ISF(Industrial Security Exploitation Framework)](https://github.com/w3h/isf) - ISF(Industrial Security Exploitation Framework) is an exploitation framework based on Python, claiming to be based on the NSA Equation Group Fuzzbunch toolkit, developed by the ICSMASTER team.
 * [EtherSploit/IP](https://github.com/thiagoralves/EtherSploit-IP) - An interactive shell with a bunch of helpful commands to exploit EtherNet/IP vulnerabilities (more specifically Allen-Bradley MicroLogix implementation of ENIP)
 
 ## Metasploit Modules
