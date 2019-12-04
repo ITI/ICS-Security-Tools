@@ -11,11 +11,13 @@
 
 ## Others
 * [PLC Fiddle](http://www.plcfiddle.com/) - Free Online Ladder logic Editor and Simulator in your Browser. [Description](http://accautomation.ca/plc-fiddle-online-editor-and-simulator-in-your-browser)
-* [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs
+* [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs. Source [v1](https://github.com/thiagoralves/OpenPLC), [v2](https://github.com/thiagoralves/OpenPLC_v2), [v3](https://github.com/thiagoralves/OpenPLC_v3). Simulink interface [here](https://github.com/thiagoralves/OpenPLC_Simulink-Interface)
 * [Net To PLCSim](https://sourceforge.net/projects/nettoplcsim/) - TCP/IP-Network extension for the PLC simulation software Siemens PLCSim
+* [openPLC v2](https://github.com/thiagoralves/OpenPLC_v2) - OpenPLC with the new IEC ST to C compiler
 
 ## Systems
 * [MiniCPS](https://github.com/scy-phy/minicps) - MiniCPS: a framework for Cyber-Physical Systems real-time simulation, built on top of mininet.
+* [GRFICS](https://github.com/djformby/GRFICS) - GRFICS is a graphical realism framework for industrial control simulations that uses Unity 3D game engine graphics to lower the barrier to entry for industrial control system security. GRFICS provides users with a full virtual industrial control system (ICS) network to practice common attacks including command injection, man-in-the-middle, and buffer overflows, and visually see the impact of their attacks in the 3D visualization. Users can also practice their defensive skills by properly segmenting the network with strong firewall rules, or writing intrusion detection rules.
 
 (creative commons license)
 
