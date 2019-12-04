@@ -13,6 +13,7 @@ Developed as a community asset
 ## BACnet
 
 * [BACpypes](https://github.com/JoelBender/bacpypes) - BACpypes provides a BACnet application layer and network layer written in Python for daemons, scripting, and graphical interfaces.
+* [zeek plugin bacnet](https://github.com/amzn/zeek-plugin-bacnet) - BACnet Zeek Plugin from Amazon
 
 ## DNP3
 
@@ -36,6 +37,7 @@ Developed as a community asset
 * [CPPPO - Communications Protocol Python Parser and Originator (EtherNet/IP CIP implementation)](https://github.com/pjkundert/cpppo) - Cpppo is used to implement binary communications protocol parsers. The protocol’s communication elements are described in terms of state machines which change state in response to input events, collecting the data and producing output data artifacts.
 * [pycomm](https://github.com/ruscito/pycomm) - **pycomm** is a package that includes a collection of modules used to communicate with PLCs. At the moment the first module in the package is **ab_comm**. **ab_comm** is a module that contains a set of classes used to interface Rockwell PLCs using Ethernet/IP protocol. The "clx" class can be used to communicate with Compactlogix, Controllogix PLCs The "slc" can be used to communicate with Micrologix or SLC PLCs
 * [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
+* [zeek plugin enip](https://github.com/amzn/zeek-plugin-enip) - EthernetIP Zeek Plugin from Amazon
 
 ## IEC 104
 
@@ -94,6 +96,7 @@ Developed as a community asset
 * [Profinet - Python](https://github.com/devkid/profinet) - Simple PROFINET implementation in python
 * [Profinet - C](https://github.com/kprovost/libs7comm) - PROFINET implementation in C
 * [Profinet Explorer](https://sourceforge.net/projects/profinetexplorer/) - Simple PROFINET explorer written in C#
+* [zeek plugin Profinet](https://github.com/amzn/zeek-plugin-profinet) - PROFINET Zeek Plugin from Amazon
 
 ### Fuzzing
 
@@ -112,6 +115,7 @@ Developed as a community asset
 * [S7comm](http://sourceforge.net/projects/s7commwireshark/) - open source Wireshark dissector plugin for the Siemens S7 protocol.
 * [Python Snap7 Wrapper](https://github.com/gijzelaerr/python-snap7) - A Python wrapper for the snap7 PLC communication library
 * [Bro-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Bro IDS
+* [zeek plugin s7](https://github.com/amzn/zeek-plugin-s7comm) - S7 Zeek Plugin from Amazon
 
 ## TriStation
 
