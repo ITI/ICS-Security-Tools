@@ -1,10 +1,10 @@
-[Source](http://scadamag.infracritical.com/index.php/2018/12/03/justifying-an-ics-lab/)
-
 # Justifying an ICS Lab
+
+[Source](http://scadamag.infracritical.com/index.php/2018/12/03/justifying-an-ics-lab/)
 
 December 3, 2018 -- Jake Brodsky
 
-# Introduction
+## Introduction
 
 It dawned on me recently that that there is very little discussion on why an Industrial Control Systems (ICS) lab is needed or what it is used for. I am jotting down these notions in the hope that others can add to this discussion and help justify a lab to managers who may not understand what all this fuss is about.
 
@@ -12,18 +12,18 @@ If you’re from the ICS security camp, pay attention here. To correctly diagnos
 
 So, why have a lab at all? It’s not cheap to set one up or keep it running.
 
-• Have a place to examine failed parts to determine causes
-• Mock up and test new systems BEFORE installing it in the field for the first time
-• Practice what was taught in training
-• Penetration testing of offline equipment
-• Patch testing for field equipment
-• Demonstrate functionality of new equipment under consideration
+* Have a place to examine failed parts to determine causes
+* Mock up and test new systems BEFORE installing it in the field for the first time
+* Practice what was taught in training
+* Penetration testing of offline equipment
+* Patch testing for field equipment
+* Demonstrate functionality of new equipment under consideration
 
 These are reasons enough for most Operations staff and every ICS consultant firm to have a lab. Not many mangers understand the depth and complexity of the instruments, the managed switches, the servers, the HMI workstations, the power systems, the networks, the wiring, the surge protection systems, the software, the PLC gear, the I/O panels and so forth.
 
 It’s all about the care and feeding of engineers. When you say the word “empowerment” this is how you empower an engineer: By giving them the tools and context to confirm what they’re designing.
 
-# Background
+## Background
 
 As an aside, control systems integrators are usually the last people working on a job before the keys are handed over to the end users. There are usually delays at that point, many change orders, schedule slips, and so forth. The General Contractor just wants the job to be over so that he can get paid. Any delay on behalf of the instrumentation or control system vendor is not usually met with much grace.
 
@@ -31,13 +31,13 @@ If you’re an end-user, this is one very good reason for you to ramp up the cap
 
 I’m not knocking how project management works, it’s just the reality that most organizations have learned to deal with. The project managers are usually exhausted toward the end of the project and the last thing they want to hear is that some automated thingy isn’t working the way it was expected to. Most notions of turn-key operation are nearly moot at that point. If the automation matters to you, be ready to pick things up and change it to your liking.
 
-# Basics
+## Basics
 
 So how much space do you need for a lab? Well, if you’re a small firm, you could build up a nice lab in the space it takes for a two car garage. A couple work benches, a whiteboard, a panel of wall with plywood, DIN rail and so forth would be nice. A couple of 19″ racks, one with conventional IT server rack size and one perhaps as a relay rack. Obviously if you routinely assemble panels or have larger equipment on a skid such as a Variable Frequency Drive (VFD) and a motor, or you’re testing instruments, you’ll need more space and probably more power. You should also have decent Internet access, a good firewall, and some auxiliary computing resources including good laptops with enough computing resources to run at least one virtualized image along side the existing operating system.
 
 You’ll probably need space and ventilation for batteries on charge. Power systems for 12, 24, and 48 volt DC batteries on charge are often necessary for system mock-ups.
 
-# Expendables
+## Expendables
 
 There are expendable items in the lab that you’ll be replenishing. These include DIN rail, a large assortment of fasteners (self tapping screws, machine screws, zip ties etc.), machine tool wire of various colors and gauges, and of course a wide assortment of fuses from cartridge fuses and fuse holders to small 1AG fuses and everything in between. You’ll need outlet strips, power cords, extension cords, wire loom, wire ducts, crimp tool wire lugs, RJ-11 and RJ 45 plugs and sockets, punch blocks, telephone wire, coaxial cables, twinaxial cables, junction boxes for electrical work, grounding rods and ground wire, wire nuts of various sizes, DIN terminal strips, DIN terminal bus-bar connectors, fuse connectors, precision 250 Ohm resistors (at least 1/2W and 1% or better accuracy), some Kindorf and various various connectors and brackets, an assortment of electrical tape in different colors, and so on.
 
@@ -49,7 +49,7 @@ Another thing: get one of those pocket size voltage sensor devices to tell you i
 
 Finally, if you’re doing any installation work, a decent laser level guide, a good reciprocating saw, a hammer drill and other heavy tools will save you loads of time instead of waiting for an electrician to do that work for you. Some job sites have union work rules that may make trouble for you to use such tools on a job site, so check before doing anything. That said, you owe it to yourself to get familiar with those tools and make sure your work is neat. If you leave a site with cheap, sloppy, or shoddy work; that reputation will follow you for a long time to come. People on industrial sites have memories of elephants. I’ve seen them harass others over things that were done fifteen years ago. If you’re not comfortable doing installation work, pair up with a reputable industrial electrician firm. Any delay or extra cost will be more than worth the hit to your reputation from leaving cheap work behind.
 
-# Test Equipment
+## Test Equipment
 
 There is also the need for test equipment. This is where things get expensive. You’ll need a few durable, accurate digital volt meters. I like the ProcessMeter from Fluke. With one of those you can simulate a 4-20 mA signal very easily. This invaluable, particularly when smoking out problems with a multi-leg 4-20 mA circuit where one side may be grounded. If you’re doing certification testing, or diagnostics, you’ll need a clamp-on ammeter. You can even get those clamp-on current meters for 4-20 mA current loops work. These meters are not cheap, but they’ll save you lots of time and hassle on a job site.
 
@@ -69,7 +69,7 @@ You may also need an environmental test chamber. It doesn’t have to be fancy. 
 
 You may also want to check calibrations of RTDs or Thermistors using boiling liquid nitrogen, water at freezing and boiling water as references. In theory you shouldn’t have to do this for thermocouples, but it’s a useful exercise to ensure that your cold junction compensation system and thermowell is working as it supposed to.
 
-# Side Benefits
+## Side Benefits
 
 So a lab is an interesting place. It’s a significant investment. You may be wondering if it’s worth doing. Well, it is. It all has to do with the care, empowerment, and feeding the needs of Engineers.
 
@@ -92,7 +92,7 @@ Fourth, well trained people don’t just emerge out of the ground. They need to 
 
 And finally, given a context like this, managers can determine who is on the ball and knows their stuff and who may need more training without this discovery happening on a production site.
 
-# Summary
+## Summary
 
 Not all of these features are things you’ll need to do, and not all of them are worth the expense. But the need for a lab is there. A lab isn’t cheap. However, if there is no lab, things will rapidly get a lot more expensive.
 

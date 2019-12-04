@@ -1,8 +1,13 @@
 # ICS Product Vendors
-## Developed as a community asset
-This is not an endorsement, nor is it comprehensive. This is just providing a list, not a specific description. Since products, offerings, and services change, no attempt is made at a categorization. Also, no judegement is passed on how deeply involved any of these companies are with ICS. Please contribute as there are definitely plenty of companies missing from this list still.
 
-# Alphabetical
+Developed as a community asset
+
+This is not an endorsement, nor is it comprehensive. This is just providing a list, not a specific description. Since products, offerings, and services change, no attempt is made at a categorization. Also, no judgement is passed on how deeply involved any of these companies are with ICS. Please contribute as there are definitely plenty of companies missing from this list still.
+
+Note: This list is not actively maintained.
+
+## Alphabetical
+
 * [Abatis](http://www.abatis-hdf.com)
 * [ABB](https://www.abb.com)
 * [Accenture](https://www.accenture.com/us-en/service-industrial-control-system-cybersecurity)
