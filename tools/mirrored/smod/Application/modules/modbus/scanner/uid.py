@@ -56,7 +56,7 @@ class Module:
 
 	def do(self,ip):
 		self.printLine('[+] Start Brute Force UID on : ' + ip,bcolors.OKGREEN)
-		for i in range(10,11): # Total of 255 (legal) uid
+		for i in range(1,255): # Total of 255 (legal) uid
 			c = connectToTarget(ip,self.options['RPORT'][0])
 			if(c == None):
 				break
@@ -66,7 +66,6 @@ class Module:
 				self.printLine('[+] UID on ' + ip + ' is : ' + str(i),bcolors.OKGREEN)
 				closeConnectionToTarget(c)
 			except Exception,e:
-				print e
 				closeConnectionToTarget(c)
 				pass
 

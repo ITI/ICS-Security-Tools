@@ -26,8 +26,8 @@ root@kali:~/smod# python smod.py
              U  ||----w |
                 ||     ||
           --=[MODBUS Penetration Test FrameWork
-       --+--=[Version : 1.0.2
-       --+--=[Modules : 14
+       --+--=[Version : 1.0.4
+       --+--=[Modules : 23
        --+--=[Coder   : Farzin Enddo
           --=[github  : www.github.com/enddo
 
@@ -42,22 +42,31 @@ SMOD >help
  set      Sets a variable to a value                       
  use      Selects a module by name                         
 SMOD >show modules
- Modules                              Description                             
- -------                              -----------
- modbus/dos/galilRIO                  DOS Galil RIO-47100 
- modbus/dos/writeSingleCoils          DOS With Write Single Coil Function     
- modbus/dos/writeSingleRegister       DOS Write Single Register Function      
- modbus/function/readCoils            Fuzzing Read Coils Function             
- modbus/function/readDiscreteInput    Fuzzing Read Discrete Inputs Function   
- modbus/function/readExceptionStatus  Fuzzing Read Exception Status Function  
- modbus/function/readHoldingRegister  Fuzzing Read Holding Registers Function 
- modbus/function/readInputRegister    Fuzzing Read Input Registers Function   
- modbus/function/writeSingleCoils     Fuzzing Write Single Coil Function      
- modbus/function/writeSingleRegister  Fuzzing Write Single Register Function  
- modbus/scanner/discover              Check Modbus Protocols                  
- modbus/scanner/getfunc               Enumeration Function on Modbus          
- modbus/scanner/uid                   Brute Force UID      
- modbus/sniff/arp                     Arp Poisoning
+ Modules                                       Description                                       
+ -------                                       -----------                                       
+ modbus/dos/arp                                DOS with Arp Poisoning                            
+ modbus/dos/galilRIO                           DOS Galil RIO-47100
+ modbus/dos/writeAllCoils                      DOS With Write All Coils                          
+ modbus/dos/writeAllRegister                   DOS With Write All Register Function 
+ modbus/dos/writeSingleCoils                   DOS With Write Single Coil Function               
+ modbus/dos/writeSingleRegister                DOS Write Single Register Function                
+ modbus/function/fuzzing                       Fuzzing Modbus Functions                          
+ modbus/function/readCoils                     Fuzzing Read Coils Function                       
+ modbus/function/readCoilsException            Fuzzing Read Coils Exception Function             
+ modbus/function/readDiscreteInput             Fuzzing Read Discrete Inputs Function             
+ modbus/function/readDiscreteInputException    Fuzzing Read Discrete Inputs Exception Function   
+ modbus/function/readExceptionStatus           Fuzzing Read Exception Status Function            
+ modbus/function/readHoldingRegister           Fuzzing Read Holding Registers Function           
+ modbus/function/readHoldingRegisterException  Fuzzing Read Holding Registers Exception Function 
+ modbus/function/readInputRegister             Fuzzing Read Input Registers Function             
+ modbus/function/readInputRegisterException    Fuzzing Read Input Registers Exception Function   
+ modbus/function/writeSingleCoils              Fuzzing Write Single Coil Function                
+ modbus/function/writeSingleRegister           Fuzzing Write Single Register Function            
+ modbus/scanner/arpWatcher                     ARP Watcher                                       
+ modbus/scanner/discover                       Check Modbus Protocols                            
+ modbus/scanner/getfunc                        Enumeration Function on Modbus                    
+ modbus/scanner/uid                            Brute Force UID                                   
+ modbus/sniff/arp                              Arp Poisoning   
 SMOD >
 ```
 Brute Force Modbus UID

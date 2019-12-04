@@ -10,16 +10,15 @@ class Module:
 
 
 	info = {
-		'Name': 'Read Coils Function',
+		'Name': 'Fuzzing Function',
 		'Author': ['@enddo'],
-		'Description': ("Fuzzing Read Coils Function"),
+		'Description': ("Fuzzing Modbus Functions"),
 
         }
 	options = {
 		'RHOSTS'	:[''		,True	,'The target address range or CIDR identifier'],
 		'RPORT'		:[502		,False	,'The port number for modbus protocol'],
-		'UID'		:[None		,True	,'Modbus Slave UID.'],
-		'StartAddr'	:['0x0000'	,True	,'Start Address.'],
+		'UID'		:[''		,True	,'Modbus Slave UID.'],
 		'Quantity'	:['0x0001'	,True	,'Registers Values.'],
 		'Threads'	:[1		,False	,'The number of concurrent threads'],
 		'Output'	:[True		,False	,'The stdout save in output directory']
@@ -62,12 +61,31 @@ class Module:
 			self.printLine('[-] Modbus is not running on : ' + ip,bcolors.WARNING)
 			return None
 		self.printLine('[+] Connecting to ' + ip,bcolors.OKGREEN)
-		ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU01_Read_Coils(startAddr=int(self.options['StartAddr'][0],16),quantity=int(self.options['Quantity'][0],16)),timeout=timeout, verbose=0)
-		ans = ModbusADU_Answer(str(ans))
-		self.printLine('[+] Response is :',bcolors.OKGREEN)
-		ans.show()
-		
-				
+		self.printLine('[+] Fuzzing Read Coils on ' + ip,bcolors.OKGREEN)
+		for i in range(0x0000,0x10000):
+			c = connectToTarget(ip,self.options['RPORT'][0])
+			self.printLine('[+] Address is ' + str(hex(i)),bcolors.OKGREEN)
+			ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU01_Read_Coils(startAddr=int(hex(i),16),quantity=int(self.options['Quantity'][0],16)),timeout=timeout, verbose=0)
+			ans = ModbusADU_Answer(str(ans))
+			self.printLine('[+] Response is :',bcolors.OKGREEN)
+			ans.show()
 
+		self.printLine('[+] Fuzzing Read Discrete Inputs on ' + ip,bcolors.OKGREEN)
+		for i in range(0x0000,0x10000):
+			c = connectToTarget(ip,self.options['RPORT'][0])
+			self.printLine('[+] Address is ' + str(hex(i)),bcolors.OKGREEN)
+			ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU02_Read_Discrete_Inputs(startAddr=int(hex(i),16),quantity=int(self.options['Quantity'][0],16)),timeout=timeout, verbose=0)
+			ans = ModbusADU_Answer(str(ans))
+			self.printLine('[+] Response is :',bcolors.OKGREEN)
+			ans.show()		
+
+		self.printLine('[+] Fuzzing Read Holding Registers on ' + ip,bcolors.OKGREEN)
+		for i in range(0x0000,0x10000):
+			c = connectToTarget(ip,self.options['RPORT'][0])
+			self.printLine('[+] Address is ' + str(hex(i)),bcolors.OKGREEN)
+			ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU03_Read_Holding_Registers(startAddr=int(hex(i),16),quantity=int(self.options['Quantity'][0],16)),timeout=timeout, verbose=0)
+			ans = ModbusADU_Answer(str(ans))
+			self.printLine('[+] Response is :',bcolors.OKGREEN)
+			ans.show()
 
 		

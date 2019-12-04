@@ -49,7 +49,7 @@ class Module:
 		if(str.find('[+]') != -1):
 			print str.replace('[+]',color + '[+]' + bcolors.ENDC)
 		elif(str.find('[-]') != -1):
-			print str.replace('[-]',color + '[+]' + bcolors.ENDC)
+			print str.replace('[-]',color + '[-]' + bcolors.ENDC)
 		else:
 			print str
 

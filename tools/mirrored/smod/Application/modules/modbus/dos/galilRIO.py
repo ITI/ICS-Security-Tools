@@ -8,6 +8,7 @@ from System.Core.Modbus import *
 from System.Lib import ipcalc
 
 down = False
+THREADS = list()
 class Module:
 
 
@@ -37,11 +38,10 @@ class Module:
 				THREADS.append(thread)
 			else:
 				break
-			for thread in THREADS:
-				thread.join()
-			if(down):
-				self.printLine('[-] Modbus is not running on : ' + self.options['RHOST'][0],bcolors.WARNING)
-				break
+		for thread in THREADS:
+			thread.join()
+		if(down):
+			self.printLine('[-] Modbus is not running on : ' + self.options['RHOST'][0],bcolors.WARNING)
 		if(self.options['Output'][0]):
 			open(mainPath + '/Output/' + moduleName + '_' + self.options['RHOST'][0].replace('/','_') + '.txt','a').write('='*30 + '\n' + self.output + '\n\n')
 		self.output 	= ''
@@ -57,11 +57,13 @@ class Module:
 
 	def do(self,ip):
 		global down
-		c = connectToTarget(ip,self.options['RPORT'][0])
-		if(c == None):
-			down = True
+		if(down == True):
 			return None
 		while True:
+			c = connectToTarget(ip,self.options['RPORT'][0])
+			if(c == None):
+				down = True
+				return None
 			try:
 				ans = c.sr1(ModbusADU(transId=getTransId(),unitId=int(self.options['UID'][0]))/ModbusPDU01_Read_Coils(),timeout=timeout, verbose=0)
 			except:
