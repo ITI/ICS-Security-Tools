@@ -18,10 +18,11 @@ Developed as a community asset
 * [ScadaBR](https://sourceforge.net/projects/scadabr/) - ScadaBR is a SCADA (Supervisory Control and Data Acquisition) system with applications in Process Control and Automation, being developed and distributed using the open source model.
 * [SCADA-LTS](https://github.com/SCADA-LTS/Scada-LTS) - Actively maintained fork of ScadaBR
 
-## Education Kits
+## Education Kits and Distributions
 
 * [CybatiWorks](https://cybati.org/cybatiworks-one) - Control system cybersecurity platform enabling entities to understand control system environments and cybersecurity risks. Engages the participant in understanding, enumerating, penetrating and mitigating the engineering workstation, HMI, OPC, Historian, PLC/PAC/IED/R(M)TU/DCS and protocol communications. Made up of three key components, 1) Virtualized operating system providing cyber offensive and defensive capabilities for ICS and IT environments, 2) Leveraging the Raspberry PI with PiFace Digital to represent a variety of control system devices (e.g. PLCs, PACs, MTU/RTU, DCS, Physical Security, and 3) Low voltage, kinetic I/O supporting models such as a traffic light, water treatment facility, bottling plant and assembly line.
 * [ControlThings.io](https://www.controlthings.io) - ControlThings Platform takes the best-in-breed security assessment tools for traditional IT infrastructures and adds specialized tools for embedded electronics, proprietary wireless, and a healthy dose of ICS specific assessment tools, both from the greater community and custom created from their team. This is used in some training curriculum as well.
+* [Moki](https://github.com/moki-ics/moki) - Moki Distribution - ICS/SCADA Tools
 * [LICSTER](https://github.com/hsainnos/LICSTER) - LICSTER, the Low-cost ICS Security Testbed for Education and Research, aims to help setup a minimal, low-cost Industrial Control System (ICS) testbed for students, researchers, or anyone with an interest in industrial security. The project contains a list of affordable hardware to build the minimalistic ICS with, instructions, configurations and installation scripts to instantiate the system as well as various attacker scenarios and their implications. The paper can be found [here](https://arxiv.org/abs/1910.00303). 
 
 ## Related
