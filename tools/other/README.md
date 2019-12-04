@@ -3,6 +3,7 @@
 
 ## Evasion
 * [Modshaft](https://github.com/reidmefirst/modshaft/) - Modshaft is an IP-over-Modbus/TCP tunnel.  It is useful for evading application-layer firewalls.
+* [ICS Evasion Attacks](https://github.com/scy-phy/ICS-Evasion-Attacks) - Implementation of white box and black box classifier evasion from SUTD. Paper in repo.
 
 ## Spoofing
 * [Modbus-VCR](https://github.com/reidmefirst/modbus-vcr/) - The Modbus VCR records and replays Modbus traffic
@@ -27,6 +28,7 @@
 * [S7 Metasplot pack](../mirrored/s7-metasploit-modules) - Initial s7 metasploit modules.
 * [Schneider Electric PLC / Modbus modules from DEFCON 25](https://github.com/arnaudsoullie/funwithmodbus0x5a) - Downloading a program from the PLC, gathering information about the PLC and forcing the values of the digital outputs, START/STOP
 * [IEC 104 Module](https://github.com/michaelj0hn/iec104) - IEC104 Client for Metasploit [merged into mainline](https://github.com/rapid7/metasploit-framework/pull/10386)
+* [random modbus tools](https://github.com/arnaudsoullie/funwithmodbus0x5a) - ICS Village talk at DEFCON 25
 
 ## Other
 Note: The following tools haven't necessarily been utilized in an ICS context, but could be helpful.
