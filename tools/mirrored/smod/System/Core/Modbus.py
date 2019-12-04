@@ -5,8 +5,11 @@ import sys
 import Global
 sys.path.append(Global.mainPath + '/System/')
 sys.path.append(Global.mainPath + '/System/Lib/')
+sys.path.append(Global.mainPath + '/System/Lib/scapy')
 # import scapy
-from Lib.scapy.all import *
+from scapy.all import *
+from scapy.layers.inet import *
+conf.verb = 0
 # Set Scapy log level for getting warnings
 
 import math

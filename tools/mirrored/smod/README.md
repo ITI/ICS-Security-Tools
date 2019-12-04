@@ -1,6 +1,8 @@
 #smod
 smod is a modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol. It is a full Modbus protocol implementation using Python and Scapy. This software could be run on Linux/OSX under python 2.7.x. 
 
+Feel free to make pull requests, if there's anything you feel we could do better.
+
 ##Summery
 SCADA (Process Control Networks) based systems have moved from proprietary closed networks to open source solutions and TCP/IP enabled networks steadily over recent years. This has made them vulnerable to the same security vulnerabilities that face our traditional computer networks.
 
@@ -22,6 +24,13 @@ root@kali:~/smod# python smod.py
          \  (xx)\_______
             (__)\       )\/\
              U  ||----w |
+                ||     ||
+          --=[MODBUS Penetration Test FrameWork
+       --+--=[Version : 1.0.2
+       --+--=[Modules : 14
+       --+--=[Coder   : Farzin Enddo
+          --=[github  : www.github.com/enddo
+
 SMOD >help
  Command  Description                                      
  -------  -----------                                      
@@ -34,16 +43,21 @@ SMOD >help
  use      Selects a module by name                         
 SMOD >show modules
  Modules                              Description                             
- -------                              -----------                             
+ -------                              -----------
+ modbus/dos/galilRIO                  DOS Galil RIO-47100 
+ modbus/dos/writeSingleCoils          DOS With Write Single Coil Function     
+ modbus/dos/writeSingleRegister       DOS Write Single Register Function      
  modbus/function/readCoils            Fuzzing Read Coils Function             
  modbus/function/readDiscreteInput    Fuzzing Read Discrete Inputs Function   
+ modbus/function/readExceptionStatus  Fuzzing Read Exception Status Function  
  modbus/function/readHoldingRegister  Fuzzing Read Holding Registers Function 
  modbus/function/readInputRegister    Fuzzing Read Input Registers Function   
  modbus/function/writeSingleCoils     Fuzzing Write Single Coil Function      
  modbus/function/writeSingleRegister  Fuzzing Write Single Register Function  
  modbus/scanner/discover              Check Modbus Protocols                  
- modbus/scanner/getfunc               Enumeration Function on Modbus           
- modbus/scanner/uid                   Brute Force UID                         
+ modbus/scanner/getfunc               Enumeration Function on Modbus          
+ modbus/scanner/uid                   Brute Force UID      
+ modbus/sniff/arp                     Arp Poisoning
 SMOD >
 ```
 Brute Force Modbus UID
@@ -96,4 +110,35 @@ SMOD modbus(getfunc) >exploit
 [+] Function Code 22(Mask Write Register) is supported.
 [+] Function Code 23(Read/Write Multiple Registers) is supported.
 SMOD modbus(getfunc) >
+```
+
+Fuzzing Read Coils Function 
+```
+SMOD >use modbus/function/readCoils
+SMOD modbus(readCoils) >show options
+ Name       Current Setting  Required  Description                                 
+ ----       ---------------  --------  -----------                                 
+ Output     True             False     The stdout save in output directory         
+ Quantity   0x0001           True      Registers Values.                           
+ RHOSTS                      True      The target address range or CIDR identifier 
+ RPORT      502              False     The port number for modbus protocol         
+ StartAddr  0x0000           True      Start Address.                              
+ Threads    1                False     The number of concurrent threads            
+ UID        None             True      Modbus Slave UID.                           
+SMOD modbus(readCoils) >set RHOSTS 192.168.1.6
+SMOD modbus(readCoils) >set UID 10
+SMOD modbus(readCoils) >exploit 
+[+] Module Read Coils Function Start
+[+] Connecting to 192.168.1.6
+[+] Response is :
+###[ ModbusADU ]###
+  transId   = 0x2
+  protoId   = 0x0
+  len       = 0x4
+  unitId    = 0xa
+###[ Read Coils Answer ]###
+     funcCode  = 0x1
+     byteCount = 1L
+     coilStatus= [0]
+SMOD modbus(readCoils) >
 ```

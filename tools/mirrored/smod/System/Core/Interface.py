@@ -38,6 +38,8 @@ class Command:
 		global POINTER
 		POINTER = None
 	def show(self,args,pointer = None):
+		if(len(args) < 2):
+			return None
 		if(args[1] == 'modules'):
 			table 	 = prettytable.PrettyTable([bcolors.BOLD + 'Modules' + bcolors.ENDC,bcolors.BOLD + 'Description' + bcolors.ENDC])
 			table.border = False
@@ -59,6 +61,8 @@ class Command:
 				print table			
 	def use(self,args,pointer = None):
 		global POINTER
+		if(len(args) < 2):
+			return None
 		POINTER = args[1]
 		moduleName = args[1].split('/')
 		comp 	= Completer()
@@ -67,11 +71,16 @@ class Command:
 		readline.set_completer(comp.complete)
 		while True:
 			input	= raw_input('SMOD ' + moduleName[0] + '(' + bcolors.OKBLUE + moduleName[-1] + bcolors.ENDC + ') >').strip().split()
-			result 	= getattr(globals()['Command'](),input[0])(input,args[1])
+			try:			
+				result 	= getattr(globals()['Command'](),input[0])(input,args[1])
+			except:
+				return None
 			if (POINTER == None):
 				break
 	
 	def set(self,args,pointer = None):
+		if(len(args) < 2):
+			return None
 		if(pointer):
 			modules[pointer].options[args[1]][0] = args[2]
 
