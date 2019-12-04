@@ -15,6 +15,9 @@
 ## Exploit frameworks
 * [Sixnet Tools](https://github.com/mssabr01/sixnet-tools) - Tool for exploiting sixnet RTUs
 
+## Demonstrations
+
+* [Defcon26 Tools](https://github.com/thiagoralves/defcon26) - Tools demonstrated at DEF CON 26 talk "Hacking PLCs and Causing Havoc on Critical Infrastructures"
 
 ## Common Toolsets
 * [Metasploit](http://www.metasploit.com) - Exploitation framework.
