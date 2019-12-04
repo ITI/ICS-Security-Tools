@@ -7,6 +7,10 @@ Developed as a community asset
 * [Rob Lee's Thoughts](roblee.md)
 * [Jake Brodsky's Thoughts](scadamagICSLab.md)
 
+## Getting Started
+
+* [SANS ICS Security History](https://ics.sans.org/media/An-Abbreviated-History-of-Automation-and-ICS-Cybersecurity.pdf) - An Abbreviated History of Automation & Industrial Controls Systems and Cybersecurity (pdf)
+
 ## Curated Content
 
 * [Awesome ICS Tools](https://github.com/hslatman/awesome-industrial-control-system-security)
