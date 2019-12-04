@@ -9,11 +9,13 @@
 * [GE PSLF](http://www.geenergyconsulting.com/practice-area/software-products/pslf) - Effective power system analysis often requires large-scale simulations and manipulation of large volumes of data. When performing these analyses, efficient algorithms are just as important as the engineering models in which the data is used. GE Energy recognizes these imperatives, and has developed Concorda PSLF. The algorithms in the PSLF suite have been developed to handle large utility-scale systems of up to 80,000 buses. A complete set of tools allows the user to switch smoothly between data visualization, system simulation, and results analysis. **[Commercial]**
 * [GridDyn](https://github.com/llnl/griddyn) - is an open-source power transmission simulation software package developed at Lawrence Livermore National Laboratory. The name is a concatenation of Grid Dynamics, and as such usually pronounced as "Grid Dine". It was created to meet a research need for exploring coupling between transmission, distribution, and communications system simulations.
 
-
 ## Others
 * [PLC Fiddle](http://www.plcfiddle.com/) - Free Online Ladder logic Editor and Simulator in your Browser. [Description](http://accautomation.ca/plc-fiddle-online-editor-and-simulator-in-your-browser)
 * [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs
 * [Net To PLCSim](https://sourceforge.net/projects/nettoplcsim/) - TCP/IP-Network extension for the PLC simulation software Siemens PLCSim
+
+## Systems
+* [MiniCPS](https://github.com/scy-phy/minicps) - MiniCPS: a framework for Cyber-Physical Systems real-time simulation, built on top of mininet.
 
 (creative commons license)
 
