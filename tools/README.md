@@ -16,7 +16,7 @@ Developed as a community asset
 
 ## Honeypots
 
-[Honeypots](honeypot) - ICS related honeypot tools
+[Honeypots](honeypots) - ICS related honeypot tools
 
 ## Simulation Tools
 
@@ -25,5 +25,9 @@ Developed as a community asset
 ## Other
 
 [Other Related Tools](other) - Other related/useful tools in the ICS space, including MITM, evasion, spoofing, or even exploitation.
+
+## Mirrored Tools
+
+[Mirrored Tools](mirrored) - Once useful open-source tools that are no longer easily available are now mirrored here.
 
 (creative commons license)

@@ -18,7 +18,8 @@ General Structure:
   [./tools/analysis](tools/analysis)  
   [./tools/audit](tools/audit)  
   [./tools/general](tools/general)  
-  [./tools/honeypots](tools/honeypots)  
+  [./tools/honeypots](tools/honeypots)
+  [./tools/mirrored](tools/mirrored)
   [./tools/other](tools/other)  
   [./tools/simulation](tools/simulation)  
 
