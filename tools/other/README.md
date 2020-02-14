@@ -42,6 +42,8 @@ Developed as a community asset
 
 ## Other
 
+* [Siemens S7 PLC Bootloader Code Execution Utility](https://github.com/RUB-SysSec/SiemensS7-Bootloader) - Non-invasive arbitrary code execution on the Siemens S7 PLC by using an undocumented bootloader protocol over UART. Siemens assigned SSA-686531 (CVE-2019-13945) for this vulnerability. Affected devices are Siemens S7-1200 (all variants including SIPLUS) and S7-200 Smart.
+
 Note: The following tools haven't necessarily been utilized in an ICS context, but could be helpful.
 
 * [Laika Boss](https://github.com/lmco/laikaboss) - Laika is an object scanner and intrusion detection system that strives to achieve the goal of a scalable, flexible, and verbose system.
