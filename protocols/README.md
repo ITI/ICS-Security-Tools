@@ -117,6 +117,12 @@ Developed as a community asset
 * [Bro-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Bro IDS
 * [zeek plugin s7](https://github.com/amzn/zeek-plugin-s7comm) - S7 Zeek Plugin from Amazon
 
+## SSP21
+
+* [SSP21 - Specification](https://github.com/ssp21/ssp21-spec) - SSP21 specification
+* [SSP21 - C++](https://github.com/ssp21/ssp21-spec) - SSP21 reference implementation in C++
+* [SSP21 - Rust](https://github.com/ssp21/ssp21-rs-core) - SSP21 core library in Rust
+
 ## TriStation
 
 * [FireEye TriStation Wireshark Dissector](https://github.com/stvemillertime/TriStation) - reverse engineered wireshark dissector from Mandiant/FireEye team after Triton discovery.
