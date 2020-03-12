@@ -89,6 +89,15 @@ Developed as a community asset
 
 * [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](../tools/mirrored/aegis-opensource).
 
+## OpenADR
+
+### Protocol Implementation / Tools
+
+* [OpenADR 2.0a VEN Python]{https://github.com/EnerNOC/oadr2-ven-python} - EnerNOC Open Source Python OpenADR 2.0a VEN client implementation
+* [EPRI OpenADR VTN Implementation]{https://github.com/epri-dev/OpenADR-Virtual-Top-Node} - OpenADR 2.0 Profile Specification B Profile for virtual top node implementation.
+* [OpenADR Java Implementation]{https://github.com/avob/OpenADR} - OpenADR minimal VEN / VTN 2.0a / 2.0b skeleton implementations in Java
+* [Node-Red Implementation]{https://github.com/Argonne-National-Laboratory/node-red-contrib-oadr-ven} - Node-Red OADR2 VEN Implementation w/ HTTP transport
+
 ## PROFINET
 
 ### Protocol Implementation
