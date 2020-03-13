@@ -14,6 +14,7 @@ Developed as a community asset
 
 * [BACpypes](https://github.com/JoelBender/bacpypes) - BACpypes provides a BACnet application layer and network layer written in Python for daemons, scripting, and graphical interfaces.
 * [zeek plugin bacnet](https://github.com/amzn/zeek-plugin-bacnet) - BACnet Zeek Plugin from Amazon
+* [yet another zeek plugin bacnet](https://github.com/delta-2-4/Zeek-BACnetIP) - BACnet Zeek Plugin by Aaron Heller + [SANS whitepaper](https://www.sans.org/reading-room/whitepapers/ICS/paper/39240) 
 
 ## DNP3
 
