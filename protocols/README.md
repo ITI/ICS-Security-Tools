@@ -126,6 +126,7 @@ Developed as a community asset
 * [Python Snap7 Wrapper](https://github.com/gijzelaerr/python-snap7) - A Python wrapper for the snap7 PLC communication library
 * [Bro-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Bro IDS
 * [zeek plugin s7](https://github.com/amzn/zeek-plugin-s7comm) - S7 Zeek Plugin from Amazon
+* [SPPA S7 Data port dissector](https://github.com/klsecservices/SPPA/blob/master/sppa_dissector.lua) - SPPA-T3000 Automation server (PLC) dissector + [whitepaper](https://github.com/klsecservices/SPPA/blob/master/Security%20of%20DCS%20for%20turbines%20-%202020.pdf) by Kaspersky Security Services team 
 
 ## SSP21
 
