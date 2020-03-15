@@ -17,6 +17,10 @@ Developed as a community asset
 * [Open PHA](https://www.kenexis.com/software/openpha/download/) - Open PHA™ is a  HAZOP and LOPA software tool. Open PHA™ provides an easy to use, light-weight platform for performing HAZOP and LOPA analysis. Includes the ability to perform a Security PHA Review directly in the PHA study (description: https://www.kenexis.com/security-pha-review-spr-open-pha/)
 * [Industrial Security Auditing Framework](https://gitlab.com/d0ubl3g/industrial-security-auditing-framework/) - ISAF aims to be a framework that provides the necessary tools for the correct security audit of industrial environments.
 * [Shodan](https://www.shodan.io) - Shodan is the world's first search engine for Internet-connected devices
+* [Censys](https://censys.io/) - Another search engine for Internet-connected devices
+* [ZoomEye](https://www.zoomeye.org/topic?id=ics_project) - Chinese search engine for Internet-connected devices
+* [FOFA pro](https://fofa.so/subject) - Chinese search engine for Internet-connected devices
+* [Zhifeng](https://zhifeng.io/monitor) - Chinese search engine for internet-connected IoT/ICS assets
 * [kamerka](https://github.com/woj-ciech/kamerka) - Build interactive map of ICS devices from Shodan
 * [splonebox](https://splone.com/splonebox/) - splonebox is an open source network assessment tool with focus on Industry Control Systems. It offers an ongoing analysis of your network and its devices. A modular design allows writing of additional plugins.
 
@@ -28,6 +32,7 @@ Developed as a community asset
 
 * [Quickdraw ICS IDS](https://github.com/digitalbond/quickdraw) - Digital Bond’s original research project was to develop a set of IDS rules for SCADA protocols. The initial rules for Modbus TCP and DNP3 have now been enhanced for EtherNet/IP, Vulnerability rules and Device Specific rules. Quickdraw also includes Snort preprocessors and plugins that allow rules for more complex control system protocols.
 * [Quickdraw Suricata Signatures for EtherNet/IP](https://github.com/digitalbond/Quickdraw-Suricata) - A set of EtherNet/IP IDS rules for use with Suricata.
+* [Triton SNORT rules](https://www.bsi.bund.de/DE/Themen/Industrie_KRITIS/ICS/Tools/RAPSN_SETS/RAPSN_SETS_node.html) by BSI
 
 ## IDS Extensions
 
