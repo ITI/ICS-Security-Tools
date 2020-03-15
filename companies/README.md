@@ -53,6 +53,7 @@ Note: This list is not actively maintained.
 * [N-dimension](https://www.n-dimension.com)
 * [NexDefense](https://www.nexdefense.com)
 * [NextNine](https://nextnine.com)
+* [Nixu](https://www.nixu.com/services/safety-and-reliability)
 * [Nozomi Networks](https://www.nozominetworks.com)
 * [OPSWAT](https://www.opswat.com)
 * [OSI](http://www.osii.com)
