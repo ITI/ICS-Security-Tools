@@ -90,6 +90,15 @@ Developed as a community asset
 
 * [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](../tools/mirrored/aegis-opensource).
 
+## OPC UA
+
+### Protocol Implementation
+
+* [OPC UA .Net Standard] (https://github.com/OPCFoundation/UA-.NETStandard) - Official OPC UA .Net Standard Stack and Samples from the OPC Foundation
+* [OPC UA Client GUI] (https://github.com/FreeOpcUa/opcua-client-gui) - A simple OPC-UA GUI client.
+* [OPC UA Server Simulator] (https://integrationobjects.com/opc-products/opc-unified-architecture/opc-ua-server-simulator/) - Simulate real-time and historical data using OPC UA Server Simulator.
+* [OPC UA Server and Client C++ Libraries] (https://github.com/FreeOpcUa/freeopcua) - LGPL OPC-UA server and client library written in C++ and with a lot of code auto-generated from xml specification using python.
+
 ## OpenADR
 
 ### Protocol Implementation / Tools
@@ -146,5 +155,7 @@ Developed as a community asset
 ## General Protocol Fuzzing
 
 * [AFL](http://lcamtuf.coredump.cx/afl/) - American fuzzy lop is a security-oriented fuzzer that employs a novel type of compile-time instrumentation and genetic algorithms to automatically discover clean, interesting test cases that trigger new internal states in the targeted binary.
+
+* [WinAFL](https://github.com/ivanfratric/winafl) - AFL that works for Windows binaries.
 
 (creative commons license)
