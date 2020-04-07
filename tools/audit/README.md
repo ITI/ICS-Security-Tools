@@ -24,6 +24,8 @@ Developed as a community asset
 * [Zhifeng](https://zhifeng.io/monitor) - Chinese search engine for internet-connected IoT/ICS assets
 * [kamerka](https://github.com/woj-ciech/kamerka) - Build interactive map of ICS devices from Shodan
 * [splonebox](https://splone.com/splonebox/) - splonebox is an open source network assessment tool with focus on Industry Control Systems. It offers an ongoing analysis of your network and its devices. A modular design allows writing of additional plugins.
+* [CHAPS](https://github.com/cutaway-security/chaps) - Configuration Hardening Assessment PowerShell Script, a script for checking Windows system security settings where additional software and assessment tools cannot be installed (e.g. Industrial Control System (ICS) environments)
+* [WES-NG](https://github.com/bitsadmin/wesng) - Windows Exploit Suggester - Next Generation, a tool based on the output of Windows' systeminfo utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported.
 
 ## Robotics
 
