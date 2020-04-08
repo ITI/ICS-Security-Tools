@@ -22,6 +22,7 @@ Developed as a community asset
 * [ZoomEye](https://www.zoomeye.org/topic?id=ics_project) - Chinese search engine for Internet-connected devices
 * [FOFA pro](https://fofa.so/subject) - Chinese search engine for Internet-connected devices
 * [Zhifeng](https://zhifeng.io/monitor) - Chinese search engine for internet-connected IoT/ICS assets
+* [Ditecting](http://www.ditecting.com/) - Chinese search engine for Industrial Control System Devices
 * [kamerka](https://github.com/woj-ciech/kamerka) - Build interactive map of ICS devices from Shodan
 * [splonebox](https://splone.com/splonebox/) - splonebox is an open source network assessment tool with focus on Industry Control Systems. It offers an ongoing analysis of your network and its devices. A modular design allows writing of additional plugins.
 * [CHAPS](https://github.com/cutaway-security/chaps) - Configuration Hardening Assessment PowerShell Script, a script for checking Windows system security settings where additional software and assessment tools cannot be installed (e.g. Industrial Control System (ICS) environments)
