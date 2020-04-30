@@ -11,18 +11,19 @@ General Structure:
 [./configurations/](configurations)  
 [./guides/](guides)  
 [./hardware/](hardware)  
-[./hwinfo/](ICS hardware information)  
+[./hwinfo/](hwinfo)  
 [./pcaps/](pcaps)  
 [./protocols/](protocols)  
-[./scripts/](scripts)  
+[./scripts/](scripts)
+
 [./tools/](tools)  
-  [./tools/analysis](tools/analysis)  
-  [./tools/audit](tools/audit)  
-  [./tools/general](tools/general)  
-  [./tools/honeypots](tools/honeypots)  
-  [./tools/mirrored](tools/mirrored)  
-  [./tools/other](tools/other)  
-  [./tools/simulation](tools/simulation)  
+ [./tools/analysis](tools/analysis)  
+ [./tools/audit](tools/audit)  
+ [./tools/general](tools/general)  
+ [./tools/honeypots](tools/honeypots)  
+ [./tools/mirrored](tools/mirrored)  
+ [./tools/other](tools/other)  
+ [./tools/simulation](tools/simulation)
 
 Enjoy!
 
