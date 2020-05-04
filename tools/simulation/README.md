@@ -11,6 +11,10 @@ Developed as a community asset
 * [GE PSLF](http://www.geenergyconsulting.com/practice-area/software-products/pslf) - Effective power system analysis often requires large-scale simulations and manipulation of large volumes of data. When performing these analyses, efficient algorithms are just as important as the engineering models in which the data is used. GE Energy recognizes these imperatives, and has developed Concorda PSLF. The algorithms in the PSLF suite have been developed to handle large utility-scale systems of up to 80,000 buses. A complete set of tools allows the user to switch smoothly between data visualization, system simulation, and results analysis. **[Commercial]**
 * [GridDyn](https://github.com/llnl/griddyn) - is an open-source power transmission simulation software package developed at Lawrence Livermore National Laboratory. The name is a concatenation of Grid Dynamics, and as such usually pronounced as "Grid Dine". It was created to meet a research need for exploring coupling between transmission, distribution, and communications system simulations.
 
+## Nuclear Power Plant Simulation Tools
+
+* [Nuclear Reactor Simulators for Education and Training](https://www.iaea.org/topics/nuclear-power-reactors/nuclear-reactor-simulators-for-education-and-training) - Free PC-Based Basic Principle Simulators by IAEA, distributed at no cost, upon request 
+
 ## Others
 
 * [PLC Fiddle](http://www.plcfiddle.com/) - Free Online Ladder logic Editor and Simulator in your Browser. [Description](http://accautomation.ca/plc-fiddle-online-editor-and-simulator-in-your-browser)
