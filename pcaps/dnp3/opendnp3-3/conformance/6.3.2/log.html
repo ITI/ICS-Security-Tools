@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:53:37.934
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 6.3.2
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:53:37.943
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.943
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Cycle power to the DUT
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:53:37.950
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.950
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Issue a REQUEST_LINK_STATES (0xC9) using link control block 0xC9
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:53:37.952
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: REQUEST_LINK_STATES(0x09) 0xC9 length: 5 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:53:37.953
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 C9 00 04 01 00 98 81
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:53:37.955
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.955
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the DUT responds with a valid link frame
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.955
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the frame uses link control block 0x0B or 0x1B
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:53:37.956
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 05 0B 01 00 00 04 64 40
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:53:37.957
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 0 fcb: 0 fcv: 0 func: LINK_STATUS(0x0B) 0x0B length: 5 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:53:37.959
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.959
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Issue a REQUEST_LINK_STATES (0xE9) using link control block 0xE9
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:53:37.960
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 1 fcv: 0 func: REQUEST_LINK_STATES(0x09) 0xE9 length: 5 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:53:37.960
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 E9 00 04 01 00 C5 99
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:53:37.962
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.962
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the DUT responds with a valid link frame
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:53:37.962
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the frame uses link control block 0x0B or 0x1B
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:53:37.963
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 05 0B 01 00 00 04 64 40
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:53:37.964
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 0 fcb: 0 fcv: 0 func: LINK_STATUS(0x0B) 0x0B length: 5 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:53:37.964
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 6.3.2
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

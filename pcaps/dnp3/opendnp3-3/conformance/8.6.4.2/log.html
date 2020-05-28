@@ -1,0 +1,991 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:56:02.470
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 8.6.4.2
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.475
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          This procedure is enabled because the following options:
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.475
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - supports.globalRemoteSupervisoryControl == true
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.475
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.475
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the DUT does not support placing its binary outputs in a local state no further testing is required in this section.
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.476
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.476
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the DUT supports a global feature for enabling or disabling remote supervisory control, ensure that this is set to the 'Enabled' or 'Remote' mode.
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.477
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.477
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.477
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g10v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:02.478
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:02.478
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g10v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:02.478
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:02.478
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:02.479
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:02.479
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 0A 00 06 53 98
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.480
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.480
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x00)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.480
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(LocalControl)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:02.481
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 23 44 01 00 00 04 DE 56
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:02.481
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 81 90 00 0A 02 00 00 13 01 01 01 01 01 01 E9 C2
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:02.481
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 01 01 01 01 01 01 01 01 01 01 01 01 01 2F E0
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:02.481
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 35 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:02.481
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00 IIN(DeviceRestart, NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g10v2, 1-Byte Start/Stop, start: 0 stop: 19
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [2] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [3] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [4] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [5] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [6] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [7] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [8] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [9] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [10] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [11] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [12] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [13] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [14] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [15] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [16] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [17] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [18] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.487
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [19] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.488
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.488
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Change the DUT's global switch to the 'Disabled' or 'Local' mode
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.488
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Cycle power to the DUT
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.497
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.497
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.497
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g10v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:02.499
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:02.499
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g10v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:02.499
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:02.499
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:02.500
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:02.500
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 01 0A 00 06 55 BB
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:02.500
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.500
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:02.500
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field contains IIN(LocalControl)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:02.501
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 23 44 01 00 00 04 DE 56
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:02.501
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 81 B0 00 0A 02 00 00 13 11 01 01 01 01 01 E1 15
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:02.501
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 01 01 01 01 01 01 01 01 01 01 01 01 01 2F E0
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:02.502
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 35 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:02.502
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01 IIN(DeviceRestart, LocalControl, NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g10v2, 1-Byte Start/Stop, start: 0 stop: 19
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x11
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [2] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [3] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [4] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [5] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [6] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [7] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [8] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [9] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [10] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [11] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [12] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [13] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [14] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [15] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [16] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [17] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [18] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [19] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:02.507
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 8.6.4.2
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

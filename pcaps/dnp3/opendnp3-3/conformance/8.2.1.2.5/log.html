@@ -1,0 +1,628 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:54:39.025
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 8.2.1.2.5
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:39.030
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          This procedure is enabled because the following options:
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.030
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - supports.binaryOutput.status == true
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:39.032
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.032
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Select(0x03) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.032
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.032
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - [0] - code: 3 count: 1 onTime: 100 offTime: 200 status: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:54:39.033
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Select(0x03) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:54:39.033
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 transmit data-level-4">
+        <td>
+          11:54:39.033
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - code: 3 count: 1 onTime: 100 offTime: 200 status: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:54:39.033
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:39.033
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 24 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:39.034
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 18 C4 00 04 01 00 5B 61
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:39.034
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 03 0C 01 17 01 00 03 01 64 00 00 00 C8 00 FD 11
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:39.034
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 00 FF FF
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:39.036
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.036
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x00)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.036
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify the response contains the exact object header: 
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.036
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.036
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - [0] - code: 3 count: 1 onTime: 100 offTime: 200 status: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:54:39.037
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 1A 44 01 00 00 04 A6 F0
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:54:39.037
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 81 90 00 0C 01 17 01 00 03 01 64 00 00 00 9C 9A
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:54:39.037
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C8 00 00 00 00 78 FB
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:54:39.037
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 26 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:54:39.038
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:54:39.038
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00 IIN(DeviceRestart, NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:54:39.038
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:54:39.038
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - code: 3 count: 1 onTime: 100 offTime: 200 status: 0
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Operate(0x04) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - [1] - code: 3 count: 1 onTime: 100 offTime: 200 status: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Operate(0x04) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 transmit data-level-4">
+        <td>
+          11:54:39.040
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1] - code: 3 count: 1 onTime: 100 offTime: 200 status: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:54:39.041
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:39.041
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 24 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:39.042
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 18 C4 00 04 01 00 5B 61
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:39.042
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 04 0C 01 17 01 01 03 01 64 00 00 00 C8 00 F4 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:39.042
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 00 FF FF
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:39.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify the response contains the exact object header: 
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - [1] - code: 3 count: 1 onTime: 100 offTime: 200 status: 2
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:54:39.044
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 1A 44 01 00 00 04 A6 F0
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:54:39.044
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C1 C1 81 90 00 0C 01 17 01 01 03 01 64 00 00 00 6A E6
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:54:39.044
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C8 00 00 00 02 C4 97
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:54:39.045
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 26 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:54:39.045
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 1
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:54:39.046
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01 IIN(DeviceRestart, NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:54:39.046
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g12v1, 1-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:54:39.046
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1] - code: 3 count: 1 onTime: 100 offTime: 200 status: 2
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:39.046
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:39.046
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Check that no binary control point operated
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:54:40.050
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 8.2.1.2.5
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

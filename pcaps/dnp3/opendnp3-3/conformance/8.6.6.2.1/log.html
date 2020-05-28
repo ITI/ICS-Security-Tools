@@ -1,0 +1,5996 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:56:09.163
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 8.6.6.2.1
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.170
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          This procedure is enabled because the following options:
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.170
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - supports.binaryInputChangeEvents == true
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.171
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.171
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the device does not support Binary Input Change Events, end testing of this procedure
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.172
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.172
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.172
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.172
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v3, All Objects
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.172
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v4, All Objects
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.172
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x00)
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:09.174
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:09.174
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:09.174
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v3, All Objects
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:09.174
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v4, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:09.174
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:09.174
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 17 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:09.175
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 11 C4 00 04 01 00 60 4E
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:09.175
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 02 06 3C 03 06 3C 04 06 9E 30
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:09.176
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.176
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 81 90 00 9B 2C
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:09.176
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:09.177
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:09.177
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00 IIN(DeviceRestart, NeedTime)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.177
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.177
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate 200 Binary Input Change Event(s)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.178
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169178)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.179
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169178)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.179
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169179)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.179
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169179)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.180
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169179)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.180
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169180)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.180
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169180)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.181
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169180)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.181
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169181)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.182
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169181)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.182
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169182)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.182
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169182)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.183
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169182)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.183
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169183)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.183
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169183)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.184
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169183)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.184
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169184)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.184
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169184)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.184
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169184)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.184
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169184)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.184
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169184)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.185
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169184)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.185
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169185)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.185
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169185)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.186
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169186)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.186
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169186)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.187
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169186)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.187
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169187)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.187
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169187)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.187
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169187)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.188
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169188)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.188
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169188)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.189
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169188)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.189
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169189)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.189
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169189)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.190
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169189)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.190
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169190)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.190
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169190)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.191
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169190)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.191
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169191)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.191
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169191)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.192
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169191)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.192
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169192)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.192
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169192)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.193
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169192)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.193
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169193)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.193
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169193)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.194
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169193)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.194
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169194)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.195
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169195)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.196
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169195)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.196
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169196)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.196
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169196)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.197
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169196)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.197
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169197)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.197
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169197)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.198
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169197)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.198
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169198)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.198
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169198)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.199
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169198)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.199
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169199)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.200
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169199)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.200
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169200)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.200
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169200)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.201
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169200)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.201
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169201)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.201
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169201)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.202
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169201)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.202
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169202)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.203
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169202)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.203
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169203)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.203
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169203)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.204
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169203)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.204
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169204)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.204
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169204)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.205
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169204)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.205
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169205)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.205
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169205)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.206
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169205)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.206
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169206)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.206
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169206)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.207
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169206)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.207
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169207)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.208
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169207)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.208
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169208)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.208
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169208)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.209
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169208)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.209
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169209)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.209
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169209)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.210
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169209)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.210
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169210)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.210
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169210)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.211
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169210)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.211
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169211)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.211
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169211)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.212
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169211)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.212
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169212)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.212
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169212)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.213
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169212)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.213
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169213)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.214
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169213)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.214
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169214)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.214
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169214)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.215
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169214)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.215
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169215)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.215
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169215)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.216
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169215)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.216
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169216)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.216
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169216)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.217
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169216)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.217
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169217)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.217
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169217)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.218
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169217)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.218
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169218)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.218
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169218)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.219
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169218)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.219
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169219)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.220
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169219)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.220
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169220)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.220
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169220)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.221
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169220)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.221
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169221)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.221
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169221)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.222
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169221)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.222
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169222)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.222
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169222)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.223
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169222)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.223
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169223)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.223
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169223)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.224
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169223)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.224
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169224)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.224
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169224)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.225
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169224)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.225
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169225)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.225
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169225)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.226
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169225)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.226
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169226)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.226
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169226)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.226
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169226)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.226
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169226)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.226
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169226)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.227
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169226)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.227
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169227)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.227
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169227)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.228
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169227)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.228
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169228)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.228
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169228)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.229
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169228)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.229
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169229)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.229
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169229)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.230
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169229)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.230
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169230)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.231
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169230)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.231
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169231)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.231
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169231)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.232
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169231)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.232
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169232)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.233
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169232)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.233
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169233)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.233
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169233)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.234
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169233)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.234
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169234)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.234
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169234)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.235
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169235)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.235
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169235)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.236
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169235)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.236
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169236)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.236
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169236)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.237
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169236)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.237
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169237)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.237
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169237)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.238
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169237)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.238
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169238)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.238
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169238)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.239
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169238)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.239
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169239)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.239
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169239)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.240
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169239)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.240
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169240)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.240
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169240)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.241
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169241)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.241
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169241)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.242
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169241)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.242
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169242)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.242
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169242)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.243
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169242)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.243
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169243)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.265
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169243)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169265)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169266)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169266)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534169266)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534169266)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.267
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534169266)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.267
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169267)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.267
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169267)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.268
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534169267)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.268
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=false, flags=1, timestamp=DNPTime(1586534169268)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.268
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534169268)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.269
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534169268)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.269
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.269
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.269
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:09.270
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:09.270
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:09.270
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:09.271
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:09.271
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:09.271
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 01 3C 02 06 52 C3
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.272
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.272
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.272
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(EventBufferOverflow)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 FF 44 01 00 00 04 53 46
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          41 E1 81 90 00 02 01 28 C8 00 FF FF 81 00 00 81 AE 87
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 04 81 00 04 01 00 04 81 00 00 01 FF FF 01 00 7F 31
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          04 01 00 04 81 FF FF 81 00 00 81 FF FF 01 FF FF 32 A7
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 29 00 81 00 00 01 00 04 01 00 04 81 00 04 01 F6 43
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 81 29 00 01 29 00 81 00 04 81 FF FF 01 00 4E D5
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          04 01 00 04 81 00 04 01 00 04 81 00 04 01 00 00 5F 69
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 FF FF 81 00 00 81 00 00 01 00 04 81 FF FF 01 BD D2
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 81 FF FF 81 FF FF 01 29 00 01 FF FF 81 00 34 1D
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          04 01 FF FF 01 00 04 81 00 00 01 00 00 81 00 04 D8 A3
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 FF FF 81 00 00 01 00 04 81 29 00 81 FF FF 01 C7 ED
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          FF FF 81 FF FF 01 FF FF 81 00 04 01 29 00 01 29 ED E8
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 81 FF FF 01 FF FF 81 29 00 01 29 00 81 FF FF B0 75
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 FF FF 81 00 04 81 00 04 01 00 04 81 00 00 81 D3 6C
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          29 00 01 FF FF 01 29 00 81 00 04 01 00 00 01 FF C2 7B
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          FF 81 00 04 81 29 00 01 29 00 81 FF FF 01 FF FF 68 42
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.277
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 00 00 81 00 00 01 00 04 01 10 95
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:09.278
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 255 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:09.278
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 0 seq: 1
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 FF 44 01 00 00 04 53 46
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          02 FF FF 01 00 00 81 FF FF 81 00 00 01 00 00 81 12 6B
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 04 81 00 00 01 FF FF 01 FF FF 81 FF FF 01 00 F9 14
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          04 01 29 00 01 29 00 81 29 00 01 29 00 81 29 00 7B 91
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 00 00 81 00 00 01 00 04 81 00 00 81 00 00 01 EA FD
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 81 29 00 81 00 04 01 00 04 81 00 04 01 00 FE BA
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 01 00 04 81 29 00 01 00 04 01 FF FF 81 00 00 6B 6B
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 00 04 81 29 00 81 FF FF 01 00 04 01 29 00 01 51 44
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          29 00 81 00 04 81 29 00 01 00 04 01 00 00 01 FF B0 24
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          FF 81 00 04 81 29 00 81 00 00 81 00 04 01 29 00 F1 E8
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 00 04 81 29 00 81 00 04 01 00 04 81 FF FF 01 F9 76
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 01 00 04 01 00 04 81 00 04 01 29 00 01 FF 59 C5
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          FF 81 00 00 81 00 04 81 00 04 01 29 00 81 00 00 B4 1B
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 29 00 01 FF FF 01 FF FF 81 00 00 81 29 00 81 4D 4C
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 01 00 00 81 FF FF 01 00 00 01 00 00 81 00 95 7F
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          04 81 00 04 01 00 00 01 29 00 01 00 04 81 FF FF 43 4B
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 29 00 81 00 04 01 29 00 01 0B 81
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 255 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:09.283
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 0 fin: 0 seq: 2
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 75 44 01 00 00 04 BB EB
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          83 FF FF 01 00 00 81 29 00 81 00 00 01 29 00 01 86 67
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          29 00 81 00 04 81 00 00 81 00 00 01 00 00 81 00 1F 47
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          04 01 FF FF 81 00 04 81 00 04 01 29 00 01 00 04 DB A3
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 FF FF 01 00 04 01 FF FF 81 29 00 81 00 00 01 B7 6D
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 00 81 FF FF 01 00 00 01 29 00 01 29 00 81 29 68 07
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          00 01 FF FF 81 29 00 81 00 00 81 00 00 01 00 04 3D A4
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 00 04 01 29 00 01 FF FF 01 00 04 81 FF FF 81 73 D9
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 117 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:09.286
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 0 fin: 1 seq: 3
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x01 IIN(DeviceRestart, NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v1, 2-Byte Count and Index, count: 200
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.341
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate 1 Binary Input Change Event(s)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.342
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534169341)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.343
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.343
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.343
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:09.343
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:09.343
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:09.343
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:09.344
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 12 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:09.344
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0C C4 00 04 01 00 F4 54
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:09.344
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C2 01 3C 02 07 01 3F 6E
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 8 to 9
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x02)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response contains a single Binary Input Change Event
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field contains IIN(EventBufferOverflow)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that an application layer confirmation is requested.
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 12 44 01 00 00 04 7A 6A
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.346
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C4 E2 81 92 08 02 01 28 01 00 00 00 81 E0 6E
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 18 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 4
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x02 IIN(DeviceRestart, NeedTime, Class1Events, EventBufferOverflow)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v1, 2-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Confirm(0x00) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:09.347
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:09.348
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:09.348
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:09.348
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C2 00 D6 8D
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.349
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 10
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.349
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.349
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:09.350
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:09.350
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:09.350
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:09.351
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 12 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:09.352
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0C C4 00 04 01 00 F4 54
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:09.352
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C3 01 3C 02 07 01 D8 DB
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:09.353
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 11 to 12
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.353
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x03)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.353
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response contains a single Binary Input Change Event
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.353
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(EventBufferOverflow)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:09.353
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that an application layer confirmation is requested.
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:09.354
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 12 44 01 00 00 04 7A 6A
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:09.354
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C5 E3 81 92 00 02 01 28 01 00 00 04 81 91 FE
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:09.355
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 18 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:09.355
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 5
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:09.356
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x03 IIN(DeviceRestart, NeedTime, Class1Events)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          11:56:09.356
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v1, 2-Byte Count and Index, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          11:56:09.356
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:09.356
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Confirm(0x00) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:09.357
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:09.357
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:09.358
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:09.358
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C3 00 98 26
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:09.358
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 8.6.6.2.1
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

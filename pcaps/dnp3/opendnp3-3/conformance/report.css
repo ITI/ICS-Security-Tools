@@ -1,0 +1,147 @@
+
+/**
+* Global settings
+*/
+
+body {
+  color: white;
+  background-color: #1D1C1C;
+  font-family: Consolas,monaco,monospace;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+}
+
+table {
+   border-collapse:collapse
+}
+
+td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+a:link {
+   color:inherit;
+}
+
+a:visited{color:inherit}
+
+/**
+* Main report
+*/
+
+tr.level1 > td:first-child {
+    padding-left: 20px;
+}
+
+tr.level2 > td:first-child {
+    padding-left: 40px;
+}
+
+tr.level3 > td:first-child {
+    padding-left: 60px;
+}
+
+tr.level4 > td:first-child {
+    padding-left: 80px;
+}
+
+td:nth-child(2) {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+tr.section.level0 > td {
+     background-color: #3366cc;
+}
+
+
+tr.section.level1 > td {
+     background-color: #363535;
+}
+
+tr.section.level2 > td {
+	background-color: #4d4c4c;
+}
+
+tr.incomplete > td:first-child {
+    text-decoration: line-through;
+}
+
+td.no-result {
+    text-align: center;
+    color: yellow;
+}
+
+td.pass {
+    color: LimeGreen;
+}
+
+td.fail {
+    color: red;
+}
+
+td.skip {
+    color: cyan;
+}
+
+/**
+* Log report
+*/
+
+tr.error > td:nth-child(3) {
+    color: red;
+}
+
+tr.error > td:nth-child(3) {
+    color: yellow;
+}
+
+tr.warn > td:nth-child(3) {
+    color: yellow;
+}
+
+tr.note > td:nth-child(3) {
+    color: silver;
+}
+
+tr.transmit > td:nth-child(3) {
+    color: CornflowerBlue;
+}
+
+tr.receive > td:nth-child(3) {
+    color: LimeGreen;
+}
+
+tr.data-level-1 > td:nth-child(3) {
+    color: white;
+}
+
+/** Underline the beginning of test steps in grey */
+tr.note:not(.detail-level-0) > td:nth-child(3) {
+    color: grey;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/** The description of test steps in bullets */
+tr.note.detail-level-0 > td:nth-child(3) {
+  color: BurlyWood;
+  display: list-item;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/** Indent object headers in white */
+tr.data-level-4.detail-level-0 > td:nth-child(3) {
+  color: white;
+  padding-left: 20px;
+}
+
+/** Indent object decodings in white */
+tr.data-level-4.detail-level-1 > td:nth-child(3) {
+  color: silver;
+  padding-left: 40px;
+}

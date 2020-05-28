@@ -1,0 +1,474 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:54:10.250
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 6.6.2.4
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:10.254
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 1 to 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:10.254
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:10.254
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Qualifier Code 0x06 and a link control block 0xD3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:10.254
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Modify the frame so the CRC of the data link layer header is incorrect
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:10.254
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Send the request
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:10.256
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 C4 00 04 01 00 D0 7B
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:10.256
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 01 06 FF 50
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:10.256
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 4 to 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:10.256
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that no link layer frames are received within 3000 ms
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:13.256
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:13.257
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 6 to 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:13.257
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Modify the frame so the CRC of the data link layer header is correct but the
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:13.257
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - CRC of the application layer request is incorrect
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:13.257
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Send the request
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:13.258
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 C4 00 04 01 00 CF 7B
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:13.258
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 01 06 00 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:13.258
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 8 to 9
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:13.258
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that no link layer frames are received within 3000 ms
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:16.260
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:16.260
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 10
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:16.260
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Repeat this test once with different incorrect CRC values
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:16.261
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 1 to 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:16.261
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:16.261
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Qualifier Code 0x06 and a link control block 0xD3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:16.261
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Modify the frame so the CRC of the data link layer header is incorrect
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:16.261
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Send the request
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:16.262
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 C4 00 04 01 00 D1 7B
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:16.262
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 01 06 FF 50
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:16.262
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 4 to 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:16.262
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that no link layer frames are received within 3000 ms
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:19.263
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:19.264
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 6 to 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:19.264
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Modify the frame so the CRC of the data link layer header is correct but the
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:19.264
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - CRC of the application layer request is incorrect
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:19.264
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Send the request
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:19.265
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 C4 00 04 01 00 CF 7B
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:19.265
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 01 06 01 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:19.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 8 to 9
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:19.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that no link layer frames are received within 3000 ms
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:22.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:54:22.266
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 6.6.2.4
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

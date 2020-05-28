@@ -1,0 +1,3059 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          12:01:38.769
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 8.15.2
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.773
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          This procedure is enabled because the following options:
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.773
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - timesync.binaryInputChangeWithRelativeTime == true
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - DUT supports Binary Input Change with Relative Time.
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Cycle power to the DUT
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g80v1, 1-Byte Start/Stop, start: 7 stop: 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - [7] - BooleanValue(false)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x00)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response is empty
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:38.782
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:38.782
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g80v1, 1-Byte Start/Stop, start: 7 stop: 7
+        </td>
+      </tr>
+      <tr class="detail-level-1 transmit data-level-4">
+        <td>
+          12:01:38.782
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [7] - BooleanValue(false)
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:38.782
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:38.782
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 14 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:38.783
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0E C4 00 04 01 00 43 72
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:38.783
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 02 50 01 00 07 07 00 2C 49
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:38.784
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:38.784
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 81 10 00 B4 37
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:38.784
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:38.784
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:38.785
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x00 IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.785
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.785
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate several Binary Input Change Events
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:38.785
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534498785)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:38.786
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534498785)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:38.786
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534498786)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.787
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.787
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.787
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:38.787
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:38.787
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:38.788
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:38.788
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:38.789
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:38.789
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 01 02 03 06 3E C6
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 6 to 9
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validate that a g51v2 precedes the g2v3 in each fragment of the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validation that only g51v2 and g2v3 appears in the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that flag behavior complies with Section 2, Note #5.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that an application layer confirmation is requested.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify the device responds with all generated Binary Input events
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.791
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the variation contains timestamps, verify that they are reasonable according to the resolution specified in the Device Profile
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:38.792
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 28 44 01 00 00 04 52 5F
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:38.792
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C1 E1 81 10 00 33 02 07 01 E1 41 D3 64 71 01 02 F3 15
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:38.792
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          03 28 03 00 29 00 81 00 00 29 00 01 00 00 00 04 A5 1D
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:38.792
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 01 00 AE 18
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:38.793
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 40 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:38.793
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 1
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x01 IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g51v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          time: 1586534498785
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, 2-Byte Count and Index, count: 3
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x81 cto: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01 cto: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x81 cto: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Confirm(0x00) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:38.795
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:38.796
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:38.796
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:38.796
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 00 7D 3D
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.797
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 10
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.797
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Device supports time synchronization from DNP3 master
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:38.798
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 11
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:38.798
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Wait for 5000 milliseconds
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.799
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 12
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.799
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Delay Meas(0x17) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:43.800
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Delay Meas(0x17) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:43.800
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:43.800
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:43.801
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:43.801
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C2 17 27 BC
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.803
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 13
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.803
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x02)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.803
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify valid delay measurement response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.803
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field contains IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:43.803
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 10 44 01 00 00 04 CD 4C
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:43.803
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C2 C2 81 10 00 34 02 07 01 00 00 DB F7
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:43.804
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 16 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:43.804
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 2
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:43.805
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02 IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:43.805
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g52v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:43.805
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          delay: 0
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.806
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 14
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.806
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.806
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g50v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.806
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - time: 1586534498773
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:43.807
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:43.807
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g50v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 transmit data-level-4">
+        <td>
+          12:01:43.807
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          time: 1586534498773
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:43.807
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:43.807
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 18 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:43.808
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 12 C4 00 04 01 00 30 DD
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:43.808
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C3 02 32 01 07 01 D5 41 D3 64 71 01 8F 22
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.809
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 15
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.809
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x03)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.809
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response is empty
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.809
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C3 C3 81 00 00 D7 87
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 3
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03 IIN()
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 16
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate several Binary Input Change Events
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:43.810
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534498775)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:43.811
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534498775)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:43.811
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534498776)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.812
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 17
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.812
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x04
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.812
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:43.812
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x04
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:43.812
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:43.812
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:43.813
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:43.813
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:43.813
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C4 01 02 03 06 20 69
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 18 to 21
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x04)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validate that a g51v1 precedes the g2v3 in each fragment of the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validation that only g51v1 and g2v3 appears in the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that flag behavior complies with Section 2, Note #5.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that an application layer confirmation is requested.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify the device responds with all generated Binary Input events
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.818
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the variation contains timestamps, verify that they are reasonable according to the resolution specified in the Device Profile
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:43.819
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 28 44 01 00 00 04 52 5F
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:43.819
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C4 E4 81 00 00 33 01 07 01 D7 41 D3 64 71 01 02 BC F1
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:43.819
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          03 28 03 00 00 00 81 00 00 00 00 01 00 00 FF FF 93 85
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:43.819
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          81 01 00 AE 18
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:43.820
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 40 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:43.820
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 4
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x04 IIN()
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g51v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          time: 1586534498775
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, 2-Byte Count and Index, count: 3
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81 cto: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01 cto: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81 cto: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Confirm(0x00) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x04
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:43.822
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:43.823
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:43.823
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:43.823
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C4 00 F9 A1
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.824
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 22
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.824
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate several Binary Input Change Events
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:43.825
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534498789)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:43.825
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534498790)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:43.825
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=false, flags=1, timestamp=DNPTime(1586534498790)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:43.826
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 23
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:43.826
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Wait for 5000 milliseconds
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.827
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 24
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.827
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Delay Meas(0x17) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x05
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:48.827
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Delay Meas(0x17) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x05
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:48.828
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:48.828
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:48.828
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:48.828
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C5 17 46 3B
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.830
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 25
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.830
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x05)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.830
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify valid delay measurement response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.830
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field contains IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:48.830
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 10 44 01 00 00 04 CD 4C
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.830
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C5 C5 81 12 00 34 02 07 01 00 00 89 68
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:48.831
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 16 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:48.831
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 5
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:48.832
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x05 IIN(NeedTime, Class1Events)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:48.832
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g52v2, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.832
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          delay: 0
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.833
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 26
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.833
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x06
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.833
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:48.833
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x06
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:48.833
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:48.833
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:48.834
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:48.834
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:48.834
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C6 01 02 03 06 2C 2F
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 27 to 29
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x06)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validate that a g51v1 precedes the g2v3 in each fragment of the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validation that only g51v1 and g2v3 appears in the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that flag behavior complies with Section 2, Note #5.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that an application layer confirmation is requested.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify the device responds with all generated Binary Input events
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.837
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the variation contains timestamps, verify that they are reasonable according to the resolution specified in the Device Profile
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:48.838
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 28 44 01 00 00 04 52 5F
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.838
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C6 E6 81 10 00 33 01 07 01 E5 41 D3 64 71 01 02 31 C7
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.838
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          03 28 03 00 00 04 01 00 00 00 00 81 01 00 00 00 2E D3
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.838
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 01 00 09 4D
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:48.838
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 40 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:48.839
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 6
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x06 IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g51v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          time: 1586534498789
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, 2-Byte Count and Index, count: 3
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01 cto: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81 cto: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01 cto: 1
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 30
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.841
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Do not issue the application layer confirm
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 31
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x07
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g50v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - time: 1586534498773
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x07
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g50v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 transmit data-level-4">
+        <td>
+          12:01:48.843
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          time: 1586534498773
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:48.844
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:48.844
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 18 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:48.844
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 12 C4 00 04 01 00 30 DD
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:48.844
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C7 02 32 01 07 01 D5 41 D3 64 71 01 98 46
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.846
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 32
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.846
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x07)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.846
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response is empty
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.846
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:48.846
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.846
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C7 C7 81 00 00 E4 D7
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:48.847
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:48.847
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 7
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:48.847
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x07 IIN()
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.848
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 33
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.848
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x08
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.848
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:48.848
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x08
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:48.848
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:48.849
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:48.849
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:48.850
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:48.850
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C8 01 02 03 06 71 B0
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 34 to 36
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x08)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validate that a g51v1 precedes the g2v3 in each fragment of the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Validation that only g51v1 and g2v3 appears in the response
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that flag behavior complies with Section 2, Note #5.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that an application layer confirmation is requested.
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify the device responds with all generated Binary Input events
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.852
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - If the variation contains timestamps, verify that they are reasonable according to the resolution specified in the Device Profile
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:48.853
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 28 44 01 00 00 04 52 5F
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.853
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C8 E8 81 00 00 33 01 07 01 E5 41 D3 64 71 01 02 C4 99
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.853
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          03 28 03 00 00 04 01 00 00 00 00 81 01 00 00 00 2E D3
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.853
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          01 01 00 09 4D
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:48.853
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 40 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:48.854
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 8
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 1 uns: 0 seq: 0x08 IIN()
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g51v1, 1-Byte Count, count: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          time: 1586534498789
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, 2-Byte Count and Index, count: 3
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01 cto: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81 cto: 1
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x01 cto: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Confirm(0x00) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x08
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:48.856
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 8 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:48.857
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 08 C4 00 04 01 00 9A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:48.857
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C8 00 A7 F9
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.858
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 37
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.858
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x09
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.858
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:01:48.859
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x09
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:01:48.859
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g2v3, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:01:48.859
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:01:48.859
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:01:48.860
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:01:48.860
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C9 01 02 03 06 77 93
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:01:48.861
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 38
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.861
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x09)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:01:48.861
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response is empty
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:01:48.861
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:01:48.861
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C9 C9 81 00 00 14 A9
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:01:48.862
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:01:48.862
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 9
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:01:48.862
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x09 IIN()
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:01:48.862
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 8.15.2
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,815 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          12:00:20.037
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 8.13.2.2
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.042
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          This procedure is enabled because the following options:
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.042
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - supports.binaryInput == true
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate a known Binary Input pattern
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 0: value=true, flags=81, timestamp=DNPTime(1586534420043)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.043
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=true, flags=81, timestamp=DNPTime(1586534420043)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.044
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 41: value=false, flags=1, timestamp=DNPTime(1586534420043)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.045
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.045
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.045
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g1v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:00:20.046
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:00:20.046
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:00:20.046
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:00:20.046
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:00:20.047
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:00:20.047
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 01 01 00 06 5D 5C
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.048
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 3 to 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.048
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read any number of valid responses beginning w/ sequence(0x01) and incrementing by 1 modulo 16
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.048
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the device responds with only variations: Set(g1v1, g1v2)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.048
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the data is reported using either 8 bit start/stop indexing (qualifier 0x00) or 16 bit start/stop indexing (qualifier 0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.048
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response contains the expected values for the binary inputs
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:00:20.050
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 2A 44 01 00 00 04 E5 79
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:00:20.050
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 81 92 00 01 02 01 00 00 00 00 81 01 02 01 50 4B
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:00:20.050
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          29 00 29 00 01 01 02 01 00 04 00 04 01 01 02 01 2A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:00:20.050
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          FF FF FF FF 01 BE 01
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:00:20.050
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 42 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:00:20.050
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01 IIN(DeviceRestart, NeedTime, Class1Events)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 0 stop: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 41 stop: 41
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 1024 stop: 1024
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 65535 stop: 65535
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.053
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.055
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.055
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Generate a known Binary Input pattern
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.055
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 65535: value=true, flags=81, timestamp=DNPTime(1586534420055)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.056
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=true, flags=81, timestamp=DNPTime(1586534420055)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.056
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Updated BI 1024: value=false, flags=1, timestamp=DNPTime(1586534420056)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.057
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.057
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.057
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g1v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          12:00:20.058
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          12:00:20.058
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v0, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          12:00:20.058
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          12:00:20.058
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          12:00:20.059
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          12:00:20.059
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C2 01 01 00 06 57 39
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          12:00:20.062
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 8 to 9
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.062
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read any number of valid responses beginning w/ sequence(0x02) and incrementing by 1 modulo 16
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.062
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the device responds with only variations: Set(g1v1, g1v2)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.062
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the data is reported using either 8 bit start/stop indexing (qualifier 0x00) or 16 bit start/stop indexing (qualifier 0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.062
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response contains the expected values for the binary inputs
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          12:00:20.062
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that flag behavior complies with Section 2, Note #5.
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          12:00:20.063
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 2A 44 01 00 00 04 E5 79
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:00:20.063
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C1 C2 81 92 00 01 02 01 00 00 00 00 81 01 02 01 F4 B4
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:00:20.063
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          29 00 29 00 01 01 02 01 00 04 00 04 01 01 02 01 2A 19
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          12:00:20.063
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          FF FF FF FF 81 02 A7
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          12:00:20.063
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 42 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          12:00:20.064
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 1
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02 IIN(DeviceRestart, NeedTime, Class1Events)
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 0 stop: 0
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [0] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 41 stop: 41
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [41] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 1024 stop: 1024
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [1024] - flags: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g1v2, 2-Byte Start/Stop, start: 65535 stop: 65535
+        </td>
+      </tr>
+      <tr class="detail-level-1 receive data-level-4">
+        <td>
+          12:00:20.067
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [65535] - flags: 0x81
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          12:00:20.068
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 8.13.2.2
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

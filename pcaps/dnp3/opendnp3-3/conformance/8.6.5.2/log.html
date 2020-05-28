@@ -1,0 +1,881 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:56:03.536
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 8.6.5.2
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:03.540
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 1
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.540
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Cycle power to the DUT
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:03.545
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.545
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Issue a RESET_LINK_STATES (0xC0) using link control block 0xC0
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.545
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the DUT responds with a valid link frame
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.545
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the frame uses link control block 0x00
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:03.546
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: RESET_LINK_STATES(0x00) 0xC0 length: 5 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:03.546
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 05 C0 00 04 01 00 D7 F7
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:03.547
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 05 00 01 00 00 04 27 70
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:03.547
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 0 fcb: 0 fcv: 0 func: ACK(0x00) 0x00 length: 5 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:03.548
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 3
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.548
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.548
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:03.548
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:03.548
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:03.548
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:03.549
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:03.549
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:03.549
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 01 3C 02 06 52 C3
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:03.550
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.550
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x01)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.550
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field contains IIN(DeviceRestart)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:03.551
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:03.551
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C1 81 90 00 73 EE
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:03.551
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:03.551
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:03.551
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x01 IIN(DeviceRestart, NeedTime)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 5
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02 using link options: { control == 0xF3, destination == 0xFFFF }
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g80v1, 1-Byte Start/Stop, start: 7 stop: 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                   - [7] - BooleanValue(false)
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Write(0x02) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x02
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g80v1, 1-Byte Start/Stop, start: 7 stop: 7
+        </td>
+      </tr>
+      <tr class="detail-level-1 transmit data-level-4">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          [7] - BooleanValue(false)
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:03.553
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:03.554
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 1 fcv: 1 func: CONFIRMED_USER_DATA(0x03) 0xF3 length: 14 dest: 65535 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:03.554
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0E F3 FF FF 01 00 CB AC
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:03.554
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C2 02 50 01 00 07 07 00 08 65
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:03.555
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 6 to 7
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:03.555
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that no link layer frames are received
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:56:04.555
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:04.556
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 8
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.556
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.556
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:04.557
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:04.557
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:04.558
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:04.558
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:04.559
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:04.559
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C3 01 3C 02 06 5E 85
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:04.561
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 9 to 10
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.561
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x03)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.561
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(DeviceRestart)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.561
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field contains IIN(Broadcast)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:04.562
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:04.562
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C1 C3 81 11 00 BD B5
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:04.563
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:04.563
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 1
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:04.564
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x03 IIN(NeedTime, Broadcast)
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:04.565
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 11
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.565
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x04
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.565
+        </td>
+        <td>
+               
+        </td>
+        <td>
+                - g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-4">
+        <td>
+          11:56:04.566
+        </td>
+        <td>
+          --A->
+        </td>
+        <td>
+          Read(0x01) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x04
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-4">
+        <td>
+          11:56:04.566
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          g60v2, All Objects
+        </td>
+      </tr>
+      <tr class="transmit data-level-3">
+        <td>
+          11:56:04.567
+        </td>
+        <td>
+          --T->
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 0
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:56:04.567
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0xC4 length: 11 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:56:04.568
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 0B C4 00 04 01 00 CA 8A
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:56:04.568
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C4 01 3C 02 06 4C 6C
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:56:04.570
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          step: 12
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.570
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Read a single fragment response w/ sequence(0x04)
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.570
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the response is empty
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:56:04.570
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Verify that the IIN field does not contain bits IIN(DeviceRestart, Broadcast)
+        </td>
+      </tr>
+      <tr class="receive data-level-1">
+        <td>
+          11:56:04.571
+        </td>
+        <td>
+          <-P--
+        </td>
+        <td>
+          05 64 0A 44 01 00 00 04 67 88
+        </td>
+      </tr>
+      <tr class="detail-level-0 receive data-level-1">
+        <td>
+          11:56:04.571
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C2 C4 81 10 00 93 AD
+        </td>
+      </tr>
+      <tr class="receive data-level-2">
+        <td>
+          11:56:04.571
+        </td>
+        <td>
+          <-L--
+        </td>
+        <td>
+          master: 0 pri: 1 fcb: 0 fcv: 0 func: UNCONFIRMED_USER_DATA(0x04) 0x44 length: 10 dest: 1 src: 1024
+        </td>
+      </tr>
+      <tr class="receive data-level-3">
+        <td>
+          11:56:04.572
+        </td>
+        <td>
+          <-T--
+        </td>
+        <td>
+          fir: 1 fin: 1 seq: 2
+        </td>
+      </tr>
+      <tr class="receive data-level-4">
+        <td>
+          11:56:04.572
+        </td>
+        <td>
+          <-A--
+        </td>
+        <td>
+          Response(0x81) fir: 1 fin: 1 con: 0 uns: 0 seq: 0x04 IIN(NeedTime)
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:56:04.573
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 8.6.5.2
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

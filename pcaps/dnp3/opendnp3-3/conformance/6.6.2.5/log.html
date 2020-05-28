@@ -1,0 +1,529 @@
+<html>
+  <head>
+    <title>
+      Test Report
+    </title>
+    <link rel="stylesheet" type="text/css" href="../report.css"/>
+  </head>
+  <body>
+    <table>
+      <tr class="info">
+        <td>
+          11:54:22.765
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Running procedure: 6.6.2.5
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:22.770
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 1 to 2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:22.770
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using Qualifier Code 0x06
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:22.770
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - and a link control block 0xC3, i.e. SEND/CONFIRM USER DATA, but with FCV=0 (incorrect)
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:22.771
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: CONFIRMED_USER_DATA(0x03) 0xC3 length: 20 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:22.771
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 14 C3 00 04 01 00 FB 5F
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:22.771
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 02 06 3C 03 06 3C 04 06 3C 01 06 8A 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:22.772
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 3 to 4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:22.772
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Expect link layer timeout or List(   - Verify that the frame uses link function: NOT_SUPPORTED)
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:23.773
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:23.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 5 to 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:23.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using Qualifier Code 0x06 and a link control block 0xD4
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:23.774
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - i.e. SEND/NO CONFIRM USER DATA, but with FCV=1 (incorrect).
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:23.775
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 1 func: UNCONFIRMED_USER_DATA(0x04) 0xD4 length: 20 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:23.775
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 14 D4 00 04 01 00 7B 1C
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:23.775
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 02 06 3C 03 06 3C 04 06 3C 01 06 8A 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:23.776
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 7 to 8
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:23.776
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Expect link layer timeout or List(   - Verify that the frame uses link function: NOT_SUPPORTED)
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:24.776
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:24.777
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 5 to 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:24.777
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using Qualifier Code 0x06 and a link control block 0xC2
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:24.777
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - i.e. SEND/NO CONFIRM USER DATA, but with FCV=1 (incorrect).
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:24.777
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 0 func: TEST_LINK_STATES(0x02) 0xC2 length: 20 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:24.778
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 14 C2 00 04 01 00 FD 7C
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:24.778
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 02 06 3C 03 06 3C 04 06 3C 01 06 8A 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:24.778
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 7 to 8
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:24.778
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Expect link layer timeout or List(   - Verify that the frame uses link function: NOT_SUPPORTED)
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:25.778
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:25.779
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 5 to 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:25.779
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using Qualifier Code 0x06 and a link control block 0xD0
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:25.779
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - i.e. SEND/NO CONFIRM USER DATA, but with FCV=1 (incorrect).
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:25.779
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 1 func: RESET_LINK_STATES(0x00) 0xD0 length: 20 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:25.780
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 14 D0 00 04 01 00 63 90
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:25.780
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 02 06 3C 03 06 3C 04 06 3C 01 06 8A 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:25.781
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 7 to 8
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:25.781
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Expect link layer timeout or List(   - Verify that the frame uses link function: NOT_SUPPORTED)
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:26.782
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:26.782
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 5 to 6
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:26.782
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Prepare a READ request for Class 0 data (Object 60 Variation 1) using Qualifier Code 0x06 and a link control block 0xD9
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:26.782
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - i.e. SEND/NO CONFIRM USER DATA, but with FCV=1 (incorrect).
+        </td>
+      </tr>
+      <tr class="transmit data-level-2">
+        <td>
+          11:54:26.782
+        </td>
+        <td>
+          --L->
+        </td>
+        <td>
+          master: 1 pri: 1 fcb: 0 fcv: 1 func: REQUEST_LINK_STATES(0x09) 0xD9 length: 20 dest: 1024 src: 1
+        </td>
+      </tr>
+      <tr class="transmit data-level-1">
+        <td>
+          11:54:26.783
+        </td>
+        <td>
+          --P->
+        </td>
+        <td>
+          05 64 14 D9 00 04 01 00 2C E6
+        </td>
+      </tr>
+      <tr class="detail-level-0 transmit data-level-1">
+        <td>
+          11:54:26.783
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          C0 C0 01 3C 02 06 3C 03 06 3C 04 06 3C 01 06 8A 51
+        </td>
+      </tr>
+      <tr class="note">
+        <td>
+          11:54:26.784
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          steps: 7 to 8
+        </td>
+      </tr>
+      <tr class="detail-level-0 note">
+        <td>
+          11:54:26.784
+        </td>
+        <td>
+               
+        </td>
+        <td>
+             - Expect link layer timeout or List(   - Verify that the frame uses link function: NOT_SUPPORTED)
+        </td>
+      </tr>
+      <tr class="warn">
+        <td>
+          11:54:27.785
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          frame receive timeout
+        </td>
+      </tr>
+      <tr class="info">
+        <td>
+          11:54:27.785
+        </td>
+        <td>
+               
+        </td>
+        <td>
+          Passed procedure: 6.6.2.5
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
