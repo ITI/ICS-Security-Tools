@@ -5,6 +5,7 @@ Developed as a community asset
 ## Tools
 
 - [CapSan](https://github.com/jsiwek/capsan) - Packet capture sanitizer/anonymizer for Jon Siwek at University of Illinois.
+- [Malcolm](https://github.com/idaholab/Malcolm) - Malcolm is a powerful, easily deployable network traffic analysis tool suite for full packet capture artifacts (PCAP files) and Zeek logs.
 
 ## Protocol Organized PCAPs
 
