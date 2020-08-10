@@ -26,6 +26,10 @@ Developed as a community asset
 - [LangSec DNP3 Parser](https://github.com/Dartmouth-Trustlab/dnp3) - Parsing DNP3 using parser combinators in C.
 - [Proxyd](https://github.com/Dartmouth-Trustlab/proxy) - TCP Proxy for testing hammer based parsers (such as the DNP3 parser above)
 
+### Traffic Generation
+
+- [DNP3 Traffic Generation](https://github.com/iti/ics-trafficgen/) - OpenDNP3-based traffic generation that can take a profile of traffic, apply scriptable variation, and result in output of DNP3 traffic matching that profile.
+
 ### Fuzzing
 
 - [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](aegis-opensource).
@@ -91,6 +95,10 @@ Developed as a community asset
 - [ModbusPal](http://modbuspal.sourceforge.net) - ModbusPal is a MODBUS slave simulator. Its purpose is to offer an easy to use interface with the capabilities to reproduce complex and realistic MODBUS environments. Mirror available [here](../tools/mirrored/modbuspal/).
 - [SMOD](../tools/mirrored/smod/) - MODBUS Penetration Testing Framework. smod is a modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol. It is a full Modbus protocol implementation using Python and Scapy. (mirrored as original source is now gone)
 - [mbtget](https://github.com/sourceperl/mbtget) - A simple modbus/TCP client write in pure Perl.
+
+### Traffic Generation
+
+- [Modbus Traffic Generation](https://github.com/iti/ics-trafficgen/) - pyModbus-based traffic generation that can take a profile of traffic, apply scriptable variation, and result in output of Modbus traffic matching that profile.
 
 ### Fuzzing
 
