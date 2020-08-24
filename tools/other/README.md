@@ -10,6 +10,7 @@ Developed as a community asset
 ## Spoofing
 
 * [Modbus-VCR](https://github.com/reidmefirst/modbus-vcr/) - The Modbus VCR records and replays Modbus traffic
+* [Ettercap plugin for IEC 60870-5-104](https://github.com/PMaynard/ettercap-104-mitm) - Ettercap Plugin for Man-In-The-Middle Attacks on IEC 60870-5-104 
 
 ## PLC Injection
 
