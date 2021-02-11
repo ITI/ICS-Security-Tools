@@ -5,6 +5,7 @@ Developed as a community asset
 ## General / Miscellaneous Releases
 
 - [PoC 2013 SCADA Release](https://github.com/atimorin/PoC2013) - Power of Community 2013 conference special release of ICS/SCADA toolkit
+- [Industrial Control Systems Network Protocol Parsers (ICSNPP)](https://github.com/cisagov/ICSNPP) - DHS CISA Industrial Control Systems protocol parsers plugins for the Zeek network security monitoring framework
 
 ## AMI
 
@@ -15,6 +16,12 @@ Developed as a community asset
 - [BACpypes](https://github.com/JoelBender/bacpypes) - BACpypes provides a BACnet application layer and network layer written in Python for daemons, scripting, and graphical interfaces.
 - [zeek plugin bacnet](https://github.com/amzn/zeek-plugin-bacnet) - BACnet Zeek Plugin from Amazon
 - [yet another zeek plugin bacnet](https://github.com/delta-2-4/Zeek-BACnetIP) - BACnet Zeek Plugin by Aaron Heller + [SANS whitepaper](https://www.sans.org/reading-room/whitepapers/ICS/paper/39240)
+- [ICSNPP Bacnet for Zeek](https://github.com/cisagov/icsnpp-bacnet) - DHS CISA Bacnet parser for Zeek
+
+## Bristol Standard Asynchronous Protocol (BSAP)
+
+- [ICSNPP BSAP IP for Zeek](https://github.com/cisagov/icsnpp-bsap-ip) - DHS CISA BSAP over IP plugin for Zeek
+- [ICSNPP BSAP Serial for Zeek](https://github.com/cisagov/icsnpp-bsap-serial) - DHS CISA BSAP over Serial plugin for Zeek
 
 ## DNP3
 
@@ -25,6 +32,7 @@ Developed as a community asset
 - [PIFaceRTU](https://github.com/automatak/pifacertu) - Opendnp3 running on a Raspberry Pi with Piface I/O board
 - [LangSec DNP3 Parser](https://github.com/Dartmouth-Trustlab/dnp3) - Parsing DNP3 using parser combinators in C.
 - [Proxyd](https://github.com/Dartmouth-Trustlab/proxy) - TCP Proxy for testing hammer based parsers (such as the DNP3 parser above)
+- [ICSNPP DNP3 for Zeek](https://github.com/cisagov/icsnpp-dnp3) - DHS CISA DNP3 logging extensions to Zeek
 
 ### Traffic Generation
 
@@ -38,11 +46,12 @@ Developed as a community asset
 
 - [EtherNet/IP+CIP dissector for Scapy](https://github.com/scy-phy/scapy-cip-enip) - a Python library which can be used to interact with components of a network using ENIP (Ethernet/IP) and CIP (Common Industrial Protocol) protocols. It uses scapy to implement packet dissectors which are able to decode a part of the network traffic. These dissectors can also be used to craft packets, which allows directly communicating with the PLCs (Programmable Logic Controllers) of the network. [Use case](https://labs.mwrinfosecurity.com/blog/offensive-ics-exploitation-a-technical-description/)
 - [Scapy implementation of DLR (Device Level Ring) protocol](https://github.com/scy-phy/scapy-dlr)
-- [Bro implementation for ethernet/ip](https://github.com/scy-phy/bro-cip-enip) - This repository contains the necessary files in order to inspect Ethernet/IP and Common Industrial Protocol packets with Bro.
+- [Zeek implementation for ethernet/ip](https://github.com/scy-phy/bro-cip-enip) - This repository contains the necessary files in order to inspect Ethernet/IP and Common Industrial Protocol packets with Zeek.
 - [CPPPO - Communications Protocol Python Parser and Originator (EtherNet/IP CIP implementation)](https://github.com/pjkundert/cpppo) - Cpppo is used to implement binary communications protocol parsers. The protocol’s communication elements are described in terms of state machines which change state in response to input events, collecting the data and producing output data artifacts.
 - [pycomm](https://github.com/ruscito/pycomm) - **pycomm** is a package that includes a collection of modules used to communicate with PLCs. At the moment the first module in the package is **ab_comm**. **ab_comm** is a module that contains a set of classes used to interface Rockwell PLCs using Ethernet/IP protocol. The "clx" class can be used to communicate with Compactlogix, Controllogix PLCs The "slc" can be used to communicate with Micrologix or SLC PLCs
 - [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
 - [zeek plugin enip](https://github.com/amzn/zeek-plugin-enip) - EthernetIP Zeek Plugin from Amazon
+- [ICSNPP ENIP and CIP for Zeek](https://github.com/cisagov/icsnpp-enip) - DHS CISA ENIP and CIP plugin for Zeek
 
 ## IEC 104
 
@@ -99,6 +108,7 @@ Developed as a community asset
 - [ModbusPal](http://modbuspal.sourceforge.net) - ModbusPal is a MODBUS slave simulator. Its purpose is to offer an easy to use interface with the capabilities to reproduce complex and realistic MODBUS environments. Mirror available [here](../tools/mirrored/modbuspal/).
 - [SMOD](../tools/mirrored/smod/) - MODBUS Penetration Testing Framework. smod is a modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol. It is a full Modbus protocol implementation using Python and Scapy. (mirrored as original source is now gone)
 - [mbtget](https://github.com/sourceperl/mbtget) - A simple modbus/TCP client write in pure Perl.
+- [ICSNPP Modbus for Zeek](https://github.com/cisagov/icsnpp-modbus) - DHS CISA Modbus extensions to logging for Zeek
 
 ### Traffic Generation
 
@@ -151,7 +161,7 @@ Developed as a community asset
 - [LibNoDave](http://libnodave.sourceforge.net/) - Another (less complete) open source communication library for the S7 protocol.
 - [S7comm](http://sourceforge.net/projects/s7commwireshark/) - open source Wireshark dissector plugin for the Siemens S7 protocol.
 - [Python Snap7 Wrapper](https://github.com/gijzelaerr/python-snap7) - A Python wrapper for the snap7 PLC communication library
-- [Bro-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Bro IDS
+- [Zeek-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Zeek IDS
 - [zeek plugin s7](https://github.com/amzn/zeek-plugin-s7comm) - S7 Zeek Plugin from Amazon
 - [SPPA S7 Data port dissector](https://github.com/klsecservices/SPPA/blob/master/sppa_dissector.lua) - SPPA-T3000 Automation server (PLC) dissector + [whitepaper](https://github.com/klsecservices/SPPA/blob/master/Security%20of%20DCS%20for%20turbines%20-%202020.pdf) by Kaspersky Security Services team
 
