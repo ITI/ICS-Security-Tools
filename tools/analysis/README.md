@@ -34,7 +34,7 @@ Developed as a community asset
 - [EDMAND](https://github.com/ITI/EDMAND) - EDMAND Anomaly detection framework. Built around Bro.
 - [AIUS](https://github.com/ITI/aius) - AIUS Repository (EDMAND/CAPTAR combination). Built around Bro.
 - [ML NIDS For ICS](https://github.com/Rocionightwater/ML-NIDS-for-SCADA) - Machine learning techniques for Intrusion Detection in SCADA Systems.
-- [Malcolm](https://github.com/idaholab/Malcolm) - Malcolm is a powerful, easily deployable network traffic analysis tool suite for full packet capture artifacts (PCAP files) and Zeek logs.
+- [Malcolm](https://github.com/cisagov/Malcolm) - Malcolm is a powerful, easily deployable network traffic analysis tool suite for full packet capture artifacts (PCAP files) and Zeek logs.
 - [Flare](https://github.com/austin-taylor/flare) - An analytical framework for network traffic and behavioral analytics
 - [Skydive](https://github.com/skydive-project/skydive) - An open source real-time network topology and protocols analyzer
 - [Zeek Goose Protocol Parser](https://github.com/smartgridadsc/Goose-protocol-parser-for-Zeek-IDS) - A Zeek GOOSE parser has been developed to enable detailed analysis of the transmitted data and allow rule-based identification of anomalies related to cybersecurity attacks. It is compatible with an older instance of Zeek Network Security Monitor (v2.6).
