@@ -12,6 +12,11 @@ Developed as a community asset
 - [GridDyn](https://github.com/llnl/griddyn) - is an open-source power transmission simulation software package developed at Lawrence Livermore National Laboratory. The name is a concatenation of Grid Dynamics, and as such usually pronounced as "Grid Dine". It was created to meet a research need for exploring coupling between transmission, distribution, and communications system simulations.
 - [SoftGrid](https://github.com/smartgridadsc/SoftGrid) - SoftGrid: A Testing Toolkit for Evaluating Power Grid Substation Cybersecurity Solutions.
 
+## Libraries to Interface with Simulators
+
+- [PyPSSE](https://github.com/NREL/PyPSSE) - A python wrapper around psspy (python API for PSSE simulator) to perform time series powerflow and dynamic simulation for power system fault.
+- [PyDSS](https://github.com/NREL/PyDSS) - PyDSS is a high level python interface for OpenDSS and provides the following functionalities.
+
 ## Nuclear Power Plant Simulation Tools
 
 - [Nuclear Reactor Simulators for Education and Training](https://www.iaea.org/topics/nuclear-power-reactors/nuclear-reactor-simulators-for-education-and-training) - Free PC-Based Basic Principle Simulators by IAEA, distributed at no cost, upon request
