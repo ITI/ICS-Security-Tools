@@ -18,6 +18,6 @@ Developed as a community asset
 
 ## Survey
 
-- [Industrial Control Systems Testbed Survey](https://spritz.math.unipd.it/projects/ics_survey/) - This page aims to collect and share the current state of the art Industrial Control Systems (ICS) Testbed and Datasets developed for security research. We think that this collection can help the ICS security community see the current research trend worldwide and find useful information to support future studies. [paper here](https://t.co/H6jiV2bLee)
+- [Industrial Control Systems Testbed Survey](https://spritz.math.unipd.it/projects/ics_survey/) - This page aims to collect and share the current state of the art Industrial Control Systems (ICS) Testbed and Datasets developed for security research. We think that this collection can help the ICS security community see the current research trend worldwide and find useful information to support future studies. [paper here](https://arxiv.org/abs/2102.05631)
 
 (creative commons license)
