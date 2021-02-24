@@ -4,7 +4,7 @@ Developed as a community asset
 
 ## Grid Simulation Tools
 
-- [OpenDSS](http://smartgrid.epri.com/SimulationTool.aspx) - The OpenDSS is a comprehensive electrical power system simulation tool primarly for electric utility power distribution systems. It supports nearly all frequency domain (sinusoidal steady‐state) analyses commonly performed on electric utility power distribution systems.
+- [OpenDSS](http://smartgrid.epri.com/SimulationTool.aspx) - The OpenDSS is a comprehensive electrical power system simulation tool primarily for electric utility power distribution systems. It supports nearly all frequency domain (sinusoidal steady‐state) analyses commonly performed on electric utility power distribution systems.
 - [GridLab-D](http://www.gridlabd.org) - GridLAB-D™ is a new power distribution system simulation and analysis tool that provides valuable information to users who design and operate distribution systems, and to utilities that wish to take advantage of the latest energy technologies. It incorporates the most advanced modeling techniques, with high-performance algorithms to deliver the best in end-use modeling. GridLAB-D™ is coupled with distribution automation models and software integration tools for users of many power system analysis tools. Source code [here](https://github.com/gridlab-d/gridlab-d)
 - [PowerWorld Simulator](http://www.powerworld.com) - PowerWorld Simulator is an interactive power system simulation package designed to simulate high voltage power system operation on a time frame ranging from several minutes to several days. The software contains a highly effective power flow analysis package capable of efficiently solving systems of up to 250,000 buses. **[Commercial, Free for educational use.]**
 - [Siemens PSSE](http://w3.siemens.com/smartgrid/global/en/products-systems-solutions/software-solutions/planning-data-management-software/planning-simulation/pages/pss-e.aspx) - PSS®E is a trusted leader in the power industry for cutting-edge electric transmission system analysis and planning. Used in over 115 countries worldwide, PSS®E is powerful, customizable, and fully-featured. With the addition of integrated node-breaker support in version 34, PSS®E is leading the market in advances in electric transmission modeling and simulation. **[Commercial]**
@@ -29,11 +29,8 @@ Developed as a community asset
 - [Net To PLCSim](https://sourceforge.net/projects/nettoplcsim/) - TCP/IP-Network extension for the PLC simulation software Siemens PLCSim
 - [openPLC v2](https://github.com/thiagoralves/OpenPLC_v2) - OpenPLC with the new IEC ST to C compiler
 
-## Systems
+## Federation Tooling
 
-- [MiniCPS](https://github.com/scy-phy/minicps) - MiniCPS: a framework for Cyber-Physical Systems real-time simulation, built on top of mininet.
-- [GRFICS](https://github.com/djformby/GRFICS) - GRFICS is a graphical realism framework for industrial control simulations that uses Unity 3D game engine graphics to lower the barrier to entry for industrial control system security. GRFICS provides users with a full virtual industrial control system (ICS) network to practice common attacks including command injection, man-in-the-middle, and buffer overflows, and visually see the impact of their attacks in the 3D visualization. Users can also practice their defensive skills by properly segmenting the network with strong firewall rules, or writing intrusion detection rules.
-- [GRFICS v2](https://github.com/Fortiphyd/GRFICSv2) - GRFICS v2 is version 2 of the above package, organized as 5 Virtualbox VMs. There is also a commercial version of this now available.
-- [Oil Pumpjack](https://github.com/Cisco-Talos/oil-pumpjack) - Cisco-Talos repository contains all the materials to create your own oil pumpjack environment.
+- [HELICS](https://github.com/GMLC-TDC/HELICS) - Hierarchical Engine for Large-scale Infrastructure Co-Simulation (HELICS). HELICS provides an open-source, general-purpose, modular, highly-scalable co-simulation framework that runs cross-platform (Linux, Windows, and Mac OS X). It is not a modeling tool by itself, but rather an integration tool that enables multiple existing simulation tools (and/or multiple instances of the same tool), known as "federates," to exchange data during runtime and stay synchronized in time such that together they act as one large simulation, or "federation".
 
 (creative commons license)
