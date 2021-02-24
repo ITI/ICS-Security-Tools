@@ -16,4 +16,8 @@ Developed as a community asset
 - [MiniCPS](https://github.com/scy-phy/minicps) - MiniCPS: a framework for Cyber-Physical Systems real-time simulation, built on top of mininet.- [Oil Pumpjack](https://github.com/Cisco-Talos/oil-pumpjack) - Cisco-Talos repository contains all the materials to create your own oil pumpjack environment.
 - [TESP](https://github.com/pnnl/tesp/) - PNNL's Transactive Energy Simulation Platform (TESP). The intended use case for TESP is to focus on the development and testing of transactive control agents, without having to build up a large system simulation infrastructure
 
+## Survey
+
+- [Industrial Control Systems Testbed Survey](https://spritz.math.unipd.it/projects/ics_survey/) - This page aims to collect and share the current state of the art Industrial Control Systems (ICS) Testbed and Datasets developed for security research. We think that this collection can help the ICS security community see the current research trend worldwide and find useful information to support future studies. [paper here](https://t.co/H6jiV2bLee)
+
 (creative commons license)
