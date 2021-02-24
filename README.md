@@ -9,6 +9,7 @@ The code repository will house any specific scripts, tools, configurations, or o
 General Structure:  
 [./companies/](companies)  
 [./configurations/](configurations)  
+[./feeds/](feeds)  
 [./guides/](guides)  
 [./hardware/](hardware)  
 [./hwinfo/](hwinfo)  
@@ -23,7 +24,8 @@ General Structure:
  [./tools/honeypots](tools/honeypots)  
  [./tools/mirrored](tools/mirrored)  
  [./tools/other](tools/other)  
- [./tools/simulation](tools/simulation)
+ [./tools/simulation](tools/simulation)  
+[./tools/testbeds](tools/testbeds)
 
 Enjoy!
 
