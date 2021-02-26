@@ -17,8 +17,6 @@ Developed as a community asset
 
 ## Curated Content
 
-- [Awesome ICS Tools](https://github.com/hslatman/awesome-industrial-control-system-security)
-- [ICSRepo](https://github.com/MDudek-ICS)
-- [Awesome ICS/SCADA Writeups](https://github.com/neutrinoguy/awesome-ics-writeups)
+- [See Feeds](../feeds/)
 
 (creative commons license)
