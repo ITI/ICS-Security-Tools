@@ -155,6 +155,7 @@ Developed as a community asset
 - [Wireshark Dissector - SEL Fast Message](https://github.com/boundary/wireshark/blob/master/epan/dissectors/packet-selfm.c) - Wireshark Dissector for SEL Fast Message
 - [Grid Solutions Framework SEL Fast Message](https://github.com/GridProtectionAlliance/gsf/tree/master/Source/Libraries/GSF.PhasorProtocols/SelFastMessage) - GSF implementation (.net)
 - [SEL Applications Guides](https://www.selinc.com) - Look up AG95-10 and AG2002-14 product codes.
+- [SELProtoPy](https://github.com/engineerjoe440/selprotopy) - Schweitzer Engineering Laboratories (SEL) Protocol Bindings in Python. Implements SEL Fast Meter, Fast Message, and Fast Operate.
 
 ## Siemens S7
 
