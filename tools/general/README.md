@@ -18,6 +18,7 @@ Developed as a community asset
 - [RapidSCADA](https://github.com/RapidScada/scada) - Rapid SCADA is an open-source full featured SCADA software that supports MODBUS and OPC.
 - [ScadaBR](https://sourceforge.net/projects/scadabr/) - ScadaBR is a SCADA (Supervisory Control and Data Acquisition) system with applications in Process Control and Automation, being developed and distributed using the open source model.
 - [SCADA-LTS](https://github.com/SCADA-LTS/Scada-LTS) - Actively maintained fork of ScadaBR
+- [ElectricPY](https://github.com/engineerjoe440/ElectricPy) - Python Libraries with functions and constants related to electrical engineering.
 
 ## Education Kits and Distributions
 
