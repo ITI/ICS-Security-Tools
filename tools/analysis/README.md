@@ -53,6 +53,7 @@ Developed as a community asset
 # Symbolic Execution
 
 - [SymCC](https://github.com/eurecom-s3/symcc) - SymCC: efficient compiler-based symbolic execution
+- [IEC-Checker](https://github.com/jubnzv/iec-checker) - This project aims to implement an open source tool for static code analysis of IEC 61131-3 programs.
 
 ### Samples
 
