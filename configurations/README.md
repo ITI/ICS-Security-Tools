@@ -2,6 +2,11 @@
 
 Developed as a community asset
 
+## Common Files or Extensions
+
+- [Common File Extensions for Configurations/Projects](SCADA-Common-File-Extensions.tsv)
+- [Other Files of Interest](SCADA-Other-Files-of-Interest.tsv)
+
 ## Default Password Lists
 
 - [SCADA Strangelove's SCADAPASS](passwords/scadapass.csv)

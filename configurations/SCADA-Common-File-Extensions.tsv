@@ -1,0 +1,35 @@
+Vendor	Software	File Extension	Backup file	Notes
+SEL	Quickset	rdb	Filename_rdb_backups/Filename_rdb.##	relay configuration files
+SEL	RTAC Accelerator	exp		RTAC project file
+SEL		hprb	hprbbak, hprjbak	RTAC HMI Configuration
+SEL	SEL Architect	selaprj		Architect project file
+SEL		xml		SEL GPS clock (2488) configuration
+SEL		xml		SEL switch (2730M) configuration
+SEL		bkp		SEL 3620 configuration file
+Subnet Solutions		ssnet		Subnet Solutions project file
+Novatech	Novatech Configuration Director	ncd		OrionLX configuration file
+Novatech	Novatech Configuration Director	ncz		OrionLX configuration 61850 support file
+ABB	RTIUtil	rcd		RTU560 configuration
+ABB	RTIUtil	rtu		RTU560 configuration
+ABB	PCM600/SAB600	pcmp		ABB configuration project
+Motorola	Configurator	spj	Filename.spj.prev	Motorola ACE project file
+Motorola	Configurator	plz		Motorola ACE compiled library
+Motorola	Configurator	adb, opt, out, prp		Motorola ACE Application
+Various		cid		61850 configured IED description
+Various		icd		61850 IED capability description
+Various		scd		61850 substation configuration description
+Aveva	Citect SCADA	ctz		
+Siemens	TIA Portal	ap12, ap13,...,ap17	zap12, zap13,..., zap17	Number is version of TIA Portal
+Rockwell	Harmony	conf		
+Yokogawa	CENTUM VP	gz, zip		
+GE	Enervista	urs		GE UR settings file
+GE	Mark VIe	tcw		Mark VIe control .tcw file
+GE	Cimplicity	hmb		Cimplicity HMI configuration file
+GE	Mark VI	m6b		Binary file used in Speedtronics turbine control
+GE	Mark VIe / VIes Simulator	sim		Virtual controller sim file that holds the project configuration
+GE	Mark VIe / VIes Simulator	syl		Virtual controller sim file that contains named variables and all internal states
+Siemens		cfg		
+Triconex		pt2		
+Allen-Bradley		l5x		
+Honeywell	TDS	txt, zip		
+Profinet	IOCM	xml		
