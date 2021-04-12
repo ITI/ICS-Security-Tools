@@ -9,15 +9,21 @@ SEL		bkp		SEL 3620 configuration file
 Subnet Solutions		ssnet		Subnet Solutions project file
 Novatech	Novatech Configuration Director	ncd		OrionLX configuration file
 Novatech	Novatech Configuration Director	ncz		OrionLX configuration 61850 support file
+ABB	Control Builder	prj		Potential Control Builder project file
 ABB	RTIUtil	rcd		RTU560 configuration
 ABB	RTIUtil	rtu		RTU560 configuration
+ABB	SYS600	SYS_BASCOM.COM		ABB SYS600 Base System Configuration file
 ABB	PCM600/SAB600	pcmp		ABB configuration project
+ABB	PCM600/SAB600	pcmi		ABB PCM600 IEC File
+ABB	PCM600/SAB600	pcmt		ABB PCM600 Template IED File
 Motorola	Configurator	spj	Filename.spj.prev	Motorola ACE project file
 Motorola	Configurator	plz		Motorola ACE compiled library
 Motorola	Configurator	adb, opt, out, prp		Motorola ACE Application
-Various		cid		61850 configured IED description
-Various		icd		61850 IED capability description
-Various		scd		61850 substation configuration description
+Generic	Various	scl, xml		Substation Configuration Language (IEC 61850)
+Generic	Various	icd, ied		Substation Configuration Language (IEC 61850)
+Generic	Various	cid		IED Capability Description (IEC 61850)
+Generic	Various	scd		Substation Configuration Description (IEC 61850)
+Generic	Various	ssd		System Specification Description (IEC 61850)
 Aveva	Citect SCADA	ctz		
 Siemens	TIA Portal	ap12, ap13,...,ap17	zap12, zap13,..., zap17	Number is version of TIA Portal
 Rockwell	Harmony	conf		
@@ -33,3 +39,10 @@ Triconex		pt2
 Allen-Bradley		l5x		
 Honeywell	TDS	txt, zip		
 Profinet	IOCM	xml		
+Generic	Various	pl		Programmable Logic File (vendor neutral)
+Generic	Various	paf		PLC Archive File (vendor neutral)
+Generic	Various	ini		Possible configuration file
+ABB	MicroSCADA	cin		ABB MicroSCADA specific file
+ABB	MicroSCADA	xrf		Cross-Reference File
+Generic	Autocad	v		Potential Autocad file
+Generic	Various	trc		Trace file type specified in OPC DA
