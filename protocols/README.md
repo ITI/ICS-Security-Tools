@@ -146,6 +146,7 @@ Developed as a community asset
 - [Profinet - C](https://github.com/kprovost/libs7comm) - PROFINET implementation in C
 - [Profinet Explorer](https://sourceforge.net/projects/profinetexplorer/) - Simple PROFINET explorer written in C#
 - [zeek plugin Profinet](https://github.com/amzn/zeek-plugin-profinet) - PROFINET Zeek Plugin from Amazon
+- [PROFINET GSD Checker](https://www.profibus.com/download/profinet-gsd-checker/) - Free tool to show and edit the content of GSD files for PROFINET in an easy to understand table view. It also contains a function to check the accuracy of GSD files which helps to build a valid description file.
 
 ### Fuzzing
 
