@@ -46,3 +46,31 @@ ABB	MicroSCADA	cin		ABB MicroSCADA specific file
 ABB	MicroSCADA	xrf		Cross-Reference File
 Generic	Autocad	v		Potential Autocad file
 Generic	Various	trc		Trace file type specified in OPC DA
+Siemens	PSSE	out		Siemens PSSE output
+Siemens	Various	s5d		Siemens SIMATIC Step 5 program
+Siemens	Various	s7p		Siemens SIMATIC Step 7 program
+Siemens	Various	mwp		Siemens Step 7-micro PLV program
+Siemens	Various	s7f	zip, arj	Siemens SIMATIC Step 7 project
+Siemens	Various	zip, arj		Siemens SIMATIC Step 7 compressed project
+Siemens	Various	ekb		Siemens Automation License Manager data
+Generic	Various	license		Potential license data
+Generic	Various	lic		FlexNet license files
+Microsoft	Various	vstax		Visual Studio Tools for Applications Template
+Microsoft	Various	cv4		Microsoft CodeView Graphics Data
+Microsoft	Various	dtq		Visual Studio .NET SQL Query
+Rockwell	RSLogix	pc5		RSLogix internal data
+Rockwell	RSLogix	l5x		RSLogix 5000 XML data
+Rockwell	RSLogix	eas		RSLogix 5000 symbol data
+Rockwell	RSLogix	l5k		RSLogix 5000 project export data
+Rockwell	FactoryTalk	apa		FactoryTalk Project Archive
+Rockwell	FactoryTalk	lic		FlexNet license files
+Rockwell	FactoryTalk	xml		FactoryTalk Activation Manager binding file and other internals
+Generic	Various	gsd		PROFINET General Station Description (language-neutral)
+Generic	Various	gsg		PROFINET General Station Description (german)
+Generic	Various	gse		PROFINET General Station Description (english)
+Generic	Various	gsf		PROFINET General Station Description (french)
+Generic	Various	gsi		PROFINET General Station Description (italian)
+Generic	Various	gsp		PROFINET General Station Description (portuguese)
+Generic	Various	gss		PROFINET General Station Description (spanish)
+Generic	Various	xml		PROFINET General Station Description XML format
+Generic	Various	gsd		PROFINET General Station Description
