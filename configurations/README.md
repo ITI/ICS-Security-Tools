@@ -4,8 +4,12 @@ Developed as a community asset
 
 ## Common Files or Extensions
 
+Note, if you find ICS-relevant file extensions that are not listed in the above list, please submit a pull to contribute those to the TSV's in this project.
+
 - [Common File Extensions for Configurations/Projects](SCADA-Common-File-Extensions.tsv)
 - [Other Files of Interest](SCADA-Other-Files-of-Interest.tsv)
+- [File-extension seeker](https://file-extension.net/seeker/) - aggregate search engine to find info about file extensions.
+- [Data Types](https://datatypes.net) - another file extension search engine
 
 ## Default Password Lists
 
