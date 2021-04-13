@@ -15,6 +15,11 @@ Developed as a community asset
 
 - [ICS Testbed Tetris](https://lancaster-ics-testbed.github.io) - Shared resource to reason about structural organization of ICS testbeds.
 
+## Incident Response or Security Assessment
+
+- [ROSA Jumpkit](https://github.com/cutaway-security/ROSA_Jumpkit) - Remote / Onsite Security Assessment Jumpkit
+- [Industrial Cyber Response Blog Post](https://www.dragos.com/blog/industry-news/preparing-for-industrial-cyber-response-what-to-have-in-your-incident-response-toolkit/) - Some high-level thoughts on what you need to have in your incident response toolkit to be prepared for an industrial cyber response.
+
 ## Curated Content
 
 - [See Feeds](../feeds/)

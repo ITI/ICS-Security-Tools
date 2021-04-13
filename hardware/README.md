@@ -2,6 +2,10 @@
 
 Developed as a community asset
 
+## Firmware
+
+- [ICS Legacy Firmware](https://github.com/cutaway-security/ics_firmware_legacy) - some legacy firmware provided for educational purposes.
+
 ## Starting Hardware
 
 - [Siemens S7-1200](http://w3.siemens.com/mcms/programmable-logic-controller/en/basic-controller/s7-1200/pages/default.aspx) PLCs - Cheap and commonly used. You can buy a "starter kit" that includes TIA Portal (software to configure the PLC). Trial version of the software is also available. Check eBay or refurb vendors for deals.

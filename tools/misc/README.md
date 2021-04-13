@@ -2,6 +2,10 @@
 
 Developed as a community asset
 
+## General
+
+- [Cutaway Security Tools and Scripts](https://github.com/cutaway-security/cutsec_tools) - Scripts and other tools to help parse data or gather information.
+
 ## Evasion
 
 - [Modshaft](https://github.com/reidmefirst/modshaft/) - Modshaft is an IP-over-Modbus/TCP tunnel. It is useful for evading application-layer firewalls.
