@@ -24,7 +24,7 @@ Developed as a community asset
 
 ## Other
 
-[Other Related Tools](other) - Other related/useful tools in the ICS space, including MITM, evasion, spoofing, or even exploitation.
+[Miscellaneous Related Tools](misc) - Other related/useful tools in the ICS space, including MITM, evasion, spoofing, or even exploitation.
 
 ## Mirrored Tools
 
