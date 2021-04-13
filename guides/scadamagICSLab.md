@@ -12,12 +12,12 @@ If you’re from the ICS security camp, pay attention here. To correctly diagnos
 
 So, why have a lab at all? It’s not cheap to set one up or keep it running.
 
-* Have a place to examine failed parts to determine causes
-* Mock up and test new systems BEFORE installing it in the field for the first time
-* Practice what was taught in training
-* Penetration testing of offline equipment
-* Patch testing for field equipment
-* Demonstrate functionality of new equipment under consideration
+- Have a place to examine failed parts to determine causes
+- Mock up and test new systems BEFORE installing it in the field for the first time
+- Practice what was taught in training
+- Penetration testing of offline equipment
+- Patch testing for field equipment
+- Demonstrate functionality of new equipment under consideration
 
 These are reasons enough for most Operations staff and every ICS consultant firm to have a lab. Not many mangers understand the depth and complexity of the instruments, the managed switches, the servers, the HMI workstations, the power systems, the networks, the wiring, the surge protection systems, the software, the PLC gear, the I/O panels and so forth.
 
@@ -74,6 +74,7 @@ You may also want to check calibrations of RTDs or Thermistors using boiling liq
 So a lab is an interesting place. It’s a significant investment. You may be wondering if it’s worth doing. Well, it is. It all has to do with the care, empowerment, and feeding the needs of Engineers.
 
 Here are few side benefits:
+
 1. Toy Factor for Retention
 2. Recruitment
 3. Publicity
@@ -95,4 +96,3 @@ And finally, given a context like this, managers can determine who is on the bal
 ## Summary
 
 Not all of these features are things you’ll need to do, and not all of them are worth the expense. But the need for a lab is there. A lab isn’t cheap. However, if there is no lab, things will rapidly get a lot more expensive.
-

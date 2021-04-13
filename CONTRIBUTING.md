@@ -1,4 +1,3 @@
-
 # Contributing
 
 Contributing is VERY welcomed. The only way for this resource to be useful is if it is maintained.
