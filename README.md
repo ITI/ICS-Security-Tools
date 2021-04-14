@@ -23,7 +23,7 @@ General Structure:
  [./tools/general](tools/general)  
  [./tools/honeypots](tools/honeypots)  
  [./tools/mirrored](tools/mirrored)  
- [./tools/other](tools/other)  
+ [./tools/misc](tools/misc)  
  [./tools/simulation](tools/simulation)  
  [./tools/testbeds](tools/testbeds)
 
