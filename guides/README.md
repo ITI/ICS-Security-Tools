@@ -13,6 +13,7 @@ Developed as a community asset
 - [SANS ICS Concepts Youtube Playlist](https://www.youtube.com/playlist?list=PLjoUWqjR7qXhGruLWvAewVkJ05Nh8z4O8) - An ever-growing series of videos on ICS Concepts
 - [S4 Onramp Online](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qRHrSTpwFbuLUL-bOrGn4y) - A series of videos from S4 events intended to onboard newer people to the field rapidly.
 - [S4 ICS Security Fundamentals](https://www.youtube.com/playlist?list=PL8OWO1qWXF4rz8ZyeQh9B9wTt5LIlVN0Z)
+- [RealPars PLC Training](https://www.youtube.com/c/realpars/playlists) - RealPars is the world's largest online learning platform for automation engineers.
 
 ## Technical Conference Videos
 
