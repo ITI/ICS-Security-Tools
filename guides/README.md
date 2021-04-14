@@ -10,6 +10,25 @@ Developed as a community asset
 ## Getting Started
 
 - [SANS ICS Security History](https://ics.sans.org/media/An-Abbreviated-History-of-Automation-and-ICS-Cybersecurity.pdf) - An Abbreviated History of Automation & Industrial Controls Systems and Cybersecurity (pdf)
+- [SANS ICS Concepts Youtube Playlist](https://www.youtube.com/playlist?list=PLjoUWqjR7qXhGruLWvAewVkJ05Nh8z4O8) - An ever-growing series of videos on ICS Concepts
+- [S4 Onramp Online](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qRHrSTpwFbuLUL-bOrGn4y) - A series of videos from S4 events intended to onboard newer people to the field rapidly.
+- [S4 ICS Security Fundamentals](https://www.youtube.com/playlist?list=PL8OWO1qWXF4rz8ZyeQh9B9wTt5LIlVN0Z)
+
+## Technical Conference Videos
+
+- [S4x13](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qoq2QYKSLmBnGlYJDEnwLC)
+- [S4x14](https://www.youtube.com/playlist?list=PL8OWO1qWXF4pf9rUklNPPS2z1aF651FJm)
+- [S4x15](https://www.youtube.com/playlist?list=PL8OWO1qWXF4ooQiuKuT1lKEz-uu50Pie4)
+- [4SICS 2015](https://www.youtube.com/playlist?list=PLK9u2M6_KckQYRg2nKSvoNivx-DWDCmYS)
+- [S4x16](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qABous0ingd8x8oR3HuqyC)
+- [4SICS 2016](https://www.youtube.com/playlist?list=PLK9u2M6_KckQpC1iABet3hEY57yuv02Kw)
+- [CS3STHLM 2017](https://www.youtube.com/playlist?list=PLK9u2M6_KckRA4YlcGtmEgIVHKYkok0UV)
+- [S4x18](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qYG19p7An4Vw3N2YZ86aRS)
+- [CS3STHLM 2018](https://www.youtube.com/playlist?list=PLK9u2M6_KckTrwNok5JubicYBu8GUSRKW)
+- [S4x19](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qYu-Kak1dOVvx0iq2fekdS)
+- [CS3STHLM 2019](https://www.youtube.com/playlist?list=PLK9u2M6_KckS-xoCb8g2qxaD3vxYN29-S)
+- [S4x20](https://www.youtube.com/playlist?list=PL8OWO1qWXF4o4wPUBcZcHn_Fu3PtqOVg9)
+- [CS3STHLM 2020](https://www.youtube.com/playlist?list=PLK9u2M6_KckS-xoCb8g2qxaD3vxYN29-S)
 
 ## Frameworks
 
