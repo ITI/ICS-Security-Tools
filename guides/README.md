@@ -7,7 +7,7 @@ Developed as a community asset
 - [Rob Lee's Thoughts](roblee.md)
 - [Jake Brodsky's Thoughts](scadamagICSLab.md)
 
-## Getting Started
+## Getting Started / Training
 
 - [SANS ICS Security History](https://ics.sans.org/media/An-Abbreviated-History-of-Automation-and-ICS-Cybersecurity.pdf) - An Abbreviated History of Automation & Industrial Controls Systems and Cybersecurity (pdf)
 - [SANS ICS Concepts Youtube Playlist](https://www.youtube.com/playlist?list=PLjoUWqjR7qXhGruLWvAewVkJ05Nh8z4O8) - An ever-growing series of videos on ICS Concepts
@@ -15,6 +15,13 @@ Developed as a community asset
 - [S4 ICS Security Fundamentals](https://www.youtube.com/playlist?list=PL8OWO1qWXF4rz8ZyeQh9B9wTt5LIlVN0Z)
 - [RealPars PLC Training](https://www.youtube.com/c/realpars/playlists) - RealPars is the world's largest online learning platform for automation engineers.
 - [DHS CISA ICS Training](https://us-cert.cisa.gov/ics/Training-Available-Through-ICS-CERT) - Online and in-person training links
+
+## Non-Free Training
+
+- [SANS ICS](https://www.sans.org/industrial-control-systems-security/)
+- [Industrial Control Systems Cyber Security Institute](https://icscsi.org/index.html)
+- [ISA Control Systems Training](https://www.isa.org/training-and-certification/isa-training/control-systems-training)
+- [ISC2 ICS Course](https://www.isc2.org/Development/Immersive-Courses/Exploring-Cybersecurity-in-Industrial-Control-Systems)
 
 ## Technical Conference Videos
 
