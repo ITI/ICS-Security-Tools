@@ -14,6 +14,7 @@ Developed as a community asset
 - [S4 Onramp Online](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qRHrSTpwFbuLUL-bOrGn4y) - A series of videos from S4 events intended to onboard newer people to the field rapidly.
 - [S4 ICS Security Fundamentals](https://www.youtube.com/playlist?list=PL8OWO1qWXF4rz8ZyeQh9B9wTt5LIlVN0Z)
 - [RealPars PLC Training](https://www.youtube.com/c/realpars/playlists) - RealPars is the world's largest online learning platform for automation engineers.
+- [DHS CISA ICS Training](https://us-cert.cisa.gov/ics/Training-Available-Through-ICS-CERT) - Online and in-person training links
 
 ## Technical Conference Videos
 
