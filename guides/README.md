@@ -24,6 +24,7 @@ Developed as a community asset
 - [ISC2 ICS Course](https://www.isc2.org/Development/Immersive-Courses/Exploring-Cybersecurity-in-Industrial-Control-Systems)
 - [CybatiWorks](https://intelligenesisllc.com/cybatiworks-2/)
 - [Dragos Training](https://www.dragos.com/training/)
+- [FireEye Training](https://www.fireeye.com/services/training/courses.html)
 
 ## Certifications
 
