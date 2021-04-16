@@ -22,6 +22,7 @@ Developed as a community asset
 - [Industrial Control Systems Cyber Security Institute](https://icscsi.org/index.html)
 - [ISA Control Systems Training](https://www.isa.org/training-and-certification/isa-training/control-systems-training)
 - [ISC2 ICS Course](https://www.isc2.org/Development/Immersive-Courses/Exploring-Cybersecurity-in-Industrial-Control-Systems)
+- [CybatiWorks](https://intelligenesisllc.com/cybatiworks-2/)
 
 ## Certifications
 
