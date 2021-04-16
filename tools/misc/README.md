@@ -5,6 +5,7 @@ Developed as a community asset
 ## General
 
 - [Cutaway Security Tools and Scripts](https://github.com/cutaway-security/cutsec_tools) - Scripts and other tools to help parse data or gather information.
+- [ICS Security Resources](https://github.com/selmux/ICS-Security) - Various wordlists, models, tools, and scripts from academic work.
 
 ## Evasion
 
