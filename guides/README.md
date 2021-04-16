@@ -23,6 +23,10 @@ Developed as a community asset
 - [ISA Control Systems Training](https://www.isa.org/training-and-certification/isa-training/control-systems-training)
 - [ISC2 ICS Course](https://www.isc2.org/Development/Immersive-Courses/Exploring-Cybersecurity-in-Industrial-Control-Systems)
 
+## Certifications
+
+- [Security Certification Roadmap](https://pauljerimy.com/security-certification-roadmap/) - This covers a broad spectrum of security-related certifications, including ICS/OT (see the column under Security Architecture and Engineering). Source for this is [here](https://github.com/sinecurelife/SecCertRoadmapHTML).
+
 ## Technical Conference Videos
 
 - [S4x13](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qoq2QYKSLmBnGlYJDEnwLC)
