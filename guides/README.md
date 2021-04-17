@@ -15,6 +15,8 @@ Developed as a community asset
 - [S4 ICS Security Fundamentals](https://www.youtube.com/playlist?list=PL8OWO1qWXF4rz8ZyeQh9B9wTt5LIlVN0Z)
 - [RealPars PLC Training](https://www.youtube.com/c/realpars/playlists) - RealPars is the world's largest online learning platform for automation engineers.
 - [DHS CISA ICS Training](https://us-cert.cisa.gov/ics/Training-Available-Through-ICS-CERT) - Online and in-person training links
+- [ENISA Introduction to network forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational#network_forensics) - Includes "ICS/SCADA environment" Use Case
+- [IAEA Nuclear Security e-Learning Modules: Information and computer security](https://elearning.iaea.org/m2/course/index.php?categoryid=104) - 4 Modules, that include a final tests and certificates
 
 ## Non-Free Training
 
