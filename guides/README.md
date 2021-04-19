@@ -27,6 +27,7 @@ Developed as a community asset
 - [CybatiWorks](https://intelligenesisllc.com/cybatiworks-2/)
 - [Dragos Training](https://www.dragos.com/training/)
 - [FireEye Training](https://www.fireeye.com/services/training/courses.html)
+- [Kaspersky](https://ics.kaspersky.com/media/Kaspersky-ICS-CERT-Training-Program.pdf )
 
 ## Certifications
 
