@@ -1,0 +1,23 @@
+		MD5				SHA-1
+-------------------------------------------------------------------------
+64ece21dd9b0da617238fcd98c6b344d 24e2f0a0becabb3dfaf8ea88614d898f76dafc2f serial2pcap-release\Lib\BlankConsumer.py
+fe3544e4a53fd20bbb0524d9b92abebe 4233c9efec69710bbdbfb7aba300792f28f61fe9 serial2pcap-release\Lib\BufferOutput.py
+c14022bc04c8f5a1351f14115a9afc0e 1947a0376c2ab1e29a2a61ab35ba35153d173740 serial2pcap-release\Lib\CaptureDataBuffer.py
+337e4d83c00b2033583205f03086d560 db3778238c777bdebf7beb672a0f9cbe1d80cff2 serial2pcap-release\Lib\DumpTimeFile.py
+213b491b7500e9c8319246468dfbfc40 1f6f6dd57f52d542d96ac4f24168595a99de48df serial2pcap-release\Lib\SerialPortReader.py
+67a6211a8d90e98865e949206b85c2e7 8076566896c949c800e0772de163dc1d86344961 serial2pcap-release\Lib\util.py
+d41d8cd98f00b204e9800998ecf8427e da39a3ee5e6b4b0d3255bfef95601890afd80709 serial2pcap-release\Lib\__init__.py
+183e0af194aedc8721d5d3eb8a1c896b 8a980c7c8fae69a5345e5b7c10d42432701436e6 serial2pcap-release\libserial2pcap.py
+b90fbc29ace5fdcea1d4b2a1d8807397 c2582cc0d2a5c50db3c132342c088386415f0131 serial2pcap-release\libserial2pcapunittest.py
+c994c906fc62bd2bffe342b01935cfc6 48d58a55d5ed3518441667cd0be5c76089d9e284 serial2pcap-release\Plugins\Byte.py
+37ffd33b191ebecb6a9952a4ddf470a4 dc5b0762171a4376b7d641d8e99320d57e507109 serial2pcap-release\Plugins\df1.py
+58f6f0d2ab98e348b01d72a1baae8209 fd82bbf331b9a0a40f2ae97fe002a352e0428ea2 serial2pcap-release\Plugins\DNP3.py
+e850bed0ea08debf8a6ef46dd0b23d9c 8250ebe4eabdb5001f657b4c5c929d47cafe2198 serial2pcap-release\Plugins\ModbusASCII.py
+d99c88249f2df4150525a37c6c8be03a 481fede6ba631136c4d7631bb44dcd8db2f33591 serial2pcap-release\Plugins\ModbusRTU.py
+f13f39d70ae5faaba7eebb9b292defed 6d2f406cd0c6277d13bf19674949a7c05eb4ab56 serial2pcap-release\Plugins\PluginCore.py
+a2efadba5e741d2f12481e0fb25ecbcb 33721025d6787a3ea743a8b6501e7640a4200977 serial2pcap-release\Plugins\SELFM.py
+4b53bdbb95102b2240a8bfde16a24c55 ea2f6c02fbad6d493931653c02064b75014b83fe serial2pcap-release\Plugins\SLIP.py
+d41d8cd98f00b204e9800998ecf8427e da39a3ee5e6b4b0d3255bfef95601890afd80709 serial2pcap-release\Plugins\__init__.py
+1c136b47f801afbfef6f00c91a4e20a9 5b84aba38967e3b2a9eb8f1e0b870e050628c094 serial2pcap-release\serial2pcap.py
+b5fefb987fded860ac6650e59a944143 9e013796c25fae0be2078676c23defcefc893dd6 serial2pcap-release\USAGE
+3cf918272ffa5de195752d73f3da3e5e 7959c969e092f2a5a8604e2287807ac5b1b384ad serial2pcap-release\VERSION
