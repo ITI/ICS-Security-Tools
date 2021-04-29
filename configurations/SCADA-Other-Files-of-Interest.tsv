@@ -5,3 +5,15 @@ GE	Mark VIe and Mark VIeS Virtual Controllers	GESimEgd.exe	EGD services to the v
 GE	Mark VIe and Mark VIeS Virtual Controllers	GESimAlm.exe	alarm services to the virtual controller
 GE	iFIX Scada	FIXTOHIST.exe	synchronizing datablock's Historian collection settings between iFIX database and Historian server
 ABB	SYS600	SYS_BASCOM.COM	ABB SYS600 Base System Configuration File
+DHS	CSET	*.cset	Legacy CSET Assessment File
+DHS	CSET	*.csetw	CSET Assessment File (post 9.0)
+Microsoft	Access	*.mdb	Microsoft Access Database (2003 and earlier)
+Microsoft	Access	*.mde	Microsoft Access Protected Database (2003 and earlier)
+Microsoft	Access	*.accdb	Microsoft Access Database (2007 and later)
+Microsoft	Access	*.accde	Microsoft Access Protected Database (2007 and later)
+Microsoft	Excel	*.xls	Microsoft Excel Files... could be assets, configurations, assessments, etc
+Microsoft	Excel	*.xlsx	Microsoft Excel Files... could be assets, configurations, assessments, etc
+Microsoft	Visio	*.vsd	Microsoft Visio Files... diagrams!
+Microsoft	Visio	*.vsdx	Microsoft Visio Files... diagrams!
+Microsoft	Word	*.doc	Microsoft Word Files... documents!
+Microsoft	Word	*.docx	Microsoft Word Files... documents!
