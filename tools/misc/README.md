@@ -41,7 +41,7 @@ Developed as a community asset
 ## Metasploit Modules
 
 - [Gleg SCADA+ Pack](http://gleg.net/agora_scada.shtml) - **Commercial**
-- [S7 Metasplot pack](../mirrored/s7-metasploit-modules) - Initial s7 metasploit modules.
+- [S7 Metasploit pack](/tools/mirrored/s7-metasploit-modules) - Initial s7 metasploit modules.
 - [Schneider Electric PLC / Modbus modules from DEFCON 25](https://github.com/arnaudsoullie/funwithmodbus0x5a) - Downloading a program from the PLC, gathering information about the PLC and forcing the values of the digital outputs, START/STOP
 - [IEC 104 Module](https://github.com/michaelj0hn/iec104) - IEC104 Client for Metasploit [merged into mainline](https://github.com/rapid7/metasploit-framework/pull/10386)
 - [random modbus tools](https://github.com/arnaudsoullie/funwithmodbus0x5a) - ICS Village talk at DEFCON 25
