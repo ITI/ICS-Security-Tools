@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>JAUS Robots</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of JAUS Robots traffic.</Description>
+    </Header>
+    <Filter For="JAUS Robots" Name="DstPort">
+        <DstPort>3794</DstPort>
+    </Filter>
+    <Payload For="JAUS Robots">
+        <Description>This fingerprint looks for evidence of JAUS Robots traffic.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">JAUS Robots</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

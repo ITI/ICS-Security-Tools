@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell RSViewSE</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of RSviewSE HMI Server traffic. This fingerprint looks for evidence of RSViewSE Server Framework traffic. This fingerprint looks for evidence of RSViewSE HMI Activation traffic. This fingerprint looks for evidence of RSViewSE Directory Serve traffic. </Description>
+    </Header>
+    <Filter For="HMI Server" Name="HMI Server">
+        <SrcPort>7720</SrcPort>
+    </Filter>
+    <Filter For="Server Framework" Name="Server Framework">
+        <SrcPort>7721</SrcPort>
+    </Filter>
+    <Filter For="HMI Activation" Name="HMI Activation">
+        <SrcPort>7721</SrcPort>
+    </Filter>
+    <Filter For="Directory Server" Name="Directory Server">
+        <SrcPort>7721</SrcPort>
+    </Filter>	
+    <Payload For="HMI Server">
+		<Description>Rockwell FactoryTalk RSView SE HMI Server</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSView SE HMI Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Server Framework">
+		<Description>Rockwell FactoryTalk RSView SE Server Framework</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSView SE Server Framework</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="HMI Activation">
+		<Description>Rockwell FactoryTalk RSView SE HMI Activation</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+                    <Category>HMI</Category>
+                    <Role>OTHER</Role>
+                    <Detail Name="Product">Rockwell HMI Activation</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Directory Server">
+		<Description>Rockwell FactoryTalk RSView SE Directory Server</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell Directory Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

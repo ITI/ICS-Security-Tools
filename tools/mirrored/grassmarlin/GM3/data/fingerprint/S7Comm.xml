@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>S7Comm</Name>
+        <Author>Default</Author>
+        <Description>ISO 8073 COTP 020f80 
+protocol usually rides on port 102
+
+s7 communication 32 is the protocol id
+
+020f80 32</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="default">
+        <DstPort>102</DstPort>
+    </Filter>
+    <Payload For="default">
+        <Match Offset="0" Within="65535" MoveCursors="true">
+            <Content Type="HEX">02F0803201</Content>
+            <AndThen>
+                <Return Confidence="3">
+                    <Extract Name="Siemens" From="CURSOR_START" To="CURSOR_END"/>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

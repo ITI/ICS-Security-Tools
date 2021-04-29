@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Automation Direct DirectNET</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Automation Direct's DirectNet protocol traffic.</Description>
+    </Header>
+    <Filter For="DirectNet Master TCP" Name="MASTER TCP">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>3447</DstPort>
+    </Filter>
+    <Filter For="DirectNet Slave TCP" Name="SLAVE TCP">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>3447</SrcPort>
+    </Filter>
+    <Filter For="DirectNet Master UDP" Name="MASTER UDP">
+        <TransportProtocol>17</TransportProtocol> 
+        <DstPort>3447</DstPort>
+    </Filter>
+    <Filter For="DirectNet Slave UDP" Name="SLAVE UDP">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>3447</SrcPort>
+    </Filter>	
+    <Payload For="DirectNet Master TCP">
+        <Description>DirectNet MASTER that matches the HEX pattern</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>MTU</Category>
+                    <Role>MASTER</Role>
+                    <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">4E2105</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="DirectNet Slave TCP">
+        <Description>DirectNet SLAVE that matches the HEX pattern</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>RTU</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">4E2105</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="DirectNet Master UDP">
+        <Description>DirectNet MASTER that matches the HEX pattern</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>MTU</Category>
+                    <Role>MASTER</Role>
+                    <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">4E2105</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>	
+    <Payload For="DirectNet Slave UDP">
+        <Description>DirectNet SLAVE that matches the HEX pattern</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>RTU</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">4E2105</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Detail Name="ICSProtocol">Automation Direct DirectNet</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>		
+</Fingerprint>

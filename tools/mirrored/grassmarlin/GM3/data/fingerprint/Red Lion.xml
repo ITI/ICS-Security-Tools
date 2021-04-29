@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Red Lion</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Red Lion traffic running the CrimsonV3 software for HMI.</Description>
+    </Header>
+    <Filter For="Red Lion CrimsonV3" Name="CrimsonV3">
+        <DstPort>789</DstPort>
+    </Filter>
+    <Payload For="Red Lion CrimsonV3">
+        <Description>Red Lion traffic running the CrimsonV3 software for HMI.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Red Lion CrimsonV3</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

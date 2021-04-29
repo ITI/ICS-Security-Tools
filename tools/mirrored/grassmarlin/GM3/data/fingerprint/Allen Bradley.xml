@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Allen Bradley</Name>
+        <Author>Default</Author>
+        <Description>This is the response seen from a device running an Allen Bradley specific web server and providing its device description via a web page. 
+This is evidence of some sort of Allen Bradley Intelligent Electronic Device (IED). 
+	This is the response seen from a device running an Allen Bradley specific web server. "Server: A-B WWW/0.1" 
+This is evidence of some sort of Allen Bradley Intelligent Electronic Device (IED). 
+	This is the response seen from a device running an Allen Bradley specific web server and providing its device name via a web page. 
+This is evidence of some sort of Allen Bradley Intelligent Electronic Device (IED). 
+	</Description>
+    </Header>
+    <Filter For="Bradley Web Server Device Description" Name="Server Device">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>80</SrcPort>
+    </Filter>
+    <Filter For="Bradley Web Server" Name="Web Server">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>80</SrcPort>
+    </Filter>
+    <Filter For="Bradley Web Server Device Name" Name="Server Device Name">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>80</SrcPort>
+    </Filter>
+    <Filter For="All newer Rockwell PLC" Name="Rockwell PLC">
+        <TransportProtocol>6</TransportProtocol>
+		<DstPort>44818</DstPort>
+    </Filter>	
+    <Payload For="Bradley Web Server Device Description">
+	<Description>Bradley Web Server Device Description</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Pattern>Description&lt;/td&gt;&lt;td&gt;</Pattern>
+            <AndThen>
+                <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN" Relative="false" Offset="0"/>
+                        <Return Direction="SOURCE" Confidence="4">
+                            <Details>
+                                <Category>IED</Category>
+                                <Role>SERVER</Role>
+                                <Detail Name="ICSProtocol">Bradley Web Server Device Description</Detail>
+                            </Details>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="Bradley Web Server">
+		<Description>Bradley Web Server</Description>
+        <Match Offset="17" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">5365727665723A20412D42205757572F302E310D0A</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="4">
+                    <Details>
+                        <Category>IED</Category>
+                        <Role>SERVER</Role>
+                        <Detail Name="ICSProtocol">Bradley Web Server</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="Bradley Web Server Device Name">
+		<Description>Bradley Web Server Device Name</Description>
+        <Match Offset="184" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">73733D52363E446576696365204E616D653C2F74643E3C74643E</Content>
+            <AndThen>
+                <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN" Relative="false" Offset="0"/>
+                        <Return Direction="SOURCE" Confidence="4">
+                            <Details>
+                                <Category>IED</Category>
+                                <Role>SERVER</Role>
+                                <Detail Name="ICSProtocol">Bradely Web Server Device Name</Detail>
+                            </Details>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+	<Payload For="All newer Rockwell PLC">
+        <Description>Allen Bradley Rockwell PLC</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="ICSProtocol">Allen Bradley Rockwell PLC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

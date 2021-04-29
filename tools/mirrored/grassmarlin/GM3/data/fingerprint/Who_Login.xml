@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Who_Login</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of who/login against tcp/udp traffic. This is a automatic authentication performed based on privileged port numbers and distributed databases which identify "authentication domains." Also the protocol maintains databases showing who's logged into the machines on a local network and the load average of the machine.</Description>
+    </Header>
+    <Filter For="who_login" Name="SrcPort">
+        <SrcPort>513</SrcPort>
+    </Filter>
+    <Filter For="who_login" Name="DstPort">
+        <DstPort>513</DstPort>
+    </Filter>
+    <Payload For="who_login">
+        <Description>Tags version 1 type 1, WHO or LOGIN protocol over 513 tcp/udp traffic.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Authentication">WHO/Login</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="12" Relative="true" Within="0" MoveCursors="true">
+            <Pattern>1010</Pattern>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Hostname" From="12" To="16" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

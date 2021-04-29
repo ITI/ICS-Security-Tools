@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>DCERPC</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of DCERPC traffic which is a specificiation for a remote call that defines both APIs and an over-the-network protocol. A DCE/RPC server's endpoint mapper (EPMAP) will listen for incoming calls. A client will call this endpoint mapper and ask for a specific interface, which will be accessed on a different connection.</Description>
+    </Header>
+    <Filter For="DCERPC" Name="DCERPC">
+        <DstPort>135</DstPort>
+    </Filter>
+    <Payload For="DCERPC">
+        <Description>Tags the CTX data item under the DCE/RPC payload</Description>
+        <Match Offset="28" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">00000100C4</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Detail Name="Microsoft Server Product">DCE/RPC</Detail>
+                    </Details>
+                    <Extract Name="IOXIDResolver UUID" From="32" To="48" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                    <Extract Name="NDR UUID" From="52" To="68" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

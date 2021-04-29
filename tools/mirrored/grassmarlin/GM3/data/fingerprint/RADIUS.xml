@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>RADIUS</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of RADIUS services including internet authentication and accounting.</Description>
+    </Header>
+    <Filter For="RADIUS Authentication" Name="Authentication">
+		<TransportProtocol>17</TransportProtocol>
+        <DstPort>1812</DstPort>
+    </Filter>
+    <Filter For="RADIUS Accounting" Name="Accounting">
+		<TransportProtocol>17</TransportProtocol>
+        <DstPort>1813</DstPort>
+    </Filter>
+    <Payload For="RADIUS Authentication">
+        <Description>Tags RADIUS authentication internet service</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Micrsoft Server Product">RADIUS-Authentication</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="RADIUS Accounting">
+        <Description>Tags RADIUS accounting internet service.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Micrsoft Server Product">RADIUS - Accounting</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

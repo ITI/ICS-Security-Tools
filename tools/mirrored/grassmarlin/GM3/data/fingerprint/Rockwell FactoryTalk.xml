@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell FactoryTalk</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of FactoryTalk Event Server traffic. This fingerprint looks for evidence of FactoryTalk Directory Server File transfer traffic. This fingerprint looks for evidence of FactoryTalk Directory Server traffic. This fingerprint looks for evidence of FactoryTalk Alarming  traffic. This fingerprint looks for evidence of FactoryTalk Object RPC traffic.This fingerprint looks for evidence of FactoryTalk Event Multiplexor traffic.This fingerprint looks for evidence of FactoryTalk Service control traffic.This fingerprint looks for evidence of FactoryTalk Server Health traffic. This fingerprint looks for evidence of FactoryTalk Historian Site Edition which includes PI Network Manager, Analysis Framework v1.x, ACE2 scheduler, Asset Framework Server, PI Notifications, Asset Framework to OLEDB Enterprise. This fingerprint looks for evidence of FactoryTalk Asset Centre Services traffic. This fingerprint looks for evidence of FactoryTalk Asset Centre Server/ VantagePoint SQL or MSSQL. This fingerprint looks for evidence of FactoryTalk Live Data/SE HMI Tag Server. This fingerprint looks for evidence of FactoryTalk Diagnostics. This fingerprint looks for evidence of FactoryTalk Diagnostics VantagePoint Incuity Server Advertiser.</Description>
+    </Header>
+    <Filter For="Alarming Server" Name="Alarming">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>6543</DstPort>
+    </Filter>
+    <Filter For="Object RPC" Name="RPC">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1330</DstPort>
+    </Filter>
+    <Filter For="Event Multiplexor" Name="Multiplexor">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>7600</DstPort>
+    </Filter>
+    <Filter For="Service Control" Name="Control">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1331</DstPort>
+    </Filter>
+    <Filter For="Server Health" Name="Server Health">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1332</DstPort>
+    </Filter>
+    <Filter For="Event Server" Name="Event Server">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>7700</SrcPort>
+    </Filter>
+    <Filter For="Directory Server File Transfer" Name="File Transfer">
+        <DstPort>3060</DstPort>
+    </Filter>
+    <Filter For="Directory Server" Name="Directory Server">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>7710</DstPort>
+    </Filter>	
+    <Filter For="PI Network Manager" Name="PI Network">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5450</DstPort>
+    </Filter>
+    <Filter For="Analysis Framework 5454" Name="5454">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5454</DstPort>
+    </Filter>
+    <Filter For="Analysis Framework 5455" Name="5455">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5455</DstPort>
+    </Filter>
+    <Filter For="ACE2 Scheduler" Name="ACE2">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5456</DstPort>
+    </Filter>
+    <Filter For="Asset Framework Server" Name="Asset Framework">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5457</DstPort>
+    </Filter>
+    <Filter For="PI Notification" Name="PI">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5458</DstPort>
+    </Filter>
+    <Filter For="Asset Centre Services 7002" Name="7002">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>7002</DstPort>
+    </Filter>
+    <Filter For="Asset Centre Services 7003" Name="7003">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>7003</DstPort>
+    </Filter>
+    <Filter For="Asset Centre Services 7004" Name="7004">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>7004</DstPort>
+    </Filter>	
+    <Filter For="Asset Centre Server/VantagePoint SQL" Name="SQL">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1433</DstPort>
+    </Filter>	
+    <Filter For="Asset Centre Server/VantagePoint MSSQL" Name="MSSQL">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1434</DstPort>
+    </Filter>	
+    <Filter For="Live Data/SE HMI Tag Server" Name="Data/SE HMI">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>49281</DstPort>
+    </Filter>	
+    <Filter For="Diagnostics" Name="Diagnostics">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>60093</DstPort>
+    </Filter>	
+    <Filter For="VantagePoint Incuity Server Advertiser" Name="Incuity Server">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>65207</DstPort>
+    </Filter>		
+    <Payload For="Alarming Server">
+        <Description>Rockwell FactoryTalk Alarming Server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Alarming Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Object RPC">
+        <Description>Rockwell FactoryTalk Object RPC</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="2">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Object RPC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Event Multiplexor">
+        <Description>Rockwell FactoryTalk Object RPC</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Event Multiplexor</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Service Control">
+        <Description>Rockwell FactoryTalk Service Control</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="2">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Service Control</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Server Health">
+        <Description>Rockwell FactoryTalk Server Health</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="2">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Server Health</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Event Server">
+        <Description>Rockwell FactoryTalk Event Server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="2">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Event Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Directory Server File Transfer">
+        <Description>Rockwell FactoryTalk Directory Server File Transfer</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Directory Server File Transfer</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Directory Server">
+        <Description>Rockwell FactoryTalk Directory Server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Directory Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="PI Network Manager">
+        <Description>Rockwell FactoryTalk Historian Site Edition - PI Network Manager</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>ENGINEER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk PI Network Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Analysis Framework 5454">
+        <Description>Rockwell FactoryTalk Historian Site Edition - Analysis Framework 5454</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Analysis Framework 5454</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Analysis Framework 5455">
+        <Description>Rockwell FactoryTalk Historian Site Edition - Analysis Framework 5455</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Analysis Framework 5455</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="ACE2 Scheduler">
+        <Description>Rockwell FactoryTalk Historian Site Edition - ACE2 Scheduler</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk ACE2 Scheduler</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Asset Framework Server">
+        <Description>Rockwell FactoryTalk Historian Site Edition - Asset Framework Server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Asset Framework Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="PI Notification">
+        <Description>Rockwell FactoryTalk Historian Site Edition - PI Notification</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk PI Notification</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Asset Centre Services 7002">
+        <Description>Rockwell FactoryTalk Historian Site Edition - Asset Centre Services 7002</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Asset Centre Services 7002</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Asset Centre Services 7003">
+        <Description>Rockwell FactoryTalk Asset Centre Services 7003</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Asset Centre Services 7003</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Asset Centre Services 7004">
+        <Description>Rockwell FactoryTalk Asset Centre Services 7004</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Asset Centre Services 7004</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+    <Payload For="Asset Centre Server/VantagePoint SQL">
+        <Description>Rockwell FactoryTalk Asset Centre Server/ VantagePoint SQL</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Asset Centre Server. SQL server communication over default port.</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Asset Centre Server/VantagePoint MSSQL">
+        <Description>Rockwell FactoryTalk Asset Centre Server/ VantagePoint MSSQL</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Asset Centre Server. Recommended static destination port for MSSQL to minimize the number of ports open to a firewall.</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Live Data/SE HMI Tag Server">
+        <Description>Rockwell FactoryTalk Live Data/SE HMI Tag Server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk Live Data/SE HMI Tag Server.</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Diagnostics">
+        <Description>Rockwell FactoryTalk Diagnostics</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">Rockwell FactoryTalk Diagnostics.</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="VantagePoint Incuity Server Advertiser">
+        <Description>Rockwell FactoryTalk VantagePoint Incuity Server Advertiser</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FactoryTalk VantagePoint Incuity Server Advertiser.</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>RNRP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of RNRP traffic.</Description>
+    </Header>
+    <Filter For="Redundant Network Routing" Name="RNRP">
+        <DstPort>2423</DstPort>
+    </Filter>
+    <Payload For="Redundant Network Routing">
+		<Description>Tags RNRP TCP/UDP destination port</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">RNRP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

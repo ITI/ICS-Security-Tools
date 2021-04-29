@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell RSBizWare</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of RSBizWare traffic.</Description>
+    </Header>
+    <Filter For="RPC Production Server" Name="RPC Production">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>4120</DstPort>
+    </Filter>
+    <Filter For="RPC Server Manager" Name="RPC Server Manager">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>4121</DstPort>
+    </Filter>	
+    <Filter For="RPC PlantMetrics Server" Name="RPC PlantMetrics">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>4122</DstPort>
+    </Filter>	
+    <Filter For="RPC Task Manager" Name="RPC Task Manager">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>4123</DstPort>
+    </Filter>	
+    <Filter For="RPC Scheduler Server" Name="RPC Scheduler">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>4124</DstPort>
+    </Filter>	
+    <Filter For="RPC Scheduler CTP Server" Name="RPC Scheduler CTP">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>4125</DstPort>
+    </Filter>		
+    <Filter For="HTTP Production Server" Name="HTTP Production">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>8080</DstPort>
+    </Filter>
+    <Filter For="HTTP Server Manager" Name="HTTP Server Manager">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>8081</DstPort>
+    </Filter>	
+    <Payload For="RPC Production Server">
+        <Description>Rockwell RSBizWare Production Server payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Production Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="RPC Server Manager">
+        <Description>Rockwell RSBizWare Server Manager payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>OPERATOR</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Server Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="RPC PlantMetrics Server">
+        <Description>Rockwell RSBizWare PlantMetrics Server payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Production Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="RPC Task Manager">
+        <Description>Rockwell RSBizWare Task Manager payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>OPERATOR</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Task Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="RPC Scheduler Server">
+        <Description>Rockwell RSBizWare Scheduler Server payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Scheduler Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="RPC Scheduler CTP Server">
+        <Description>Rockwell RSBizWare Scheduler CTP Server payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Scheduler CTP Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+		<Payload For="HTTP Production Server">
+        <Description>Rockwell RSBizWare Production Server payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Scheduler CTP Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+		<Payload For="HTTP Server Manager">
+        <Description>Rockwell RSBizWare Server Manager payload that tags TCP traffic over the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>OPERATOR</Role>
+                    <Detail Name="Product">Rockwell RSBizWare-Scheduler CTP Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

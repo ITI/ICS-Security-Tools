@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Omron</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Omron Factory Interface Network (FIN) Service traffic. Protocol is used by Omron PLCs over physical networks.</Description>
+    </Header>
+    <Filter For="Factory Interface Network Service" Name="Network Service">
+        <DstPort>9600</DstPort>
+    </Filter>
+    <Payload For="Factory Interface Network Service">
+        <Description>This network protocol is used by Omron PLCs and it looks for the response code over the port.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="ICSProtocol">FIN (Factory Interface Network) Service</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

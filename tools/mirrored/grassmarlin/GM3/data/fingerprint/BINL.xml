@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>BINL</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Boot Information Negotiation layer service which answers PXE requests and checks active directory for client information to and from the server.</Description>
+    </Header>
+    <Filter For="BINL" Name="Boot Information Negotiation">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>4011</DstPort>
+    </Filter>
+    <Payload For="BINL">
+        <Description>Tags UDP service that makes sure the client received correct configuration and policy settings during negotiation.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">BINL</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>RTP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of real time streaming communicating with media servers in conjunction with real time control protocol for media delivery.</Description>
+    </Header>
+    <Filter For="RTSP" Name="Streaming Protocol">
+        <DstPort>554</DstPort>
+    </Filter>
+    <Filter For="RTP" Name="Time Transport">
+        <DstPort>5004</DstPort>
+    </Filter>
+    <Payload For="RTSP">
+        <Description>Real time streaming protocol</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">RTSP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="RTP">
+        <Description>Real Time Transport</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Micosoft Server Product">RTP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

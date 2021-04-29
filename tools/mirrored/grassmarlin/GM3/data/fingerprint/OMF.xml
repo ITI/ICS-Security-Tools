@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>OMF</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of OMF Data B traffic. This fingerprint looks for evidence of OMF Data M traffic. This fingerprint looks for evidence of OMF Data H traffic. This fingerprint looks for evidence of OMF Data L traffic</Description>
+    </Header>
+    <Filter For="Data B" Name="ANET-B">
+        <DstPort>3338</DstPort>
+    </Filter>
+    <Filter For="Data M" Name="ANET-M">
+        <DstPort>3340</DstPort>
+    </Filter>
+    <Filter For="Data H" Name="ANET-H">
+        <DstPort>3341</DstPort>
+    </Filter>
+    <Filter For="Data L" Name="ANET-L">
+        <DstPort>0</DstPort>
+    </Filter>
+    <Payload For="Data B">
+       <Description>OMF Data B ANET-B</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ANET-B</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Data M">
+        <Description>OMF Data M ANET-M</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ANET-M</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Data H">
+        <Description>OMF Data H ANET-H</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ANET-H</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Data L">
+        <Description>OMF Data L ANET-L</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ANET-L</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

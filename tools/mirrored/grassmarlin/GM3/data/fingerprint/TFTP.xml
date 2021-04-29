@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>TFTP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of TFTP daemons that listen on UDP port 69, but respond but respond from a randomly allocated high port.</Description>
+    </Header>
+    <Filter For="Trivial FTP Daemon Service" Name="TFTP">
+        <TransportProtocol>17</TransportProtocol>
+		<DstPort>69</DstPort>
+    </Filter>
+    <Payload For="Trivial FTP Daemon Service">
+        <Description>Tags TFTP traffic that listens on UDP port 69</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">TFTP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

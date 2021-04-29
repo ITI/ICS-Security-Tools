@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Memobus</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Memobus traffic.</Description>
+    </Header>
+    <Filter For="Memobus" Name="Yashawa MP Series Controllers">
+        <DstPort>502</DstPort>
+    </Filter>
+    <Payload For="Memobus">
+		<Description>Alternative for those who require a non-ieController</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Memobus</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

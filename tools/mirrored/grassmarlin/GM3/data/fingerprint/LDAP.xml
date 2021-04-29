@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>LDAP</Name>
+        <Author>Default</Author>
+        <Description>Local Security Authority/Distributed File System.</Description>
+    </Header>
+    <Filter For="LDAP" Name="LDAP">
+        <DstPort>389</DstPort>
+    </Filter>
+    <Payload For="LDAP">
+        <Description>Tags LDAP communication to the server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">LDAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>SEL-351A</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint pulls out the version info transmitted from a SEL-351A ID command over telnet.</Description>
+    </Header>
+    <Filter For="SEL-351A" Name="Device Info From ID Cmd">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>23</SrcPort>
+    </Filter>
+    <Payload For="SEL-351A">
+        <Description>Tags SEL-351A return traffic that is sending IP commands over telnet.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">49440D0A020D0A224649443D</Content>
+            <AndThen>
+                <Anchor Cursor="START" Position="START_OF_PAYLOAD" Relative="false" Offset="12"/>
+                <Anchor Cursor="END" Position="START_OF_PAYLOAD" Relative="false" Offset="46"/>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Category>ICS_HOST</Category>
+                        <Detail Name="ICSProtocol">SEL-351A</Detail>
+                    </Details>
+                    <Extract Name="Version" From="12" To="CURSOR_END" MaxLength="1024" Endian="BIG">
+                        <Post Convert="INTEGER"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

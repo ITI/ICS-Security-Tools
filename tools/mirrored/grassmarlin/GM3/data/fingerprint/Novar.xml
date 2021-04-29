@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Novar</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Novar Alarm traffic. This fingerprint looks for evidence of Novar Global traffic. This fingerprint looks for evidence of Novar Data traffic.</Description>
+    </Header>
+    <Filter For="Novar Alarm" Name="Alarm">
+        <SrcPort>23401</SrcPort>
+    </Filter>
+    <Filter For="Novar Global" Name="Global">
+        <SrcPort>23402</SrcPort>
+    </Filter>
+    <Filter For="Novar Data" Name="Data">
+        <SrcPort>23400</SrcPort>
+    </Filter>
+    <Payload For="Novar Alarm">
+		<Description>This fingerprint looks for evidence of Novar Alarm traffic.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">Novar Alarm</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="Novar Global">
+		<Description>This fingerprint looks for evidence of Novar Global traffic.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">Novar Global</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="Novar Data">
+		<Description>This fingerprint looks for evidence of Novar Data traffic.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">Novar Data</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

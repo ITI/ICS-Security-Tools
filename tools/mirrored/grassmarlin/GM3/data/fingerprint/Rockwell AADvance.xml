@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell AADvance</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Rockwell AADvance traffic.</Description>
+    </Header>
+    <Filter For="ModbusTCP" Name="ModbusTCP">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>502</DstPort>
+    </Filter>
+    <Filter For="SNCP" Name="SNCP">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1132</DstPort>
+    </Filter>
+    <Filter For="ModbusRTU" Name="ModbusRTU">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1132</DstPort> 
+    </Filter>
+    <Filter For="Discover Tool" Name="Discover Tool 2010">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>2010</DstPort>
+    </Filter>
+    <Filter For="Discover Tool" Name="Discover Tool 2011">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>2011</DstPort>
+    </Filter>
+    <Filter For="Peer to Peer" Name="P2P">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>5000</DstPort>
+    </Filter>	
+    <Filter For="Serial Data" Name="Serial 10001">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>10001</DstPort>
+    </Filter>	
+    <Filter For="Serial Data" Name="Serial 10002">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>10002</DstPort>
+    </Filter>	
+    <Filter For="Serial Data" Name="Serial 10003">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>10003</DstPort>
+    </Filter>	
+    <Filter For="Serial Data" Name="Serial 10004">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>10004</DstPort>
+    </Filter>	
+    <Filter For="Serial Data" Name="Serial 10005">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>10005</DstPort>
+    </Filter>	
+    <Filter For="Serial Data" Name="Serial 10006">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>10006</DstPort>
+    </Filter>		
+    <Filter For="Telnet" Name="Telnet">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>55555</DstPort>
+    </Filter>		
+    <Payload For="ModbusTCP">
+        <Description>Rockwell AADvance ModbusTCP that tags the destination port.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Protocol">Rockwell AADvance ModbusTCP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="SNCP">
+        <Description>Rockwell AADvance tagged via destination port. Safely network control protocol, used by opc, workbench debugger and binding networks.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell AADvance SNCP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="ModbusRTU">
+        <Description>Rockwell AADvance tagged via destination port. RTU packaged in serial stream. Other ports may be assigned.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>RTU</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="Product">Rockwell AADvance ModbusRTU</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Discover Tool">
+        <Description>Rockwell AADvance tagged via destination port. Used to configure systems. the tool sends broadcast to 2010 and systems reply to port 2011.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>RTU</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="Product">Rockw ell AADvance Discovery Tool</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Peer to Peer">
+        <Description>Rockwell AADvance tagged via destination port.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell AADvance Peer to Peer</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+	<Payload For="Serial Data">
+        <Description>Rockwell AADvance tagged via destination port. Transparent communication interface, where an Ethernet host can talk through AADvance to a serial port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell AADvance Serial Data</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+	<Payload For="Telnet">
+        <Description>Rockwell AADvance tagged via destination port. Diagnostic command line interface</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell AADvance Telnet</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+</Fingerprint>

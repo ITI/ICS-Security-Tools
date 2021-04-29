@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../../../src/core/fingerprint/fingerprint3.xsd'>
+    <Header>
+        <Name>Rockwell</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of Rockwell CSP2, CSP3, CSP1, and Encapsulation traffic.</Description>
+    </Header>
+    <Filter For="CSP1">
+        <SrcPort>2221</SrcPort>
+    </Filter>
+    <Filter For="CSP2">
+        <DstPort>2222</DstPort>
+    </Filter>
+    <Filter For="CSP3">
+        <DstPort>0</DstPort>
+    </Filter>
+    <Filter For="Encapsulation">
+        <SrcPort>44818</SrcPort>
+    </Filter>
+    <Payload For="CSP1">
+        <Always>
+            <Return Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Rockwell">CSP1</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="CSP2">
+        <Always>
+            <Return Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Rockwell">CSP2</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="CSP3">
+        <Always>
+            <Return Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Rockwell">CSP3</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Encapsulation">
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Rockwell">ROCWELL-ENCAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

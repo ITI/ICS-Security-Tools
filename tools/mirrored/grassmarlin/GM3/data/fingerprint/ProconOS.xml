@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>ProconOS</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of ProconOS traffic.</Description>
+    </Header>
+    <Filter For="ProconOS" Name="DstPort">
+        <DstPort>20547</DstPort>
+    </Filter>
+    <Payload For="ProconOS">
+        <Description>High performance PLC runtime engine desinged to run both embedded and PC applications</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="ICSProtocol">ProconOS</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

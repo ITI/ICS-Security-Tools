@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>SAIA S-BUS</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of SAIA S-BUS traffic.</Description>
+    </Header>
+    <Filter For="SAIA" Name="S-BUS">
+        <DstPort>5050</DstPort>
+    </Filter>
+    <Payload For="SAIA">
+		<Description>Communication Protocol between PDC and PLC by Saia-Burgess Controls.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">SAIA</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload> 
+</Fingerprint>

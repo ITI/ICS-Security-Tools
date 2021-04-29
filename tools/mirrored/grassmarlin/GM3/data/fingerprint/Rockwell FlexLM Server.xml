@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell FlexLM Server</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of FlexLM server traffic.</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="FlexLM Server 1" Name="Server 1">
+        <DstPort>27000</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For="FlexLM Server 2" Name="Server 2">
+        <DstPort>27001</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 3" Name="Server 3">
+        <DstPort>27002</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 4" Name="Server 4">
+        <DstPort>27003</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 5" Name="Server 5">
+        <DstPort>27004</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 6" Name="Server 6">
+        <DstPort>27005</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 7" Name="Server 7">
+        <DstPort>27006</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 8" Name="Server 8">
+        <DstPort>27007</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 9" Name="Server 9">
+        <DstPort>27008</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>	
+    <Filter For="FlexLM Server 10" Name="Server 10">
+        <DstPort>27009</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>		
+    <Payload For="FlexLM Server 1">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 2">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 3">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 4">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 5">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 6">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 7">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 8">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 9">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="FlexLM Server 10">
+        <Description>Rockwell FlexLM Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SERVER</Role>
+                    <Detail Name="Product">Rockwell FlexLM Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>CNRP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of CNRP traffic</Description>
+    </Header>
+    <Filter For="Common Name Resolution Protocol" Name="DstPort">
+        <DstPort>2757</DstPort>
+    </Filter>
+    <Payload For="Common Name Resolution Protocol">
+        <Description>Tags the Common Name Resolution Protocol</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Name Resolution Protocol">Common Name Resolution Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

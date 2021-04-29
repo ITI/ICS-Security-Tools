@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Bizware</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of Bizware Task Manager traffic.This fingerprint looks for the evidence of Bizware Production Server traffic.This fingerprint looks for the evidence of Bizware Server Manager traffic.This fingerprint looks for the evidence of Bizware CTP Server traffic.This fingerprint looks for the evidence of Bizware PlantMetrics Server traffic.</Description>
+    </Header>
+    <Filter For=" Task Manager">
+        <DstPort>4123</DstPort>
+    </Filter>
+    <Filter For=" Production Server">
+        <DstPort>4120</DstPort>
+    </Filter>
+    <Filter For=" Server Manager">
+        <DstPort>4121</DstPort>
+    </Filter>
+    <Filter For=" CTP Server">
+        <DstPort>4125</DstPort>
+    </Filter>
+    <Filter For=" PlantMetrics Server">
+        <DstPort>4122</DstPort>
+    </Filter>
+    <Payload For=" Task Manager">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="BIZ-TASK-MANG" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Production Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="BIZ-PROD-SERV" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Server Manager">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="BIZ-SERV-MANG" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" CTP Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="BIZ-CTP-SERV" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" PlantMetrics Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="BIZ-PLANTMET" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

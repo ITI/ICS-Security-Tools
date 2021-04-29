@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Operating System</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Operating system by TCP default Window_Size and IP header TTL values. Various Payloads include XP, Vista, 7...</Description>
+    </Header>
+    <Filter For="Windows" Name="95">
+        <TTLWithin Min="17" Max="32"/>
+    </Filter>
+    <Filter For="Windows" Name="98">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>	
+    <Filter For="Windows" Name="2000">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>	
+    <Filter For="Windows" Name="XP">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>
+    <Filter For="Windows" Name="Vista/7/10/Server">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>
+    <Filter For="Windows" Name="7">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>
+    <Filter For="Windows" Name="10">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>
+    <Filter For="Windows" Name="Server">
+        <TTLWithin Min="113" Max="128"/>
+    </Filter>	
+    <Filter For="Linux" Name="2.4/2.7">
+        <TTLWithin Min="49" Max="64"/>
+    </Filter>
+    <Filter For="Google Linux" Name="Google Nix">
+        <TTLWithin Min="49" Max="64"/>
+    </Filter>	
+    <Filter For="FreeBSD" Name="BSD">
+        <TTLWithin Min="49" Max="64"/>
+    </Filter>
+    <Filter For="CISCO Router" Name="IOS 12.4">
+        <TTLWithin Min="140" Max="255"/>
+    </Filter>
+    <Filter For="Solaris" Name="2.8">
+        <TTLWithin Min="49" Max="64"/>
+    </Filter>	
+    <Filter For="Solaris" Name="7.0">
+        <TTLWithin Min="140" Max="255"/>
+    </Filter>	
+    <Filter For="Stratus" Name="14.2">
+        <TTLWithin Min="15" Max="30"/>
+    </Filter>
+    <Filter For="Stratus" Name="14.3">
+        <TTLWithin Min="49" Max="64"/>
+    </Filter>	
+    <Filter For="SunOS" Name="4.1.3">
+        <TTLWithin Min="45" Max="60"/>
+    </Filter>	
+    <Filter For="SunOS" Name="4.1.4">
+        <TTLWithin Min="45" Max="60"/>
+    </Filter>
+    <Filter For="Ultrix" Name="4.1, 4.1A">
+		<TransportProtocol>6</TransportProtocol>
+        <TTLWithin Min="45" Max="60"/>
+    </Filter>	
+    <Filter For="Ultrix" Name="4.2, 4.2A">
+		<TransportProtocol>17</TransportProtocol>
+        <TTLWithin Min="15" Max="30"/>
+    </Filter>	
+    <Payload For="Windows">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">Windows 2000, XP, Vista, 7, 10, Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Linux">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">Linux 2.4/2.6</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Google Linux">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">Google Linux</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="FreeBSD">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">FreeBSD</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="CISCO Router">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">CISCO Router IOS 12.4</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Solaris">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">Solaris</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Stratus">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">Stratus</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="SunOS">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">SunOS</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Ultrix">
+        <Description>Tags TTL value in the IP header</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="OS">Ultrix</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+</Fingerprint>

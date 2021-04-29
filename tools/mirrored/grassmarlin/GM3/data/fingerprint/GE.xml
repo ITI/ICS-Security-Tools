@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>GE</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of GE 9030 devices. This fingerprint identifies evidence of engineering workstations for GE 9030 devices. This fingerprint identifies evidence of GE Industrial Solution SRTP Data traffic. This fingerprint identifies evidence of Ethernet Global Data traffic.</Description>
+    </Header>
+    <Filter For="9030 Device" Name="Device">
+		<TransportProtocol>6</TransportProtocol>
+        <SrcPort>18245</SrcPort>
+    </Filter>
+    <Filter For="9030 Engineering workstation" Name="Engineering workstation">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>18245</DstPort>
+    </Filter>
+    <Filter For="GE-SRTP 18245" Name="18245">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>18245</DstPort>
+    </Filter>	
+    <Filter For="GE-SRTP 18246" Name="18246">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>18246</DstPort>
+    </Filter>	
+    <Filter For="Producer/Consumer" Name="Producer/Consumer">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>18246</DstPort>
+    </Filter>
+    <Filter For="Command Service" Name="Service">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>7937</DstPort>
+    </Filter>	
+    <Filter For="QuickPanels" Name="QuickPanels">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>57176</DstPort>
+    </Filter>	
+    <Payload For="9030 Device">
+        <Description>PLC GE9030 device</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="9030 Engineering workstation">
+        <Description>Engineering workstation for GE9030</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">0200</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Category>WORKSTATION</Category>
+                        <Role>ENGINEER</Role>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="GE-SRTP 18245">
+        <Description>The protocol was developed by GE Intelligent Platforms after GE Fanuc to tranfer data of PLCs</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">GE-STRP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+    <Payload For="GE-SRTP 18246">
+        <Description>The protocol was developed by GE Intelligent Platforms after GE Fanuc to tranfer data of PLCs</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">GE-STRP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+	<Payload For="Producer/Consumer">
+        <Description>The EGD supports both the producer/consumer service port and the command service port using UDP over an IP network.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="ICSProtocol">GE Fanuc EGD Producer/Consumer</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="Command Service">
+        <Description>The EGD supports both the producer/consumer service port and the command service port using UDP over an IP network.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="ICSProtocol">GE Fanuc EGD Command Service</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="QuickPanels">
+        <Description>Multi functional interface that integrates process control, views, runs data historian communication.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="Product">GE Fanuc QuickPanels</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+</Fingerprint>

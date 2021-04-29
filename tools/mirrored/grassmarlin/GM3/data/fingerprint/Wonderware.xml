@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Wonderware</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the devices using the wonderware protocol.</Description>
+    </Header>
+    <Filter For="WonderwareDST" Name="Dst">
+        <DstPort>5413</DstPort>
+    </Filter>
+    <Filter For="WonderwareSRC" Name="Src">
+        <SrcPort>5413</SrcPort>
+    </Filter>
+    <Payload For="WonderwareDST">
+	<Description>Wonderware IO Talk traffic that looks for the specific destination port.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="WonderwareProtocol">SuiteLink</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="WonderwareSRC">
+	<Description>Wonderware IO Talk traffic that looks for the specific source port.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>HMI</Category>
+                    <Detail Name="WonderwareProtocol">SuiteLink</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

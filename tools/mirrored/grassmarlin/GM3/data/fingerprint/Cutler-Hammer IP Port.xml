@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Cutler-Hammer IP Port</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Cutler-Hammer IP Port traffic.</Description>
+    </Header>
+    <Filter For="IPCS Command" Name="DstPort">
+        <DstPort>3743</DstPort>
+    </Filter>
+    <Payload For="IPCS Command" >
+        <Description>Tags the Cutler-Hammer IP Port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSCommand">IPCS Command</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

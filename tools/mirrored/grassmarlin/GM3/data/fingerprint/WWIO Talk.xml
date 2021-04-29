@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>WWIO Talk</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of WWIO Talk traffic.</Description>
+    </Header>
+    <Filter For="WWIO Talk" Name="WWIO Talk">
+        <SrcPort>5413</SrcPort>
+    </Filter>
+    <Payload For="WWIO Talk">
+        <Description>The host listening on 5413</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>OTHER</Role>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

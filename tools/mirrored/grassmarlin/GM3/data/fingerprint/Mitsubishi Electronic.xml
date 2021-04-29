@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Mitsubishi Electronic</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of MELSEC-Q network protocol communication. The devices are used by equipment and manufacturing facilities to provide high-speed, large volume data processing and machine control.</Description>
+    </Header>
+    <Filter For="MELSEC-Q MASTER 5006" Name="MASTER 5006">
+        <DstPort>5006</DstPort>
+    </Filter>
+    <Filter For="MELSEC-Q MASTER 5007" Name="MASTER 5007">
+        <DstPort>5007</DstPort>
+    </Filter>
+    <Filter For="MELSEC-Q SLAVE 5006" Name="SLAVE 5006">
+        <SrcPort>5007</SrcPort>
+    </Filter>
+    <Filter For="MELSEC-Q SLAVE 5007" Name="SLAVE 5007">
+        <SrcPort>5007</SrcPort>
+    </Filter>
+    <Filter For="MELSEC-Q" Name="4999">
+        <DstPort>4999</DstPort>
+    </Filter>
+    <Filter For="QJ71E71" Name="4999">
+        <DstPort>4999</DstPort>
+    </Filter>		
+    <Filter For="FX" Name="FX 1025">
+        <DstPort>1025</DstPort>
+    </Filter>
+    <Filter For="FX3u" Name="Fx3u 5001">
+        <DstPort>5001</DstPort>
+    </Filter>
+    <Filter For="FL-Net Cyclic Transmission" Name="Cyclic Transmission">
+        <DstPort>55000</DstPort>
+    </Filter>
+    <Filter For="FL-Net Message Transmission" Name="Message Transmission">
+        <DstPort>55001</DstPort>
+    </Filter>	
+    <Filter For="FL-Net Participation Request Frame" Name="Participation Request Frame">
+        <DstPort>55002</DstPort>
+    </Filter>
+    <Filter For="FL-Net Sending Service" Name="Sending Service">
+        <DstPort>55003</DstPort>
+    </Filter>		
+    <Payload For="MELSEC-Q MASTER 5006">
+        <Description>MELSEC-Q payload that tags the destination port and always returns details.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>MTU</Category>
+					<Role>MASTER</Role>
+                    <Detail Name="Product">MELSEC-Q</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MELSEC-Q MASTER 5007">
+        <Description>MELSEC-Q payload that tags the destination port and always returns details.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>MTU</Category>
+                    <Role>MASTER</Role>
+                    <Detail Name="Product">MELSEC-Q</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MELSEC-Q SLAVE 5006">
+        <Description>MELSEC-Q payload that tags the destination port and always returns details.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="Product">MELSEC-Q</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="MELSEC-Q SLAVE 5007">
+        <Description>MELSEC-Q payload that tags the destination port and always returns details.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="Product">MELSEC-Q</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MELSEC-Q">
+        <Description>MELSEC-Q payload that tags the destination port and always returns details.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Detail Name="Product">MELSEC-Q</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+    <Payload For="QJ71E71">
+        <Description>QJ71E71 payload that tags the destination port and always returns details.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Detail Name="Product">QJ71E71</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FX">
+        <Description>PLC that incorporates power supply, cpu, I/O into a single unit.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Detail Name="Product">FX</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FX3u">
+        <Description>Part of the MELSEC-F PLCs, that has exchangable communication boards that mount directly into the main unit (Ethernet or Serial).</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Detail Name="Product">FX3u</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FL-Net Cyclic Transmission">
+        <Description>FA link protocol is a standardized by the Japan FA Open System Promotion Group of the manufacturing Science and Technology Center. The FL link protocol is intended for the FL net to be used for data exchange between various control modules.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Cyclic Transmission</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FL-Net Message Transmission">
+        <Description>FA link protocol is a standardized by the Japan FA Open System Promotion Group of the manufacturing Science and Technology Center. The FL link protocol is intended for the FL net to be used for data exchange between various control modules.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Message Transmission</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FL-Net Participation Request Frame">
+        <Description>FA link protocol is a standardized by the Japan FA Open System Promotion Group of the manufacturing Science and Technology Center. The FL link protocol is intended for the FL net to be used for data exchange between various control modules.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Message Transmission</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FL-Net Sending Service">
+        <Description>FA link protocol is a standardized by the Japan FA Open System Promotion Group of the manufacturing Science and Technology Center. The FL link protocol is intended for the FL net to be used for data exchange between various control modules.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Message Transmission</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+</Fingerprint>

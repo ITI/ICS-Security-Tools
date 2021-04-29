@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>ADA Control</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of ADA Control traffic.</Description>
+    </Header>
+    <Filter For="ADA-CIP" Name="DstPort">
+        <DstPort>2085</DstPort>
+    </Filter>
+    <Payload For="ADA-CIP">
+		<Description>TCP/UDP ADA-CIP</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ADA-CIP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell RSSql</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Rockwell RSSql Transaction Manager, Compression Server, and Configuration Server traffic.</Description>
+    </Header>
+    <Filter For="RSSql Transaction Manager" Name="RSSql Transaction">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>400</DstPort>
+    </Filter>
+    <Filter For="RSSql Compression Server" Name="RSSql Compression">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>401</DstPort>
+    </Filter>
+    <Filter For="RSSql Configuration Server" Name="RSSql Configuration">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>402</DstPort>
+    </Filter>
+    <Payload For="RSSql Transaction Manager">
+        <Description>Rockwell RSSql transaction that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell RSSql Transaction Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="RSSql Compression Server">
+        <Description>Rockwell RSSql compression server that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell RSSql Compression Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="RSSql Configuration Server">
+        <Description>Rockwell RSSql Configuration server that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell RSSql Configuration Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

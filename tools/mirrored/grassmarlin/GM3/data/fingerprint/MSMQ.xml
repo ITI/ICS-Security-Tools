@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>MSMQ</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of the Microsoft messaging queuing system for the messaging infrastructure and development tool for creating distributed messaging applications for Windows.</Description>
+    </Header>
+    <Filter For="MSMQ" Name="MSMQ">
+        <DstPort>1801</DstPort>
+    </Filter>
+    <Filter For="MSMQ-DCs" Name="DCs TCP">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>2101</DstPort>
+    </Filter>
+    <Filter For="MSMQ-Mgmt" Name="Mgmt TCP">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>27107</DstPort>
+    </Filter>
+    <Filter For="MSMQ-Ping" Name="Ping UDP">
+		<TransportProtocol>17</TransportProtocol>
+        <DstPort>3527</DstPort>
+    </Filter>
+    <Filter For="MSMQ-RPC" Name="RPC TCP">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>2105</DstPort>
+    </Filter>
+    <Filter For="MSMQ-RPC2" Name="RPC2 TCP">
+		<TransportProtocol>17</TransportProtocol>
+        <DstPort>2103</DstPort>
+    </Filter>	
+    <Payload For="MSMQ">
+        <Description>MSMQ UDP/TCP over 1801</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MSMQ</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MSMQ-DCs">
+        <Description>MSMQ-DCs TCP over 2101</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MSMQ-DCs</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MSMQ-Mgmt">
+        <Description>MSMQ-Mgmt TCP over 2107</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MSMQ-Mgmt</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MSMQ-Ping">
+        <Description>MSMQ-Ping UDP over 3527</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MSMQ-Ping</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+    <Payload For="MSMQ-RPC">
+        <Description>MSMQ-RPC TCP over 2105</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MSMQ-RPC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="MSMQ-RPC2">
+        <Description>MSMQ-RPC2 TCP over 2103</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MSMQ-RPC2</Detail>
+                </Details>
+            </Return>
+        </Always>	
+	</Payload>
+</Fingerprint>

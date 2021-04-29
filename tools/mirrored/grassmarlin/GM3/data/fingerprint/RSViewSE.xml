@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>RSViewSE</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of RSviewSE HMI Server traffic.This fingerprint looks for the evidence of RSViewSE Server Framework traffic.</Description>
+    </Header>
+    <Filter For=" HMI Server">
+        <SrcPort>7720</SrcPort>
+    </Filter>
+    <Filter For=" Server Framework">
+        <SrcPort>7721</SrcPort>
+    </Filter>
+    <Payload For=" HMI Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="RSVIEWSE-HMI" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Server Framework">
+        <Always>
+            <Return Confidence="2">
+                <Extract Name="RSVIEWSE-FRAM" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

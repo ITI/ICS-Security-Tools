@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Beckhoff</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of EtherCAT traffic.</Description>
+    </Header>
+    <Filter For="EtherCAT TCP Master" Name="TCP Master">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>34980</DstPort>
+    </Filter>
+    <Filter For="EtherCAT TCP Slave" Name="TCP Slave">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>34980</SrcPort>
+    </Filter>
+    <Filter For="EtherCAT UDP Master" Name="UDP Master">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>34980</DstPort>
+    </Filter>
+    <Filter For="EtherCAT UDP Slave" Name="UDP Slave">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>34980</SrcPort>
+    </Filter>	
+    <Filter For="Embedded PC" Name="PC">
+        <DstPort>48898</DstPort>
+    </Filter>		
+    <Payload For="EtherCAT TCP Master">
+        <Description>EtherCAT Master that matches TCP and port number</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>MTU</Category>
+                    <Role>MASTER</Role>
+                    <Detail Name="ICSProtocol">BECKHOFF EtherCAT</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="EtherCAT TCP Slave">
+        <Description>EtherCAT Slave that matches TCP and port number</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="ICSProtocol">BECKHOFF EtherCAT</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="EtherCAT UDP Master">
+        <Description>EtherCAT Master that matches UDP and port number</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>MTU</Category>
+                    <Role>MASTER</Role>
+                    <Detail Name="ICSProtocol">BECKHOFF EtherCAT</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="EtherCAT UDP Slave">
+        <Description>EtherCAT Slave that matches UDP and port number</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="ICSProtocol">BECKHOFF EtherCAT</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Embedded PC">
+        <Description>BECKHOFF Embedded PC over destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+					<Category>PLC</Category>
+                    <Detail Name="ICSProtocol">BECKHOFF Embedded PC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+</Fingerprint>

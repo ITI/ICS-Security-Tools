@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>APOGEE</Name>
+        <Author>Default</Author>
+        <Description>This is finding the version number of the device in the APOGEE networkThis identifies a AEM (APOGEE Ethernet Microserver). This is finding the hardware type of the device in the APOGEE networkThis is finding the hardware type of the device in the APOGEE networkThis is finding the last link date of the device in the APOGEE network</Description>
+    </Header>
+    <Filter For=" Network-Version Number">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For=" device">
+        <SrcPort>3001</SrcPort>
+    </Filter>
+    <Filter For=" Network-Hardware Type">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For=" Network-Panel Name">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For=" Network-Link Date">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Payload For=" Network-Version Number">
+        <Match Offset="0" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C56657273696F6E4E756D6265723E</Content>
+            <AndThen>
+                <Match Relative="true" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+<Category>ICS_HOST</Category>
+<Detail Name="Role">SERVER</Detail>
+                            </Details>
+                            <Extract Name="Version" From="CURSOR_START" To="CURSOR_END"/>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For=" device">
+        <Match Offset="0" Within="65535" MoveCursors="true">
+            <Content Type="HEX">41706F676565</Content>
+            <AndThen>
+                <Return Confidence="3">
+                    <Details>
+                        <Category>ICS_HOST</Category>
+                        <Detail Name="Role">OTHER</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For=" Network-Hardware Type">
+        <Match Offset="0" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C4861726477617265547970653E</Content>
+            <AndThen>
+                <Match Relative="true" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+<Category>ICS_HOST</Category>
+<Detail Name="Role">SERVER</Detail>
+                            </Details>
+                            <Extract Name="Model" From="CURSOR_START" To="CURSOR_END"/>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For=" Network-Panel Name">
+        <Match Offset="0" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C50616E656C204E616D653D22</Content>
+            <AndThen>
+                <Match Relative="true" MoveCursors="false">
+                    <Content Type="HEX">22</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+<Category>ICS_HOST</Category>
+<Detail Name="Role">SERVER</Detail>
+                            </Details>
+                            <Extract Name="Panel Name: " From="CURSOR_START" To="CURSOR_END"/>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For=" Network-Link Date">
+        <Match Offset="0" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C4C696E6B446174653E</Content>
+            <AndThen>
+                <Match Relative="true" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+<Category>ICS_HOST</Category>
+<Detail Name="Role">SERVER</Detail>
+                            </Details>
+                            <Extract Name="Link Date:" From="CURSOR_START" To="CURSOR_END"/>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

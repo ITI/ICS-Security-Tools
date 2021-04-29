@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell CSP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of Rockwell CSP1, CSP2, and CSP3 traffic.</Description>
+    </Header>
+    <Filter For="CSP1" Name="CSP1 Src">
+        <SrcPort>2221</SrcPort>
+    </Filter>
+    <Filter For="CSP1" Name="CSP1 Dst">
+        <DstPort>2221</DstPort>
+    </Filter>
+    <Filter For="CSP2" Name="CSP2 Src">
+        <SrcPort>2222</SrcPort>
+    </Filter>
+    <Filter For="CSP2" Name="CSP2 Dst">
+        <DstPort>2222</DstPort>
+    </Filter>
+    <Filter For="CSP3" Name="CSP3 Src">
+        <SrcPort>2223</SrcPort>
+    </Filter>
+    <Filter For="CSP3" Name="CSP3 Dst">
+        <DstPort>2223</DstPort>
+    </Filter>
+    <Payload For="CSP1">
+        <Description>Rockwell CSP1 that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell CSP1</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="CSP2">
+        <Description>Rockwell CSP2 that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell CSP2</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="CSP3">
+        <Description>Rockwell CSP3 that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell CSP3</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

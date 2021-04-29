@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>FF</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of FF LAN Redundancy Port traffic.This fingerprint looks for the evidence of FF Fieldbus traffic.This fingerprint looks for the evidence of FF System Management traffic.This fingerprint looks for the evidence of FF Annunciation traffic.</Description>
+    </Header>
+    <Filter For=" LAN Redundancy Port">
+        <DstPort>3622</DstPort>
+    </Filter>
+    <Filter For=" Fieldbus Message Specification">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>1090</SrcPort>
+        <DstPort>1090</DstPort>
+    </Filter>
+    <Filter For=" SYstem Management">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>1091</SrcPort>
+        <DstPort>1091</DstPort>
+    </Filter>
+    <Filter For=" Annunciation">
+        <SrcPort>1089</SrcPort>
+        <DstPort>1089</DstPort>
+    </Filter>
+    <Payload For=" LAN Redundancy Port">
+        <Always>
+            <Return Confidence="5">
+                <Extract Name="FF-LR-PORT" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Fieldbus Message Specification">
+        <Always>
+            <Return Confidence="4"/>
+        </Always>
+    </Payload>
+    <Payload For=" SYstem Management">
+        <Always>
+            <Return Confidence="4"/>
+        </Always>
+    </Payload>
+    <Payload For=" Annunciation">
+        <Always>
+            <Return Confidence="4"/>
+        </Always>
+    </Payload>
+</Fingerprint>

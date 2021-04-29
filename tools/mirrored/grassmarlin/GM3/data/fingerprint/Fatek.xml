@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Fatek</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of the FATEK FB Series traffic.</Description>
+    </Header>
+    <Filter For="FB Series" Name="FB Series">
+        <DstPort>500</DstPort>
+    </Filter>
+    <Payload For="FB Series">
+		<Description>Identifies Fatek FB series PLC traffic.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="Product">Fatek FB Series</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

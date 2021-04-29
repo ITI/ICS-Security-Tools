@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>UPNP Device Host</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of UPNP device host discovery system service that implements all the components required for device registration, control, and responding to events for hsoted device.</Description>
+    </Header>
+    <Filter For="UPNP Device Host" Name="UPNP">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>2869</DstPort>
+    </Filter>
+    <Payload For="UPNP Device Host">
+        <Description>Tags upnp device host traffic over UDP port 2869</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">UPNP Device Host</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Panasonic</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Panasonic FP and FP2 ethernet traffic.</Description>
+    </Header>
+    <Filter For="Panasonic" Name="FP">
+        <DstPort>9094</DstPort>
+    </Filter>
+    <Filter For="Panasonic" Name="FP2">
+        <DstPort>8500</DstPort>
+    </Filter>	
+    <Payload For="Panasonic">
+		<Description>PLC that has the ability to do higher processing with optimizing communication.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="Product">Pansonic FP/FP2</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

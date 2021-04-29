@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Koyo Ethernet</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Koyo Ethernet traffic over 28784.</Description>
+    </Header>
+    <Filter For="Koyo Ethernet" Name="Ethernet DstPort">
+        <DstPort>28784</DstPort>
+    </Filter>
+    <Payload For="Koyo Ethernet">
+        <Description>PLC that uses IEC/JIS standards under the Direct Logic PLC.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="ICSProtocol">Koyo Ethernet</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>MMS</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Microsoft media Server as part of a service.</Description>
+    </Header>
+    <Filter For="MMS" Name="MMS">
+        <DstPort>1755</DstPort>
+    </Filter>
+    <Payload For="MMS">
+        <Description>Tags Microsoft Media Server</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Micrsoft Server Product">Microsoft Media Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

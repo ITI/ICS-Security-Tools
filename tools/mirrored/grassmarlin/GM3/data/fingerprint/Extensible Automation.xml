@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Extensible Automation</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Extensible Automation traffic.</Description>
+    </Header>
+    <Filter For="Extensible Automation" Name="xAP-HA">
+        <DstPort>3639</DstPort>
+    </Filter>
+    <Payload For="Extensible Automation">
+		<Description>Supports integration of telemetry and control devices for building automation</Description>
+        <Always>
+            <Return Confidence="5">
+				<Category>ICS_HOST</Category>
+				<Detail Name="ICSProtocol">xAP-HA</Detail>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Factory</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of Factory Talk Event Server traffic.This fingerprint looks for the evidence of Factory Talk Directory Server File transfer traffic.This fingerprint looks for the evidence of Factory Talk Directory Server traffic.</Description>
+    </Header>
+    <Filter For=" Talk Event Server">
+        <SrcPort>7700</SrcPort>
+    </Filter>
+    <Filter For=" Talk Directory Server File Transfer">
+        <DstPort>3060</DstPort>
+    </Filter>
+    <Filter For=" Talk Directory Server">
+        <SrcPort>7710</SrcPort>
+    </Filter>
+    <Payload For=" Talk Event Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="FT-EVENT-SERV" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Talk Directory Server File Transfer">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="RNADIRFT" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Talk Directory Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="FT-DIR-SERV" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

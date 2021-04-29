@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>OneHome</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of OneHome Remote Access traffic. This fingerprint looks for evidence of OneHome Service Port traffic.</Description>
+    </Header>
+    <Filter For=" Remote Access" Name="Remote Access">
+        <DstPort>2198</DstPort>
+    </Filter>
+    <Filter For=" Service Port" Name="Service Port">
+        <DstPort>2199</DstPort>
+    </Filter>
+    <Payload For=" Remote Access">
+		<Description>OneHome Remote Access</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+					<Category>HMI</Category>
+					<Detail Name="Product">OneHome Remote Access</Detail>
+				</Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Service Port">
+		<Description>OneHome Remote Access Service port</Description>
+        <Always>
+            <Return Confidence="5">
+				<Details>
+					<Category>HMI</Category>
+					<Detail Name="Product">OneHome Remote Access Service port</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

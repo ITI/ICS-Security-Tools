@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>LonWorks2</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of LonWorks2 traffic.</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="default">
+        <DstPort>2541</DstPort>
+    </Filter>
+    <Payload For="default">
+        <Always>
+            <Return Confidence="3"/>
+        </Always>
+    </Payload>
+</Fingerprint>

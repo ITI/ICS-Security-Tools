@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>RSSql</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of RSSql transaction Manager traffic.This fingerprint looks for the evidence of RSSql Compression Server traffic.This fingerprint looks for the evidence of RSSql Configuration Server traffic.</Description>
+    </Header>
+    <Filter For=" Transaction Manager">
+        <DstPort>400</DstPort>
+    </Filter>
+    <Filter For=" Compression Server">
+        <DstPort>401</DstPort>
+    </Filter>
+    <Filter For=" Configuration Server">
+        <DstPort>402</DstPort>
+    </Filter>
+    <Payload For=" Transaction Manager">
+        <Always>
+            <Return Confidence="2"/>
+        </Always>
+    </Payload>
+    <Payload For=" Compression Server">
+        <Always>
+            <Return Confidence="2"/>
+        </Always>
+    </Payload>
+    <Payload For=" Configuration Server">
+        <Always>
+            <Return Confidence="2"/>
+        </Always>
+    </Payload>
+</Fingerprint>

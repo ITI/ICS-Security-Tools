@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>EGD</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of EGD Type:13 Version:1 traffic over 18246.</Description>
+    </Header>
+    <Filter For="EGD" Name="Ethernet Global Data">
+        <DstPort>18246</DstPort>
+        <SrcPort>18246</SrcPort>
+    </Filter>
+    <Payload For="EGD">
+        <Description>Protocol that enables producer (server) to share a portion of its memory to all the consumer (clients) at the schedule periodic rate protocol developed for GE Fanuc PLCs to change data between PLCs/GE drive systems. The protocol uses UDP over Ethernet layers for exchanging data.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="ICSProtocol">Ethernet Global Data</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="2" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">0D01</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="RequestID" From="2" To="4" MaxLength="1024" Endian="LITTLE">
+                        <Post Convert="INTEGER"/>
+                    </Extract>
+                    <Extract Name="ProducerID-IP_Address" From="4" To="8" MaxLength="1024" Endian="BIG">
+                        <Post Convert="RAW_BYTES"/>
+                    </Extract>
+                    <Extract Name="ExchangeID" From="8" To="12" MaxLength="1024" Endian="LITTLE">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

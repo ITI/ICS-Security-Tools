@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>FODMS FLIP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of FODMS FLIP traffic.</Description>
+    </Header>
+    <Filter For="FODMS FLIP" Name="SrcPort">
+        <SrcPort>7200</SrcPort>
+    </Filter>
+    <Payload For="FODMS FLIP">
+        <Description>Fiber optics multiplexing service as per RFC 822</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">FODMS FLIP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

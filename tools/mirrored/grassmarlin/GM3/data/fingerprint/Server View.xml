@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Server View</Name>
+        <Author>Default</Author>
+        <Description>This tries to find Server view dmbs access traffic.</Description>
+    </Header>
+    <Filter For="Server View" Name="DBMS Access">
+        <SrcPort>9212</SrcPort>
+    </Filter>
+    <Payload For="Server View">
+        <Description>Tags the DBMS access from Server View.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">Server View DBMS access</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

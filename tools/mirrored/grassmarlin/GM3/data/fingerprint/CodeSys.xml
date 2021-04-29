@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>CodeSys</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of CodeSys traffic.</Description>
+    </Header>
+    <Filter For="Gateway Server 1" Name="Dst 2455">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>2455</DstPort>
+    </Filter>
+    <Filter For="Gateway Server 2" Name="Dst 1200">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>1200</DstPort>
+    </Filter>	
+	<Payload For="Gateway Server 1">
+		<Description>Gateway Server for industrial devices running CodeSys programming interface</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+					<Role>SERVER</Role>
+                    <Detail Name="ICSProtocol">CodeSys</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="Gateway Server 2">
+		<Description>Gateway Server for industrial devices running CodeSys programming interface</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+					<Role>SERVER</Role>
+                    <Detail Name="ICSProtocol">CodeSys</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>DNP3</Name>
+        <Author>Default</Author>
+        <Description>Looks for evidence of DNP3 traffic on src/des on port 20000</Description>
+    </Header>
+    <Filter For="DNP3_Master" Name="Master">
+        <DstPort>20000</DstPort>
+    </Filter>
+    <Filter For="DNP3_Slave" Name="Slave">
+        <SrcPort>20000</SrcPort>
+    </Filter>
+    <Payload For="DNP3_Master">
+        <Description>Finds a DNP3 Master device by matching the DNP3 header and attaches details to the DESTINATION in the frame.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="false">
+            <Content Type="HEX">0564</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="4">
+                    <Details>
+                        <Category>MTU</Category>
+                        <Role>MASTER</Role>
+                        <Detail Name="ICSProtocol">DNP3</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="DNP3_Slave">
+        <Description>Finds a DNP3 Slave device by matching the DNP3 header and attaches details to the SOURCE in the frame.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="false">
+            <Content Type="HEX">0564</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="4">
+                    <Details>
+                        <Category>IED</Category>
+                        <Role>SLAVE</Role>
+                        <Detail Name="ICSProtocol">DNP3</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

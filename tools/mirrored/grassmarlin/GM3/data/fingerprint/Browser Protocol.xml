@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Browser Protocol</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint tags the Host Name and the OS version in the Browser protocol.</Description>
+    </Header>
+    <Filter For="Browser Protocol" Name="SrcPort">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>138</SrcPort>
+    </Filter>
+    <Filter For="Browser Protocol" Name="DstPort">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>
+    <Filter For="Browser Protocol2" Name="SrcPort2">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>138</SrcPort>
+    </Filter>
+    <Filter For="Browser Protocol2" Name="DstPort2">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>
+    <Filter For="Browser Protocol3" Name="SrcPort3">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>138</SrcPort>
+    </Filter>
+    <Filter For="Browser Protocol3" Name="DstPort3">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>
+    <Filter For="Browser Protocol4" Name="SrcPort4">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>138</SrcPort>
+    </Filter>	
+    <Filter For="Browser Protocol4" Name="DstPort4">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>	
+    <Filter For="Browser Protocol5" Name="SrcPort5">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>138</SrcPort>
+    </Filter>
+    <Filter For="Browser Protocol5" Name="DstPort5">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>	
+    <Filter For="Browser Protocol6" Name="SrcPort6">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>138</SrcPort>
+    </Filter>
+    <Filter For="Browser Protocol6" Name="DstPort6">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>	
+    <Payload For="Browser Protocol">
+        <Description>Tags 0F00C0D4 Hex pattern in payload. Extracting from bytes 174-182 for Windows Name and bytes 190-192 for Version number.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="MicrosoftProtocol">Microsoft Windows Browser Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="true" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">0F00C0D4</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Host Name" From="174" To="182" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="Windows Version" From="190" To="192" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="Browser Protocol2">
+        <Description>Tags 0F0080FC Hex pattern in payload. Extracting from bytes 174-190 for Windows Name and bytes 190-192 for Version number.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="MicrosoftProtocol">Microsoft Windows Browser Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="true" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">0F0080FC</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Host Name" From="174" To="190" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="Windows Version" From="190" To="192" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+	<Payload For="Browser Protocol3">
+        <Description>Tags 010080FC Hex pattern in payload. Extracting from bytes 174-189 for Windows Name and bytes 190-192 for Version number.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="MicrosoftProtocol">Microsoft Windows Browser Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="true" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">010080FC</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Host Name" From="174" To="189" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="Windows Version" From="190" To="192" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+	<Payload For="Browser Protocol4">
+        <Description>Tags 0F162012 Hex pattern in payload. Extracting from bytes 174-189 for Windows Name and bytes 190-192 for Version number.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="MicrosoftProtocol">Microsoft Windows Browser Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="true" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">0F162012</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Host Name" From="174" To="189" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="Windows Version" From="190" To="192" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>	
+	<Payload For="Browser Protocol5">
+        <Description>Tags 010080A9 Hex pattern in payload. Extracting from bytes 174-190 for Windows Name and bytes 190-192 for Version number.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="MicrosoftProtocol">Microsoft Windows Browser Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="true" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">010080A9</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Host Name" From="174" To="190" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="Windows Version" From="190" To="192" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+	<Payload For="Browser Protocol6">
+        <Description>Tags the Domain/Workgroup Accouncement in the Browser Protocol and matches on 0C00A0BB Hex pattern in payload. Extracts bytes 174-190 for Domain/Workgroup and bytes 190-192 for Windows version number.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="MicrosoftProtocol">Microsoft Windows Browser Protocol</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="true" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Content Type="HEX">0C00A0BB</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="Domain/Workgroup" From="174" To="190" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="Windows Version" From="190" To="192" MaxLength="1024" Endian="BIG">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>		
+</Fingerprint>

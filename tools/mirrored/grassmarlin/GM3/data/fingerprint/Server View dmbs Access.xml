@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Server View dmbs Access</Name>
+        <Author>Default</Author>
+        <Description>This tries to find Server view dmbs access traffic.</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="default">
+        <SrcPort>9212</SrcPort>
+    </Filter>
+    <Payload For="default">
+        <Always>
+            <Return Confidence="1">
+                <Extract Name="SERVERVIEWDBMS" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

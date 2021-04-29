@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>LonWorks</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of LonWorks traffic.</Description>
+    </Header>
+    <Filter For="LonWorks 1" Name="DstPort">
+        <DstPort>2540</DstPort>
+    </Filter>
+    <Filter For="LonWorks 2" Name="DstPort">
+        <DstPort>2541</DstPort>
+    </Filter>	
+    <Payload For="LonWorks 1">
+        <Always>
+            <Return Confidence="5">
+				<Category>ICS_HOST</Category>
+				<Detail Name="ICSProtocol">LonWorks</Detail>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="LonWorks 2">
+        <Always>
+            <Return Confidence="5">
+				<Category>ICS_HOST</Category>
+				<Detail Name="ICSProtocol">LonWorks</Detail>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

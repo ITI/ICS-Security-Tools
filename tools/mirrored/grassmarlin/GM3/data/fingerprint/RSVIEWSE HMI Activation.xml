@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>RSVIEWSE HMI Activation</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of RSViewSE HMI Activation traffic.</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="default">
+        <SrcPort>7722</SrcPort>
+    </Filter>
+    <Payload For="default">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="RSVIEWSE-ACT" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

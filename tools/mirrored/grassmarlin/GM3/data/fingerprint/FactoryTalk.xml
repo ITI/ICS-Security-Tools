@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>FactoryTalk</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of FactoryTalk Alarming  traffic.This fingerprint looks for the evidence of FactoryTalk Object RPC traffic.This fingerprint looks for the evidence of Factory Talk Event Multiplexor traffic.This fingerprint looks for the evidence of FactoryTalk Service control traffic.This fingerprint looks for the evidence of FactoryTalk Server Health traffic.</Description>
+    </Header>
+    <Filter For=" Alarming Server">
+        <DstPort>6543</DstPort>
+    </Filter>
+    <Filter For=" Object RPC">
+        <DstPort>1330</DstPort>
+    </Filter>
+    <Filter For=" Event Multiplexor">
+        <DstPort>7600</DstPort>
+    </Filter>
+    <Filter For=" Service control">
+        <DstPort>1331</DstPort>
+    </Filter>
+    <Filter For=" Server Health">
+        <DstPort>1332</DstPort>
+    </Filter>
+    <Payload For=" Alarming Server">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="RNA-ALARM-SERV" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Object RPC">
+        <Always>
+            <Return Confidence="2">
+                <Extract Name="RNAORPC" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Event Multiplexor">
+        <Always>
+            <Return Confidence="3">
+                <Extract Name="FT-EVENT-MULTI" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Service control">
+        <Always>
+            <Return Confidence="2">
+                <Extract Name="RNASERV" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Server Health">
+        <Always>
+            <Return Confidence="2">
+                <Extract Name="RNASERVERPING" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

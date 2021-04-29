@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Hitachi</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Hitachi EHV Series traffic.</Description>
+    </Header>
+    <Filter For="Hitachi" Name="EHV Series">
+        <DstPort>3004</DstPort>
+    </Filter>
+    <Payload For="Hitachi">
+        <Description>General purpose PLC that uses Codesys</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="Product">Hitachi EHV Series</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>IEC 60870-5-104</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of IEC 60870-5-104 traffic.</Description>
+    </Header>
+    <Filter For="60870-5-104" Name="60870-5-104">
+        <DstPort>2404</DstPort>
+    </Filter>
+    <Payload For="60870-5-104">
+        <Description>Set of standards which define systems used for SCADA in electrical engineering and power systems</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">IEC 60870-5-104</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

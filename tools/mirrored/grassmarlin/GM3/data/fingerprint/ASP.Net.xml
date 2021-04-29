@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>ASP.Net</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of session states that stores data out of process.</Description>
+    </Header>
+    <Filter For="ASP.Net" Name="State Service">
+        <DstPort>42424</DstPort>
+    </Filter>
+    <Payload For="ASP.Net">
+        <Description>Payload supports asp.net state service</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">ASP.NET</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

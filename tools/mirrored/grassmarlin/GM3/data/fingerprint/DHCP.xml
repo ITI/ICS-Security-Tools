@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>DHCP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of DHCP communication and DHCP traffic deployed at a MADCAP server.</Description>
+    </Header>
+    <Filter For="DHCP" Name="DHCP">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>67</DstPort>
+    </Filter>
+    <Filter For="MADCAP" Name="MADCAP">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>2535</DstPort>
+    </Filter>
+    <Payload For="DHCP">
+        <Description>Tags DHCP traffic</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">DHCP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="MADCAP">
+        <Description>Tags DHCP in MADCAP server deployment</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">DHCP MADCAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

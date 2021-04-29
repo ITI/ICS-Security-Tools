@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>PROFInet</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of PROFInet RT Multicast traffic. This fingerprint looks for the evidence of PROFInet RT Unicast traffic. This fingerprint looks for the evidence of PROFInet Context Manager traffic.</Description>
+    </Header>
+    <Filter For="RT Multicast" Name="Multicast">
+        <SrcPort>34963</SrcPort>
+    </Filter>
+    <Filter For="RT Unicast" Name="Unicast">
+        <DstPort>34962</DstPort>
+    </Filter>
+    <Filter For="Context Manager" Name="Manager">
+        <SrcPort>34964</SrcPort>
+    </Filter>
+    <Payload For="RT Multicast">
+        <Description>PROFInet RT Multicast over source port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">RT Multicast</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="RT Unicast">
+        <Description>PROFInet RT Unicast over destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">RT Unicast</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Context Manager">
+        <Description>PROFInet Context Manager over source port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">Context Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

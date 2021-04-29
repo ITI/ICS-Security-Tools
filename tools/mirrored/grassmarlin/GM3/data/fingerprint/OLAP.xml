@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>OLAP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of OLAP service which provides SQL service client support for answering multi dimensional analytical queries.</Description>
+    </Header>
+    <Filter For="OLAP 1" Name="DstPort">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>2393</DstPort>
+    </Filter>
+    <Filter For="OLAP 2" Name="DstPort">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>2394</DstPort>
+    </Filter>
+    <Payload For="OLAP 1">
+        <Description>Tags OLAP SQL services</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">OLAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="OLAP 2">
+        <Description>Tags OLAP SQL services</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">OLAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

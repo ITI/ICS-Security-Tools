@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>IP Control Systems Ltd</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of IP Control Systems traffic. Write standard input info about active interprocess communication facilities.</Description>
+    </Header>
+    <Filter For="ICS Command" Name="DstPort">
+        <DstPort>3743</DstPort>
+    </Filter>
+    <Payload For="ICS Command">
+        <Description>This fingerprint looks for the evidence of IP Control Systems traffic.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">IP Control Systems Ltd</Detail>
+                </Details>
+            </Return>
+        </Always>
+	</Payload>	
+</Fingerprint>

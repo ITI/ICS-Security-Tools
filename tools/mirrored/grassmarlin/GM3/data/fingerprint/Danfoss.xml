@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Danfoss</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Danfoss ECL Alex traffic.</Description>
+    </Header>
+    <Filter For="Danfoss ECL Apex" Name="ECL Apex">
+        <DstPort>5050</DstPort>
+    </Filter>
+    <Payload For="Danfoss ECL Apex">
+        <Description>High performance PLC runtime engine desinged to run both embedded and PC applications</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="Product">Danfoss ECL Apex</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

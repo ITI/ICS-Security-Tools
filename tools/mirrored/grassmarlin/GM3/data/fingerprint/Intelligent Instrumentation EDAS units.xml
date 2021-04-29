@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Intelligent Instrumentation EDAS units</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of Undocumented usage by Intelligent Instrumentation EDAS units, models EDAS-1001E, -1002E, -1024E, 1031E traffic.</Description>
+    </Header>
+    <Filter For="Intelligent Instrumentation" Name="Undocumented EDAS unites">
+        <SrcPort>5891</SrcPort>
+    </Filter>
+    <Payload For="Intelligent Instrumentation">
+        <Description>Tags Undocumented usage by Intelligent Instrumentation EDAS unites by incoming source port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">Intelligent Instrumentation EDAS</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

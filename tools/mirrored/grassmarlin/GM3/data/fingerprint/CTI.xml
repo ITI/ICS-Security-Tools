@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>CTI</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of CTI Program Load traffic. This fingerprint looks for evidence of CTI System Msg traffic.</Description>
+    </Header>
+    <Filter For="Program Load" Name="DstPort">
+        <DstPort>4452</DstPort>
+    </Filter>
+    <Filter For="System Message" Name="DstPort">
+        <DstPort>4451</DstPort>
+    </Filter>
+    <Payload For="Program Load">
+        <Description>Tags the CTI Program Load</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">CT Program Load</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="System Message">
+        <Description>Tags the CT Discovery Protocol</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">CT System Message</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

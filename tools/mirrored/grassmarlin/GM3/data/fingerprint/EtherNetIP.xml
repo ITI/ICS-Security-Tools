@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>EtherNetIP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of EtherNetIP traffic.</Description>
+        <Tag>ETHERNETIP</Tag>
+    </Header>
+    <Filter For="EtherNetIP UDP List Identity Response" Name="UDP List">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>44818</SrcPort>
+    </Filter>
+    <Filter For="Replier/Requester UDP" Name="Dst">
+        <DstPort>44818</DstPort>
+    </Filter>
+    <Filter For="Replier/Requester UDP" Name="Src">
+        <SrcPort>44818</SrcPort>
+    </Filter>
+    <Payload For="Replier/Requester UDP">
+		<Description>Tags UDP replier/requester EtherNetIP traffic.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ETHERNETIP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="EtherNetIP UDP List Identity Response">
+		<Description>Tags UDP identity EtherNetIP response traffic.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">ETHERNETIP</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="24" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">01000C00</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="ENIP Vendor" From="48" To="50" MaxLength="1024" Endian="LITTLE">
+                        <Post Lookup="ENIPVENDOR"/>
+                    </Extract>
+                    <Extract Name="ENIP Device Type" From="50" To="52" MaxLength="1024" Endian="LITTLE">
+                        <Post Lookup="ENIPDEVICE"/>
+                    </Extract>
+                    <Extract Name="ENIP Product Code" From="52" To="54" MaxLength="1024" Endian="LITTLE">
+                        <Post Convert="INTEGER"/>
+                    </Extract>
+                    <Extract Name="ENIP Serial Number" From="58" To="62" MaxLength="1024" Endian="LITTLE">
+                        <Post Convert="HEX"/>
+                    </Extract>
+                </Return>
+                <ByteJump PostOffset="63" Relative="false" Endian="BIG" Offset="62" Bytes="1">
+                    <AndThen>
+                        <Return Direction="SOURCE" Confidence="5">
+                            <Details/>
+                            <Extract Name="Model" From="63" To="CURSOR_MAIN" MaxLength="1024" Endian="BIG">
+                                <Post Convert="STRING"/>
+                            </Extract>
+                        </Return>
+                    </AndThen>
+                </ByteJump>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

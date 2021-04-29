@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Siemens APOGEE</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint finds the version number of the device in the APOGEE network. This fingerprint finds the AEM (APOGEE Ethernet Microserver). This fingerprint finds the hardware type of the device in the APOGEE network. This fingerprint finds the hardware type of the device in the APOGEE network. This fingerprint finds the last link date of the device in the APOGEE network. This fingerprint finds the Ethernet field nael traffic. This fingerprint finds the AEM device. This fingerprint finds the AEM device. This fingerprint finds the AEM device. This fingerprint finds the AEM device. This fingerprint finds the AEM device. This fingerprint finds the License Manager. This fingerprint finds the Device Field Panel. This fingerprint finds the Device Field Panel. This fingerprint finds the Insight Async Service. This fingerprint finds the Objectivity Database 1 and 2. This fingerprint finds the Objectivity Insight 1. This fingerprint finds the AMS Service and Lock server and AEM200. This fingerprint finds Dialogic Board. This fingerprint finds the utility cast manager. This fingerprint finds the UDP BACnet</Description>
+    </Header>
+    <Filter For="Network-Version Number" Name="Version Number">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For="Network-Hardware Type" Name="Hardware Type">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For="Network-Panel Name" Name="Panel Name">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For="Network-Link Date" Name="Link Date">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>5033</SrcPort>
+    </Filter>
+    <Filter For="Ethernet RS485 field panel" Name="Field Panel">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>3001</DstPort>
+    </Filter>
+    <Filter For="AEM Device" Name="Field Panel">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>3002</DstPort>
+    </Filter>
+    <Filter For="License Manager" Name="Manager">
+        <DstPort>5099</DstPort>
+    </Filter>
+    <Filter For="Device Field Panel" Name="Field Panel">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>5441</DstPort>
+    </Filter>
+    <Filter For="Insight Async Service" Name="Async Service">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>5442</DstPort>
+    </Filter>
+    <Filter For="Objectivity Database 1" Name="Database 1">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>6775</DstPort>
+    </Filter>
+    <Filter For="Objectivity Database 2" Name="Database 2">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>6888</DstPort>
+    </Filter>
+    <Filter For="Objectivity Insight 1" Name="Insight 1">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>6889</DstPort>
+    </Filter>
+    <Filter For="Objectivity Insight 2" Name="Insight 2">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>6780</DstPort>
+    </Filter>	
+    <Filter For="Objectivity AMS Service" Name="AMS Service">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>6779</DstPort>
+    </Filter>
+    <Filter For="Objectivity Lock Server" Name="Lock Server">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>6780</DstPort>
+    </Filter>
+    <Filter For="AEM200 Communication" Name="AEM200 Communication">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>999</DstPort>
+	</Filter>	
+    <Filter For="Dialogic Board 1" Name="Dialogic Board 1">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>12001</DstPort>		
+    </Filter>
+    <Filter For="Dialogic Board 2" Name="Dialogic Board 2">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>12002</DstPort>		
+    </Filter>	
+    <Filter For="Dialogic Board 3" Name="Dialogic Board 3">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>12003</DstPort>		
+    </Filter>	
+    <Filter For="Dialogic Board 4" Name="Dialogic Board 4">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>12004</DstPort>		
+    </Filter>
+    <Filter For="Dialogic Board 5" Name="Dialogic Board 5">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>12005</DstPort>		
+    </Filter>
+    <Filter For="Utility Cast Manager" Name="Manager">
+        <DstPort>30400</DstPort>		
+    </Filter>
+    <Filter For="BACnet Field Panels" Name="BACnet">
+        <DstPort>47808</DstPort>		
+    </Filter>		
+    <Payload For="Network-Version Number">
+        <Description>Tags APOGEE network version number by HEX match and extracts the version number.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C56657273696F6E4E756D6265723E</Content>
+            <AndThen>
+                <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN" Relative="false" Offset="0"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+                                <Category>ICS_HOST</Category>
+                                <Role>SERVER</Role>
+                                <Detail Name="Product">APOGEE - Network Version Number</Detail>
+                            </Details>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="Network-Hardware Type">
+        <Description>Tags APOGEE network hardware type by HEX match and extracts the model type</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C4861726477617265547970653E</Content>
+            <AndThen>
+                <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN" Relative="false" Offset="0"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+                                <Category>ICS_HOST</Category>
+                                <Role>SERVER</Role>
+                                <Detail Name="Product">APOGEE-Network Hardware Type</Detail>
+                            </Details>
+                            <Extract Name="Model" From="CURSOR_START" To="CURSOR_END" MaxLength="1024" Endian="BIG">
+                                <Post Convert="INTEGER"/>
+                            </Extract>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="Network-Panel Name">
+        <Description>Tags APOGEE network panel name HEX match and extracts the panel name</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C50616E656C204E616D653D22</Content>
+            <AndThen>
+                <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="false">
+                    <Content Type="HEX">22</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN" Relative="false" Offset="0"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+                                <Category>ICS_HOST</Category>
+                                <Role>SERVER</Role>
+                                <Detail Name="Product">APOGEE - Network Panel Name</Detail>
+                            </Details>
+                            <Extract Name="Panel Name: " From="CURSOR_START" To="CURSOR_END" MaxLength="1024" Endian="BIG">
+                                <Post Convert="STRING"/>
+                            </Extract>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="Network-Link Date">
+        <Description>Tags APOGEE network link date by HEX match and extracts the link date.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="65535" MoveCursors="true">
+            <Content Type="HEX">3C4C696E6B446174653E</Content>
+            <AndThen>
+                <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN" Relative="false" Offset="0"/>
+                        <Return Direction="SOURCE" Confidence="3">
+                            <Details>
+                                <Category>ICS_HOST</Category>
+                                <Role>SERVER</Role>
+                                <Detail Name="Product">APOGEE - Network Link Date</Detail>
+                            </Details>
+                            <Extract Name="Link Date:" From="CURSOR_START" To="CURSOR_END" MaxLength="1024" Endian="BIG">
+                                <Post Convert="INTEGER"/>
+                            </Extract>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+	<Payload For="Ethernet RS485 field panel">
+        <Description>Tags APOGEE field panels.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">APOGEE Ethernet Field Panel</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+	<Payload For="AEM Device">
+        <Description>Tags APOGEE AEM Device.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE AEM Device</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>	
+	<Payload For="License Manager">
+        <Description>Tags APOGEE License Manager.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE License Manager</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Device Field Panel">
+        <Description>Tags APOGEE Device Field Panel.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Device Field Panel</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Insight Async Service">
+        <Description>Tags APOGEE Insight Async Service.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Insight Async Service</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Objectivity Database 1">
+        <Description>Tags APOGEE Objectivity Database 1.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Role>SERVER</Role>
+						<Detail Name="Product">APOGEE Objectivity Database 1</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Objectivity Database 2">
+        <Description>Tags APOGEE Device Field Panel 2.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Role>SERVER</Role>
+						<Detail Name="Product">APOGEE Objectivity Database 2</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Objectivity Insight 1">
+        <Description>Tags APOGEE Objectivity Insight 1.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Objectivity Insight 1</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Objectivity Insight 2">
+        <Description>Tags APOGEE Objectivity Insight 2.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Objectivity Insight 2</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>		
+	<Payload For="Objectivity AMS Service">
+        <Description>Tags APOGEE Objectivity AMS Service.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Role>SERVER</Role>
+						<Detail Name="Product">APOGEE Objectivity AMS Service</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>	
+	<Payload For="Objectivity Lock Server">
+        <Description>Tags APOGEE Objectivity Lock Server.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Role>SERVER</Role>
+						<Detail Name="Product">APOGEE Objectivity Lock Server</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>	
+	<Payload For="AEM200 Communication">
+        <Description>Tags APOGEE AEM200 Communication.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE AEM200 Communication</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Dialogic Board 1">
+        <Description>Tags APOGEE Dialogic Board 1.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Dialogic Board 1</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Dialogic Board 2">
+        <Description>Tags APOGEE Dialogic Board 2.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Dialogic Board 2</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Dialogic Board 3">
+        <Description>Tags APOGEE Dialogic Board 3.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Dialogic Board 3</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Dialogic Board 4">
+        <Description>Tags APOGEE Dialogic Board 4.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Dialogic Board 4</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="Dialogic Board 5">
+        <Description>Tags APOGEE Dialogic Board 5.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Dialogic Board</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>	
+	<Payload For="Utility Cast Manager">
+        <Description>Tags APOGEE Utility Cast Manager.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE Utility Cast Manager</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>
+	<Payload For="BACnet Field Panels">
+        <Description>Tags APOGEE BACnet Field Panels.</Description>
+            <Always>
+				<Return Confidence="5">
+					<Details>
+						<Category>ICS_HOST</Category>
+						<Detail Name="Product">APOGEE BACnet Field Panels</Detail>
+					</Details>
+				</Return>
+			</Always>
+    </Payload>	
+</Fingerprint>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Fingerprint>
+    <Header>
+        <Name>MODBUS</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of MODBUS traffic on port 502.</Description>
+    </Header>
+    <Filter For="TCP Slave Unit Number" Name="TCP Slave">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>502</SrcPort>
+    </Filter>
+    <Filter For="UDP Client/Server Unit Number" Name="UDP Client/Server">
+        <TransportProtocol>17</TransportProtocol>
+        <SrcPort>502</SrcPort>
+    </Filter>
+    <Filter For="TCP Master" Name="TCP Master">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>502</DstPort>
+    </Filter>
+    <Payload For="TCP Master">
+		<Description>MODBUS TCP Master</Description>
+        <Always>
+            <Return Confidence="4">
+                <Details>
+                    <Category>MTU</Category>
+					<Role>MASTER</Role>
+                    <Detail Name="ICSProtocol">MODBUS</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="UDP Client/Server Unit Number">
+        <Description>MODBUS UDP Client or Server</Description>
+        <Always>
+            <Return Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">MODBUS</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="TCP Slave Unit Number">
+        <Description>MODBUS TCP Slave Unit Number</Description>
+        <Always>
+            <Return Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="ICSProtocol">MODBUS</Detail>
+                </Details>
+				<Extract Name="Unit" From="6" To="7"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

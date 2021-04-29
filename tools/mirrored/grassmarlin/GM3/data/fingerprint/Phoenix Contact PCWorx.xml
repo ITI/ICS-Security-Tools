@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Phoenix Contact PCWorx</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Phoenix contact data traffic.</Description>
+    </Header>
+    <Filter For="PCWorx" Name="ENGINEERING WORKSTATION 1962">
+        <DstPort>1962</DstPort>
+    </Filter>
+    <Payload For="PCWorx">
+        <Description>Looks for PCWorx data communication of engineering workstation over the port specified.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>WORKSTATION</Category>
+                    <Role>ENGINEER</Role>
+                    <Detail Name="Product">PCWorx</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

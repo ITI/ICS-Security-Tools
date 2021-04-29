@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>HMS HICP Port</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of HMS HICP Port traffic.</Description>
+    </Header>
+    <Filter For="HICP" Name="HMC HICP Port">
+        <DstPort>3250</DstPort>
+    </Filter>
+    <Payload For="HICP">
+        <Description>Acts as a translator between industrial control systems. It also detects any Ethernet device on a local network.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">HMS HICP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

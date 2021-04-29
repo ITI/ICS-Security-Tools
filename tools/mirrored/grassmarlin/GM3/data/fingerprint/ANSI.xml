@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>ANSI</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidenece of ANSI x3.28, z39.50, and c1222-asse traffic.</Description>
+    </Header>
+    <Filter For="ANSI 1" Name="z39.50">
+        <DstPort>210</DstPort>
+    </Filter>
+    <Filter For="ANSI 2" Name="c1222-asse">
+        <DstPort>1153</DstPort>
+    </Filter>
+    <Payload For="ANSI 1">
+        <Description>Developed by Allen Bradley to communicate between stations and substations. Z39.50</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="ISCProtocol">ANSI</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="ANSI 2">
+        <Description>Developed by Allen Bradley to communicate between stations and substations. C1222-ASSE.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="ICSProtocol">ANSI</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,11 @@
+Fingerprint XML Notes
+DCERPC.xml Line 6, near end "..which whill...", remove h. - Fixed
+EDG.xml Line 13, several places - Fixed
+Fatek.xml Line 12 - Fixed
+GE.xml Line 6, 62, 73 - Fixed
+HMS HICP Port.xml Line 6, space between "of" & "HMS" - Fixed
+Invensys Sigma Port.xml Line 12 "Schneider" - Fixed
+LonWorks Line 18, 26 not LongWorks - Fixed
+Mitsubishi Electronic.xml Line 115 - Fixed
+Rockwell AADvance.xml Line 72, 83, 95, 107, 118, 129: destination, not "destiantion" - Fixed
+Who_Login.xml Line 6 near end, several items - Fixed

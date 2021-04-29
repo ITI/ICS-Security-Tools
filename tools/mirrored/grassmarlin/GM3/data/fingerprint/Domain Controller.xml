@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Domain Controller</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of domain controller communication including client computers, authentication, and active directory.</Description>
+    </Header>
+    <Filter For="Domain Controller" Name="Controller Traffic">
+        <DstPort>135</DstPort>
+    </Filter>	
+    <Filter For="Kerberos" Name="Authentication">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>88</DstPort>
+    </Filter>
+    <Filter For="File Replication Service" Name="UDP File Replication">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>138</DstPort>
+    </Filter>
+    <Filter For="File Replication Service" Name="TCP File Replication">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>139</DstPort>
+    </Filter>
+    <Filter For="Light Directory Application Protocol" Name="LDAP Query">
+        <DstPort>389</DstPort>
+    </Filter>
+    <Filter For="Light Directory Application Protocol" Name="LDAP SSL">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>636</DstPort>
+    </Filter>
+    <Filter For="Light Directory Application Protocol" Name="LDAP Global Catalog">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>3268</DstPort>
+    </Filter>
+	<Filter For="Light Directory Application Protocol" Name="LDAP Global Catalog SSL">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>3269</DstPort>
+    </Filter>
+	<Filter For="FRS-RPC" Name="Microsoft FRS-RPC service">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>53248</DstPort>
+    </Filter>		
+	<Filter For="DFS-R" Name="Microsoft DFS Replication Service">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>5722</DstPort>
+    </Filter>	
+    <Payload For="Domain Controller">
+        <Description>Identifies domain contoller to domain controller traffic.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Service">Authentication</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+    <Payload For="Kerberos">
+        <Description>Identifies kerberos authentication traffic.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Service">Kerberos</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="File Replication Service">
+        <Description>File replication service between domain controllers.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Service">File Replication Service</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Light Directory Application Protocol">
+        <Description>LDAP to handle normal queries from client computers to domain controllers.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Service">LDAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="FRS-RPC">
+        <Description>Microsoft technology that replicates files and folders stored in the SYSVOL shared folder on domain controllers and distributed shared folders.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Service">FRS-RPC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>		
+    <Payload For="DFS-R">
+        <Description>Microsoft DFS replication service that shares folders that can be kept synchronized by using methods other than FRS.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Role>SERVER</Role>
+                    <Detail Name="Service">DFS-R</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Undocumented usage by Intelligent Instrumentation EDAS unites</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of Undocumented usage by Intelligent Instrumentation EDAS units, models EDAS-1001E, -1002E, -1024E, 1031E traffic.</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="default">
+        <SrcPort>5891</SrcPort>
+    </Filter>
+    <Payload For="default">
+        <Always>
+            <Return Confidence="5">
+                <Extract Name="EDAS" From="CURSOR_START" To="CURSOR_END"/>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

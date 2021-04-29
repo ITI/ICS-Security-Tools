@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<xs:schema version="1.1"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!--    HEADER SPECIFICATION    -->
+    <xs:element name="Fingerprint">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Header" type="Header"/>
+                <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                    <xs:element name="Filter">
+                        <xs:complexType>
+                            <xs:sequence minOccurs="1" maxOccurs="unbounded">
+                                <xs:element name="Ack" type="xs:long" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="MSS" type="xs:nonNegativeInteger" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="Dsize" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="DsizeWithin" minOccurs="0" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:attribute name="Min" type="xs:integer"/>
+                                        <xs:attribute name="Max" type="xs:integer"/>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="DstPort"  type="xs:unsignedShort" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="Ethertype"  type="xs:unsignedShort" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="Flags" minOccurs="0" maxOccurs="unbounded">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:pattern value="((NS)|(CWR)|(ECE)|(URG)|(ACK)|(PSH)|(RST)|(SYN)|(FIN)){1,9}"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:element name="Seq" type="xs:long" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="SrcPort"  type="xs:unsignedShort" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="TransportProtocol" type="xs:unsignedByte" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="TTL" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:element name="TTLWithin" minOccurs="0" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:attribute name="Min" type="xs:integer"/>
+                                        <xs:attribute name="Max" type="xs:integer"/>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Window" type="xs:integer" minOccurs="0" maxOccurs="unbounded"/>
+                            </xs:sequence>
+                            <xs:attribute name="For" type="xs:string" use="required"/>
+                            <xs:attribute name="Name" type="xs:string" use="optional"/>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                <xs:element name="Payload" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Description" type="xs:string" minOccurs="0" maxOccurs="1"/>
+                            <xs:sequence>
+                                <xs:element name="Always" minOccurs="0">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element ref="Return" maxOccurs="unbounded"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:group ref="Operation" maxOccurs="unbounded"/>
+                            </xs:sequence>
+                        </xs:sequence>
+                        <xs:attribute name="For" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Header">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Author" type="xs:string" minOccurs="0"/>
+            <xs:element name="Description" type="xs:string" minOccurs="0"/>
+            <xs:element name="Tag" type="boundString" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:simpleType name="boundString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- TYPES -->
+    <xs:attribute name="Direction">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="SOURCE"/>
+                <xs:enumeration value="DESTINATION"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <!--
+        PAYLOAD SPECIFICATION 6/9/2015
+    -->
+    <xs:group name="Operation">
+        <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="Match" type="MatchFunction" minOccurs="0"/>
+                <xs:element name="ByteTest" type="ByteTestFunction" minOccurs="0"/>
+                <xs:element name="IsDataAt" type="IsDataAtFunction" minOccurs="0"/>
+                <xs:element name="ByteJump" type="ByteJumpFunction" minOccurs="0"/>
+                <xs:element ref="Anchor" minOccurs="0"/>
+                <xs:element ref="Return" minOccurs="0"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:group>
+
+    <xs:element name="Return" type="Return"/>
+    <xs:complexType name="Return">
+        <xs:sequence>
+            <xs:choice minOccurs="0">
+                <xs:element name="Details" type="DetailGroup"/>
+            </xs:choice>
+            <xs:element ref="Extract" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute ref="Direction" default="SOURCE"/>
+        <xs:attribute name="Confidence" type="Confidence" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="Extract">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Post" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="Name" type="xs:string" use="required"/>
+            <xs:attribute name="From" type="Index" use="required"/>
+            <xs:attribute name="To" type="Index" use="required"/>
+            <xs:attribute name="MaxLength" type="xs:unsignedShort" default="1024"/>
+            <xs:attribute ref="Endian"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Post">
+        <xs:complexType>
+            <xs:attribute name="Convert" type="ContentType"/>
+            <xs:attribute name="Lookup">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="BACNET"/>
+                        <xs:enumeration value="ENIPVENDOR"/>
+                        <xs:enumeration value="ENIPDEVICE"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="DetailGroup">
+        <xs:sequence>
+            <xs:element name="Category" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="PLC"/>
+                        <xs:enumeration value="RTU"/>
+                        <xs:enumeration value="MTU"/>
+                        <xs:enumeration value="IED"/>
+                        <xs:enumeration value="HMI"/>
+                        <xs:enumeration value="UNKNOWN"/>
+                        <xs:enumeration value="ICS_HOST"/>
+                        <xs:enumeration value="FIREWALL"/>
+                        <xs:enumeration value="NETWORK_DEVICE"/>
+                        <xs:enumeration value="PROTOCOL_CONVERTER"/>
+                        <xs:enumeration value="WORKSTATION"/>
+                        <xs:enumeration value="OTHER"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Role" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="CLIENT"/>
+                        <xs:enumeration value="SERVER"/>
+                        <xs:enumeration value="MASTER"/>
+                        <xs:enumeration value="SLAVE"/>
+                        <xs:enumeration value="OPERATOR"/>
+                        <xs:enumeration value="ENGINEER"/>
+                        <xs:enumeration value="UNKNOWN"/>
+                        <xs:enumeration value="OTHER"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Detail" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="Name" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="Index">
+        <xs:union memberTypes="xs:integer Position"/>
+    </xs:simpleType>
+
+    <!--    Anchor Function     -->
+    <xs:element name="Anchor" type="Anchor"/>
+    <xs:complexType name="Anchor">
+        <xs:attribute ref="Cursor" use="required"/>
+        <xs:attribute ref="Position"/>
+        <xs:attribute ref="Relative"/>
+        <xs:attribute ref="Offset"/>
+    </xs:complexType>
+
+    <xs:attribute name="Cursor" type="Cursor"/>
+    <xs:simpleType name="Cursor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="START"/>
+            <xs:enumeration value="MAIN"/>
+            <xs:enumeration value="END"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:attribute name="Position" type="Position"/>
+    <xs:simpleType name="Position">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="START_OF_PAYLOAD"/>
+            <xs:enumeration value="END_OF_PAYLOAD"/>
+            <xs:enumeration value="CURSOR_START"/>
+            <xs:enumeration value="CURSOR_MAIN"/>
+            <xs:enumeration value="CURSOR_END"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!--    IsDataAt  -->
+    <xs:complexType name="IsDataAtFunction">
+        <xs:sequence>
+            <xs:element ref="AndThen"/>
+        </xs:sequence>
+        <xs:attribute name="Offset" type="FrameSize" use="required"/>
+        <xs:attribute ref="Relative"/>
+    </xs:complexType>
+
+    <!--    Content -->
+    <xs:complexType name="MatchFunction">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="Pattern" type="xs:string"/>
+                <xs:element name="Content">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="Type" type="ContentType" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+            <xs:element ref="AndThen"/>
+        </xs:sequence>
+        <xs:attribute name="Offset" type="FrameSize" default="0"/>
+        <xs:attribute name="Reverse" type="xs:boolean" default="true"/>
+        <xs:attribute name="NoCase" type="xs:boolean" default="false"/>
+        <xs:attribute name="Depth" type="xs:unsignedShort" default="0"/>
+        <xs:attribute name="Relative" type="xs:boolean" default="true"/>
+        <xs:attribute name="Within" type="xs:unsignedShort" default="0"/>
+        <xs:attribute name="MoveCursors" type="xs:boolean" default="true"/>
+    </xs:complexType>
+
+    <!--      ByteTest      -->
+    <xs:complexType name="ByteTestFunction">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="GT" type="xs:integer"/>
+                <xs:element name="LT" type="xs:integer"/>
+                <xs:element name="GTE" type="xs:integer"/>
+                <xs:element name="LTE" type="xs:integer"/>
+                <xs:element name="EQ" type="xs:integer"/>
+                <xs:element name="AND" type="xs:integer"/>
+                <xs:element name="OR" type="xs:integer"/>
+            </xs:choice>
+            <xs:element ref="AndThen"/>
+        </xs:sequence>
+        <xs:attribute ref="PostOffset" default="0"/>
+        <xs:attribute ref="Relative" default="false"/>
+        <xs:attribute ref="Endian" default="BIG"/>
+        <xs:attribute ref="Offset" default="0"/>
+        <xs:attribute ref="Bytes" default="1"/>
+    </xs:complexType>
+
+    <!--    ByteJump Function   -->
+    <xs:complexType name="ByteJumpFunction">
+        <xs:sequence>
+            <xs:element name="Calc" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="((\d+)|x)([-+/*]((\d+)|x))*"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element ref="AndThen"/>
+        </xs:sequence>
+        <xs:attribute ref="PostOffset"/>
+        <xs:attribute ref="Relative"/>
+        <xs:attribute ref="Endian"/>
+        <xs:attribute ref="Offset"/>
+        <xs:attribute ref="Bytes"/>
+    </xs:complexType>
+
+    <!-- Rule Fragments -->
+    <xs:simpleType name="LIMITED_CONTENT">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!--    Basic operator type     -->
+    <xs:complexType name="OPERATOR">
+        <xs:simpleContent>
+            <xs:extension base="LIMITED_CONTENT">
+                <xs:attribute ref="Type" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <!--    Relative Attribute  -->
+    <xs:attribute name="Relative" type="xs:boolean" default="false"/>
+    <!--    Endianess Attribute  -->
+    <xs:attribute name="Endian">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <!-- default of big MUST be enforced in code -->
+                <xs:enumeration value="BIG"/>
+                <xs:enumeration value="LITTLE"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <!--    Type Attribute  -->
+    <xs:attribute name="Type" type="ContentType"/>
+    <xs:simpleType name="ContentType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="HEX"/>
+            <xs:enumeration value="INTEGER"/>
+            <xs:enumeration value="RAW_BYTES"/>
+            <xs:enumeration value="STRING"/>
+            <xs:maxLength value="1024"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- FRAME SIZE -->
+    <xs:attribute name="PostOffset" type="FrameSize"/>
+    <xs:attribute name="Offset" type="FrameSize"/>
+    <xs:simpleType name="FrameSize">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="-65535"/>
+            <xs:maxInclusive value="65535"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!--    Restrictive LENGTH   -->
+    <xs:attribute name="Bytes">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:minInclusive value="1"/>
+                <xs:maxInclusive value="10"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <!--       CONFIDENCE TYPE      -->
+    <xs:simpleType name="Confidence">
+        <xs:restriction base="xs:integer">
+            <xs:maxInclusive value="5"/>
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- recursion rule  -->
+    <xs:element name="AndThen">
+        <xs:complexType>
+            <xs:group ref="Operation"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

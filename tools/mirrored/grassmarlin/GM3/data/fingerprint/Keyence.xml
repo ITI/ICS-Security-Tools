@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Keyence</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Keyence KV-5000 series traffic over 8501.</Description>
+    </Header>
+    <Filter For="Keyence" Name="KV-5000">
+        <DstPort>8501</DstPort>
+    </Filter>
+    <Payload For="Keyence">
+        <Description>PLC traffic for real time control over 8501.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Detail Name="Product">Keyence KV-5000</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

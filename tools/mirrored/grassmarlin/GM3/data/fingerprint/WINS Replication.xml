@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>WINS Replication</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of windows internet naming service that enables NetBIOS name resolution.</Description>
+    </Header>
+    <Filter For="WINS" Name="Replication">
+        <DstPort>42</DstPort>
+    </Filter>
+    <Payload For="WINS">
+        <Description>Tags WINS server that is communicating with network clients using NetBIOS name resolution</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">WINS Replication</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>TCIM-Control</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of TCIM Control traffic.</Description>
+    </Header>
+    <Filter For="TCIM-Control" Name="DstPort">
+        <DstPort>2729</DstPort>
+    </Filter>
+    <Payload For="TCIM-Control">
+        <Description>Tags TCIM-control traffic by destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">TCIM-Control</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

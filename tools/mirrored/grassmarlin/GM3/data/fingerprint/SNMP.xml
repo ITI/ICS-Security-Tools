@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>SNMP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of the Simple Network Management Protocol traffic.</Description>
+    </Header>
+    <Filter For="SNMP" Name="SNMP">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>161</DstPort>
+    </Filter>
+    <Filter For="SNMP" Name="SNMPTRAP">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>162</DstPort>
+    </Filter>
+    <Payload For="SNMP">
+		<Description>Tags Simple Network Management Protocol over UDP port 161 and 162 for SNMPTRAP services. The payload looks for SNMP HEX pattern match that will extract the CommunityID and the RequestID from the DATA GET request header.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="InternetStandardProtocol">SNMP</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="0" MoveCursors="true">
+            <Content Type="HEX">302E02</Content>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details/>
+                    <Extract Name="CommunityID" From="7" To="15" MaxLength="1024" Endian="BIG">
+                        <Post Convert="STRING"/>
+                    </Extract>
+                    <Extract Name="RequestID" From="19" To="23" MaxLength="1024" Endian="BIG">
+                        <Post Convert="INTEGER"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

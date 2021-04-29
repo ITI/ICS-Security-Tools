@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>I-NET 2000-NPR</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of I/NET 2000-NPR traffic.</Description>
+    </Header>
+    <Filter For="I-NET 2000-NPR" Name="DstPort">
+        <DstPort>5069</DstPort>
+    </Filter>
+    <Payload For="I-NET 2000-NPR">
+        <Description>This fingerprint looks for the evidence of I/NET 2000-NPR traffic.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">I-NET 2000-NPR</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

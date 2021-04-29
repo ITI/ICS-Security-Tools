@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Trivial</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Trivial Network Management traffic. Low confidence that it is TFTP. TFTP is often used in embedded devices.</Description>
+    </Header>
+    <Filter For="Network Management" Name="TNMPV-2">
+        <DstPort>3686</DstPort>
+    </Filter>
+    <Filter For="File Transfer Protocol" Name="FTP">
+        <SrcPort>69</SrcPort>
+        <DstPort>69</DstPort>
+    </Filter>
+    <Payload For="Network Management">
+        <Description>Tags Trivial Network Management TNMPV-2</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">TNMPV-2</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="File Transfer Protocol">
+        <Description>Tags Trivial File Transfer Protocol</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">FTP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

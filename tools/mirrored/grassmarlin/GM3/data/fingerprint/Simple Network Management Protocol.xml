@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Simple Network Management Protocol</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for the evidence of the Simple Network Management Protocol traffic.</Description>
+        <Tag>Original</Tag>
+    </Header>
+    <Filter For="default">
+        <TransportProtocol>17</TransportProtocol>
+        <DstPort>161</DstPort>
+    </Filter>
+    <Payload For="default">
+        <Always>
+            <Return Confidence="1"/>
+        </Always>
+    </Payload>
+</Fingerprint>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Korenix</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Korenix 6550 traffic.</Description>
+    </Header>
+    <Filter For="Korenix" Name="6550">
+        <DstPort>502</DstPort>
+    </Filter>
+    <Payload For="Korenix">
+        <Description>Korenix 6550 PLC series for communication monitoring.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Korenix 6550</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

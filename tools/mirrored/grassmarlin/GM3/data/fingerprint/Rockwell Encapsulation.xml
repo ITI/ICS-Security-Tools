@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell Encapsulation</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Rockwell Encapsulation traffic.</Description>
+    </Header>
+    <Filter For="Encapsulation" Name="Src">
+        <SrcPort>44818</SrcPort>
+    </Filter>
+    <Filter For="Encapsulation" Name="Dst">
+        <DstPort>44818</DstPort>
+    </Filter>
+    <Payload For="Encapsulation">
+        <Description>Rockwell encapsulation that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Encapsulation</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

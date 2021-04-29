@@ -1,0 +1,36 @@
+00, Generic Device (deprecated)
+02, AC Drive
+03, Motor Overload
+04, Limit Switch
+05, Inductive Proximity Switch
+06, Photoelectric Sensor
+07, General Purpose Discrete I/O
+09, Resolver
+12, Communications Adapter
+14, Programmable Logic Controller
+16, Position Controller
+19, DC Drive
+21, Contactor
+22, Motor Starter
+23, Soft Start
+24, Human-Machine Interface
+26, Mass Flow Controller
+27, Pneumatic Valve
+28, Vacuum Pressure Gauge
+29, Process Control Value
+30, Residual Gas Analyzer
+31, DC Power Generator
+32, RF Power Generator
+33, Turbomolecular Vacuum Pump
+34, Encoder
+35, Safety Discrete I/O Device
+36, Fluid Flow Controller
+37, CIP Motion Drive
+38, CompoNet Repeater
+39, Mass Flow Controller, Enhanced
+40, CIP Modbus Device
+41, CIP Modbus Translator
+42, Safety Analog I/O Device
+43, Generic Device (keyable)
+44, Managed Switch
+59, ControlNet Physical Layer Component

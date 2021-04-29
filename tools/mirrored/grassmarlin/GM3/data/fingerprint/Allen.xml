@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Allen</Name>
+        <Author>Default</Author>
+        <Description>This is the response seen from a device running an Allen Bradley specific web server and providing its device description via a web page. 
+This is evidence of some sort of Allen Bradley Intelligent Electronic Device (IED). 
+	This is the response seen from a device running an Allen Bradley specific web server. "Server: A-B WWW/0.1" 
+This is evidence of some sort of Allen Bradley Intelligent Electronic Device (IED). 
+	This is the response seen from a device running an Allen Bradley specific web server and providing its device name via a web page. 
+This is evidence of some sort of Allen Bradley Intelligent Electronic Device (IED). 
+	</Description>
+    </Header>
+    <Filter For=" Bradley Web Server Device Description">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>80</SrcPort>
+    </Filter>
+    <Filter For=" Bradley Web Server">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>80</SrcPort>
+    </Filter>
+    <Filter For=" Bradley Web Server Device Name">
+        <TransportProtocol>6</TransportProtocol>
+        <Ethertype>2048</Ethertype>
+        <SrcPort>80</SrcPort>
+    </Filter>
+    <Payload For=" Bradley Web Server Device Description">
+        <Match Offset="0" MoveCursors="true">
+            <Pattern>Description&lt;/td&gt;&lt;td&gt;</Pattern>
+            <AndThen>
+                <Match Relative="true" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN"/>
+                        <Return Confidence="4">
+                            <Extract Name="Version" From="CURSOR_START" To="CURSOR_END"/>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For=" Bradley Web Server">
+        <Match Offset="17" MoveCursors="true">
+            <Content Type="HEX">5365727665723A20412D42205757572F302E310D0A</Content>
+            <AndThen>
+                <Return Confidence="4">
+                    <Extract Name="Allen Bradley" From="CURSOR_START" To="CURSOR_END"/>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For=" Bradley Web Server Device Name">
+        <Match Offset="184" MoveCursors="true">
+            <Content Type="HEX">73733D52363E446576696365204E616D653C2F74643E3C74643E</Content>
+            <AndThen>
+                <Match Relative="true" MoveCursors="false">
+                    <Content Type="HEX">3C</Content>
+                    <AndThen>
+                        <Anchor Cursor="END" Position="CURSOR_MAIN"/>
+                        <Return Confidence="4">
+                            <Extract Name="Model" From="210" To="CURSOR_END"/>
+                        </Return>
+                    </AndThen>
+                </Match>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

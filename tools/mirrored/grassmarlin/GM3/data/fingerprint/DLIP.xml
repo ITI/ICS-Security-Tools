@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>DLIP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of DLIP traffic.</Description>
+    </Header>
+    <Filter For="DLIP Src" Name="DLIP Src">
+        <SrcPort>7201</SrcPort>
+    </Filter>
+    <Filter For="DLIP Dst" Name="DLIP Dst">
+        <DstPort>7201</DstPort>
+    </Filter>	
+    <Payload For="DLIP Src">
+        <Description>Tags Intelligent Data Acquisition and Control</Description>
+		<Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">DLIP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="DLIP Dst">
+        <Description>Tags Intelligent Data Acquisition and Control</Description>
+		<Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">DLIP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>	
+</Fingerprint>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>OSI Monarch</Name>
+        <Author>Default</Author>
+        <Description>Identifies the Application layer header for the FEPSI protocol (version 2) from a client. This protocol is used within the OSI Monarch SCADA system. This fingerprint looks for the start byte value, the function code, and version number within their dedicated position in the payload.
+
+The second payload looks for the start byte value, server response byte value, the function code, and version number within their dedicated position in the payload.
+
+The third payload identifies the Network header for the Fepcontrol protocol (header type 1). This protocol is used within the OSI Monarch SCADA system. This fingerprint looks for the start byte, the header type, the Application ID, and the Control Type values within their dedicated positions in the payload.</Description>
+    </Header>
+    <Filter For="OSI Monarch FEPSI Client" Name="FEPSI Client">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>11999</DstPort>
+    </Filter>
+    <Filter For="OSI Monarch FEPSI Server" Name="FEPSI Server">
+        <TransportProtocol>6</TransportProtocol>
+        <SrcPort>11999</SrcPort>
+    </Filter>
+    <Filter For="OSI Monarch Fepcontrol Client" Name="Fepcontrol Client">
+        <TransportProtocol>6</TransportProtocol>
+        <DstPort>16002</DstPort>
+    </Filter>
+    <Payload For="OSI Monarch FEPSI Client">
+        <Description>Identifies the Application layer header for the FEPSI protocol (version 2) from a client. This protocol is used within the OSI Monarch SCADA system.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Pattern>\x03(.{7}[\x00\x10\x20\x30\x40]{1})\x02</Pattern>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Category>ICS_HOST</Category>
+                        <Role>CLIENT</Role>
+                        <Detail Name="ICSProtocol">OSI Monarch FEPSI Client</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="OSI Monarch FEPSI Server">
+        <Description>Identifies the Application layer header for the FEPSI protocol (version 2) from a server. This protocol is used within the OSI Monarch SCADA system.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Pattern>\x03(.{2}\x03)(.{4}[\x00\x10\x20\x30\x40]{1})\x02</Pattern>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Category>ICS_HOST</Category>
+                        <Role>SERVER</Role>
+                        <Detail Name="ICSProtocol">OSI Monarch FEPSI Server</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+    <Payload For="OSI Monarch Fepcontrol Client">
+        <Description>Identifies the Network header for the Fepcontrol protocol (header type 1). This protocol is used within the OSI Monarch SCADA system.</Description>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="false" Within="0" MoveCursors="true">
+            <Pattern>\x03(.{11}\x01)(.{16}[\x00\x01\x02\x03])(.{1}[\s3-7e-l]{1,20})</Pattern>
+            <AndThen>
+                <Return Direction="SOURCE" Confidence="5">
+                    <Details>
+                        <Category>ICS_HOST</Category>
+                        <Role>CLIENT</Role>
+                        <Detail Name="ICSProtocol">OSI Monarch Fepcontrol Client</Detail>
+                    </Details>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

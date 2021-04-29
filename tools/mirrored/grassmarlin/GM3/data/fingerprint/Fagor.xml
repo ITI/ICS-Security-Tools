@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Fagor</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence for Fagor DNC traffic.</Description>
+    </Header>
+    <Filter For="Fagor" Name="DNC">
+        <DstPort>3873</DstPort>
+    </Filter>
+    <Payload For="Fagor">
+		<Description>Fagor DNC over 3873</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">DNC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

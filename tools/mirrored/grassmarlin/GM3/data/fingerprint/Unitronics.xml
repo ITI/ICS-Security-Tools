@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Unitronics</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Unitronics Socket TCP slave communication.</Description>
+    </Header>
+    <Filter For="Unitronics Socket1" Name="Socket1">
+        <DstPort>20256</DstPort>
+    </Filter>
+    <Filter For="Unitronics Socket2" Name="Socket2">
+        <DstPort>502</DstPort>
+    </Filter>
+    <Filter For="Unitronicsw Socket3" Name="Socket2">
+        <DstPort>20257</DstPort>
+    </Filter>
+    <Payload For="Unitronics Socket1">
+        <Description>PLC Socket Slave connection over TCP 20256</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="Product">Socket1</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Unitronics Socket2">
+        <Description>PLC Socket Slave connection over TCP 502</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Product">Socket2</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Unitronicsw Socket3">
+        <Description>PLC Socket Slave connection over TCP 20257</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>PLC</Category>
+                    <Role>SLAVE</Role>
+                    <Detail Name="Product">Socket3</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

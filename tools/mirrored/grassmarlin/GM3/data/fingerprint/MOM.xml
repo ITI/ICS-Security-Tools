@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>MOM</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of Microsoft's Operation Manager framework that provides event driven operation for monitoring and performance tracking, policy enforcement, and auditing.</Description>
+    </Header>
+    <Filter For="MOM" Name="MOM">
+		<TransportProtocol>6</TransportProtocol>
+        <DstPort>1270</DstPort>
+    </Filter>
+    <Payload For="MOM">
+        <Description>Tags MOM encrypted traffic</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">MOM</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

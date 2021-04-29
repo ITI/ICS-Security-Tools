@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>OPC</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of OPC traffic. OPC is a series of standard specifications designed to simplify integration of various forms of data on systems from different vendors.</Description>
+    </Header>
+    <Filter For="OLE for Process Control" Name="OPC">
+        <DstPort>135</DstPort>
+    </Filter>
+    <Payload For="OLE for Process Control">
+        <Description>Devices running OPC client trying to connect an OPC server on a different computer would reply on DCOM for the communication.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">OPC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

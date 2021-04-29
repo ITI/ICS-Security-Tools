@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>BACNET</Name>
+        <Author>Default</Author>
+        <Description>Finds BACNET traffic and attemps to extract the Device Name and Number.</Description>
+    </Header>
+    <Filter For="BACNET" Name="Dst/Src">
+        <DstPort>47808</DstPort>
+        <SrcPort>47808</SrcPort>
+    </Filter>
+    <Payload For="BACNET">
+        <Description>Tags BACNET traffic</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="1">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">BACNET</Detail>
+                </Details>
+            </Return>
+        </Always>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="65535" MoveCursors="true">
+            <Content Type="HEX">1007</Content>
+            <AndThen>
+                <ByteJump PostOffset="0" Relative="false" Endian="BIG" Offset="9" Bytes="1">
+                    <AndThen>
+                        <Return Direction="SOURCE" Confidence="1">
+                            <Details>
+                                <Category>ICS_HOST</Category>
+                                <Role>SERVER</Role>
+                            </Details>
+                            <Extract Name="Device Name" From="10" To="CURSOR_MAIN" MaxLength="256" Endian="BIG">
+                                <Post Lookup="BACNET"/>
+                            </Extract>
+                        </Return>
+                    </AndThen>
+                </ByteJump>
+            </AndThen>
+        </Match>
+        <Match Offset="0" Reverse="true" NoCase="false" Depth="0" Relative="true" Within="65535" MoveCursors="true">
+            <Content Type="HEX">1000C40200</Content>
+            <AndThen>
+                <Anchor Cursor="END" Position="START_OF_PAYLOAD" Relative="true" Offset="2"/>
+                <Return Direction="SOURCE" Confidence="1">
+                    <Details>
+                        <Category>ICS_HOST</Category>
+                        <Role>CLIENT</Role>
+                        <Detail Name="ICSProtocol">BACNET</Detail>
+                    </Details>
+                    <Extract Name="Device ID" From="CURSOR_MAIN" To="CURSOR_END" MaxLength="2" Endian="BIG">
+                        <Post Convert="INTEGER"/>
+                    </Extract>
+                </Return>
+            </AndThen>
+        </Match>
+    </Payload>
+</Fingerprint>

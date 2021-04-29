@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>IT Environmental Monitor</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of IT Environmental Monitor traffic.</Description>
+    </Header>
+    <Filter For="Item Service" Name="DstPort">
+        <DstPort>3848</DstPort>
+    </Filter>
+    <Payload For="Item Service">
+        <Description>Gateway Server for industrial devices running CodeSys programming interface.</Description>
+        <Always>
+            <Return Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="ICSProtocol">IT Environmental Monitor</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

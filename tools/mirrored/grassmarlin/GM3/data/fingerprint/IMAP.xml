@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>IMAP</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint identifies evidence of communication between the exchange server.</Description>
+    </Header>
+    <Filter For="IMAP" Name="IMAP">
+        <DstPort>143</DstPort>
+    </Filter>
+    <Payload For="IMAP">
+        <Description>Tags IMAP exchange server communication used to manage email server/receive email.</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Detail Name="Microsoft Server Product">IMAP</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

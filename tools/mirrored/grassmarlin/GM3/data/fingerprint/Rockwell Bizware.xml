@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell Bizware</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of Bizware Task Manager traffic. This fingerprint looks for evidence of Bizware Production Server traffic. This fingerprint looks for evidence of Bizware Server Manager traffic. This fingerprint looks for evidence of Bizware CTP Server traffic. This fingerprint looks for evidence of Bizware PlantMetrics Server traffic.</Description>
+    </Header>
+    <Filter For=" Task Manager" Name="Task Manager">
+        <DstPort>4123</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" Production Server" Name="Production">
+        <DstPort>4120</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" Server Manager" Name="Server">
+        <DstPort>4121</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" CTP Server" Name="CTP">
+        <DstPort>4125</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" PlantMetrics Server" Name="PlantMetrics">
+        <DstPort>4122</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" Scheduler" Name="Scheduler">
+        <DstPort>4124</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" HTTP Product Server" Name="HTTP Product">
+        <DstPort>8080</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" HTTP Server Manager" Name="HTTP Server">
+        <DstPort>8081</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Filter For=" HTTP CTP Server" Name="HTTP CTP">
+        <DstPort>8083</DstPort>
+        <TransportProtocol>6</TransportProtocol>
+    </Filter>
+    <Payload For=" Task Manager">
+        <Description>Rockwell Bizware Task Manager payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware Task Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Production Server">
+        <Description>Rockwell Bizware Production Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware Production Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Server Manager">
+        <Description>Rockwell Bizware Server Manager payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware Server Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" CTP Server">
+        <Description>Rockwell Bizware CTP Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware CTP Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" PlantMetrics Server">
+        <Description>Rockwell Bizware Server Manager payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware PlanMetrics Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" Scheduler">
+        <Description>Rockwell Bizware Scheduler payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware Task Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" HTTP Product Server">
+        <Description>Rockwell Bizware HTTP Product Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware HTTP Product Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" HTTP Server Manager">
+        <Description>Rockwell Bizware HTTP Server Manager payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware HTTP Server Manager</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For=" HTTP CTP Server">
+        <Description>Rockwell Bizware HTTP CTP Server payload that tags the destination port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="3">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell Bizware HTTP CTP Server</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>

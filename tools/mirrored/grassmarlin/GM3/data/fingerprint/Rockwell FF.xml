@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Fingerprint>
+    <Header>
+        <Name>Rockwell FF</Name>
+        <Author>Default</Author>
+        <Description>This fingerprint looks for evidence of FF LAN Redundancy Port traffic. This fingerprint looks for evidence of FF Fieldbus traffic. This fingerprint looks for evidence of FF System Management traffic. This fingerprint looks for evidence of FF Annunciation traffic.</Description>
+    </Header>
+    <Filter For="LAN Redundancy Port" Name="LAN Redundancy">
+        <DstPort>3622</DstPort>
+    </Filter>
+    <Filter For="Fieldbus Message Specification" Name="Fieldbus Message Specification">
+        <DstPort>1090</DstPort>
+    </Filter>
+    <Filter For="System Management" Name="System Management">
+        <DstPort>1091</DstPort>
+    </Filter>
+    <Filter For="Annunciation" Name="Annunciation">
+        <DstPort>1089</DstPort>
+    </Filter>
+    <Payload For="LAN Redundancy Port">
+        <Description>Rockwell LAN Redundancy payload that tags the source port</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="5">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell FF-LR-PORT</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Fieldbus Message Specification">
+        <Description>Rockwell Fieldbus Message Specification payload that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell FF-FMS</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="System Management">
+        <Description>Rockwell System Management payload that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell FF-SM</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+    <Payload For="Annunciation">
+        <Description>Rockwell Annuciation payload that tags the source and destination ports</Description>
+        <Always>
+            <Return Direction="SOURCE" Confidence="4">
+                <Details>
+                    <Category>ICS_HOST</Category>
+                    <Detail Name="Product">Rockwell FF-ANNUNC</Detail>
+                </Details>
+            </Return>
+        </Always>
+    </Payload>
+</Fingerprint>
