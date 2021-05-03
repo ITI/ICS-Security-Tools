@@ -17,6 +17,7 @@ Developed as a community asset
 - [TESP](https://github.com/pnnl/tesp/) - PNNL's Transactive Energy Simulation Platform (TESP). The intended use case for TESP is to focus on the development and testing of transactive control agents, without having to build up a large system simulation infrastructure
 - [DVCP-TE](https://github.com/satejnik/DVCP-TE) - Damn Vulnerable Chemical Process - Tennessee Eastman
 - [DVCP-VAM](https://github.com/satejnik/DVCP-VAM) - Damn Vulnerable Chemical Process - Vinyl Acetate Monomer
+- [SWaT Simulator](https://github.com/yuqiChen94/Swat_Simulator) - SUTD SWaT Testbed Simulation written in python
 
 ## Survey
 
