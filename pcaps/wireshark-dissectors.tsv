@@ -1,0 +1,37 @@
+Protocol	Source Location	Description
+Siemens S7	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-s7comm.c	Communication protocol supported by Siemens PLC
+MMS (IEC61850)	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/asn1/mms	Transmission and distribution communication protocol
+GOOSE (IEC61850)	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/asn1/goose	Transmission and distribution communication protocol
+SV (IEC61850)	https://github.com/wireshark/wireshark/blob/master/epan/dissectors/asn1/sv/	Transmission and distribution communication protocol
+Modbus	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-mbtcp.c	Industrial control standard protocol
+OPC DA	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-dcom.c	Industrial control standard protocol
+FF HSE	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-ff.c	Foundation Fieldbus Ethernet communication protocol
+IEC 104	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-iec104.c	Transmission and distribution communication protocol
+Ethernet POWERLINK	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-epl.c	Open real-time Ethernet communication
+OPC UA	https://github.com/wireshark/wireshark/tree/master/plugins/opcua/opcua.c	OPC new generation standard
+HART-IP	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-hartip.c	High-speed addressable remote sensor protocol
+CoAP	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-coap.c	Lightweight application layer protocol
+Omron FINS	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-omron-fins.c	Communication protocol supported by Omron PLC
+openSAFETY	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-opensafety.c	Open source security application protocol
+EGD (Ethernet Global Data)	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-egd.c	Communication protocol developed by GE Fanuc for PLC
+DNP3	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-dnp.c	Distributed network protocol, mainly used in the power industry
+Sinec H1	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-h1.c	Communication protocol supported by Siemens PLC
+Profinet	https://github.com/wireshark/wireshark/tree/master/plugins/profinet/	Open industrial Ethernet communication protocol
+EtherCAT	https://github.com/wireshark/wireshark/tree/master/plugins/ethercat/	An open real-time Ethernet communication protocol promoted by Beckhoff, Germany
+SERCOS III	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-sercosiii.c	Real-time Ethernet communication protocol
+RTPS	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-rtps.c	Real-time streaming protocol
+TTEthernet	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-tte.c	Real-time Ethernet communication protocol
+CDT 	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-cdt.c	Telecontrol protocol
+EtherNet/IP	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-etherip.c	Industrial Protocol (Industrial Protocol) is an implementation of CIP, developed by Rockwell Designed by Automation Company
+CIP	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-cip.c	Common Industrial Protocol
+CIP Safety	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-cipsafety.c	Safety General Industrial Agreement
+DeviceNet	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-devicenet.c	A CIP implementation, designed by Allen-Bradley
+BACnet	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-bacnet.c	Building automation control network data communication protocol
+KNXnet/IP	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-knxnetip.c	Residential and building control standards
+Lontalk	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-lon.c	The communication protocol used by Echelon’s LonWorks technology
+CANopen	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-canopen.c	Control LAN communication protocol
+SAE J1939	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-j1939.c	A variant of CAN, suitable for agricultural vehicles and commercial vehicles
+USITT DMX512-A	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-dmx.c	Light control data transmission protocol
+BSSAP/BSAP	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-bssap.c	A communication protocol developed by Bristol Babcock Inc
+Gryphon	https://github.com/wireshark/wireshark/tree/master/plugins/gryphon	vehicle communication protocol
+ZigBee	https://github.com/wireshark/wireshark/tree/master/epan/dissectors/packet-zbee.h	Open wireless communication protocol
