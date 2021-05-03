@@ -128,6 +128,4 @@ The control system ports table combines the previous two tables and sorts the en
 | TCP/63094          |               SNC GENe                |
 | TCP/65443          |               SNC GENe                |
 
-# Clone from
-
-[Source](https://web.archive.org/web/20111203052654/http://www.digitalbond.com/tools/the-rack/control-system-port-list)
+## Clone from [Source](https://web.archive.org/web/20111203052654/http://www.digitalbond.com/tools/the-rack/control-system-port-list)
