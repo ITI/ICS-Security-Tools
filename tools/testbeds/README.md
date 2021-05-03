@@ -15,6 +15,8 @@ Developed as a community asset
 - [GRFICS v2](https://github.com/Fortiphyd/GRFICSv2) - GRFICS v2 is version 2 of the above package, organized as 5 Virtualbox VMs. There is also a commercial version of this now available.
 - [MiniCPS](https://github.com/scy-phy/minicps) - MiniCPS: a framework for Cyber-Physical Systems real-time simulation, built on top of mininet.- [Oil Pumpjack](https://github.com/Cisco-Talos/oil-pumpjack) - Cisco-Talos repository contains all the materials to create your own oil pumpjack environment.
 - [TESP](https://github.com/pnnl/tesp/) - PNNL's Transactive Energy Simulation Platform (TESP). The intended use case for TESP is to focus on the development and testing of transactive control agents, without having to build up a large system simulation infrastructure
+- [DVCP-TE](https://github.com/satejnik/DVCP-TE) - Damn Vulnerable Chemical Process - Tennessee Eastman
+- [DVCP-VAM](https://github.com/satejnik/DVCP-VAM) - Damn Vulnerable Chemical Process - Vinyl Acetate Monomer
 
 ## Survey
 
