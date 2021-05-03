@@ -40,6 +40,7 @@ Developed as a community asset
 - [Skydive](https://github.com/skydive-project/skydive) - An open source real-time network topology and protocols analyzer
 - [Zeek Goose Protocol Parser](https://github.com/smartgridadsc/Goose-protocol-parser-for-Zeek-IDS) - A Zeek GOOSE parser has been developed to enable detailed analysis of the transmitted data and allow rule-based identification of anomalies related to cybersecurity attacks. It is compatible with an older instance of Zeek Network Security Monitor (v2.6).
 - [ntopng (community version)](https://github.com/ntop/ntopng) - a web-based network traffic monitoring application released under GPLv3. Supports Industrial IOT and Scada with modbus, DNP3 and IEC 60870-5-104 since ntopng 4.2 (October 2020)
+- [Sequence 2 Sequence Anomaly Detection on SWaT](https://github.com/jukworks/swat-seq2seq) - Anomaly Detection for SWaT Dataset using Sequence-to-Sequence Neural Networks
 
 ### Protocols
 
