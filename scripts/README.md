@@ -8,6 +8,7 @@ Developed as a community asset
 - [Drainware NMAP SCADA NSEs](https://github.com/drainware/nmap-scada) - A collection of NSE scripts from drainware.
 - [Misc SCADA Tools](https://github.com/atimorin/scada-tools) - A collection of miscellaneous SCADA tools written in python.
 - [Siemens NSE Scripts](https://github.com/jpalanco/nmap-scada) - Siemens-based discovery scripts
+- [macDetec](https://github.com/hsainnos/macDetec) - Passive ICS Network Scanner based on MAC Address Detection
 
 ## Exploitation
 
