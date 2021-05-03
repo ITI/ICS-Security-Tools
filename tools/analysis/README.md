@@ -51,7 +51,7 @@ Developed as a community asset
 - [ANGR](https://github.com/angr/angr) - A powerful and user-friendly binary analysis platform.
 - [Floss](https://github.com/fireeye/flare-floss) - FireEye Labs Obfuscated String Solver (FLOSS) uses advanced static analysis techniques to automatically deobfuscate strings from malware binaries.
 
-# Symbolic Execution
+### Symbolic Execution
 
 - [SymCC](https://github.com/eurecom-s3/symcc) - SymCC: efficient compiler-based symbolic execution
 - [IEC-Checker](https://github.com/jubnzv/iec-checker) - This project aims to implement an open source tool for static code analysis of IEC 61131-3 programs.
@@ -59,5 +59,9 @@ Developed as a community asset
 ### Samples
 
 - [Trisis/Triton/Hatman](https://github.com/MDudek-ICS/TRISIS-TRITON-HATMAN) - Repository containing original and decompiled files of TRISIS/TRITON/HATMAN malware
+
+### System Analysis
+
+- [PASAD](https://github.com/mikeliturbe/pasad) - Process-Aware Stealthy Attack Detection using SWaT and DVCP-TE
 
 (creative commons license)
