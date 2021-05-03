@@ -5,6 +5,7 @@ Developed as a community asset
 ## Research
 
 - [Secure Network Scanner Architecture](https://github.com/hsainnos/ICSscannerDiode) - Architecture for a secure ICS network scanner with an intelligent data diode
+- [HYDRA Water Distribution Testbed](https://github.com/hydra-testbed/Part-list) - detailed part list for HYDRA water testbed
 
 ## Firmware
 
