@@ -2,6 +2,10 @@
 
 Developed as a community asset
 
+## Research
+
+- [Secure Network Scanner Architecture](https://github.com/hsainnos/ICSscannerDiode) - Architecture for a secure ICS network scanner with an intelligent data diode
+
 ## Firmware
 
 - [ICS Legacy Firmware](https://github.com/cutaway-security/ics_firmware_legacy) - some legacy firmware provided for educational purposes.
