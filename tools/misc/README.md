@@ -25,6 +25,7 @@ Developed as a community asset
 ## Exploit frameworks
 
 - [Sixnet Tools](https://github.com/mssabr01/sixnet-tools) - Tool for exploiting sixnet RTUs
+- [ICS Exploits - Industrial Army](https://github.com/industrialarmy/ics_exploits)
 
 ## Demonstrations
 

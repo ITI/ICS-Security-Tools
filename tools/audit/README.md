@@ -37,6 +37,8 @@ Developed as a community asset
 - [WES-NG](https://github.com/bitsadmin/wesng) - Windows Exploit Suggester - Next Generation, a tool based on the output of Windows' systeminfo utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported.
 - [Siemens Simatic PCS 7 Hardening Tool](https://github.com/otoriocyber/PCS7-Hardening-Tool) - Powershell script for assessing the security configurations of Siemens - SIMATIC PCS 7 OS client, OS Server or Engineering station
 - [General Electric CIMPLICITY Hardening Tool](https://github.com/otoriocyber/CIMPLICITY-Hardening-Tool) - Powershell script for assessing the security configurations of windows machines in the CIMPLICITY environment
+- [Hello Proto - Banner Grabbing](https://github.com/industrialarmy/hello_proto) - banner grabbing tools for ICS protocols
+- [Modbus Recon Functions](https://github.com/industrialarmy/recon_modbus_functions) - Modbus tool to poke a device for valid functions
 
 ## Robotics
 
