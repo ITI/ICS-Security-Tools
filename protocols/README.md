@@ -34,6 +34,7 @@ Developed as a community asset
 - [LangSec DNP3 Parser](https://github.com/Dartmouth-Trustlab/dnp3) - Parsing DNP3 using parser combinators in C.
 - [Proxyd](https://github.com/Dartmouth-Trustlab/proxy) - TCP Proxy for testing hammer based parsers (such as the DNP3 parser above)
 - [ICSNPP DNP3 for Zeek](https://github.com/cisagov/icsnpp-dnp3) - DHS CISA DNP3 logging extensions to Zeek
+- [dnp3 - rust implementation](https://github.com/stepfunc/dnp3) - Rust implementation of DNP3 (IEEE 1815) with idiomatic bindings for C, .NET, and Java
 
 ### Traffic Generation
 
@@ -116,6 +117,7 @@ Developed as a community asset
 - [SMOD](/tools/mirrored/smod/) - MODBUS Penetration Testing Framework. smod is a modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol. It is a full Modbus protocol implementation using Python and Scapy. (mirrored as original source is now gone)
 - [mbtget](https://github.com/sourceperl/mbtget) - A simple modbus/TCP client write in pure Perl.
 - [ICSNPP Modbus for Zeek](https://github.com/cisagov/icsnpp-modbus) - DHS CISA Modbus extensions to logging for Zeek
+- [rodbus](https://github.com/stepfunc/rodbus) - Rust implementation of Modbus with idiomatic bindings for C, C++, .Net, and Java
 
 ### Traffic Generation
 
