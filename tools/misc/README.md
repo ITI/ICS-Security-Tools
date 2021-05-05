@@ -49,13 +49,15 @@ Developed as a community asset
 
 ## PoCs
 
-- [Tenable POCs](https://github.com/tenable/poc/)
+- [Tenable PoCs](https://github.com/tenable/poc/)
   - [VServer](https://github.com/tenable/poc/tree/master/FujiElectric/VServer) - [CVE-2019-3946](https://nvd.nist.gov/vuln/detail/CVE-2019-3946)
   - [codesys](https://github.com/tenable/poc/tree/master/codesys) - Misc CVEs
   - [Advantech WebAccess](https://github.com/tenable/poc/tree/master/advantech/webaccess_scada) - [CVE-2018-15705](https://nvd.nist.gov/vuln/detail/CVE-2018-15705)
   - [TIAPortal](https://github.com/tenable/poc/tree/master/Siemens/TIAPortal) - Misc CVEs
   - [Schneider Electric](https://github.com/tenable/poc/tree/master/SchneiderElectric) - Misc CVEs
   - [Rockwell Automation](https://github.com/tenable/poc/tree/master/RockwellAutomation) - Misc CVEs
+- Cisco Talos PoCs
+  - [Allen Bradley MicroLogix](https://blog.talosintelligence.com/2018/03/ab-micrologix-1400-multiple-vulns.html) - Misc CVEs
 
 ## Other
 
