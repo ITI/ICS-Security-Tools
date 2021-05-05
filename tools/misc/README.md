@@ -58,6 +58,9 @@ Developed as a community asset
   - [Rockwell Automation](https://github.com/tenable/poc/tree/master/RockwellAutomation) - Misc CVEs
 - Cisco Talos PoCs
   - [Allen Bradley MicroLogix](https://blog.talosintelligence.com/2018/03/ab-micrologix-1400-multiple-vulns.html) - Misc CVEs
+  - [Advantech WebAccess](https://blog.talosintelligence.com/2021/02/advantech-web-access-scada.html) - Misc CVEs
+  - [Moxa Industrial Secure Router](https://blog.talosintelligence.com/2018/04/vuln-moxa-edr-810.html) - Misc CVEs
+  - [Moxa Industrial Wireless Access Point](https://blog.talosintelligence.com/2018/04/vulnerability-spotlight-moxa-awk-3131a.html) - Misc CVEs, also [here](https://blog.talosintelligence.com/2017/04/moxa-hardcoded-creds.html)
 
 ## Other
 
