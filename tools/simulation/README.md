@@ -17,6 +17,7 @@ Developed as a community asset
 - [pypower](https://github.com/rwl/PYPOWER) - PYPOWER is a power flow and Optimal Power Flow (OPF) solver. It is a port of MATPOWER to the Python programming language. Current features include: DC and AC (Newton’s method & Fast Decoupled) power flow and DC and AC optimal power flow (OPF)
 - [Siemens PSSE](http://w3.siemens.com/smartgrid/global/en/products-systems-solutions/software-solutions/planning-data-management-software/planning-simulation/pages/pss-e.aspx) - PSS®E is a trusted leader in the power industry for cutting-edge electric transmission system analysis and planning. Used in over 115 countries worldwide, PSS®E is powerful, customizable, and fully-featured. With the addition of integrated node-breaker support in version 34, PSS®E is leading the market in advances in electric transmission modeling and simulation. **[Commercial]**
 - [SoftGrid](https://github.com/smartgridadsc/SoftGrid) - SoftGrid: A Testing Toolkit for Evaluating Power Grid Substation Cybersecurity Solutions.
+- [GridSTAGE](https://github.com/pnnl/GridSTAGE) - GridSTAGE (Spatio-Temporal Adversarial scenario GEneration) is a multivariate spatio-temporal data generation framework for simulation of adversarial scenarios in cyber-physical systems.
 
 ## Libraries to Interface with Simulators
 
