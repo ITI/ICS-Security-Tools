@@ -10,7 +10,7 @@ Developed as a community asset
 - [JPCERT J-CLICS](https://www.jpcert.or.jp/english/cs/jclics.html) - J-CLICS (Check List for Industrial Control Systems of Japan; a self-assessment tool for security) consists of "Check List" which helps understanding the status of security measure implementation in ICS, and "Guidance" which provides detailed measures for each question in the Checklist.
 - [BSI LARS](https://www.bsi.bund.de/EN/Topics/Industry_CI/ICS/Tools/LarsICS/LarsICS_node.html) - Light and Right Security ICS (LARS ICS) is a free tool that makes it easier for small and midsize enterprises involved in industrial control systems to take their first steps towards achieving cyber security. It provides organisations with questions they can use to assess the current state of their own cyber security and recommends the safeguards they should implement next (and in which areas). All safeguards are assigned to corresponding parts of the standards and procedures of IT-Grundschutz, ISO 27001, IEC62443, and the BSI ICS Security Compendium, which facilitates the transition to using a holistic management system for information security.
 
-## Auditing
+## Auditing / Scanning
 
 - [Bandolier Security Audit Files](http://www.digitalbond.com/tools/bandolier/) - These audit files are used with the Nessus scanner’s compliance plugins to audit the security settings of control system components. A typical control system will have over 1,000 security settings including the OS settings, database and webserver settings, and the SCADA or DCS application settings. Digital Bond worked with the vendors, such as ABB, AREVA, Emerson, OSIsoft, Telvent, …, to identify the optimal security settings for their systems. Bandolier Security Audit Files are very useful at FAT to insure the system is installed in an optimal security configuration and periodically to verify the configuration has not degraded.
 - [PI-Security-Audit-Tools](https://github.com/osisoft/PI-Security-Audit-Tools) - The PI Security Audit Tools project is a [PowerShell] framework to baseline the security configuration of your PI System. The module (PISysAudit) can be executed locally or remotely to validate the security configuration of various PI System components: PI Data Archive, PI AF Server, PI Vision, SQL Server and the hosting OS [based on Digital Bond Bandolier Security Audit Files].
@@ -39,6 +39,7 @@ Developed as a community asset
 - [General Electric CIMPLICITY Hardening Tool](https://github.com/otoriocyber/CIMPLICITY-Hardening-Tool) - Powershell script for assessing the security configurations of windows machines in the CIMPLICITY environment
 - [Hello Proto - Banner Grabbing](https://github.com/industrialarmy/hello_proto) - banner grabbing tools for ICS protocols
 - [Modbus Recon Functions](https://github.com/industrialarmy/recon_modbus_functions) - Modbus tool to poke a device for valid functions
+- [SSASS-E](https://github.com/pnnl/ssass-e) - Safe Secure Autonomous Scanning Solution for Energy Delivery Systems (SSASSE). Note: UIUC was involved in this project and there are a bunch of great nuggets in the code.
 
 ## Robotics
 
