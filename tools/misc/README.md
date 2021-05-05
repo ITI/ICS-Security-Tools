@@ -47,6 +47,16 @@ Developed as a community asset
 - [IEC 104 Module](https://github.com/michaelj0hn/iec104) - IEC104 Client for Metasploit [merged into mainline](https://github.com/rapid7/metasploit-framework/pull/10386)
 - [random modbus tools](https://github.com/arnaudsoullie/funwithmodbus0x5a) - ICS Village talk at DEFCON 25
 
+## PoCs
+
+- [Tenable POCs](https://github.com/tenable/poc/)
+  - [VServer](https://github.com/tenable/poc/tree/master/FujiElectric/VServer) - [CVE-2019-3946](https://nvd.nist.gov/vuln/detail/CVE-2019-3946)
+  - [codesys](https://github.com/tenable/poc/tree/master/codesys) - Misc CVEs
+  - [Advantech WebAccess](https://github.com/tenable/poc/tree/master/advantech/webaccess_scada) - [CVE-2018-15705](https://nvd.nist.gov/vuln/detail/CVE-2018-15705)
+  - [TIAPortal](https://github.com/tenable/poc/tree/master/Siemens/TIAPortal) - Misc CVEs
+  - [Schneider Electric](https://github.com/tenable/poc/tree/master/SchneiderElectric) - Misc CVEs
+  - [Rockwell Automation](https://github.com/tenable/poc/tree/master/RockwellAutomation) - Misc CVEs
+
 ## Other
 
 - [Siemens S7 PLC Bootloader Code Execution Utility](https://github.com/RUB-SysSec/SiemensS7-Bootloader) - Non-invasive arbitrary code execution on the Siemens S7 PLC by using an undocumented bootloader protocol over UART. Siemens assigned SSA-686531 (CVE-2019-13945) for this vulnerability. Affected devices are Siemens S7-1200 (all variants including SIPLUS) and S7-200 Smart.
