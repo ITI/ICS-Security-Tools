@@ -47,6 +47,11 @@ Developed as a community asset
 
 - [TruffleHog](https://github.com/TruffleHog/TruffleHog) - A network analysis tool that works together with snort to visually represent a PROFINET network graph.
 
+### Radio
+
+- [GR Smart Meters](https://github.com/BitBangingBytes/gr-smart_meters) - GNU Radio module containing decoders for smart meter manufacturers.
+- [GR Elster](https://github.com/argilo/gr-elster) - GNU Radio block and sample flow graph are intended to receive packets transmitted by Elster smart meters on the 902-928 MHz band (tested against Elster R2S).
+
 ### Reverse Engineering
 
 - [Binwalk](https://github.com/ReFirmLabs/binwalk) - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
