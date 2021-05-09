@@ -10,7 +10,9 @@ Developed as a community asset
 
 ## AMI
 
-- [Termineter](https://github.com/GrayHatLabs/john_commor_c1218) - c1218 powermeter emulator
+- [C1218 Termineter](https://github.com/GrayHatLabs/john_commor_c1218) - c1218 powermeter emulator
+- [Newer Termineter](https://github.com/rsmusllp/termineter) - Smart Meter Security Testing Framework
+- [Kamstrup Meter Protocol (KMP)](https://github.com/johnnykv/PyKamstrup) - TCP/IP Kamstrup Meter Protocol (KMP) implementation
 
 ## BACnet
 

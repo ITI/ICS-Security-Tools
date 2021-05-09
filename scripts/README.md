@@ -15,6 +15,10 @@ Developed as a community asset
 - [GE Proficy HMI SCADA CIMPLICITY Privilege Management Vulnerability - ICSA-16-194-02](https://github.com/offensive-security/exploit-database/blob/master/exploits/windows/local/40069.cpp) - Local privilege escalation exploit from ExploitDB.
 - [Rockwell FactoryTalk Activation Server Denial of Service Vulnerability - CVE-2012-0221](https://github.com/offensive-security/exploit-database/blob/master/exploits/multiple/dos/36570.txt) - Denial of Service exploit from ExploitDB.
 
+## Device Access
+
+- [PowerMeter Reader](https://github.com/lucab85/PowerMeter-Reader) - Python code to read energetic usage data from a modbus connected PowerMeter device. Tested against Schneider Electric iEM3255 (Acti 9 iEM 3000 series - code A9MEM3255).
+
 ## Other
 
 - [ICS-Petya Resources](https://github.com/arobinsongit/ICS-Petya) - A variety of items related to Petya/Not-Petya.

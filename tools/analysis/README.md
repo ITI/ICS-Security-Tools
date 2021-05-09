@@ -46,11 +46,13 @@ Developed as a community asset
 ### Protocols
 
 - [TruffleHog](https://github.com/TruffleHog/TruffleHog) - A network analysis tool that works together with snort to visually represent a PROFINET network graph.
+- [PowerMeter Reader](https://github.com/lucab85/PowerMeter-Reader) - Python code to read energetic usage data from a modbus connected PowerMeter device. Tested against Schneider Electric iEM3255 (Acti 9 iEM 3000 series - code A9MEM3255).
 
 ### Radio
 
 - [GR Smart Meters](https://github.com/BitBangingBytes/gr-smart_meters) - GNU Radio module containing decoders for smart meter manufacturers.
 - [GR Elster](https://github.com/argilo/gr-elster) - GNU Radio block and sample flow graph are intended to receive packets transmitted by Elster smart meters on the 902-928 MHz band (tested against Elster R2S).
+- [RTL-SDR Itron ERT](https://github.com/bemasher/rtlamr) - An rtl-sdr receiver for Itron ERT compatible smart meters operating in the 900MHz ISM band.
 
 ### Reverse Engineering
 
