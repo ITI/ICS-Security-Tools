@@ -130,6 +130,15 @@ Developed as a community asset
 
 - [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](/tools/mirrored/aegis-opensource).
 
+## Multispeak
+
+### Protocol Implementation
+
+- [Multispeak](https://github.com/saberdaagi/multispeak) - Implementation of multispeak protocol.
+- [Simple-Mutlispeak](https://github.com/eau-claire-energy-cooperative/simple-multispeak) - a simple, extendable, interface for communicating with a webservice implementing the Multispeak Standard.
+- [MS-SPEAK](https://github.com/pnnl/ms-speak) - Multi-Speak - Secure Protocol Enterprise Access Kit
+-
+
 ## OPC UA
 
 ### Protocol Implementation
