@@ -7,6 +7,7 @@ Developed as a community asset
 - [ICS System Ports List](PORTS.md) - This is a list of common ICS tcp/udp ports.
 - [PoC 2013 SCADA Release](https://github.com/atimorin/PoC2013) - Power of Community 2013 conference special release of ICS/SCADA toolkit
 - [Industrial Control Systems Network Protocol Parsers (ICSNPP)](https://github.com/cisagov/ICSNPP) - DHS CISA Industrial Control Systems protocol parsers plugins for the Zeek network security monitoring framework
+- [Triangle Microworks DTM](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/dtm-pages/overview) - Distributed Test Manager (DTM) is a Windows® application that can simulate the SCADA communications in the substation and perform automated tests to confirm system or individual device behavior. **commercial**
 
 ## AMI
 
