@@ -24,8 +24,7 @@ Developed as a community asset
 
 ## Bristol Standard Asynchronous Protocol (BSAP)
 
-- [ICSNPP BSAP IP for Zeek](https://github.com/cisagov/icsnpp-bsap-ip) - DHS CISA BSAP over IP plugin for Zeek
-- [ICSNPP BSAP Serial for Zeek](https://github.com/cisagov/icsnpp-bsap-serial) - DHS CISA BSAP over Serial plugin for Zeek
+- [ICSNPP BSAP IP for Zeek](https://github.com/cisagov/icsnpp-bsap) - DHS CISA BSAP plugin for Zeek
 
 ## DNP3
 
