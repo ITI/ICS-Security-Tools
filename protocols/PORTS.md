@@ -38,6 +38,7 @@ The vendor specific ports tables lists ports that are used by only one or a smal
 | Siemens          |     Spectrum Power TG     |                                                                                                                              TCP/50001 to 50016, TCP/50018 to 50020, UDP/50020 to 50021, TCP/50025 to 50028, TCP/50110 to 50111                                                                                                                               |
 | SNC              |           GENe            | TCP/38000 to 38001, TCP/38011 to 38012, TCP/38014 to 38015, TCP/38200, TCP/38210, TCP/38301, TCP/38400, TCP/38700, TCP/62900, TCP/62911, TCP/62924, TCP/62930, TCP/62938, TCP/62956 to 62957, TCP/62963, TCP/62981 to 62982, TCP/62985, TCP/62992, TCP/63012, TCP/63027 to 63036, TCP/63041, TCP/63075, TCP/63079, TCP/63082, TCP/63088, TCP/63094, TCP/65443 |
 | Telvent          |         OASyS DNA         |                                                                                                                                         UDP/5050 to 5051, TCP/5052, TCP/5065, TCP/12135 to 12137, TCP/56001 to 56099                                                                                                                                          |
+| OMRON          |         FINS communication protocol         |                                                                                                                                                                           TCP/UDP/9600
 
 ## All Control System Ports Sorted By Port Number
 
@@ -57,6 +58,7 @@ The control system ports table combines the previous two tables and sorts the en
 | TCP/5052           |           Telvent OASyS DNA           |
 | TCP/5065           |           Telvent OASyS DNA           |
 | TCP/5450           |           OSIsoft PI Server           |
+| TCP/UDP/9600       |           OMRON FINS protocol         |    
 | TCP/10307          |            ABB Ranger 2003            |
 | TCP/10311          |            ABB Ranger 2003            |
 | TCP/10364 to 10365 |            ABB Ranger 2003            |
