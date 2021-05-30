@@ -30,5 +30,6 @@ This is meant to capture which CPU architecture and operating system is used in 
 | SEL        | RTAC 3505  | ...              | Linux            |
 | SEL        | RTAC 3530  | ...              | Linux            |
 | SEL        | RTAC 3555  | x86              | Linux            |
+| Mitsubishi | IQ-F FX5U  | ARM              | Proprietary RTOS |
 
 (creative commons license)
