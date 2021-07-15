@@ -2,6 +2,10 @@
 
 Developed as a community asset
 
+## Various
+
+- [Claroty ICS Scripts](https://github.com/claroty/ICSSecurityTools) - Various scripts from the Claroty team
+
 ## Enumeration
 
 - [Redpoint](https://github.com/digitalbond/Redpoint) - Digital Bond's ICS Enumeration Tools (NMAP NSE scripts).
