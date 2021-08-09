@@ -49,9 +49,10 @@ Developed as a community asset
 - [S4x20](https://www.youtube.com/playlist?list=PL8OWO1qWXF4o4wPUBcZcHn_Fu3PtqOVg9)
 - [CS3STHLM 2020](https://www.youtube.com/playlist?list=PLK9u2M6_KckS-xoCb8g2qxaD3vxYN29-S)
 
-## Reverse engineering
+## Reverse Engineering
 
 - [BitBangingBytes Wiki on RE Smart Meters](https://wiki.recessim.com/view/Advanced_Metering_Infrastructure) - Wiki detailing RE work on particular Smart Meters.
+- [Smart Meter Hacking Youtube Playlist](https://www.youtube.com/playlist?list=PLYlhncU2MojDY9gxU36pxNVkiylGGcbwq) - Playlist from BitBangingBytes on Smart Meter Hacking.
 
 ## Frameworks
 
