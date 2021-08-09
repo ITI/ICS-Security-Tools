@@ -49,6 +49,10 @@ Developed as a community asset
 - [S4x20](https://www.youtube.com/playlist?list=PL8OWO1qWXF4o4wPUBcZcHn_Fu3PtqOVg9)
 - [CS3STHLM 2020](https://www.youtube.com/playlist?list=PLK9u2M6_KckS-xoCb8g2qxaD3vxYN29-S)
 
+## Reverse engineering
+
+- [BitBangingBytes Wiki on RE Smart Meters](https://wiki.recessim.com/view/Advanced_Metering_Infrastructure) - Wiki detailing RE work on particular Smart Meters.
+
 ## Frameworks
 
 - [ICS Testbed Tetris](https://lancaster-ics-testbed.github.io) - Shared resource to reason about structural organization of ICS testbeds.
