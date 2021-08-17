@@ -136,8 +136,7 @@ Developed as a community asset
 
 - [Multispeak](https://github.com/saberdaagi/multispeak) - Implementation of multispeak protocol.
 - [Simple-Mutlispeak](https://github.com/eau-claire-energy-cooperative/simple-multispeak) - a simple, extendable, interface for communicating with a webservice implementing the Multispeak Standard.
-- [MS-SPEAK](https://github.com/pnnl/ms-speak) - Multi-Speak - Secure Protocol Enterprise Access Kit
--
+- [MS-SPEAK](https://github.com/pnnl/ms-speak) - Multi-Speak - Secure Protocol Enterprise Access Kit. Note, check the [Phase 3](https://github.com/pnnl/ms-speak/tree/Phase3) branch for more current development.
 
 ## OPC UA
 
