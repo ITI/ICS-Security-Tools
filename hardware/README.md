@@ -49,6 +49,6 @@ Developed as a community asset
 - Adjustable Power Supply
 - [YardStickOne](https://greatscottgadgets.com/yardstickone/)/[RFCat](http://int3.cc/products/rfcat)/[HackRF](https://greatscottgadgets.com/hackrf/)
 - Another laptop for bare Linux
-- [IDAPro](https://www.hex-rays.com/products/ida/)
+- Reverse Engineering: ([IDAPro](https://www.hex-rays.com/products/ida/) and [GHIDRA](https://github.com/NationalSecurityAgency/ghidra)
 
 (creative commons license)
