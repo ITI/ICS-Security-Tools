@@ -45,10 +45,11 @@ Developed as a community asset
 
 - Oscilloscope ([RIGOL](http://www.rigolna.com) are decent and cheap.)
 - Universal JTAG Adapter (e.g., [Wiggler](http://www.diygadget.com/universal-jtag-adapter-v2-wiggler-and-xilinx-platform-cable-compatible-debrick-routers-modems-and-more.html), [Flyswatter 2](http://www.tincantools.com/JTAG/Flyswatter2.html), [JTAGulator](http://www.grandideastudio.com/portfolio/jtagulator/)) and supporting software (e.g., [OpenOCD](http://openocd.org)).
-- Logic Analyzer ([Saleae](https://www.saleae.com) are good for normal use, stick with an 8 channel to start)
+- Logic Analyzer ([Saleae](https://www.saleae.com) are good for normal use, stick with an 8 channel to start) and also [DSLogic Plus](https://www.dreamsourcelab.com/product/dslogic-series/).
 - Adjustable Power Supply
 - [YardStickOne](https://greatscottgadgets.com/yardstickone/)/[RFCat](http://int3.cc/products/rfcat)/[HackRF](https://greatscottgadgets.com/hackrf/)
 - Another laptop for bare Linux
-- [IDAPro](https://www.hex-rays.com/products/ida/)
+- Reverse Engineering: ([IDAPro](https://www.hex-rays.com/products/ida/) and [GHIDRA](https://github.com/NationalSecurityAgency/ghidra)).
+- Firmware analysis: ([Binwalk](https://github.com/ReFirmLabs/binwalk)).
 
 (creative commons license)
