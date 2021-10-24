@@ -5,6 +5,7 @@ Developed as a community asset
 ## Various
 
 - [Claroty ICS Scripts](https://github.com/claroty/ICSSecurityTools) - Various scripts from the Claroty team
+- [ICSSecurityScripts](https://github.com/tijldeneut/ICSSecurityScripts) - Various industrial security Python scripts from [Tijl Deneut](https://github.com/tijldeneut)
 
 ## Enumeration
 
