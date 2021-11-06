@@ -64,6 +64,7 @@ Developed as a community asset
 
 - [SymCC](https://github.com/eurecom-s3/symcc) - SymCC: efficient compiler-based symbolic execution
 - [IEC-Checker](https://github.com/jubnzv/iec-checker) - This project aims to implement an open source tool for static code analysis of IEC 61131-3 programs.
+- [AttkFinder](https://gitlab.com/jhcastel/attkfinder) - a tool that performs static program analysis of PLC programs, and produce Data-oriented Attack vectors. In a nutshell, AttkFinder takes PLC programs written under the standard IEC-61131-3 in xml-format or structured text, and builds a Data-Flow graph (DFG), a Control-Flow graph (CFG) and translates the program into a Structured Intermediate Representation Language (STIR) version. A symbolic execution engine analyses the stir-version code searching for attack vectors that can be exploited by a malicious actuator.
 
 ### Samples
 
