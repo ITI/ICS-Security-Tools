@@ -14,6 +14,7 @@ Developed as a community asset
 - [Thomas Roth - Embedded Serial Gateways](https://github.com/nezza/scada-stuff) - Various scripts for analysis of some serial embedded gateways. See also: [video](https://media.ccc.de/v/34c3-8956-scada_-_gateway_to_s_hell)
 - [ICS Mem Collect](https://github.com/fireeye/ics_mem_collect) - Memory Analysis Collection Toolkit for GE D20MX platform from FireEye.
 - [Recon 2017 Work on Protection Relays](https://github.com/rigmar/Recon2017) - More information [here](http://www.scada.sl/2017/10/hopeless-relay-protection-for.html)
+- [EMBA](https://github.com/e-m-b-a/emba) - The security analyzer for embedded device firmware + [EMBArk](https://github.com/e-m-b-a/embark) - the web based enterprise interface for EMBA
 
 ### Logs
 
