@@ -3,7 +3,7 @@
 Developed as a community asset
 
 ## General
-
+- [QSimpleScada](https://github.com/IndeemaSoftware/QSimpleScada) - Qt/C++ based simple SCADA library for your IoT projects.
 - [FUXA](https://github.com/frangoteam/FUXA) - FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. With FUXA you can create modern process visualizations with individual designs for your machines and real-time data display.
 - [AdvancedHMI](http://www.advancedhmi.com) - AdvancedHMI allows you to create HMI's. The software is based on the .NET framework and uses the popular Visual Studio as it's designer.
 - [Eclipse NeoSCADA](https://www.eclipse.org/eclipsescada/) - Designed to be a framework to create a fully working production SCADA System. This was formerly called openSCADA.
