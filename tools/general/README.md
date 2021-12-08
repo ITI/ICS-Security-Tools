@@ -4,6 +4,7 @@ Developed as a community asset
 
 ## General
 
+- [FUXA](https://github.com/frangoteam/FUXA) - FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. With FUXA you can create modern process visualizations with individual designs for your machines and real-time data display.
 - [AdvancedHMI](http://www.advancedhmi.com) - AdvancedHMI allows you to create HMI's. The software is based on the .NET framework and uses the popular Visual Studio as it's designer.
 - [Eclipse NeoSCADA](https://www.eclipse.org/eclipsescada/) - Designed to be a framework to create a fully working production SCADA System. This was formerly called openSCADA.
 - [IGSS Free 50](http://igss.schneider-electric.com/products/igss/download/free-scada.aspx) - IGSS FREE50 is a free edition of IGSS V11 (released May 2014) that is a full-featured SCADA System. Same functionality as the full offering, but is limited to setting up a project with no more than 50 objects.
