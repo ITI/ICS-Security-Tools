@@ -117,6 +117,7 @@ Developed as a community asset
 ### Protocol Implementation
 
 - [pyModBus](https://github.com/bashwork/pymodbus) - A full modbus protocol written in python.
+- [Go modbus](https://github.com/things-go/go-modbus) - modbus write in pure go, support rtu,ascii,tcp master library,also support tcp slave.
 - [Modbus for Go](https://github.com/goburrow/modbus) - Fault-tolerant implementation of modbus protocol in Go (golang)
 - [ModbusPal](http://modbuspal.sourceforge.net) - ModbusPal is a MODBUS slave simulator. Its purpose is to offer an easy to use interface with the capabilities to reproduce complex and realistic MODBUS environments. Mirror available [here](/tools/mirrored/modbuspal/).
 - [SMOD](/tools/mirrored/smod/) - MODBUS Penetration Testing Framework. smod is a modular framework with every kind of diagnostic and offensive feature you could need in order to pentest modbus protocol. It is a full Modbus protocol implementation using Python and Scapy. (mirrored as original source is now gone)
