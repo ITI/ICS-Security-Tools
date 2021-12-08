@@ -61,6 +61,7 @@ Developed as a community asset
 - [Zeek implementation for ethernet/ip](https://github.com/scy-phy/bro-cip-enip) - This repository contains the necessary files in order to inspect Ethernet/IP and Common Industrial Protocol packets with Zeek.
 - [CPPPO - Communications Protocol Python Parser and Originator (EtherNet/IP CIP implementation)](https://github.com/pjkundert/cpppo) - Cpppo is used to implement binary communications protocol parsers. The protocol’s communication elements are described in terms of state machines which change state in response to input events, collecting the data and producing output data artifacts.
 - [pycomm](https://github.com/ruscito/pycomm) - **pycomm** is a package that includes a collection of modules used to communicate with PLCs. At the moment the first module in the package is **ab_comm**. **ab_comm** is a module that contains a set of classes used to interface Rockwell PLCs using Ethernet/IP protocol. The "clx" class can be used to communicate with Compactlogix, Controllogix PLCs The "slc" can be used to communicate with Micrologix or SLC PLCs
+- [pycomm3](https://github.com/ottowayi/pycomm3) - A Python Ethernet/IP library for communicating with Allen-Bradley PLCs.
 - [pyCIP](https://github.com/cpchrispye/PyCIP) - CIP protocol implementation in Python3
 - [zeek plugin enip](https://github.com/amzn/zeek-plugin-enip) - EthernetIP Zeek Plugin from Amazon
 - [ICSNPP ENIP and CIP for Zeek](https://github.com/cisagov/icsnpp-enip) - DHS CISA ENIP and CIP plugin for Zeek
