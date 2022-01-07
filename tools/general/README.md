@@ -3,6 +3,7 @@
 Developed as a community asset
 
 ## General
+- [ICS TestBed Framework](https://github.com/PMaynard/ICS-TestBed-Framework) - A scalable framework for automatically deploying locally (or remotely) a number of virtual machines that replicate a Supervisory Control And Data Acquisition (SCADA) network is proposed.
 - [ScadaJS](https://github.com/aktos-io/scada.js) - Industrial distributed SCADA and MRP library for web, desktop and mobile.
 - [CuteHMI](https://github.com/michpolicht/CuteHMI) - CuteHMI is an open-source HMI (Human Machine Interface) software written in C++ and QML, using Qt libraries as a framework.
 - [QSimpleScada](https://github.com/IndeemaSoftware/QSimpleScada) - Qt/C++ based simple SCADA library for your IoT projects.
