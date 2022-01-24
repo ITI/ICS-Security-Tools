@@ -9,6 +9,7 @@ Developed as a community asset
 - [Systems and Cyber Impact Database MARKup (SCIDMARK)](http://scidmark.com/)
 - [RISI Online Incident Database](https://www.risidata.com) (Outdated)
 - [TI Safe Incident Hub](https://hub.tisafe.com/)
+- [Operational Technology Cyber Attack Database (OTCAD)](https://github.com/SecuraBV/OTCAD)
 
 ## General Collection
 
