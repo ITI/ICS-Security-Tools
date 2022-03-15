@@ -3,6 +3,7 @@
 Developed as a community asset
 
 ## General
+- [Windsualise](https://github.com/kim-ja/Windsualise) - Wind Turbine Data Visualisation Interface developed at University of Strathclyde, Technology & Innovation Centre.
 - [WTPHM](https://github.com/lkev/wtphm) - SCADA data pre-processing library for prognostics, health management and fault detection of wind turbines.
 - [ScadaJS](https://github.com/aktos-io/scada.js) - Industrial distributed SCADA and MRP library for web, desktop and mobile.
 - [CuteHMI](https://github.com/michpolicht/CuteHMI) - CuteHMI is an open-source HMI (Human Machine Interface) software written in C++ and QML, using Qt libraries as a framework.
