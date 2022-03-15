@@ -32,6 +32,7 @@ Developed as a community asset
 
 ## Others
 
+- [softplc](https://github.com/peteral/softplc) - PLC simulation for load / stress testing of SCADA / MES systems.
 - [PLC Fiddle](http://www.plcfiddle.com/) - Free Online Ladder logic Editor and Simulator in your Browser. [Description](http://accautomation.ca/plc-fiddle-online-editor-and-simulator-in-your-browser)
 - [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs. Source [v1](https://github.com/thiagoralves/OpenPLC), [v2](https://github.com/thiagoralves/OpenPLC_v2), [v3](https://github.com/thiagoralves/OpenPLC_v3). Simulink interface [here](https://github.com/thiagoralves/OpenPLC_Simulink-Interface)
 - [Net To PLCSim](https://sourceforge.net/projects/nettoplcsim/) - TCP/IP-Network extension for the PLC simulation software Siemens PLCSim
