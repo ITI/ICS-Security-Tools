@@ -17,6 +17,7 @@ Developed as a community asset
 - [DHS CISA ICS Training](https://us-cert.cisa.gov/ics/Training-Available-Through-ICS-CERT) - Online and in-person training links
 - [ENISA Introduction to network forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational#network_forensics) - Includes "ICS/SCADA environment" Use Case
 - [IAEA Nuclear Security e-Learning Modules: Information and computer security](https://elearning.iaea.org/m2/course/index.php?categoryid=104) - 4 Modules, that include a final tests and certificates
+- [ISA IACS Cybersecurity for CISOs](https://www.isa.org/training-and-certification/isa-training/microlearning-modules/iacs-cybersecurity-for-cisos) - A microlearning module set that provides insight and understanding around the ISA/IEC 62443 series of standards
 
 ## Non-Free Training
 
