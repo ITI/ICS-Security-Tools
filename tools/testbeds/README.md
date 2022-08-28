@@ -18,6 +18,7 @@ Developed as a community asset
 - [DVCP-TE](https://github.com/satejnik/DVCP-TE) - Damn Vulnerable Chemical Process - Tennessee Eastman
 - [DVCP-VAM](https://github.com/satejnik/DVCP-VAM) - Damn Vulnerable Chemical Process - Vinyl Acetate Monomer
 - [SWaT Simulator](https://github.com/yuqiChen94/Swat_Simulator) - SUTD SWaT Testbed Simulation written in python
+- [Simple Process Simulation](https://github.com/arnaudsoullie/simple-process-simulation) - HTML/JS process simulation interacting with a modbus device, by Arnaud Soullie
 
 ## Survey
 
