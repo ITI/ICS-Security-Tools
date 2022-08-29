@@ -22,6 +22,11 @@ Developed as a community asset
 
 - [Cyber Security ICS News Feed](https://cyberics.github.io/News/news.html) - Curated feed of ICS Cyber Security News. Source code [here](https://github.com/CyberICS/CyberICS.github.io).
 
+## Job Resources
+
+- [(CS)²AI Job Board](https://www.cs2ai.org/jobs)
+- [SANS ICS Community ICS Related Job Opportunities](https://ics-community.sans.org/category/ics-related-job-opportunities)
+
 ## Podcast
 
 - [BEERISAC: OT/ICS Security Podcast Playlist](https://www.listennotes.com/listen/beerisac-otics-security-podcast-playlist-j-G0QwC8Zsu/) - BEER ISAC Curated OT/ICS Podcast Playlist by Anton Shipulin.
