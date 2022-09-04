@@ -27,6 +27,7 @@ Developed as a community asset
 - [(CS)²AI Job Board](https://www.cs2ai.org/jobs)
 - [SANS ICS Community ICS Related Job Opportunities](https://ics-community.sans.org/category/ics-related-job-opportunities)
 - [LinkedIn Job Search](https://www.linkedin.com/jobs/search/?geoId=92000000&keywords=Industrial%20ICS%20OT%20Security&location=Worldwide&refresh=true)
+- [Verge Management Group Open Positions](https://vergemanagementgroup.com/open-positions/) - Talent Acquisition for IoT and OT Cybersecurity
 
 ## Podcast
 
