@@ -35,6 +35,7 @@ Developed as a community asset
 - [Ditecting](http://www.ditecting.com/) - Chinese search engine for Industrial Control System Devices
 - [BinaryEdge](https://app.binaryedge.io/login) - Another project focused on collecting, analyzing and classifying internet wide data
 - [kamerka](https://github.com/woj-ciech/kamerka) - Build interactive map of ICS devices from Shodan
+- [kamerka GUI](https://github.com/woj-ciech/Kamerka-GUI) - A GUI for Kamerka from above forming the "Ultimate Internet of Things/Industrial Control Systems reconnaissance tool."
 - [splonebox](https://splone.com/splonebox/) - splonebox is an open source network assessment tool with focus on Industry Control Systems. It offers an ongoing analysis of your network and its devices. A modular design allows writing of additional plugins.
 - [CHAPS](https://github.com/cutaway-security/chaps) - Configuration Hardening Assessment PowerShell Script, a script for checking Windows system security settings where additional software and assessment tools cannot be installed (e.g. Industrial Control System (ICS) environments)
 - [WES-NG](https://github.com/bitsadmin/wesng) - Windows Exploit Suggester - Next Generation, a tool based on the output of Windows' systeminfo utility which provides the list of vulnerabilities the OS is vulnerable to, including any exploits for these vulnerabilities. Every Windows OS between Windows XP and Windows 10, including their Windows Server counterparts, is supported.
