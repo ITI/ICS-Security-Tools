@@ -66,6 +66,7 @@ Developed as a community asset
 - [zeek plugin enip](https://github.com/amzn/zeek-plugin-enip) - EthernetIP Zeek Plugin from Amazon
 - [ICSNPP ENIP and CIP for Zeek](https://github.com/cisagov/icsnpp-enip) - DHS CISA ENIP and CIP plugin for Zeek
 - [Molex EtherNet/IP Tool](https://www.molex.com/mx_upload/superfamily/iccc/EtherNet_IPTool.html) - The EtherNet/IP tool (EIPTool) is a small and simple helper tool which assists to explore CIP objects of EtherNet/IP nodes, without having any EDS files. It uses the explicit messaging to read and write CIP attributes.
+- [Claroty ENIP / CIP Stack Detector](https://github.com/claroty/enip-stack-detector) - EtherNet/IP & CIP Stack Detector that can help both cyber-security researchers, OT engineers, and asset owners to identify devices that are running a specific EtherNet/IP protocol stack.
 
 ## IEC 104
 
