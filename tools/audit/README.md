@@ -45,6 +45,7 @@ Developed as a community asset
 - [Modbus Recon Functions](https://github.com/industrialarmy/recon_modbus_functions) - Modbus tool to poke a device for valid functions
 - [SSASS-E](https://github.com/pnnl/ssass-e) - Safe Secure Autonomous Scanning Solution for Energy Delivery Systems (SSASSE). Note: UIUC was involved in this project and there are a bunch of great nuggets in the code.
 - [HVACScanner](https://github.com/musicmancorley/HVACScanner) - Locates Honeywell/Tridium/Niagara HVAC JACEs/Controllers via HTTP fingerprints/strings.
+- [ICS Security Scripts](https://github.com/tijldeneut/ICSSecurityScripts) - Various industrial security scripts.
 
 ## Robotics
 
