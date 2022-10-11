@@ -52,6 +52,7 @@ Developed as a community asset
 
 - [TruffleHog](https://github.com/TruffleHog/TruffleHog) - A network analysis tool that works together with snort to visually represent a PROFINET network graph.
 - [PowerMeter Reader](https://github.com/lucab85/PowerMeter-Reader) - Python code to read energetic usage data from a modbus connected PowerMeter device. Tested against Schneider Electric iEM3255 (Acti 9 iEM 3000 series - code A9MEM3255).
+- [DNP3 Attack Detection System](https://github.com/hpcn-uam/DNP3-Attack-Detection-System) - Simple packet dissector that detects anomalous DNP3 traffic by analysing its parameters.
 
 ### Radio
 

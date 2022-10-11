@@ -60,6 +60,7 @@ Developed as a community asset
 - [EDMAND](https://github.com/ITI/EDMAND) - EDMAND Anomaly detection framework. Built around Bro.
 - [AIUS](https://github.com/ITI/aius) - AIUS Repository (EDMAND/CAPTAR combination). Built around Bro.
 - [ML NIDS For ICS](https://github.com/Rocionightwater/ML-NIDS-for-SCADA) - Machine learning techniques for Intrusion Detection in SCADA Systems.
+- [DNP3 Attack Detection System](https://github.com/hpcn-uam/DNP3-Attack-Detection-System) - Simple packet dissector that detects anomalous DNP3 traffic by analysing its parameters.
 
 ## IDS Extensions
 
