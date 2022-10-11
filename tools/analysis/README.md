@@ -44,6 +44,7 @@ Developed as a community asset
 - [ntopng (community version)](https://github.com/ntop/ntopng) - a web-based network traffic monitoring application released under GPLv3. Supports Industrial IOT and Scada with modbus, DNP3 and IEC 60870-5-104 since ntopng 4.2 (October 2020)
 - [Sequence 2 Sequence Anomaly Detection on SWaT](https://github.com/jukworks/swat-seq2seq) - Anomaly Detection for SWaT Dataset using Sequence-to-Sequence Neural Networks
 - [Poisoning ICS Attack Detectors](https://github.com/mkravchik/poisoning-ics-ad) - Poisoning Attacks on Cyber Attack Detectors for Industrial Control Systems -- operates on the SWaT dataset
+- [ICS PCAP Viz](https://github.com/cutaway-security/ICSPcapViz) - A packet capture visualizer for industrial control networks.
 
 ### Protocols
 

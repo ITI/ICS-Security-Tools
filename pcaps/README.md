@@ -7,6 +7,7 @@ Developed as a community asset
 - [CapSan](https://github.com/jsiwek/capsan) - Packet capture sanitizer/anonymizer for Jon Siwek at University of Illinois.
 - [Malcolm](https://github.com/cisagov/Malcolm) - Malcolm is a powerful, easily deployable network traffic analysis tool suite for full packet capture artifacts (PCAP files) and Zeek logs.
 - [Reference Table of ICS Protocol - Wireshark Dissectors](/pcaps/wireshark-disectors.tsv)
+- [ICS PCAP Viz](https://github.com/cutaway-security/ICSPcapViz) - A packet capture visualizer for industrial control networks.
 
 ## Protocol Organized PCAPs
 
