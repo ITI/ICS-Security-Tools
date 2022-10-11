@@ -15,6 +15,7 @@ Developed as a community asset
 - [ICS Mem Collect](https://github.com/mandiant/ics_mem_collect) - Memory Analysis Collection Toolkit for GE D20MX platform from FireEye. Now archived, so mirrored [here](/tools/mirrored/ics-mem-collect)
 - [Recon 2017 Work on Protection Relays](https://github.com/rigmar/Recon2017) - More information [here](http://www.scada.sl/2017/10/hopeless-relay-protection-for.html)
 - [EMBA](https://github.com/e-m-b-a/emba) - The security analyzer for embedded device firmware + [EMBArk](https://github.com/e-m-b-a/embark) - the web based enterprise interface for EMBA
+- [TROMMEL](https://github.com/CERTCC/trommel) - TROMMEL sifts through embedded device files to identify potential vulnerable indicators. 
 
 ### Logs
 
