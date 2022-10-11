@@ -42,6 +42,7 @@ Developed as a community asset
 ### Traffic Generation
 
 - [DNP3 Traffic Generation](https://github.com/iti/ics-trafficgen/) - OpenDNP3-based traffic generation that can take a profile of traffic, apply scriptable variation, and result in output of DNP3 traffic matching that profile.
+- [DNP3Crafter](https://github.com/hpcn-uam/DNP3Crafter) - DNP3Crafter is a very simple Python script which use sockets to send precalculated DNP3 packets over TCP and allows you to choose the number of repetitions. It's use is designed for testing purposes.
 
 ### Fuzzing
 
