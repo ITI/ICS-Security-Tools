@@ -16,7 +16,8 @@ Developed as a community asset
 - [Recon 2017 Work on Protection Relays](https://github.com/rigmar/Recon2017) - More information [here](http://www.scada.sl/2017/10/hopeless-relay-protection-for.html)
 - [EMBA](https://github.com/e-m-b-a/emba) - The security analyzer for embedded device firmware + [EMBArk](https://github.com/e-m-b-a/embark) - the web based enterprise interface for EMBA
 - [TROMMEL](https://github.com/CERTCC/trommel) - TROMMEL sifts through embedded device files to identify potential vulnerable indicators. 
-- [OFRAK](https://github.com/redballoonsecurity/ofrak) - OFRAK (Open Firmware Reverse Analysis Konsole) is a binary analysis and modification platform. OFRAK combines the ability to: Identify and Unpack many binary formats. Analyze unpacked binaries with field-tested reverse engineering tools. Modify and Repack binaries with powerful patching strategies
+- [OFRAK](https://github.com/redballoonsecurity/ofrak) - OFRAK (Open Firmware Reverse Analysis Konsole) is a binary analysis and modification platform. OFRAK combines the ability to: Identify and Unpack many binary formats. Analyze unpacked binaries with field-tested reverse engineering tools. Modify and Repack binaries with powerful patching strategies.
+- [rpdebug](https://github.com/mandiant/rpdebug_qnx) - rpdbg.py is designed to communicate with the QNX operating system's pdebug utility.
 
 ### Logs
 
