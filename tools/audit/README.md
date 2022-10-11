@@ -2,6 +2,8 @@
 
 Developed as a community asset
 
+## Advisories
+- [ICS-Advisory-Project](https://github.com/icsadvprj/ICS-Advisory-Project) - The ICS Advisory Project is an open-source project to provide DHS CISA ICS-CERT Advisories data in Comma Separated Value (CSV) format to support vulnerability analysis for the OT/ICS community. 
 ## Organizational Assessment Tools
 
 - [DHS CSET](https://github.com/cisagov/cset) - The Cyber Security Evaluation Tool (CSET®) is a Department of Homeland Security (DHS) product that assists organizations in protecting their key national cyber assets. It was developed under the direction of the DHS National Cyber Security Division (NCSD) by cybersecurity experts and with assistance from the National Institute of Standards and Technology. This tool provides users with a systematic and repeatable approach for assessing the security posture of their cyber systems and networks. It includes both high-level and detailed questions related to all industrial control and IT systems.
