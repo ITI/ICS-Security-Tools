@@ -19,6 +19,8 @@ Developed as a community asset
 - [DVCP-VAM](https://github.com/satejnik/DVCP-VAM) - Damn Vulnerable Chemical Process - Vinyl Acetate Monomer
 - [SWaT Simulator](https://github.com/yuqiChen94/Swat_Simulator) - SUTD SWaT Testbed Simulation written in python
 - [Simple Process Simulation](https://github.com/arnaudsoullie/simple-process-simulation) - HTML/JS process simulation interacting with a modbus device, by Arnaud Soullie
+- [ICSSIM](https://github.com/AlirezaDehlaghi/ICSSIM) - A Framework for Building Industrial Control Systems Security Simulation Testbeds, [Paper](https://arxiv.org/abs/2210.13325)
+
 
 ## Survey
 
