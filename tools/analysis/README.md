@@ -81,4 +81,8 @@ Developed as a community asset
 - [PASAD](https://github.com/mikeliturbe/pasad) - Process-Aware Stealthy Attack Detection using SWaT and DVCP-TE
 - [Archive Walker](https://github.com/pnnl/archive_walker) - PMU data analysis tool
 
+### Forensics
+
+- [Microsoft Section52 ICS Forensics tools](https://github.com/microsoft/ics-forensics-tools) - an open source forensic toolkit for analyzing Industrial PLC metadata and project files
+
 (creative commons license)
