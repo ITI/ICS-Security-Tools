@@ -39,6 +39,7 @@ Developed as a community asset
 - [ISF (Industrial Exploitation Framework)](https://github.com/dark-lbp/isf) - an exploitation framework based on open source project routersploit
 - [ISF(Industrial Security Exploitation Framework)](https://github.com/w3h/isf) - ISF(Industrial Security Exploitation Framework) is an exploitation framework based on Python, claiming to be based on the NSA Equation Group Fuzzbunch toolkit, developed by the ICSMASTER team.
 - [EtherSploit/IP](https://github.com/thiagoralves/EtherSploit-IP) - An interactive shell with a bunch of helpful commands to exploit EtherNet/IP vulnerabilities (more specifically Allen-Bradley MicroLogix implementation of ENIP)
+- [SIMATIC-SMACKDOWN](https://github.com/RoseSecurity/SIMATIC-SMACKDOWN) - enumerates networks for S7 devices before launching a distributed attack to STOP PLC CPUs
 
 ## Metasploit Modules
 
