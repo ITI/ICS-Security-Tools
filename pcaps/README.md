@@ -35,6 +35,7 @@ Developed as a community asset
 - [Netresec PCAP collection](https://www.netresec.com/?page=PcapFiles) - This is a list of public packet capture repositories, which are freely available on the Internet. Most of the sites listed below share Full Packet Capture (FPC) files, but some do unfortunately only have truncated frames.
 - [ControlThings I/O PCAP collection](https://github.com/ControlThings-io/ct-samples/tree/master/Protocols) - ICS PCAP repository from ControlThings I/O
 - [ICS PCAPS by Emre Ekin](https://github.com/EmreEkin/ICS-Pcaps) - ICS PCAPS by Emre Ekin
+- [Malcolm-PCAP](https://github.com/mmguero-dev/Malcolm-PCAP) - A collection of PCAPs, pulled from a variety of sources in order to test the network protocol analyzers, log parsers and dashboards of Malcolm.
 
 ## Datasets
 
