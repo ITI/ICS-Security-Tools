@@ -3,7 +3,7 @@
 Developed as a community asset
 
 ## Industrial Cybersecurity Incidents Databases
-- [Critical Infrastructures Ransomware Attacks (CIRWAs)](https://sites.temple.edu/care/ci-rw-attacks/)
+- [Critical Infrastructure Ransomware Attacks (CIRA)](https://sites.temple.edu/care/cira/)
 - [ICS STRIVE](https://icsstrive.com) 
 - [MITRE ATT&CK for ICS](https://collaborate.mitre.org/attackics/index.php/Groups)
 - [Systems and Cyber Impact Database MARKup (SCIDMARK)](http://scidmark.com/)
