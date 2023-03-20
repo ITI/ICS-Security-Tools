@@ -69,6 +69,8 @@ Developed as a community asset
 - [Molex EtherNet/IP Tool](https://www.molex.com/mx_upload/superfamily/iccc/EtherNet_IPTool.html) - The EtherNet/IP tool (EIPTool) is a small and simple helper tool which assists to explore CIP objects of EtherNet/IP nodes, without having any EDS files. It uses the explicit messaging to read and write CIP attributes.
 - [Claroty ENIP / CIP Stack Detector](https://github.com/claroty/enip-stack-detector) - EtherNet/IP & CIP Stack Detector that can help both cyber-security researchers, OT engineers, and asset owners to identify devices that are running a specific EtherNet/IP protocol stack.
 
+## Genisys
+- [ICSNPP Genisys for Zeek](https://github.com/cisagov/icsnpp-genisys) - DHS CISA Genisys plugin for Zeek
 ## IEC 104
 
 - [IEC Server](/tools/mirrored/iec-server/) - Software to simulate server side of systems using a telecontrol message Protocol specified in the IEC 60870-5. Original website http://area-x1.lima-city.de is down, so this has been mirrored.
@@ -103,6 +105,7 @@ Developed as a community asset
 - [Wireshark Dissector](https://github.com/boundary/wireshark/blob/master/epan/dissectors/packet-synphasor.c) - Implemented C37.118 wireshark dissector
 - [Grid Solutions Framework C37.118](https://github.com/GridProtectionAlliance/gsf/tree/master/Source/Libraries/GSF.PhasorProtocols/IEEEC37_118) - GSF implementation (.net)
 - [LangSec C37.118 Parser](https://github.com/Dartmouth-Trustlab/C37.118PMU) - LangSec based C37.118 parser
+- [ICSNPP Synchrophasor parser for Zeek](https://github.com/cisagov/icsnpp-synchrophasor) - DHS CISA C37.118 parser for Zeek
 
 ### Tools
 
@@ -153,6 +156,7 @@ Developed as a community asset
 - [OPC UA Client GUI](https://github.com/FreeOpcUa/opcua-client-gui) - A simple OPC-UA GUI client.
 - [OPC UA Server Simulator](https://integrationobjects.com/opc-products/opc-unified-architecture/opc-ua-server-simulator/) - Simulate real-time and historical data using OPC UA Server Simulator.
 - [OPC UA Server and Client C++ Libraries](https://github.com/FreeOpcUa/freeopcua) - LGPL OPC-UA server and client library written in C++ and with a lot of code auto-generated from xml specification using python.
+- [ICSNPP OPC-UA Binary parser for Zeek](https://github.com/cisagov/icsnpp-opcua-binary) - DHS CISA OPC UA Binary protocol parser for Zeek
 
 ## OpenADR
 
@@ -193,6 +197,7 @@ Developed as a community asset
 - [Zeek-IDS S7 Protocol Parser](https://github.com/dw2102/S7Comm-Analyzer) - S7 protocol parser for Zeek IDS
 - [zeek plugin s7](https://github.com/amzn/zeek-plugin-s7comm) - S7 Zeek Plugin from Amazon
 - [SPPA S7 Data port dissector](https://github.com/klsecservices/SPPA/blob/master/sppa_dissector.lua) - SPPA-T3000 Automation server (PLC) dissector + [whitepaper](https://github.com/klsecservices/SPPA/blob/master/Security%20of%20DCS%20for%20turbines%20-%202020.pdf) by Kaspersky Security Services team
+- [ICSNPP S7comm parser for Zeek](https://github.com/cisagov/icsnpp-s7comm) - DHS CISA S7comm parser for Zeek
 
 ## SSP21
 
