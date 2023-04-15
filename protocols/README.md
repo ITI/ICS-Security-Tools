@@ -48,8 +48,6 @@ Developed as a community asset
 
 - [AEGIS Fuzzer](https://www.automatak.com/aegis/) - Aegis™ is a smart fuzzing framework for a growing number of protocols that can identify robustness and security issues in communications software before it is deployed in a production system. **[commercial]** Early Open Source version is mirrored here: [Open-Source](/tools/mirrored/aegis-opensource/).
 - [ICSFuzz](https://github.com/momalab/ICSFuzz) - an PLC-side fuzzing tool for uncovering vulnerabilities in ICS control applications.
-- [Modbus Fuzzer](https://github.com/bl4ckic3/Modbus-Fuzzer) - Modbus Protocol Fuzzer
-
 
 ## Ethercat
 
@@ -135,6 +133,8 @@ Developed as a community asset
 ### Traffic Generation
 
 - [Modbus Traffic Generation](https://github.com/iti/ics-trafficgen/) - pyModbus-based traffic generation that can take a profile of traffic, apply scriptable variation, and result in output of Modbus traffic matching that profile.
+- [Modbus Fuzzer](https://github.com/bl4ckic3/Modbus-Fuzzer) - Modbus Protocol Fuzzer
+- [Modbus network fuzzer](https://github.com/s-e-knudsen/Modbus_network_fuzzer) - The modbus network fuzzer uses Boofuzz for the fuzzing of the protocol (By Søren Knudsen)
 
 ### Fuzzing
 
