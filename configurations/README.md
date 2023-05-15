@@ -6,8 +6,8 @@ Developed as a community asset
 
 Note, if you find ICS-relevant file extensions that are not listed in the above list, please submit a pull to contribute those to the TSV's in this project.
 
-- [Common File Extensions for Configurations/Projects](SCADA-Common-File-Extensions.tsv)
-- [Other Files of Interest](SCADA-Other-Files-of-Interest.tsv)
+- [Common File Extensions for Configurations/Projects](SCADA-Common-File-Extensions.tsv) - common extensions
+- [Other Files of Interest](SCADA-Other-Files-of-Interest.tsv) - some other interesting specific files
 - [File-extension seeker](https://file-extension.net/seeker/) - aggregate search engine to find info about file extensions.
 - [Data Types](https://datatypes.net) - another file extension search engine
 - [ICS File Extension Search](https://github.com/ISSVS/ICSExtearch) - Powershell script to search on a system for common ICS file extensions. Sources this list from here.
