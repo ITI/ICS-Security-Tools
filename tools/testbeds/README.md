@@ -5,9 +5,15 @@ Developed as a community asset
 ## Platforms
 
 - [melody](https://github.com/iti/melody) - a TestBed which integrates Power System Simulation with Mininet to simulate a Micro Grid control Architecture. This TestBed was used for Anomaly Detection Purposes.
-- [minimega](https://github.com/sandia-minimega/minimega) - minimega is a tool for launching and managing virtual machines.
 - [NREL CEE](https://www.nrel.gov/docs/fy20osti/74142.pdf) - NREL’s Cyber-Energy Emulation Platform for Research and System Visualization built upon Minimega and SCEPTRE.
-- [SCEPTRE](https://www.osti.gov/servlets/purl/1376989) - Sandia National Labs SCEPTRE provides a cyber-physical environment to analyze how cyber-initiated events affect the physical world.
+- [SCEPTRE](https://www.sandia.gov/app/uploads/sites/122/2021/09/SCEPTRE_SAND2019-11907M.pdf) - Sandia National Labs SCEPTRE provides a cyber-physical environment to analyze how cyber-initiated events affect the physical world. Over-arching effort for minimega, phenix, and various plugins.
+- [minimega](https://github.com/sandia-minimega/minimega) - minimega is a tool for launching and managing virtual machines.
+- [Phenix](https://github.com/sandialabs/sceptre-phenix) - phenix is an orchestration tool and GUI for Sandia's minimega platform
+- [phenix-apps](https://github.com/sandialabs/sceptre-phenix-apps) - Apps written to work with the latest version of phenix 
+- [phenix-images](https://github.com/sandialabs/sceptre-phenix-images) - phenix image is a tool for quickly creating vm images with debian-based OSes
+- [phenix-topologies](https://github.com/sandialabs/sceptre-phenix-topologies) - Topologies created to work with the latest version of phenix 
+- [sceptre-bennu](https://github.com/sandialabs/sceptre-bennu) - Modeling and simulation application for ICS.
+
 
 ## Systems
 - [ICS TestBed Framework](https://github.com/PMaynard/ICS-TestBed-Framework) - A scalable framework for automatically deploying locally (or remotely) a number of virtual machines that replicate a Supervisory Control And Data Acquisition (SCADA) network is proposed.
@@ -20,6 +26,7 @@ Developed as a community asset
 - [SWaT Simulator](https://github.com/yuqiChen94/Swat_Simulator) - SUTD SWaT Testbed Simulation written in python
 - [Simple Process Simulation](https://github.com/arnaudsoullie/simple-process-simulation) - HTML/JS process simulation interacting with a modbus device, by Arnaud Soullie
 - [ICSSIM](https://github.com/AlirezaDehlaghi/ICSSIM) - A Framework for Building Industrial Control Systems Security Simulation Testbeds, [Paper](https://arxiv.org/abs/2210.13325)
+
 
 
 ## Survey
