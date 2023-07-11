@@ -19,6 +19,8 @@ Developed as a community asset
 - [OFRAK](https://github.com/redballoonsecurity/ofrak) - OFRAK (Open Firmware Reverse Analysis Konsole) is a binary analysis and modification platform. OFRAK combines the ability to: Identify and Unpack many binary formats. Analyze unpacked binaries with field-tested reverse engineering tools. Modify and Repack binaries with powerful patching strategies.
 - [rpdebug](https://github.com/mandiant/rpdebug_qnx) - rpdbg.py is designed to communicate with the QNX operating system's pdebug utility.
 
+### Files
+[Polyfile](https://github.com/trailofbits/polyfile) - A pure Python cleanroom implementation of libmagic, with instrumented parsing from Kaitai struct and an interactive hex viewer
 ### Logs
 
 - [Plaso - Log2timeline](https://github.com/log2timeline/plaso/wiki) - log2timeline is a tool designed to extract timestamps from various files found on a typical computer system(s) and aggregate them.
@@ -30,6 +32,7 @@ Developed as a community asset
 - [OPC Data Access IDAPython script](https://github.com/eset/malware-research/tree/master/industroyer) - An IDAPython script for IDA Pro that helps reverse engineer binaries that are using the OPC Data Access protocol. It can be used to analyse such malware families as Havex RAT and Win32/Industroyer.
 - [FLARE VM](https://github.com/fireeye/flare-vm) - FLARE VM is a fully customizable, Windows-based security distribution for malware analysis, incident response, penetration testing, etc.
 - [Control Things Tools Bin](https://github.com/ControlThingsTools/ctbin) - The goal of ctbin is to become the security professional’s Swiss army knife for analyzing binary files.
+- [Polytracker](https://github.com/trailofbits/polytracker) - An LLVM-based instrumentation tool for universal taint tracking, dataflow analysis, and tracing.
 
 ### Network
 
