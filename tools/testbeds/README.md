@@ -8,11 +8,12 @@ Developed as a community asset
 - [NREL CEE](https://www.nrel.gov/docs/fy20osti/74142.pdf) - NREL’s Cyber-Energy Emulation Platform for Research and System Visualization built upon Minimega and SCEPTRE.
 - [SCEPTRE](https://www.sandia.gov/app/uploads/sites/122/2021/09/SCEPTRE_SAND2019-11907M.pdf) - Sandia National Labs SCEPTRE provides a cyber-physical environment to analyze how cyber-initiated events affect the physical world. Over-arching effort for minimega, phenix, and various plugins.
 - [minimega](https://github.com/sandia-minimega/minimega) - minimega is a tool for launching and managing virtual machines.
-- [Phenix](https://github.com/sandialabs/sceptre-phenix) - phenix is an orchestration tool and GUI for Sandia's minimega platform
+- [phenix](https://github.com/sandialabs/sceptre-phenix) - phenix is an orchestration tool and GUI for Sandia's minimega platform
 - [phenix-apps](https://github.com/sandialabs/sceptre-phenix-apps) - Apps written to work with the latest version of phenix 
 - [phenix-images](https://github.com/sandialabs/sceptre-phenix-images) - phenix image is a tool for quickly creating vm images with debian-based OSes
 - [phenix-topologies](https://github.com/sandialabs/sceptre-phenix-topologies) - Topologies created to work with the latest version of phenix 
 - [sceptre-bennu](https://github.com/sandialabs/sceptre-bennu) - Modeling and simulation application for ICS.
+- [OT-sim](https://github.com/patsec/ot-sim) - A set of modules that run simulated OT devices in VMs or containers, allowing researchers to represent a physical system, at scale, in a co-simulation environment for specific or system-wide testing and evaluation without impacting a real-world system.
 
 
 ## Systems
