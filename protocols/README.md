@@ -21,6 +21,8 @@ Developed as a community asset
 - [zeek plugin bacnet](https://github.com/amzn/zeek-plugin-bacnet) - BACnet Zeek Plugin from Amazon
 - [yet another zeek plugin bacnet](https://github.com/delta-2-4/Zeek-BACnetIP) - BACnet Zeek Plugin by Aaron Heller + [SANS whitepaper](https://www.sans.org/reading-room/whitepapers/ICS/paper/39240)
 - [ICSNPP Bacnet for Zeek](https://github.com/cisagov/icsnpp-bacnet) - DHS CISA Bacnet parser for Zeek
+- [BACnet SC Reference Implementation](https://sourceforge.net/projects/bacnet-sc-reference-stack/) - BACnet Secure Connect Reference Implementation. More details about the standard [here](https://www.ashrae.org/file%20library/technical%20resources/bookstore/bacnet-sc-whitepaper-v15_final_20190521.pdf)
+- [Public Review of ASHRAE Standards](https://www.ashrae.org/technical-resources/standards-and-guidelines/read-only-versions-of-ashrae-standards) - A way to read some of the ASRAE standards that are out for public review.
 
 ## Bristol Standard Asynchronous Protocol (BSAP)
 
