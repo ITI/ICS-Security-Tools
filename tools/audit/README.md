@@ -25,6 +25,7 @@ Developed as a community asset
 - [modscan](/tools/mirrored/modscan) - Tool to scan modbus devices and gather information.
 - [modbus-scanner](https://github.com/arnaudsoullie/modbus-scanner) - Live scanner that looks for register changes via modbus.
 - [Metasploit Modules for OPC UA](https://github.com/COMSYS/msf-opcua) - New Metasploit modules for assessing the security of OPC UA deployments, [paper](https://arxiv.org/abs/2003.12341)
+- [OPC-UA Exploitation Framework ](https://github.com/claroty/opcua-exploit-framework) - Advanced OPC-UA framework for vulnerability research & exploitation
 - [Open PHA](https://www.kenexis.com/software/openpha/download/) - Open PHA™ is a HAZOP and LOPA software tool. Open PHA™ provides an easy to use, light-weight platform for performing HAZOP and LOPA analysis. Includes the ability to perform a Security PHA Review directly in the PHA study (description: https://www.kenexis.com/security-pha-review-spr-open-pha/)
 - [Industrial Security Auditing Framework](https://gitlab.com/d0ubl3g/industrial-security-auditing-framework/) - ISAF aims to be a framework that provides the necessary tools for the correct security audit of industrial environments.
 - [Shodan](https://www.shodan.io) - Shodan is the world's first search engine for Internet-connected devices
