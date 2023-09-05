@@ -47,6 +47,7 @@ Developed as a community asset
 - [SSASS-E](https://github.com/pnnl/ssass-e) - Safe Secure Autonomous Scanning Solution for Energy Delivery Systems (SSASSE). Note: UIUC was involved in this project and there are a bunch of great nuggets in the code.
 - [HVACScanner](https://github.com/musicmancorley/HVACScanner) - Locates Honeywell/Tridium/Niagara HVAC JACEs/Controllers via HTTP fingerprints/strings.
 - [ICS Security Scripts](https://github.com/tijldeneut/ICSSecurityScripts) - Various industrial security scripts.
+- [Caldera for OT Plugins](https://github.com/mitre/caldera-ot) - A collection of plugins that extend Caldera to the Operational Technology (OT) environment. The Caldera for OT plugins enable adversary emulation in the OT environment.
 
 ## Robotics
 
