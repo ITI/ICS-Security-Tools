@@ -170,6 +170,10 @@ Developed as a community asset
 - [OPC UA Server and Client C++ Libraries](https://github.com/FreeOpcUa/freeopcua) - LGPL OPC-UA server and client library written in C++ and with a lot of code auto-generated from xml specification using python.
 - [ICSNPP OPC-UA Binary parser for Zeek](https://github.com/cisagov/icsnpp-opcua-binary) - DHS CISA OPC UA Binary protocol parser for Zeek
 
+### Tools
+
+- [OpalOPC](https://opalopc.com/) - An OPC UA vulnerability and misconfiguration scanner. **[commercial]** Free for non-commercial use.
+
 ## OpenADR
 
 ### Protocol Implementation / Tools
