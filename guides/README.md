@@ -64,6 +64,10 @@ Developed as a community asset
 - [ROSA Jumpkit](https://github.com/cutaway-security/ROSA_Jumpkit) - Remote / Onsite Security Assessment Jumpkit
 - [Industrial Cyber Response Blog Post](https://www.dragos.com/blog/industry-news/preparing-for-industrial-cyber-response-what-to-have-in-your-incident-response-toolkit/) - Some high-level thoughts on what you need to have in your incident response toolkit to be prepared for an industrial cyber response.
 
+## Secure PLC Coding Practices
+- [Secure_PLC_Coding](https://github.com/Fortiphyd/Secure_PLC_Coding) - Documentation and guidance to practice secure coding for various PLC vendors + a custom module for the top 20 secure PLC coding practices for CISA’s Cyber Security Evaluation Tool (CSET).
+
+
 ## Curated Content
 
 - [See Feeds](/feeds/)
