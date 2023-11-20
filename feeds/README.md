@@ -9,6 +9,7 @@ Developed as a community asset
 - [MITRE ATT&CK for ICS](https://collaborate.mitre.org/attackics/index.php/Groups)
 - [Operational Technology Cyber Attack Database (OTCAD)](https://github.com/SecuraBV/OTCAD)
 - [RISI Online Incident Database](https://www.risidata.com) (Outdated)
+- [Space Attacks Open Database](https://www.spacesecurity.info/en/space-attacks-open-database/)
 - [Systems and Cyber Impact Database MARKup (SCIDMARK)](http://scidmark.com/)
 - [TI Safe Incident Hub](https://hub.tisafe.com/)
 
