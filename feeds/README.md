@@ -4,6 +4,7 @@ Developed as a community asset
 
 ## Industrial Cybersecurity Incidents Databases
 - [Critical Infrastructure Ransomware Attacks (CIRA)](https://sites.temple.edu/care/cira/)
+- [European Repository of Cyber Incidents (EuRepoC)](https://eurepoc.eu/table-view/)
 - [ICS STRIVE](https://icsstrive.com) 
 - [Maritime Cyber Attack Database (MCAD)](https://maritimecybersecurity.nl/)
 - [MITRE ATT&CK for ICS](https://collaborate.mitre.org/attackics/index.php/Groups)
