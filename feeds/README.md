@@ -4,6 +4,7 @@ Developed as a community asset
 
 ## Industrial Cybersecurity Incidents Databases
 - [Critical Infrastructure Ransomware Attacks (CIRA)](https://sites.temple.edu/care/cira/)
+- [European Repository of Cyber Incidents (EuRepoC)](https://eurepoc.eu/table-view/)
 - [ICS STRIVE](https://icsstrive.com) 
 - [Maritime Cyber Attack Database (MCAD)](https://maritimecybersecurity.nl/)
 - [MITRE ATT&CK for ICS](https://collaborate.mitre.org/attackics/index.php/Groups)
@@ -27,8 +28,8 @@ Developed as a community asset
 
 ## Job Resources
 
+- [Automation JobSearch](https://automationjobsearch.com/jobs/?search_keywords=&search_location=&search_category=240)
 - [(CS)²AI Job Board](https://www.cs2ai.org/jobs)
-- [OT Security Jobs](https://otsecurityjobs.com/)
 - [LinkedIn Job Search](https://www.linkedin.com/jobs/search/?geoId=92000000&keywords=Industrial%20ICS%20OT%20Security&location=Worldwide&refresh=true)
 - [SANS ICS Community ICS Related Job Opportunities](https://ics-community.sans.org/category/ics-related-job-opportunities)
 - [Verge Management Group Open Positions](https://vergemanagementgroup.com/open-positions/) - Talent Acquisition for IoT and OT Cybersecurity

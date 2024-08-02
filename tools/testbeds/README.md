@@ -27,8 +27,8 @@ Developed as a community asset
 - [SWaT Simulator](https://github.com/yuqiChen94/Swat_Simulator) - SUTD SWaT Testbed Simulation written in python
 - [Simple Process Simulation](https://github.com/arnaudsoullie/simple-process-simulation) - HTML/JS process simulation interacting with a modbus device, by Arnaud Soullie
 - [ICSSIM](https://github.com/AlirezaDehlaghi/ICSSIM) - A Framework for Building Industrial Control Systems Security Simulation Testbeds, [Paper](https://arxiv.org/abs/2210.13325)
-- [Sandia Experiment Control System](https://github.com/sandialabs/ECS) - The purpose of the Sandia Experimental Control System (ECS) is to provide a holistic cyber-physical environment for experiments on the response of organizations and their personnel to cyber-physical blended attacks. 
-
+- [Sandia Experiment Control System](https://github.com/sandialabs/ECS) - The purpose of the Sandia Experimental Control System (ECS) is to provide a holistic cyber-physical environment for experiments on the response of organizations and their personnel to cyber-physical blended attacks.
+- [Railway [Metro] IT/OT System Cyber Security Test Platform (Mini cyber range)](https://github.com/LiuYuancheng/Railway_IT_OT_System_Cyber_Security_Platform) - a simplified and straightforward digital twin-style emulation platform for a railway system, simulating the operations of multiple trains on various tracks, each with distinct sensor-signal controls. This platform serves as a cyber range for cyber security researchers to showcase and test the impact of various IT attacks on OT systems.
 
 
 ## Survey
