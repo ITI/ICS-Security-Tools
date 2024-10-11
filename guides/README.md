@@ -1,4 +1,4 @@
-# ICS Configurations
+# ICS Security Guides
 
 Developed as a community asset
 
@@ -6,6 +6,7 @@ Developed as a community asset
 
 - [Rob Lee's Thoughts](roblee.md)
 - [Jake Brodsky's Thoughts](scadamagICSLab.md)
+- [Paul Shaver's ICS Security Study Resouces](https://github.com/Ka0sKl0wN/ICS-Security-Study-Resources)
 
 ## Getting Started / Training
 
@@ -14,20 +15,19 @@ Developed as a community asset
 - [S4 Onramp Online](https://www.youtube.com/playlist?list=PL8OWO1qWXF4qRHrSTpwFbuLUL-bOrGn4y) - A series of videos from S4 events intended to onboard newer people to the field rapidly.
 - [S4 ICS Security Fundamentals](https://www.youtube.com/playlist?list=PL8OWO1qWXF4rz8ZyeQh9B9wTt5LIlVN0Z)
 - [RealPars PLC Training](https://www.youtube.com/c/realpars/playlists) - RealPars is the world's largest online learning platform for automation engineers.
-- [DHS CISA ICS Training](https://us-cert.cisa.gov/ics/Training-Available-Through-ICS-CERT) - Online and in-person training links
+- [DHS CISA ICS Training](https://www.cisa.gov/ics-training-available-through-cisa) - Online and in-person training links
 - [ENISA Introduction to network forensics](https://www.enisa.europa.eu/topics/trainings-for-cybersecurity-specialists/online-training-material/technical-operational#network_forensics) - Includes "ICS/SCADA environment" Use Case
 - [IAEA Nuclear Security e-Learning Modules: Information and computer security](https://elearning.iaea.org/m2/course/index.php?categoryid=104) - 4 Modules, that include a final tests and certificates
 - [ISA IACS Cybersecurity for CISOs](https://www.isa.org/training-and-certification/isa-training/microlearning-modules/iacs-cybersecurity-for-cisos) - A microlearning module set that provides insight and understanding around the ISA/IEC 62443 series of standards
 
 ## Non-Free Training
 
-- [SANS ICS](https://www.sans.org/industrial-control-systems-security/)
+- [SANS ICS](https://www.sans.org/industrial-control-systems-security/): ICS410, ICS418, ICS456, ICS515, ICS612
 - [Industrial Control Systems Cyber Security Institute](https://icscsi.org/index.html)
 - [ISA Control Systems Training](https://www.isa.org/training-and-certification/isa-training/control-systems-training)
 - [ISC2 ICS Course](https://www.isc2.org/Development/Immersive-Courses/Exploring-Cybersecurity-in-Industrial-Control-Systems)
-- [CybatiWorks](https://intelligenesisllc.com/cybatiworks-2/)
 - [Dragos Training](https://www.dragos.com/training/)
-- [FireEye Training](https://www.fireeye.com/services/training/courses.html)
+- [Mandiant Training](https://cloud.google.com/learn/security/mandiant-academy-courses?hl=en): Fundamentals of ICS Security (FICSS), Cyber Intelligence for Critical Infrastructure (CICI)
 - [Kaspersky](https://ics.kaspersky.com/media/Kaspersky-ICS-CERT-Training-Program.pdf)
 
 ## Certifications
