@@ -35,4 +35,7 @@ Developed as a community asset
 
 - [Industrial Control Systems Testbed Survey](https://spritz.math.unipd.it/projects/ics_survey/) - This page aims to collect and share the current state of the art Industrial Control Systems (ICS) Testbed and Datasets developed for security research. We think that this collection can help the ICS security community see the current research trend worldwide and find useful information to support future studies. [paper here](https://arxiv.org/abs/2102.05631)
 
+## Training
+- [labshock](https://github.com/zakharb/labshock) - [documentation](https://labshock.github.io) Labshock is a hands-on OT/ICS cybersecurity lab designed for security professionals, engineers and researchers. It provides a ready-to-use environment to analyze industrial protocols, simulate attacks and test defensive strategies.
+
 (creative commons license)
