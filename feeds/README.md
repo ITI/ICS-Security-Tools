@@ -31,6 +31,8 @@ Developed as a community asset
 - [Automation JobSearch](https://automationjobsearch.com/jobs/?search_keywords=&search_location=&search_category=240)
 - [(CS)²AI Job Board](https://www.cs2ai.org/jobs)
 - [Energy JobSearch](https://energyjobsearch.com/jobs?title=security)
+- ['Get Into Energy' Job Board](https://getintoenergy.jobs/jobs/?r=25&q=security)
+- [ISA Job Board](https://jobs.isa.org/jobs/?keywords=security)
 - [LinkedIn Job Search](https://www.linkedin.com/jobs/search/?geoId=92000000&keywords=Industrial%20ICS%20OT%20Security&location=Worldwide&refresh=true)
 - [SANS ICS Community ICS Related Job Opportunities](https://ics-community.sans.org/category/ics-related-job-opportunities)
 - [Verge Management Group Open Positions](https://vergemanagementgroup.com/open-positions/) - Talent Acquisition for IoT and OT Cybersecurity
