@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-If a vulnerability is discovered, please email iti-development@illinois.edu
+If a vulnerability is discovered, please open an issue here or contact yardley@gmail.com
