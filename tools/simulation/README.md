@@ -37,7 +37,8 @@ Developed as a community asset
 - [OpenPLC Project](http://www.openplcproject.com/) - It is a standard industrial controller, with sturdy hardware and real time response. It can be programmed with all the five standard PLC languages (ST, IL, SFC, FBD and Ladder), making it compatible with programs written for other PLCs. Source [v1](https://github.com/thiagoralves/OpenPLC), [v2](https://github.com/thiagoralves/OpenPLC_v2), [v3](https://github.com/thiagoralves/OpenPLC_v3). Simulink interface [here](https://github.com/thiagoralves/OpenPLC_Simulink-Interface)
 - [Net To PLCSim](https://sourceforge.net/projects/nettoplcsim/) - TCP/IP-Network extension for the PLC simulation software Siemens PLCSim
 - [openPLC v2](https://github.com/thiagoralves/OpenPLC_v2) - OpenPLC with the new IEC ST to C compiler
-- [ThingsBoard IoT Gateway](https://github.com/thingsboard/thingsboard-gateway) - an open-source IoT platform for data collection, processing, visualization, and device management. 
+- [ThingsBoard IoT Gateway](https://github.com/thingsboard/thingsboard-gateway) - an open-source IoT platform for data collection, processing, visualization, and device management.
+- [Industrial Protocol Emulator](https://github.com/joseluisnebot/industrial-protocol-emulator) - Single Docker container that emulates field devices over Modbus TCP, OPC-UA, MQTT, SNMP and BACnet/IP (DNP3 and EtherNet/IP as basic stubs), with a web panel to watch and override signals. For labs, SCADA/HMI testing and IDS rule development. 
 
 ## Federation Tooling
 
